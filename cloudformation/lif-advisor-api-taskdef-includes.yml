@@ -1,0 +1,24 @@
+Environment:
+  - Name: LIF_SEMANTIC_SEARCH_MCP_SERVER_URL
+    Value:
+      Fn::Sub: "http://semantic-search.lif.${EnvironmentName}.aws:8003/mcp"
+  - Name: LIF_GRAPHQL_API_URL
+    Value:
+      Fn::Sub: "http://graphql-org1.lif.${EnvironmentName}.aws:8000/graphql"
+  - Name: LIF_ADVISOR_AGENT_TASKS
+    Value: "load_profile,continue_conversation,save_interaction_summary"
+  - Name: LIF_ADVISOR_LLM_MODEL_NAME
+    Value: gpt-4.1-mini
+  - Name: LIF_ADVISOR_MESSAGES_TO_KEEP
+    Value: "4"
+  - Name: LIF_ADVISOR_TRIMMED_MESSAGES_SIZE
+    Value: "384"
+  - Name: LIF_ADVISOR_MAX_CONVERSATION_SIZE
+    Value: "2048"
+  - Name: LIF_ADVISOR_MAX_SUMMARY_SIZE
+    Value: "1024"
+Secrets:
+  - Name: OPENAI_API_KEY
+    ValueFrom:
+      Fn::Sub: "arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:${EnvironmentName}/${ServiceName}/openai-api-key"
+

@@ -1,0 +1,76 @@
+name: Deploy MongoDB to Amazon ECS
+
+env:
+  AWS_REGION: us-east-1
+  GHA_ROLE: "arn:aws:iam::381492161417:role/lif-github-actions-dev"
+  ECS_CLUSTER: dev
+  ECS_SERVICE_ORG1: mongodb-org1-FARGATE
+  ECS_SERVICE_ORG2: mongodb-org2-FARGATE
+  ECS_SERVICE_ORG3: mongodb-org3-FARGATE
+
+permissions:
+      id-token: write
+      contents: read
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    paths:
+      - projects/mongodb/**
+      - cloudformation/dev-lif-mongodb-org1.params
+      - cloudformation/dev-lif-mongodb-org2.params
+      - cloudformation/dev-lif-mongodb-org3.params
+      - cloudformation/mongodb-taskdef-includes.yml
+      - .github/workflows/mongodb.yml
+
+jobs:
+
+  mongodb:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      WORKING_DIR: ./projects/mongodb
+      ECR_REPOSITORY: lif/dev/mongodb
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Build and push docker image
+      uses: ./.github/actions/build-and-push
+      with:
+        working-dir: ${{ env.WORKING_DIR }}
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: lif-mongodb-build
+        aws-region: ${{ env.AWS_REGION }}
+        ecr-repository: ${{ env.ECR_REPOSITORY }}
+
+    - name: Update mongodb-org1
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: lif-mongodb-org1-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: ${{ env.ECS_SERVICE_ORG1 }}
+
+    - name: Update mongodb-org2
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: lif-mongodb-org2-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: ${{ env.ECS_SERVICE_ORG2 }}
+
+    - name: Update mongodb-org3
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: lif-mongodb-org3-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: ${{ env.ECS_SERVICE_ORG3 }}
+

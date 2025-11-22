@@ -1,0 +1,44 @@
+[project]
+name = "lif_orchestrator"
+requires-python = ">=3.9,<3.14"
+version = "0.1.0"
+dependencies = [
+    "dagster==1.11.12",
+    "httpx>=0.28.1",
+    "jsonpath-ng>=1.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "dagster-webserver",
+    "dagster-dg-cli",
+]
+
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+dev-mode-dirs = ["../../../components"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lif"]
+# force-include = { "pyproject.toml" = "pyproject.toml" }
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.polylith.bricks]
+"../../../components/lif/data_source_adapters" = "lif/data_source_adapters"
+"../../../components/lif/datatypes" = "lif/datatypes"
+"../../../components/lif/exceptions" = "lif/exceptions"
+"../../../components/lif/logging" = "lif/logging"
+"../../../components/lif/query_planner_service" = "lif/query_planner_service"
+
+[tool.dg]
+directory_type = "project"
+
+[tool.dg.project]
+root_module = "lif_orchestrator"
+registry_modules = [
+    "lif_orchestrator.components.*",
+]

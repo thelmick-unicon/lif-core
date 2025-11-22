@@ -1,0 +1,29 @@
+:root {
+    /* Theme/Layout */
+    --theme-bg: #E9EBEE;
+    --theme-text: #4D5E80;
+    --theme-active: #504d80;
+    --padding-x: 2em;
+
+    /* Tabs */
+    --tab-bg: #D2E4E2;
+    --tab-active: #BCD4D2;
+    --tab-radius: 0.75em;
+
+    /* Columns */
+    --col-bg-head: #D2E4E2;
+    --col-bg-body: #F8F9FA;
+
+    /* Model indicators */
+    --group1: #8BB346;
+    --group2: #F4998F;
+    --group3: #FDDA8C;
+    --group4: #8833FF;
+
+    /* Brightness */
+    --bright90: filter: brightness(90%);
+    --bright80: filter: brightness(80%);
+    --bright70: filter: brightness(70%);
+    --bright60: filter: brightness(60%);
+    --bright50: filter: brightness(50%);
+}

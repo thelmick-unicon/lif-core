@@ -1,0 +1,4 @@
+Environment:
+  - Name: MONGODB_URI
+    Value: 
+      Fn::Sub: "mongodb://mongodb-${OrganizationName}.lif.${EnvironmentName}.aws:27017"

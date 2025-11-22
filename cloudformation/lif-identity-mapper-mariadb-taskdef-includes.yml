@@ -1,0 +1,12 @@
+Environment:
+  - Name: MARIADB_ROOT_PASSWORD
+    Value: "changeme"
+  - Name: MARIADB_DATABASE
+    Value: "lif"
+  - Name: MARIADB_USER
+    Value: "myuser"
+  - Name: MARIADB_PASSWORD
+    Value: "mypass"
+  - Name: SEED_DATA_KEY
+    Value: 
+      Fn::Sub: "advisor-demo-${OrganizationName}"

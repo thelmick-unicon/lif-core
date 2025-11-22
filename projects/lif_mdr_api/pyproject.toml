@@ -1,0 +1,129 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lif_mdr_api"
+version = "0.1.0"
+
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "asyncpg~=0.30",
+    "bcrypt~=4.0",
+    "databases~=0.9",
+    "fastapi~=0.109",
+    "fastapi-pagination~=0.12",
+    "gunicorn~=21.2",
+    "jinja2~=3.1",
+    "mysql-connector-python~=8.3",
+    "pandas~=2.2",
+    "passlib[bcrypt]~=1.7",
+    "psycopg2-binary~=2.9",
+    "pydantic-settings~=2.1",
+    "pyjwt~=2.10",
+    "python-jose[cryptography]~=3.3",
+    "python-multipart~=0.0",
+    "pyyaml~=6.0",
+    "requests~=2.31",
+    "sqlmodel~=0.0",
+    "uvicorn~=0.23",
+]
+
+# This section is needed for the Hatchling build backend, to activate the polylith build hook.
+[tool.hatch.build.hooks.polylith-bricks]
+
+# This section is needed for building
+[tool.hatch.build.targets.wheel]
+packages = ["lif"]
+
+[tool.polylith.bricks]
+"../../bases/lif/mdr_restapi" = "lif/mdr_restapi"
+"../../components/lif/datatypes" = "lif/datatypes"
+"../../components/lif/mdr_auth" = "lif/mdr_auth"
+"../../components/lif/mdr_dto" = "lif/mdr_dto"
+"../../components/lif/mdr_services" = "lif/mdr_services"
+"../../components/lif/mdr_utils" = "lif/mdr_utils"
+
+# [dev.dependencies]
+# httpx = "^0.26.0"
+# mypy = "^1.8.0"
+# pytest = "^8.0.0"
+# pytest-cov = "^4.1.0"
+# pytest-env = "^1.1.3"
+# ruff = "^0.1.14"
+# types-requests = "^2.31.0.10"
+# pytest-asyncio = "^0.23.5"
+
+
+[tool.ruff.format]
+preview = true
+docstring-code-format = true
+docstring-code-line-length = 80
+line-ending = "lf"
+
+[tool.ruff.lint]
+preview = true
+select = [
+  "A",
+  "ANN",
+  "ARG",
+  "B",
+  "C4",
+  "E",
+  "ERA",
+  "F",
+  "FIX",
+  "FURB",
+  "G",
+  "I",
+  "ICN",
+  "ISC",
+  "LOG",
+  "N",
+  "PD",
+  "PERF",
+  "PL",
+  "PT",
+  "PTH",
+  "PYI",
+  "RET",
+  "RSE",
+  "RUF",
+  "S",
+  "SIM",
+  "SLF",
+  "T20",
+  "TCH",
+  "TD",
+  "TRY",
+  "UP",
+  "W"
+]
+ignore = [
+  "B008",
+  "E501",
+  "FIX002",
+  "ISC001",
+  "PT013",
+  "RUF012",
+  "S101",
+  "TD002",
+  "TD003",
+  "TRY300"
+]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["id"]
+
+[tool.ruff.lint.pylint]
+max-locals = 20
+
+[tool.mypy]
+
+asyncio_mode = "auto"
+
+filterwarnings = [
+  "ignore:Valid config keys have changed in V2:UserWarning:pydantic.*",
+  "ignore:Support for class-based `config` is deprecated:DeprecationWarning:pydantic.*"
+]

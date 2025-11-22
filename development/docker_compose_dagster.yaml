@@ -1,0 +1,113 @@
+services:
+  #####################
+  # Dagster services
+  #####################
+  # This service runs the postgres DB used by dagster for run storage, schedule storage,
+  # and event log storage. Depending on the hardware you run this Compose on, you may be able
+  # to reduce the interval and timeout in the healthcheck to speed up your `docker-compose up` times.
+  postgres-dagster:
+    image: postgres:11
+    container_name: postgres-dagster
+    environment:
+      POSTGRES_USER: 'postgres_user'
+      POSTGRES_PASSWORD: 'postgres_password'
+      POSTGRES_DB: 'postgres_db'
+    networks:
+      - lif-net-org1
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres_user -d postgres_db']
+      interval: 10s
+      timeout: 8s
+      retries: 5
+  # This service runs the gRPC server that loads your user code, in both dagster-webserver
+  # and dagster-daemon. By setting DAGSTER_CURRENT_IMAGE to its own image, we tell the
+  # run launcher to use this same image when launching runs in a new container as well.
+  # Multiple containers like this can be deployed separately - each just needs to run on
+  # its own port, and have its own entry in the workspace.yaml file that's loaded by the
+  # webserver.
+  dagster-code-location:
+    build:
+      context: ..
+      dockerfile: ./projects/dagster_docker_compose/Dockerfile.code_location
+    container_name: dagster-code-location
+    image: dagster-code-location-image
+    restart: always
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+      DAGSTER_CURRENT_IMAGE: 'dagster_code_location_image'
+      ADAPTERS__LIF-TO-LIF__ORG2__CREDENTIALS__HOST: localhost:8110
+      ADAPTERS__LIF-TO-LIF__ORG2__CREDENTIALS__SCHEME: http
+
+      ADAPTERS__LIF-TO-LIF__ORG3__CREDENTIALS__HOST: localhost:8210
+      ADAPTERS__LIF-TO-LIF__ORG3__CREDENTIALS__SCHEME: http
+
+      LIF_QUERY_PLANNER_RESULTS_BASE_URL: http://localhost:8002
+    networks:
+      - lif-net-org1
+  # This service runs dagster-webserver, which loads your user code from the code location container.
+  # Since our instance uses the QueuedRunCoordinator, any runs submitted from the webserver will be put on
+  # a queue and later dequeued and launched by dagster-daemon.
+  dagster-webserver:
+    build:
+      context: ..
+      dockerfile: ./projects/dagster_docker_compose/Dockerfile.dagster
+    entrypoint:
+      - dagster-webserver
+      - -h
+      - '0.0.0.0'
+      - -p
+      - '3000'
+      - -w
+      - workspace.yaml
+    container_name: dagster-webserver
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+    volumes: # Make docker client accessible so we can terminate containers from the webserver
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/io_manager_storage:/tmp/io_manager_storage
+    networks:
+      - lif-net-org1
+    depends_on:
+      postgres-dagster:
+        condition: service_healthy
+      dagster-code-location:
+        condition: service_started
+
+  # This service runs the dagster-daemon process, which is responsible for taking runs
+  # off of the queue and launching them, as well as creating runs from schedules or sensors.
+  dagster-daemon:
+    build:
+      context: ..
+      dockerfile: ./projects/dagster_docker_compose/Dockerfile.dagster
+    entrypoint:
+      - dagster-daemon
+      - run
+    container_name: dagster-daemon
+    restart: on-failure
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+    volumes: # Make docker client accessible so we can launch containers using host docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/io_manager_storage:/tmp/io_manager_storage
+    networks:
+      - lif-net-org1
+    depends_on:
+      postgres-dagster:
+        condition: service_healthy
+      dagster-code-location:
+        condition: service_started
+  
+networks:
+  lif-net-org1:
+    driver: bridge
+    name: lif-net-org1

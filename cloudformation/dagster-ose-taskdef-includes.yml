@@ -1,0 +1,47 @@
+Environment:
+  - Name: DAGSTER_GRPC_HOST
+    Value:
+      Fn::Sub: "dagster-code-location.lif.${EnvironmentName}.aws"
+  - Name: DAGSTER_CURRENT_IMAGE
+    Value:
+      Fn::Sub: "${ImageUrl}"
+  - Name: ADAPTERS__LIF_TO_LIF__ORG2__CREDENTIALS__HOST
+    Value:
+      Fn::Sub: "graphql-org2.lif.${EnvironmentName}.aws:8000"
+  - Name: ADAPTERS__LIF_TO_LIF__ORG2__CREDENTIALS__SCHEME
+    Value: http
+  - Name: ADAPTERS__LIF_TO_LIF__ORG3__CREDENTIALS__HOST
+    Value:
+      Fn::Sub: "graphql-org3.lif.${EnvironmentName}.aws:8000"
+  - Name: ADAPTERS__LIF_TO_LIF__ORG3__CREDENTIALS__SCHEME
+    Value: http
+  - Name: ADAPTERS__EXAMPLE_DATA_SOURCE_REST_API_TO_LIF__ORG1_EXAMPLE_DATA_SOURCE__CREDENTIALS__HOST
+    Value:
+      Fn::Sub: "example-data-source-rest-api.lif.${EnvironmentName}.aws:8011"
+  - Name: ADAPTERS__EXAMPLE_DATA_SOURCE_REST_API_TO_LIF__ORG1_EXAMPLE_DATA_SOURCE__CREDENTIALS__SCHEME
+    Value: http
+  - Name: LIF_QUERY_PLANNER_RESULTS_BASE_URL
+    Value:
+      Fn::Sub: "http://query-planner-org1.lif.${EnvironmentName}.aws:8002"
+  - Name: LIF_TRANSLATOR_BASE_URL
+    Value:
+      Fn::Sub: "http://translator-org1.lif.${EnvironmentName}.aws:8007"
+Secrets:
+  - Name: DAGSTER_POSTGRES_USER
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBUsername"
+  - Name: DAGSTER_POSTGRES_HOSTNAME
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBHost"
+  - Name: DAGSTER_POSTGRES_DB
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBName"
+  - Name: DAGSTER_POSTGRES_PORT
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBPort"
+  - Name: DAGSTER_POSTGRES_PASSWORD
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBPassword"
+  - Name: ADAPTERS__EXAMPLE_DATA_SOURCE_REST_API_TO_LIF__ORG1_EXAMPLE_DATA_SOURCE__CREDENTIALS__TOKEN
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/dagster-ose-example-data-source-rest-api-token"

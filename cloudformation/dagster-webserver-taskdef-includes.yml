@@ -1,0 +1,28 @@
+EntryPoint: 
+  - dagster-webserver
+  - -h
+  - '0.0.0.0'
+  - -p
+  - '3000'
+  - -w
+  - workspace.yaml
+Environment:
+  - Name: DAGSTER_GRPC_HOST
+    Value:
+      Fn::Sub: "dagster-code-location.lif.${EnvironmentName}.aws"
+Secrets:
+  - Name: DAGSTER_POSTGRES_USER
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBUsername"
+  - Name: DAGSTER_POSTGRES_HOSTNAME
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBHost"
+  - Name: DAGSTER_POSTGRES_DB
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBName"
+  - Name: DAGSTER_POSTGRES_PORT
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBPort"
+  - Name: DAGSTER_POSTGRES_PASSWORD
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}DagsterDb/DBPassword"

@@ -1,0 +1,37 @@
+.rt-DialogContent {
+  label {
+    .required-missing {
+      color: red;
+      &::after {
+        content: " (required)";
+        font-weight: normal;
+        font-size: 0.875rem;
+        margin-left: 0.25rem;
+      }
+    }
+  }
+  .rt-reset.rt-Button {
+    cursor: pointer;
+  }
+  .rt-SpinnerLeaf { width: "1em"; height: "1em"; }
+  .file-upload {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .file-upload__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    white-space: nowrap;
+  }
+  .file-upload__filename {
+    color: var(--gray-10, #555);
+  }
+}

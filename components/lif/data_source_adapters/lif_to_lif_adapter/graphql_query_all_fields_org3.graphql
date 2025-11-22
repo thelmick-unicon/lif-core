@@ -1,0 +1,72 @@
+query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
+  person(filter: { identifier: { identifier: $identifier, identifierType: $identifierType } }) {
+    name {
+      informationSourceId
+      lastName
+      firstName
+    }
+    contact {
+      email {
+        informationSourceId
+        emailAddress
+      }
+    }
+    identifier {
+      informationSourceId
+      identifier
+      identifierType
+    }
+    credentialAward {
+      informationSourceId
+      awardStatus
+      instanceOfRefCredential {
+        informationSourceId
+        id
+      }
+      id
+      awardIssueDate
+      credentialAwardee
+    }
+    courseLearningExperience {
+      informationSourceId
+      assertedByRefOrganization {
+        informationSourceId
+        name
+        identificationSystem
+        organizationType
+      }
+      refCourse {
+        informationSourceId
+        #identifier {
+        #  identifier
+        #  identifierType
+        #  identifierVerification
+        #  informationSourceId
+        #}
+      }
+      offeredByRefOrganization {
+        identificationSystem
+        name
+        organizationType
+        informationSourceId
+      }
+      refCredentialAward {
+        informationSourceId
+        id
+        awardIssueDate
+        credentialAwardee
+      }
+    }
+    proficiency {
+      informationSourceId
+      name
+      description
+      refCredentialAward {
+        id
+        awardIssueDate
+        credentialAwardee
+        informationSourceId
+      }
+    }
+  }
+}

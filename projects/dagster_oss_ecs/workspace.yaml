@@ -1,0 +1,7 @@
+load_from:
+  # Each entry here corresponds to a service in the docker-compose file that exposes jobs.
+  - grpc_server:
+      host:
+        env: DAGSTER_GRPC_HOST
+      port: 4000
+      location_name: "lif_code_location"

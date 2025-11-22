@@ -1,0 +1,335 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org2",
+          "lastName": "Thatcher",
+          "firstName": "Tracy"
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org2",
+              "emailAddress": [
+                "tthatcher_lifdemo@stateu.edu"
+              ]
+            }
+          ],
+          "address": [
+            {
+              "informationSourceId": "Org2",
+              "addressCity": "Land O\u00e2\u20ac\u2122 Lakes",
+              "countryCode": "US",
+              "addressState": "Florida",
+              "addressPostalCode": "33558"
+            }
+          ],
+          "telephone": [
+            {
+              "informationSourceId": "Org2",
+              "telephoneNumber": [
+                "+12221234567"
+              ]
+            }
+          ],
+          "informationSourceId": "Org2"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org2",
+          "identifier": "100006",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        }
+      ],
+      "employmentLearningExperience": [
+        {
+          "informationSourceId": "Org2",
+          "name": "Sales Associate ",
+          "refPosition": {
+            "informationSourceId": "Org2",
+            "name": "Referenced Employment Experience"
+          },
+          "startDate": "2021-05",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Tracy Thatcher",
+            "informationSourceId": "Org2"
+          }
+        },
+        {
+          "informationSourceId": "Org2",
+          "name": "Receptionist ",
+          "endDate": "2016-09",
+          "refPosition": {
+            "informationSourceId": "Org2",
+            "name": "Referenced Employment Experience"
+          },
+          "startDate": "2010-08",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Tracy Thatcher",
+            "informationSourceId": "Org2"
+          }
+        },
+        {
+          "informationSourceId": "Org2",
+          "name": "Youth Counselor",
+          "endDate": "2016-08",
+          "refPosition": {
+            "informationSourceId": "Org2",
+            "name": "Referenced Employment Experience"
+          },
+          "startDate": "2006-05",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Tracy Thatcher",
+            "informationSourceId": "Org2"
+          }
+        },
+        {
+          "informationSourceId": "Org2",
+          "name": "Childcare Provider",
+          "endDate": "2006-03",
+          "refPosition": {
+            "informationSourceId": "Org2",
+            "name": "Referenced Employment Experience"
+          },
+          "startDate": "2001-09",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Tracy Thatcher",
+            "informationSourceId": "Org2"
+          }
+        }
+      ],
+      "positionPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "travel": [
+            {
+              "percentage": 0,
+              "willingToTravelIndicator": false
+            }
+          ],
+          "relocation": [
+            {
+              "willingToRelocateIndicator": false
+            }
+          ],
+          "remoteWork": [
+            {
+              "remoteWorkIndicator": false
+            }
+          ],
+          "positionTitles": [
+            "Software Developer",
+            "Data Analyst",
+            "Project Manager"
+          ],
+          "positionOfferingTypeCodes": [
+            "Full-time",
+            "Permanent"
+          ],
+          "offeredByRefRemunerationPackage": {
+            "ranges": [
+              {
+                "minimumAmount": [
+                  {
+                    "value": 185000.0,
+                    "currency": "USD",
+                    "informationSourceId": "Org2"
+                  }
+                ],
+                "informationSourceId": "Org2"
+              }
+            ],
+            "basisCode": "Salaried",
+            "informationSourceId": "Org2"
+          },
+          "positionScheduleTypeCodes": [
+            "Standard",
+            "Flexible"
+          ]
+        }
+      ],
+      "employmentPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "offeredByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Discount Computer Supplies",
+            "identificationSystem": "Workday",
+            "organizationType": []
+          },
+          "organizationTypes": [],
+          "organizationNames": [
+            "Corporate Partners",
+            "Technology Companies"
+          ]
+        }
+      ],
+      "informationSourceId": "Org2",
+      "credentialAward": [
+        {
+          "id": "cred-employment-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceId": "Org2"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Employing Organization",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Smart Mart"
+    },
+    {
+      "identificationSystem": "stateu-training-provider-id",
+      "name": "Training Provider",
+      "organizationType": [
+        "Training Organization"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Well Health Behavioral Therapy Center"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Stuart Youth Center"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Sunny Days Daycare"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Discount Computer Supplies",
+      "identificationSystem": "Workday",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-approving-authority-id",
+      "name": "Approving Authority",
+      "organizationType": [
+        "Regulatory Body"
+      ],
+      "informationSourceId": "Org2"
+    }
+  ],
+  "informationSourceId": "Org2"
+}

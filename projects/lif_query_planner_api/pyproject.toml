@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lif_query_planner_api"
+version = "0.1.0"
+
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "fastapi~=0.115",
+    "httpx~=0.28",
+    "jsonpath-ng~=1.7",
+    "pydantic~=2.11",
+    "pyyaml~=6.0",
+    "uvicorn~=0.34",
+]
+
+# This section is needed for the Hatchling build backend, to activate the polylith build hook.
+[tool.hatch.build.hooks.polylith-bricks]
+
+# This section is needed for building
+[tool.hatch.build.targets.wheel]
+packages = ["lif"]
+
+[tool.polylith.bricks]
+"../../bases/lif/query_planner_restapi" = "lif/query_planner_restapi"
+"../../components/lif/query_planner_service" = "lif/query_planner_service"
+"../../components/lif/datatypes" = "lif/datatypes"
+"../../components/lif/exceptions" = "lif/exceptions"
+"../../components/lif/logging" = "lif/logging"

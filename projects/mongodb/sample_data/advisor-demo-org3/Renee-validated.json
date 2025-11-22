@@ -1,0 +1,336 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org3",
+          "lastName": "Green",
+          "firstName": "Renee"
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org3",
+              "emailAddress": [
+                "Rgreen11Fdemo@stateu.edu"
+              ]
+            }
+          ],
+          "address": [
+            {
+              "informationSourceId": "Org3",
+              "addressCity": "Escondido",
+              "countryCode": "US",
+              "addressState": "California",
+              "addressPostalCode": "92025"
+            }
+          ],
+          "telephone": [
+            {
+              "informationSourceId": "Org3",
+              "telephoneNumber": [
+                "+13331234567"
+              ]
+            }
+          ],
+          "informationSourceId": "Org3"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org3",
+          "identifier": "100004",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        },
+        {
+          "informationSourceId": "Org3",
+          "identifier": "SVU-20250004",
+          "identifierType": "Summit Valley University student ID"
+        }
+      ],
+      "courseLearningExperience": [
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "34024cb4-4a2d-4ed6-ba42-50c65cd688b4",
+            "awardIssueDate": "2021-11-15T20:13:56Z",
+            "credentialAwardee": "Renee Green"
+          }
+        }
+      ],
+      "credentialAward": [
+        {
+          "informationSourceId": "Org3",
+          "awardStatus": "InProgress",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1"
+          },
+          "id": "230826f6-7b40-4c79-9589-fb290deea1a3",
+          "awardIssueDate": "2022-07-31T13:14:17Z",
+          "credentialAwardee": "Renee Green"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "id": "cred-proficiency-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Renee Green",
+          "informationSourceId": "Org3"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "34024cb4-4a2d-4ed6-ba42-50c65cd688b4",
+          "awardIssueDate": "2021-11-15T20:13:56Z",
+          "credentialAwardee": "Renee Green"
+        }
+      ],
+      "proficiency": [
+        {
+          "informationSourceId": "Org3",
+          "name": "Applies Elements and Principles of Design",
+          "description": "Demonstrates understanding and application of the elements and principles of design in visual compositions.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Renee Green",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Utilizes Color Theory",
+          "description": "Applies color theory concepts including harmony, contrast, and psychological impact in design work.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Renee Green",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Applies Typography Principles",
+          "description": "Uses typography effectively by applying principles such as spacing, alignment, readability, and expression.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Renee Green",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Creates Layouts for Print and Digital Media",
+          "description": "Develops layouts suitable for both print and digital platforms with attention to format constraints and user experience.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Renee Green",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Employs Design Thinking Process",
+          "description": "Applies the design thinking process to define, ideate, prototype, and test design solutions.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Renee Green",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Uses Industry-Standard Design Software",
+          "description": "Produces digital assets using industry-standard design tools such as Adobe Photoshop or Illustrator.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Renee Green",
+            "informationSourceId": "Org3"
+          }
+        }
+      ],
+      "informationSourceId": "Org3"
+    }
+  ],
+  "course": [
+    {
+      "informationSourceId": "Org3",
+      "identifier": [
+        {
+          "identifier": "CS651",
+          "identifierType": "Course Code",
+          "identifierVerification": [
+            "Academic Records"
+          ],
+          "informationSourceId": "Org3"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
+      "contact": [
+        {
+          "address": [
+            {
+              "addressCity": "Aspen Falls",
+              "countryCode": "US",
+              "addressState": "Colorado",
+              "addressStreet": "123 Innovation Drive, Suite 500",
+              "addressPostalCode": "80901",
+              "informationSourceId": "Org3"
+            }
+          ],
+          "email": [
+            {
+              "emailAddress": [
+                "info@summitvalley.edu"
+              ],
+              "informationSourceId": "Org3"
+            }
+          ],
+          "websiteAddress": "https://www.summitvalley.edu/",
+          "telephone": [
+            {
+              "telephoneNumber": [
+                "888-555-7210"
+              ],
+              "informationSourceId": "Org3"
+            }
+          ],
+          "informationSourceId": "Org3"
+        }
+      ],
+      "imageUrl": "https://cdn.summitvalley.edu/assets/logo.svg",
+      "identifier": [
+        {
+          "identifier": "999112233",
+          "identifierType": "Federal employer identification number",
+          "informationSourceId": "Org3"
+        },
+        {
+          "identifier": "123456789",
+          "identifierType": "Dun and Bradstreet number",
+          "informationSourceId": "Org3"
+        },
+        {
+          "identifier": "https://credentialfinder.org/organization/999/Summit_Valley_University",
+          "identifierType": "credentialfinder.org",
+          "informationSourceId": "Org3"
+        }
+      ],
+      "identificationSystem": "Summit Valley University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "svu-corporate-partner-id",
+      "name": "Summit Valley Corporate Partner",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org3"
+    },
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "identificationSystem": "Summit Valley University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-state-university-id",
+      "name": "State University",
+      "organizationType": [
+        "University"
+      ],
+      "informationSourceId": "Org3"
+    },
+    {
+      "informationSourceId": "Org3",
+      "name": "Adobe Systems Incorporated",
+      "identificationSystem": "summit-valley-university-sis",
+      "organizationType": []
+    }
+  ],
+  "credential": [
+    {
+      "informationSourceId": "Org3",
+      "id": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1",
+      "name": "Adobe Certified Associate - Visual Design",
+      "format": [
+        "Digital Badge",
+        "PDF Certificate"
+      ],
+      "alignedProgram": [
+        {
+          "specialization": "Graphic Design",
+          "informationSourceId": "Org3"
+        }
+      ],
+      "issuedByRefOrganization": {
+        "informationSourceId": "Org3",
+        "name": "Adobe Systems Incorporated",
+        "identificationSystem": "summit-valley-university-sis",
+        "organizationType": []
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org3",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org3",
+      "id": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1"
+    }
+  ],
+  "informationSourceId": "Org3"
+}

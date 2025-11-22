@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lif_identity_mapper_api"
+version = "0.1.0"
+
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "fastapi~=0.115",
+    "httpx~=0.28",
+    "pydantic~=2.11",
+    "pymysql~=1.1",
+    "sqlalchemy~=2.0",
+    "uvicorn~=0.34",
+]
+
+# This section is needed for the Hatchling build backend, to activate the polylith build hook.
+[tool.hatch.build.hooks.polylith-bricks]
+
+# This section is needed for building
+[tool.hatch.build.targets.wheel]
+packages = ["lif"]
+
+[tool.polylith.bricks]
+"../../bases/lif/identity_mapper_restapi" = "lif/identity_mapper_restapi"
+"../../components/lif/identity_mapper_service" = "lif/identity_mapper_service"
+"../../components/lif/identity_mapper_storage" = "lif/identity_mapper_storage"
+"../../components/lif/identity_mapper_storage_sql" = "lif/identity_mapper_storage_sql"
+"../../components/lif/datatypes" = "lif/datatypes"
+"../../components/lif/logging" = "lif/logging"
+"../../components/lif/exceptions" = "lif/exceptions"

@@ -1,0 +1,14 @@
+Environment:
+  - Name: IDENTITY_MAPPER_DB_DRIVER
+    Value: "mysql+pymysql"
+  - Name: IDENTITY_MAPPER_DB_USERNAME
+    Value: "myuser"
+  - Name: IDENTITY_MAPPER_DB_PASSWORD
+    Value: "mypass"
+  - Name: IDENTITY_MAPPER_DB_HOST
+    Value: 
+      Fn::Sub: "identity-mapper-mariadb-${OrganizationName}.lif.${EnvironmentName}.aws"
+  - Name: IDENTITY_MAPPER_DB_PORT
+    Value: "3306"
+  - Name: IDENTITY_MAPPER_DB_NAME
+    Value: "lif"

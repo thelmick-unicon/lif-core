@@ -1,0 +1,4 @@
+site_name: My Docs
+site_url: http://localhost:8000
+theme:
+  name: material

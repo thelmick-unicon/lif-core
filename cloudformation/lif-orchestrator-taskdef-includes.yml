@@ -1,0 +1,14 @@
+Environment:
+  - Name: ORCHESTRATOR__DAGSTER__GRAPHQL_API_URL
+    Value:
+      Fn::Sub: "http://dagster-webserver.lif.${EnvironmentName}.aws:3000"
+  - Name: ORCHESTRATOR__DAGSTER__IS_DAGSTER_CLOUD
+    Value: "false"
+  - Name: LIF_ADAPTER__LIF_TO_LIF__GRAPHQL_API_URL
+    Value:
+      Fn::Sub: "http://graphql-org3.lif.${EnvironmentName}.aws:8000"
+  - Name: LIF_ADAPTER__LIF_TO_LIF__QUERY_PLANNER_URL
+    Value:
+      Fn::Sub: "http://query-planner-${OrganizationName}.lif.${EnvironmentName}.aws:8002"
+  - Name: ORCHESTRATOR__TYPE
+    Value: "dagster"

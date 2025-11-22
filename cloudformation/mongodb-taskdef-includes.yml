@@ -1,0 +1,21 @@
+User: "0:0"
+#MountPoints:
+#  - SourceVolume: efs-share
+#    ContainerPath: /data/db
+Environment:
+  - Name: MONGO_HOST
+    Value:
+      Fn::Sub: "mongodb-${OrganizationName}"
+  - Name: MONGO_DB
+    Value: "LIF"
+  - Name: MONGO_COLLECTION
+    Value: "person"
+  - Name: SEED_DATA_KEY
+    Value: 
+      Fn::Sub: "advisor-demo-${OrganizationName}"
+#  - Name: MONGO_INITDB_ROOT_USERNAME
+#    Value: 
+#  - Name: MONGO_INITDB_DATABASE
+#    Value: 
+#  - Name: MONGO_INITDB_ROOT_PASSWORD
+#    Value: 

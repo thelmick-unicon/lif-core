@@ -1,0 +1,251 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org2",
+          "lastName": "Marin",
+          "firstName": "Sarah"
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org2",
+              "emailAddress": [
+                "smarin_lifdemo@stateu.edu"
+              ]
+            }
+          ],
+          "address": [
+            {
+              "informationSourceId": "Org2",
+              "addressCity": "Littleton",
+              "countryCode": "US",
+              "addressState": "Colorado",
+              "addressPostalCode": "80014"
+            }
+          ],
+          "telephone": [
+            {
+              "informationSourceId": "Org2",
+              "telephoneNumber": [
+                "+16661234567"
+              ]
+            }
+          ],
+          "informationSourceId": "Org2"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org2",
+          "identifier": "sha256$de620a3b2b4ba794513008a7d918a429351144c47b697f4c3976387138f33e43",
+          "identifierType": "INSTITUTION_ASSIGNED_NUMBER"
+        },
+        {
+          "informationSourceId": "Org2",
+          "identifier": "100003",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        }
+      ],
+      "employmentLearningExperience": [
+        {
+          "informationSourceId": "Org2",
+          "name": "Volunteer Nursing Assistant",
+          "endDate": "2018-03",
+          "refPosition": {
+            "informationSourceId": "Org2"
+          },
+          "startDate": "2017-02",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Sarah Marin",
+            "informationSourceId": "Org2"
+          }
+        },
+        {
+          "informationSourceId": "Org2",
+          "name": "Teaching Aide",
+          "refPosition": {
+            "informationSourceId": "Org2"
+          },
+          "startDate": "2008-09",
+          "endDate": "2017-01",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Sarah Marin",
+            "informationSourceId": "Org2"
+          }
+        }
+      ],
+      "positionPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "travel": [
+            {
+              "percentage": 0,
+              "willingToTravelIndicator": false
+            }
+          ],
+          "relocation": [
+            {
+              "willingToRelocateIndicator": false
+            }
+          ],
+          "remoteWork": [
+            {
+              "remoteWorkIndicator": false
+            }
+          ],
+          "positionTitles": [
+            "Software Developer",
+            "Data Analyst",
+            "Project Manager"
+          ],
+          "positionOfferingTypeCodes": [
+            "Full-time",
+            "Permanent"
+          ],
+          "offeredByRefRemunerationPackage": {
+            "ranges": [
+              {
+                "minimumAmount": [
+                  {
+                    "value": 65000.0,
+                    "currency": "USD",
+                    "informationSourceId": "Org2"
+                  }
+                ],
+                "informationSourceId": "Org2"
+              }
+            ],
+            "basisCode": "Salaried",
+            "informationSourceId": "Org2"
+          },
+          "positionScheduleTypeCodes": [
+            "Standard",
+            "Flexible"
+          ]
+        }
+      ],
+      "employmentPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "offeredByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Shafer's Clinic",
+            "identificationSystem": "Workday",
+            "organizationType": []
+          },
+          "organizationTypes": [],
+          "organizationNames": [
+            "Corporate Partners",
+            "Technology Companies"
+          ]
+        }
+      ],
+      "informationSourceId": "Org2",
+      "credentialAward": [
+        {
+          "id": "cred-employment-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Sarah Marin",
+          "informationSourceId": "Org2"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Employing Organization",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "UI Health"
+    },
+    {
+      "identificationSystem": "stateu-training-provider-id",
+      "name": "Training Provider",
+      "organizationType": [
+        "Training Organization"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Steele Elementary School"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Shafer's Clinic",
+      "identificationSystem": "Workday",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-approving-authority-id",
+      "name": "Approving Authority",
+      "organizationType": [
+        "Regulatory Body"
+      ],
+      "informationSourceId": "Org2"
+    }
+  ],
+  "informationSourceId": "Org2"
+}

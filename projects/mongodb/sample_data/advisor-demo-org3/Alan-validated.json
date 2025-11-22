@@ -1,0 +1,579 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org3",
+          "lastName": "Tsatrian",
+          "firstName": "Alan "
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org3",
+              "emailAddress": [
+                "atsatrian_lifdemo@stateu.edu "
+              ]
+            }
+          ],
+          "address": [
+            {
+              "informationSourceId": "Org3",
+              "addressCity": null,
+              "countryCode": null,
+              "addressState": null,
+              "addressPostalCode": null
+            }
+          ],
+          "telephone": [
+            {
+              "informationSourceId": "Org3",
+              "telephoneNumber": []
+            }
+          ],
+          "informationSourceId": "Org3"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org3",
+          "identifier": "100001",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        },
+        {
+          "informationSourceId": "Org3",
+          "identifier": "SVU-20250001",
+          "identifierType": "Summit Valley University student ID"
+        }
+      ],
+      "credentialAward": [
+        {
+          "informationSourceId": "Org3",
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": "84d6de55-974c-47e5-92bf-889addac75ae"
+          },
+          "id": "org3-cred-award-001",
+          "awardIssueDate": "2021-12-03T15:43:17Z",
+          "credentialAwardee": "Alan  Tsatrian"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "id": "org3-cred-proficiency-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Alan  Tsatrian",
+          "informationSourceId": "Org3"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "31b9edc0-93cb-42a0-8668-bf6e4bc00796",
+          "awardIssueDate": "2023-03-10T17:10:37Z",
+          "credentialAwardee": "Alan  Tsatrian"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "931b66f4-a70e-4bb7-84df-3d200ed1976a",
+          "awardIssueDate": "2024-04-09",
+          "credentialAwardee": "Alan  Tsatrian"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "ad1adb0a-22c5-4643-bd70-1fbe7ef615a6",
+          "awardIssueDate": "2024-08-31T09:51:03Z",
+          "credentialAwardee": "Alan  Tsatrian"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "388bde0e-9e53-44e8-9887-cd9508b34d1e",
+          "awardIssueDate": "2020-09-07",
+          "credentialAwardee": "Alan  Tsatrian"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "11403294-d6ba-42e0-bbdd-5864080c7d3e",
+          "awardIssueDate": "2024-12-14T23:57:48Z",
+          "credentialAwardee": "Alan  Tsatrian"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "a02134d5-b3bd-423d-9856-a1702ad18183",
+          "awardIssueDate": "2024-12-18T10:24:11Z",
+          "credentialAwardee": "Alan  Tsatrian"
+        }
+      ],
+      "courseLearningExperience": [
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "31b9edc0-93cb-42a0-8668-bf6e4bc00796",
+            "awardIssueDate": "2023-03-10T17:10:37Z",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "931b66f4-a70e-4bb7-84df-3d200ed1976a",
+            "awardIssueDate": "2024-04-09",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "ad1adb0a-22c5-4643-bd70-1fbe7ef615a6",
+            "awardIssueDate": "2024-08-31T09:51:03Z",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "388bde0e-9e53-44e8-9887-cd9508b34d1e",
+            "awardIssueDate": "2020-09-07",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "11403294-d6ba-42e0-bbdd-5864080c7d3e",
+            "awardIssueDate": "2024-12-14T23:57:48Z",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "a02134d5-b3bd-423d-9856-a1702ad18183",
+            "awardIssueDate": "2024-12-18T10:24:11Z",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        }
+      ],
+      "proficiency": [
+        {
+          "informationSourceId": "Org3",
+          "name": "Fundamentals of Earth\u2019s Climate System",
+          "description": "Describes the key components and processes of Earth's climate system including the atmosphere, hydrosphere, cryosphere, and biosphere.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Atmospheric Energy Balance",
+          "description": "Explains how solar radiation, albedo, and greenhouse gases contribute to Earth's energy balance.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Paleoclimate Reconstruction Techniques",
+          "description": "Evaluates methods for reconstructing past climates using proxy data such as ice cores, tree rings, and sediment layers.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Using Python or R for Environmental Data Analysis",
+          "description": "Writes basic scripts in Python or R to automate environmental data processing, analysis, and visualization tasks.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Wildlife Tracking and Observation",
+          "description": "Applies observation protocols and non-invasive tracking techniques to monitor wildlife populations in the field.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Cumulative Impact Analysis",
+          "description": "Assesses cumulative environmental impacts resulting from the interaction of proposed projects with existing or planned activities.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Environmental Policy and Ethical Tradeoffs",
+          "description": "Evaluates ethical dilemmas in environmental policy, such as balancing economic growth with ecological preservation.",
+          "refCredentialAward": {
+            "id": "org3-cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org3"
+          }
+        }
+      ],
+      "informationSourceId": "Org3"
+    }
+  ],
+  "course": [
+    {
+      "informationSourceId": "Org3",
+      "identifier": [
+        {
+          "identifier": "CS651",
+          "identifierType": "Course Code",
+          "identifierVerification": [
+            "Academic Records"
+          ],
+          "informationSourceId": "Org3"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
+      "contact": [
+        {
+          "address": [
+            {
+              "addressCity": "Aspen Falls",
+              "countryCode": "US",
+              "addressState": "Colorado",
+              "addressStreet": "123 Innovation Drive, Suite 500",
+              "addressPostalCode": "80901",
+              "informationSourceId": "Org3"
+            }
+          ],
+          "email": [
+            {
+              "emailAddress": [
+                "info@summitvalley.edu"
+              ],
+              "informationSourceId": "Org3"
+            }
+          ],
+          "websiteAddress": "https://www.summitvalley.edu/",
+          "telephone": [
+            {
+              "telephoneNumber": [
+                "888-555-7210"
+              ],
+              "informationSourceId": "Org3"
+            }
+          ],
+          "informationSourceId": "Org3"
+        }
+      ],
+      "imageUrl": "https://cdn.summitvalley.edu/assets/logo.svg",
+      "identifier": [
+        {
+          "identifier": "999112233",
+          "identifierType": "Federal employer identification number",
+          "informationSourceId": "Org3"
+        },
+        {
+          "identifier": "123456789",
+          "identifierType": "Dun and Bradstreet number",
+          "informationSourceId": "Org3"
+        },
+        {
+          "identifier": "https://credentialfinder.org/organization/999/Summit_Valley_University",
+          "identifierType": "credentialfinder.org",
+          "informationSourceId": "Org3"
+        }
+      ],
+      "identificationSystem": "Summit Valley University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "svu-corporate-partner-id",
+      "name": "Summit Valley Corporate Partner",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org3"
+    },
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "identificationSystem": "Summit Valley University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-state-university-id",
+      "name": "State University",
+      "organizationType": [
+        "University"
+      ],
+      "informationSourceId": "Org3"
+    },
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "identificationSystem": "stateu-state-university-id",
+      "organizationType": []
+    }
+  ],
+  "credential": [
+    {
+      "informationSourceId": "Org3",
+      "id": "84d6de55-974c-47e5-92bf-889addac75ae",
+      "name": "Bachelor of Science (BS): Environmental Science",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "alignedProgram": [
+        {
+          "specialization": "Climate Modeling",
+          "informationSourceId": "Org3"
+        }
+      ],
+      "issuedByRefOrganization": {
+        "informationSourceId": "Org3",
+        "name": "Summit Valley University",
+        "identificationSystem": "stateu-state-university-id",
+        "organizationType": []
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org3",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org3",
+      "id": "84d6de55-974c-47e5-92bf-889addac75ae"
+    }
+  ],
+  "informationSourceId": "Org3"
+}

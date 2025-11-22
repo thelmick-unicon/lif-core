@@ -1,0 +1,69 @@
+name: Deploy Dagster Code Location to Amazon ECS
+
+env:
+  AWS_REGION: us-east-1
+  GHA_ROLE: "arn:aws:iam::381492161417:role/lif-github-actions-dev"
+  ECS_CLUSTER: dev
+  ECS_SERVICE: dagster-code-location-FARGATE
+
+permissions:
+      id-token: write
+      contents: read
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    paths:
+      - .github/workflows/dagster_code_location.yml
+      - projects/dagster_oss_ecs/**
+      - components/lif/data_source_adapters/**
+      - components/lif/datatypes/**
+      - components/lif/exceptions/**
+      - components/lif/logging/**
+      - components/lif/query_planner_service/**
+      - orchestrators/dagster/lif-orchestrator/**
+
+jobs:
+
+  dagster-code-location:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      WORKING_DIR: ./
+      ECR_REPOSITORY: lif/dev/dagster_code_location
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Build Orchestrator
+      working-directory: orchestrators/dagster/lif-orchestrator
+      shell: bash
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        uv sync
+
+    - name: Prepare for Docker build
+      shell: bash
+      run: |
+        cp projects/dagster_oss_ecs/Dockerfile.code_location Dockerfile
+
+    - name: Build and push docker image
+      uses: ./.github/actions/build-and-push
+      with:
+        working-dir: ${{ env.WORKING_DIR }}
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-code-location-build
+        aws-region: ${{ env.AWS_REGION }}
+        ecr-repository: ${{ env.ECR_REPOSITORY }}
+
+    - name: Update the Dagster Code Location ECS Service
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-code-location-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: ${{ env.ECS_SERVICE }}

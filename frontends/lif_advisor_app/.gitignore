@@ -1,0 +1,43 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# Vite output
+dist/
+build/
+*.local
+
+# dotenv environment files
+.env
+.env.*
+!.env.example
+
+# VSCode
+.vscode/
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Log files
+*.log
+
+# Coverage
+coverage/
+*.lcov
+
+# Local development
+*.local

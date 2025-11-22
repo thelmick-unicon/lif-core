@@ -1,0 +1,1193 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "lastName": "Diaz",
+          "firstName": "Jenna",
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "proficiency": [
+        {
+          "name": "Research Skills",
+          "description": "Research is a skill that involves gathering and analyzing information to answer questions or solve problems. It involves identifying reliable sources of information, evaluating the credibility of those sources, and synthesizing the information to draw meaningful conclusions. Research skills are essential in many fields, including academia, business, and journalism. Effective research requires critical thinking, attention to detail, and the ability to discern biases and limitations in information sources.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Advanced Cardiovascular Life Support (ACLS)",
+          "description": "ACLS Certification is a certification that healthcare professionals can obtain to demonstrate proficiency in advanced cardiac life support skills including recognition and management of cardiac arrest, stroke, and other cardiac emergencies.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Data Analysis",
+          "description": "Data analysis involves using various techniques and methods to process, transform, and summarize data in order to extract meaningful insights and information that can inform decision-making. It involves the application of statistical and computational tools to large datasets, and requires a specialized set of skills and knowledge, including expertise in programming languages, data visualization, and machine learning. Effective data analysis can help businesses, governments, and other organizations better understand their operations, customers, and markets, and make informed decisions based on the insights gained from their data.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Chemistry",
+          "description": "Chemistry is a specialized skill that involves the study of matter, its properties, and the changes that it undergoes. It is a branch of science that explores the composition, structure, and properties of elements and compounds, as well as the reactions that take place between them. Chemists use this knowledge to develop new compounds, analyze substances, and design processes that can be used for industrial applications. It is an important field that has applications in many industries, including pharmaceuticals, materials science, and energy production.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Molecular Biology",
+          "description": "Molecular biology is a specialized skill that involves the study of biological macromolecules (DNA, RNA, proteins) and their interactions within cells to understand biological processes such as replication, transcription, and translation. It involves the use of various techniques such as PCR, gel electrophoresis, and DNA sequencing to isolate, manipulate, and analyze DNA and RNA molecules. Molecular biology is crucial in understanding the causes of genetic diseases, developing new drugs, and improving crop yields in agriculture.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Biology",
+          "description": "Biology is a specialized skill focused on the study of living organisms, including their structure, function, growth, evolution, distribution, and taxonomy. It involves a deep understanding of the natural world and the processes that drive life. This scientific discipline is critical to many fields, including medicine, agriculture, genetics, and ecology, and it is continually advancing our knowledge of the world around us. Those who study biology must possess a combination of critical thinking, analytical skills, and creativity to excel in their work.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Business Process Improvement",
+          "description": "Business Process Improvement (BPI) is a specialized skill that involves analyzing current business processes, identifying inefficiencies or areas of improvement, and implementing changes to increase efficiency, productivity, and overall performance. BPI experts use various tools and methodologies to assess and optimize business processes, such as Six Sigma, Lean Management, and Kaizen. Effective BPI requires a deep understanding of business operations, strong analytical skills, and the ability to collaborate with different teams and stakeholders.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Computer Literacy",
+          "description": "Computer literacy refers to the ability to use computers and related technology effectively for a wide range of purposes. It is a common skill in today's society, where most work and communication is done using technology. Individuals who are computer literate are able to perform various tasks such as computer programming, software applications, data management, and Internet browsing. This skill is highly valued in the job market, especially in fields such as computer science, technology, and business.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Conflict Resolution",
+          "description": "Conflict Resolution is a specialized skill that involves finding solutions to disputes and disagreements between individuals or groups. It involves active listening, empathy, and effective communication to understand the needs and concerns of each party involved in the conflict. A successful conflict resolution requires a neutral and objective approach to finding a mutually beneficial solution that satisfies all parties involved.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Critical Thinking",
+          "description": "Critical thinking is a skill that allows individuals to analyze and evaluate information to make sound judgements and decisions. It involves the ability to question assumptions, identify biases, and examine evidence to reach logical conclusions. It is a common skill that is essential in various areas of life, including education, career, and personal relationships.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Data Presentation",
+          "description": "Data presentation is the process of organizing, visualizing, and communicating data in a way that is clear, accurate, and meaningful. It is a specialized skill that involves the use of various tools and techniques such as charts, graphs, infographics, and storytelling to present data in a way that can be easily understood and interpreted by the target audience. Effective data presentation is essential for decision-making, problem-solving, and communication in various fields including business, academia, and research.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Digital Storytelling",
+          "description": "Digital Storytelling is a specialized skill that involves using digital tools to create a compelling narrative or story. It requires a combination of technical skills and creativity to bring together images, audio, and video in a way that engages the audience and communicates a message effectively. Digital storytelling is a powerful way to share experiences, educate others, and create meaningful connections between people, and is commonly used in marketing, education, advocacy, and other fields.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Leadership",
+          "description": "Leadership is a skill that is common among successful individuals in various fields. It involves the ability to motivate and guide a team towards achieving common goals. Good leadership qualities include effective communication, empathy, decision-making skills, adaptability, and vision. Leadership can be developed and honed through training, practice, and learning from others.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Health Care",
+          "description": "Text Kernel Skill",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Medical Software",
+          "description": "Medical software refers to software applications used in the field of medicine and healthcare. This includes software used for electronic medical records, medical imaging, diagnostic tools, telemedicine, clinical decision support, and medical billing and coding. Medical software is designed to improve patient care, increase efficiency, and reduce errors in healthcare settings. To work with medical software, one needs specialized skills in software development, data analysis, and healthcare regulations.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Knowledge of Hygiene",
+          "description": "Hygiene is a specialized skill that involves maintaining cleanliness and preventing infection in various settings, such as healthcare facilities, schools, and public spaces. It involves knowledge of best practices for hand hygiene, cleaning and disinfection, waste management, and infection control. Proper hygiene is essential for preventing the spread of diseases and ensuring the health and safety of individuals and communities.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Interpersonal Communications",
+          "description": "Interpersonal communication is the process of exchanging information, feelings, and meaning through verbal and nonverbal interactions. It is an essential skill that involves the ability to listen actively, speak clearly, and empathize with others. Effective interpersonal communication promotes strong relationships, enhances understanding, and fosters mutual respect between individuals. It is a common skill that is used in personal, social, and professional contexts.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Problem Solving",
+          "description": "Problem solving is the process of identifying, analyzing and resolving problems that can arise in any situation. It is a common skill that is required in many different industries and situations, and involves identifying the root cause of a problem, generating possible solutions, evaluating those solutions and implementing the best one. Successful problem solving involves critical thinking, creativity and communication skills. Learning how to effectively solve problems can help individuals and organizations to more efficiently achieve their goals and objectives.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Life Support",
+          "description": "Life support is a specialized skill that involves providing medical assistance to individuals who require help in maintaining bodily functions such as breathing or circulation. It requires knowledge of advanced medical techniques and equipment to stabilize patients in critical condition. Life support providers must be knowledgeable in a variety of emergency situations and able to respond quickly to save lives.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Long-Term Care",
+          "description": "Long-term care is a specialized skill that involves providing ongoing assistance and support to individuals who have chronic health conditions or disabilities that limit their ability to perform daily activities. This type of care can be provided in a variety of settings, including nursing homes, assisted living facilities, and in the individual's own home. Caregivers in long-term care must be skilled in providing medical care, managing medications, handling complex equipment, and supporting the emotional and social needs of their patients. It is a demanding and challenging field that requires specialized training and experience.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Nursing",
+          "description": "Nursing is a specialized skill that involves the care and treatment of patients who are ill, injured, or recovering from surgery. It encompasses a broad range of tasks that vary depending on the patient's needs, from administering medication to providing emotional support. Nurses are highly trained professionals who work closely with physicians and other healthcare providers to ensure that patients receive the best possible care. They are essential members of the healthcare team and play a critical role in the overall health and well-being of patients.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Physics",
+          "description": "Physics is the scientific study of matter, energy, and their interactions. It involves the use of mathematical equations, experimental methods, and critical thinking to understand the natural world. Physicists may specialize in subfields such as astrophysics, biophysics, quantum mechanics, and thermodynamics. Overall, physics is a specialized skill that requires a deep understanding of complex concepts and rigorous analytical abilities.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Professional Communication",
+          "description": "Professional communication is the effective and appropriate exchange of information and ideas within a professional setting. It encompasses verbal, written, and nonverbal communication skills aimed at achieving specific goals, such as building relationships, addressing conflicts, or achieving business objectives. Effective professional communication involves clear, concise messaging, active listening, empathetic response building, and the appropriate levels of confidence, respect, and assertiveness. It is a critical skill for success in most career paths.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Scientific Reasoning",
+          "description": "Scientific reasoning is a specific skill that requires a certain set of abilities and practices to critically analyze and solve problems using scientific methods. It involves logical thinking, experimentation, observation, data analysis, and communication of findings. Developing and refining scientific reasoning skills is essential for success in scientific fields and applications.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Nursing Home Care",
+          "description": "Nursing home care is a specialized skill that involves providing medical care and personal assistance to elderly adults who have complex health conditions and require long-term care in a residential facility. This type of healthcare requires knowledge of geriatric medicine, patience, compassion, and excellent communication skills to provide quality care for patients and their families. Nursing home care also involves working collaboratively with a team of healthcare professionals to create individualized care plans and manage patients' health conditions.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Systems Thinking",
+          "description": "Systems thinking is a way of making sense of the complexity of the world by looking at it in terms of wholes and relationships rather than by splitting it down into its parts. It has been used as a way of exploring and developing effective action in complex contexts. Systems thinking draws on and contributes to systems theory and the system sciences.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Time Management",
+          "description": "Time management is a common skill that involves organizing and prioritizing tasks and activities to make the most efficient use of time. It involves setting goals, breaking them down into smaller tasks, and allocating time to each task. Effective time management can increase productivity, reduce stress, and provide a sense of accomplishment.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Wound Care",
+          "description": "Wound care is a specialized skill that involves the assessment, management, and treatment of various types of wounds. It includes proper and timely wound cleaning, dressing changes, infection control, and pain management. Skilled healthcare professionals are responsible for providing appropriate wound care to promote wound healing, prevent complications, and ensure the best possible outcomes for patients.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Patient Assessment",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Carrying out Assessments",
+          "description": "Text Kernel Skill",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Mentoring",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Thought Leadership",
+          "description": "Thought Leadership is the ability to lead, inspire and influence others by providing innovative and insightful ideas and perspectives in a particular field or industry. It requires a combination of expertise, strategic thinking, and effective communication skills to establish oneself as a thought leader in a specific niche. Thought leaders often publish articles, speak at conferences, engage with their audience on social media, and demonstrate their expertise in other ways to establish credibility and influence.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Receptivity",
+          "description": "Text Kernel Skill",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Certified Nursing Assistant",
+          "description": "Certified Nursing Assistant (CNA) is a certification that qualifies individuals to provide basic nursing care to patients and residents in healthcare settings. CNAs work under the supervision of licensed nurses and are responsible for providing assistance with daily tasks such as bathing, dressing, feeding, and monitoring vital signs. They also aid in maintaining a safe and clean environment for patients. To become a CNA, individuals must complete a state-approved training program and pass a competency exam.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Certified Nurse Practitioner",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Written Communication",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Communications",
+          "description": "Communication is a vital skill that involves exchanging information through speaking, writing or non-verbal means. It is crucial for building relationships, conveying ideas, clarifying misunderstandings, and achieving goals. Effective communication requires active listening, clear and concise expression, empathy, and persuasion skills. It is applicable in all aspects of life, including personal relationships, social interactions, and professional settings.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Cultural Sensitivity",
+          "description": "Cultural sensitivity, also sometimes referred to as cross-cultural sensitivity or simply cultural awareness, is the knowledge, awareness, and acceptance of other cultures and others' cultural identities. It is related to cultural competence, and sometimes regarded as the precursor to the achievement of cultural competence, but is a more widely used term than cultural competence. On the individual level, cultural sensitivity enables travelers and workers to successfully navigate a different culture with which they are interacting.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Mentorship",
+          "description": "Mentorship is the act of guiding and advising someone with less experience or knowledge in a specific area. It involves sharing expertise, knowledge, and experience to help the mentee grow professionally or personally. It is a common skill that is valued in many industries, including business, education, and healthcare. Good mentorship involves active listening, empathy, respect, and open communication. It can benefit both the mentor and the mentee, and result in long-lasting relationships and positive outcomes.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Influencing Skills",
+          "description": "Influencing skills refer to the ability to persuade or convince others to support an idea, decision or action. This involves understanding the perspectives and needs of others, communicating effectively, building trust and rapport, and using various techniques such as negotiation and persuasion to achieve the desired outcome. Influencing skills are commonly required in various personal and professional settings, such as leadership, sales, marketing, and teamwork.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Goal Oriented",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Research",
+          "description": "Research is a skill that involves gathering and analyzing information to answer questions or solve problems. It involves identifying reliable sources of information, evaluating the credibility of those sources, and synthesizing the information to draw meaningful conclusions. Research skills are essential in many fields, including academia, business, and journalism. Effective research requires critical thinking, attention to detail, and the ability to discern biases and limitations in information sources.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Detail Oriented",
+          "description": "Detail Oriented is a skill that involves a strong focus on precision and thoroughness when performing tasks or handling information. This skill is used to spot errors, maintain accuracy, and ensure quality in work. Detail-oriented individuals excel in tasks such as proofreading documents, conducting thorough research, performing quality control checks, and meticulously reviewing data to prevent mistakes and produce high-quality results.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Academic Tenacity",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Teamwork",
+          "description": "Teamwork is the ability to work effectively and harmoniously with others towards a common goal. It involves being cooperative, communicative, and collaborative, as well as being able to contribute to and participate in group decision-making processes. Teamwork is a valued skill in many workplaces and is essential for successful project completion and overall business success.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Persuasive Communication",
+          "description": "Persuasive communication refers to the ability to convince others to take a certain course of action or persuade them to believe in a particular idea or viewpoint. This skill is commonly used in various settings such as politics, advertising, sales, and public speaking. Effective persuasive communication involves understanding the audience, identifying their needs and values, presenting compelling arguments, using persuasive techniques such as storytelling and emotional appeals, and addressing potential objections. It is a valuable skill to have in personal and professional life as it can lead to successful negotiations, increased influence, and improved relationships.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Professionalism",
+          "description": "Professionalism is a skill that is essential in any career or job role. It involves demonstrating a high level of quality, competence, and integrity in one's work and interactions with others. Professionalism includes things like punctuality, good communication, a positive attitude, and respect for others. It is important for building trust, credibility, and a strong reputation in the workplace.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Acceptance",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Mental Agility",
+          "description": "Mental agility refers to a person's ability to think critically, creatively, and adaptably. It involves being able to solve problems quickly and efficiently, think on the spot, and remain flexible in one's thinking. Mental agility is an essential skill for success in many areas of life, including academics, business, and personal relationships.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Communication and Interaction",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Empirical Analysis",
+          "description": "Empirical analysis is the process of gathering and analyzing data to draw inferences or conclusions. It requires specialized skills, including knowledge of statistical methods, research design, and data collection techniques. Empirical analysis is used in various fields, including economics, psychology, sociology, and political science. The goal of empirical analysis is to produce reliable and valid findings that can inform policy decisions or advance academic knowledge.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Formal Analysis",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Novel And Adaptive Thinking",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Sensemaking",
+          "description": "Sensemaking is a cognitive process in which people attempt to make sense of complex, ambiguous, or uncertain situations by creating their own mental models of the situation. It is a specialized skill that involves identifying patterns, generating hypotheses, collecting and analyzing data, and creating meaning from that data. Sensemaking is particularly important in fields such as law enforcement, intelligence gathering, and business strategy, where decision-makers need to understand complex information and make decisions based on that information.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Digital Fluency",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Physical Science",
+          "description": "Physical Science is a field of science that deals with the study of matter and energy, including their interactions and transformations. It includes disciplines such as physics, chemistry, and astronomy. Physical scientists use specialized instruments and methods to observe and measure physical phenomena, and use mathematical models to explain and predict behavior. They study everything from the behavior of subatomic particles to the dynamics of the universe as a whole, and their work has practical applications in fields such as engineering, medicine, and technology development.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Human Literacy",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "name": "Writing",
+          "description": "Writing is a skill that involves putting thoughts and ideas into words through the use of language. It is an essential communication tool used to convey messages, express thoughts and emotions, and share information. Writing can be done in various forms, such as essays, reports, stories, and letters. It is a skill that can be developed through practice, patience, and dedication. Effective writing requires clarity, coherence, and proper grammar and punctuation, among other things.",
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "emailAddress": [
+                "jdiaz_lifdemo@stateu.edu"
+              ],
+              "informationSourceId": "Single-Org"
+            }
+          ],
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "identifier": [
+        {
+          "identifier": "100002",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER",
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "courseLearningExperience": [
+        {
+          "assertedByRefOrganization": {
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": [],
+            "informationSourceId": "Single-Org"
+          },
+          "refCourse": {
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Single-Org"
+              }
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "7b214972-2eb2-4320-b645-72518b7b2f83",
+            "awardIssueDate": "2021-10-11T09:24:23Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "assertedByRefOrganization": {
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": [],
+            "informationSourceId": "Single-Org"
+          },
+          "refCourse": {
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Single-Org"
+              }
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "3433e0e2-456d-4359-932c-f972a3e0c12b",
+            "awardIssueDate": "2022-02-10",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "assertedByRefOrganization": {
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": [],
+            "informationSourceId": "Single-Org"
+          },
+          "refCourse": {
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Single-Org"
+              }
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "efa65065-c6bf-4d35-a88a-5d1a07cd8cbf",
+            "awardIssueDate": "2021-11-24T07:25:02Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "assertedByRefOrganization": {
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": [],
+            "informationSourceId": "Single-Org"
+          },
+          "refCourse": {
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Single-Org"
+              }
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "fd606e09-f7b6-4700-be4e-9a11fa2d3b6a",
+            "awardIssueDate": "2023-06-10",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        },
+        {
+          "assertedByRefOrganization": {
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": [],
+            "informationSourceId": "Single-Org"
+          },
+          "refCourse": {
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Single-Org"
+              }
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "314ae65e-0581-4f3b-988b-9ecd98ba91fc",
+            "awardIssueDate": "2020-02-08",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        }
+      ],
+      "credentialAward": [
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+            "informationSourceId": "Single-Org"
+          },
+          "id": "cde063e8-63bb-479e-ac09-2bf016db9500",
+          "awardIssueDate": "2022-12-09",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+            "informationSourceId": "Single-Org"
+          },
+          "id": "e86d5e3b-793c-443e-8e2c-218423d6178c",
+          "awardIssueDate": "2020-12-19",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+            "informationSourceId": "Single-Org"
+          },
+          "id": "6c364507-a0a3-4afb-ac74-4cc3b5938a49",
+          "awardIssueDate": "2021-12-22",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+            "informationSourceId": "Single-Org"
+          },
+          "id": "01dd6b6d-ad9c-4df8-a110-7989c6a772a4",
+          "awardIssueDate": "2021-03-29T15:17:25Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+            "informationSourceId": "Single-Org"
+          },
+          "id": "c7e9cf5e-8399-4ca5-8735-f8c1368e8428",
+          "awardIssueDate": "2021-03-18T00:02:09Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "cred-proficiency-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "7b214972-2eb2-4320-b645-72518b7b2f83",
+          "awardIssueDate": "2021-10-11T09:24:23Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "3433e0e2-456d-4359-932c-f972a3e0c12b",
+          "awardIssueDate": "2022-02-10",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "efa65065-c6bf-4d35-a88a-5d1a07cd8cbf",
+          "awardIssueDate": "2021-11-24T07:25:02Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "fd606e09-f7b6-4700-be4e-9a11fa2d3b6a",
+          "awardIssueDate": "2023-06-10",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "314ae65e-0581-4f3b-988b-9ecd98ba91fc",
+          "awardIssueDate": "2020-02-08",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "id": "cred-employment-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "employmentLearningExperience": [
+        {
+          "name": "Certified Nursing Assistant CNA",
+          "refPosition": {
+            "informationSourceId": "Single-Org"
+          },
+          "startDate": "2018-03",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Single-Org"
+          },
+          "approvedByRefOrganization": [
+            {
+              "identificationSystem": "stateu-approving-authority-id",
+              "name": "Approving Authority",
+              "organizationType": [
+                "Regulatory Body"
+              ],
+              "informationSourceId": "Single-Org"
+            }
+          ],
+          "informationSourceId": "Single-Org",
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Single-Org"
+          }
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    }
+  ],
+  "course": [
+    {
+      "identifier": [
+        {
+          "identifier": "CS651",
+          "identifierType": "Course Code",
+          "identifierVerification": [
+            "Academic Records"
+          ],
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    }
+  ],
+  "organization": [
+    {
+      "name": "State University",
+      "description": "State University (StateU) is an accredited online university offering online bachelor's and master's degree programs. The programs are competency-based, student-focused, online, nonprofit university.",
+      "contact": [
+        {
+          "address": [
+            {
+              "addressCity": "Dallas",
+              "countryCode": "US",
+              "addressState": "Texas",
+              "addressStreet": "632 East Hwy 3",
+              "addressPostalCode": "75001",
+              "informationSourceId": "Single-Org"
+            }
+          ],
+          "email": [
+            {
+              "emailAddress": [
+                "credentials@stateu.edu"
+              ],
+              "informationSourceId": "Single-Org"
+            }
+          ],
+          "websiteAddress": "https://www.stateu.edu/",
+          "telephone": [
+            {
+              "telephoneNumber": [
+                "111-222-3333"
+              ],
+              "informationSourceId": "Single-Org"
+            }
+          ],
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "imageUrl": "https://assets.stateu.edu/99da0cfd314920b5cf8cb6c8727e7675",
+      "identifier": [
+        {
+          "identifier": "833333326",
+          "identifierType": "Federal employer identification number",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "identifier": "23323331",
+          "identifierType": "Dun and Bradstreet number",
+          "informationSourceId": "Single-Org"
+        },
+        {
+          "identifier": "https://credentialfinder.org/organization/000/State_University",
+          "identifierType": "credentialfinder.org",
+          "informationSourceId": "Single-Org"
+        }
+      ],
+      "identificationSystem": "State University SIS",
+      "organizationType": [],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Corporate Partner",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Employing Organization",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "name": "State University",
+      "identificationSystem": "State University SIS",
+      "organizationType": [],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "identificationSystem": "stateu-state-university-id",
+      "name": "State University",
+      "organizationType": [
+        "University"
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "name": "Brookdale Senior Living",
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "identificationSystem": "stateu-training-provider-id",
+      "name": "Training Provider",
+      "organizationType": [
+        "Training Organization"
+      ],
+      "informationSourceId": "Single-Org"
+    }
+  ],
+  "credential": [
+    {
+      "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+      "name": "C165 - Integrated Physical Sciences",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Single-Org",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+      "name": "D198 - Global Arts and Humanities",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Single-Org",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+      "name": "D265 - Critical Thinking: Reason and Evidence",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Single-Org",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+      "name": "D268 - Introduction to Communication: Connecting with Others",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Single-Org",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+      "name": "D269 - Composition: Writing with a Strategy",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Single-Org",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ],
+      "informationSourceId": "Single-Org"
+    },
+    {
+      "id": "249cdd22-6fb1-47c1-aea0-4cd77947e226",
+      "informationSourceId": "Single-Org"
+    }
+  ],
+  "informationSourceId": "Single-Org"
+}

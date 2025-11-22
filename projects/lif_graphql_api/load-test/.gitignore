@@ -1,0 +1,13 @@
+# k6 Load Test .gitignore
+
+# Test results and output files
+results/
+
+# k6 output files
+k6-results*
+test-results*
+performance-results*
+
+# Local test configurations
+k6.local.config.js
+local-test-*.js

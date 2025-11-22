@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app :
+    container_name: Metadata-Repository-API
+    build:
+      context: ./
+    # volumes:
+    #   - ../service/config_files:/usr/src/service/config_files
+    env_file:
+      - mdr-api.env 
+    ports:
+      - 8012:8012

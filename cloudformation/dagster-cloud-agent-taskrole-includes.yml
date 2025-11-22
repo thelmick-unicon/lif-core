@@ -1,0 +1,79 @@
+Policies:
+  - PolicyName: SecretsPolicy
+    PolicyDocument:
+      Statement:
+      - Effect: Allow
+        Action:
+          - 'kms:Decrypt'
+          - 'kms:Encrypt'
+          - 'kms:ReEncrypt*'
+          - 'kms:DescribeKey'
+          - 'kms:GenerateDataKey'
+          - 'kms:GenerateDataKeyWithoutPlaintext'
+          - 'ssm:GetParam*'
+          - 'secretsmanager:GetSecretValue'
+        Resource:
+          - Ref: EnvironmentKmsKey
+          - Fn::Sub: 'arn:aws:ssm:*:*:parameter/${EnvironmentName}'
+          - Fn::Sub: 'arn:aws:ssm:*:*:parameter/${EnvironmentName}/*'
+          - Fn::Sub: 'arn:aws:secretsmanager:*:*:secret:${EnvironmentName}*'
+      - Effect: Allow
+        Action:
+          - 'secretsmanager:ListSecrets'
+          - 'elasticfilesystem:DescribeMountTargets'
+          - 'ec2:DescribeAvailabilityZones'
+          - 'elasticfilesystem:DescribeFileSystems'
+        Resource: "*"
+  - PolicyName: S3Policy
+    PolicyDocument:
+      Statement:
+      - Effect: Allow
+        Action:
+          - 's3:Get*'
+          - 's3:List*'
+          - 's3:PutObject*'
+          - 's3-object-lambda:Get*'
+          - 's3-object-lambda:List*'
+          - 's3-object-lambda:PutObject*'
+        Resource:
+          - Fn::Sub: 'arn:aws:s3:::${S3AppBucket}'
+          - Fn::Sub: 'arn:aws:s3:::${S3AppBucket}/*'
+  - PolicyName: DagsterAgentAccessPolicy
+    PolicyDocument:
+      Statement:
+      - Effect: Allow
+        Action:
+          - 's3:Get*'
+          - 's3:List*'
+          - 's3:PutObject*'
+          - 's3-object-lambda:Get*'
+          - 's3-object-lambda:List*'
+          - 's3-object-lambda:PutObject*'
+          - 'ec2:DescribeNetworkInterfaces'
+          - 'ec2:DescribeRouteTables'
+          - 'ecs:CreateService'
+          - 'ecs:DeleteService'
+          - 'ecs:DescribeServices'
+          - 'ecs:DescribeTaskDefinition'
+          - 'ecs:DescribeTasks'
+          - 'ecs:ListAccountSettings'
+          - 'ecs:ListServices'
+          - 'ecs:ListTagsForResource'
+          - 'ecs:ListTasks'
+          - 'ecs:RegisterTaskDefinition'
+          - 'ecs:RunTask'
+          - 'ecs:StopTask'
+          - 'ecs:TagResource'
+          - 'ecs:UpdateService'
+          - 'iam:PassRole'
+          - 'logs:GetLogEvents'
+          - 'secretsmanager:DescribeSecret'
+          - 'secretsmanager:GetSecretValue'
+          - 'secretsmanager:ListSecrets'
+          - 'servicediscovery:CreateService'
+          - 'servicediscovery:DeleteService'
+          - 'servicediscovery:ListServices'
+          - 'servicediscovery:GetNamespace'
+          - 'servicediscovery:ListTagsForResource'
+          - 'servicediscovery:TagResource'
+        Resource: '*'

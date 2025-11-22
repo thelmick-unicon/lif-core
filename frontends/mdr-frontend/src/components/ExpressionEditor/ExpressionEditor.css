@@ -1,0 +1,43 @@
+.expr-editor { display:flex; flex-direction:column; font-family: system-ui, sans-serif; font-size:14px; color:#1d2433; background:#f8f9fb; border-radius:6px; padding:16px; box-sizing:border-box; }
+.expr-editor__header { font-weight:600; font-size:16px; margin-bottom:8px; }
+.expr-editor__form-row { display:flex; gap:16px; margin-bottom:12px; flex-wrap:wrap; }
+.expr-editor__field-group { display:flex; flex-direction:column; gap:4px; min-width:160px; }
+.expr-editor__field-group--grow { flex:1; }
+.expr-editor__label { font-size:12px; font-weight:500; text-transform:uppercase; letter-spacing:.5px; color:#4b5565; }
+.expr-editor__input, .expr-editor__select, .expr-editor__textarea, .expr-editor__filter { border:1px solid #cfd5de; border-radius:4px; padding:6px 8px; background:#fff; font:inherit; }
+.expr-editor__textarea { resize:vertical; min-height:100px; font-family:monospace; }
+.expr-editor__operators-bar { display:flex; flex-wrap:wrap; gap:4px; margin:8px 0 12px; }
+.expr-editor__op-btn { background:#fff; border:1px solid #d4dae3; border-radius:4px; padding:4px 8px; cursor:pointer; font-size:12px; }
+.expr-editor__op-btn:hover { background:#eef2f7; }
+.expr-editor__panes { display:flex; gap:16px; min-height:220px; }
+.expr-editor__elements-pane { width:180px; background:#fff; border:1px solid #d5dbe4; border-radius:4px; display:flex; flex-direction:column; }
+.expr-editor__elements-header { padding:8px 10px; font-weight:600; border-bottom:1px solid #e2e7ee; }
+.expr-editor__elements-list { list-style:none; margin:0; padding:4px 0; overflow-y:auto; flex:1; }
+.expr-editor__elements-list li { padding:6px 10px; cursor:pointer; font-size:13px; border-left:3px solid transparent; }
+.expr-editor__elements-list li.active { background:#eef3ff; border-left-color:#3864ff; font-weight:600; }
+.expr-editor__elements-list li:hover { background:#f0f4fa; }
+.expr-editor__values-pane { flex:1; background:#fff; border:1px solid #d5dbe4; border-radius:4px; display:flex; flex-direction:column; }
+.expr-editor__values-header-row { display:flex; gap:8px; padding:8px 10px; border-bottom:1px solid #e2e7ee; align-items:center; }
+.expr-editor__filter { flex:1; }
+.expr-editor__create-btn { background:#fff; border:1px solid #3864ff; color:#3864ff; font-size:12px; padding:4px 10px; border-radius:4px; cursor:pointer; }
+.expr-editor__create-btn:hover { background:#3864ff; color:#fff; }
+.expr-editor__values-list { flex:1; overflow:auto; padding:8px 10px; display:flex; flex-direction:column; gap:4px; max-height:200px; }
+.expr-editor__value-item { background:#f5f7fa; border:1px solid #e2e7ee; border-radius:4px; padding:6px 8px; font-size:12px; cursor:pointer; }
+.expr-editor__value-item:hover { background:#e9edf3; }
+.expr-editor__empty { font-size:12px; color:#667383; font-style:italic; }
+.expr-editor__footer { display:flex; justify-content:flex-end; align-items:center; margin-top:16px; gap:16px; flex-wrap:wrap; }
+.expr-editor__actions { display:flex; gap:8px; }
+.expr-editor__btn { border:1px solid #cfd5de; background:#fff; padding:6px 14px; font-size:13px; cursor:pointer; border-radius:4px; }
+.expr-editor__btn--primary { background:#2f3f55; border-color:#2f3f55; color:#fff; }
+.expr-editor__btn--primary:hover { background:#425779; }
+.expr-editor__btn--secondary:hover { background:#f0f2f5; }
+
+/* Preview layout */
+.expr-editor__preview { margin-top:16px; border:1px solid #d5dbe4; background:#fff; border-radius:4px; padding:10px; display:flex; flex-direction:column; gap:12px; }
+.expr-editor__preview-header { font-weight:600; font-size:13px; }
+.expr-editor__preview-body { display:flex; gap:16px; }
+.expr-editor__preview-sample, .expr-editor__preview-result { flex:1; display:flex; flex-direction:column; min-width:0; }
+.expr-editor__preview-label { font-size:12px; font-weight:600; margin-bottom:4px; color:#4b5565; }
+.expr-editor__preview-json, .expr-editor__preview-error { background:#0f172a; color:#e2e8f0; font-family:monospace; font-size:12px; padding:8px; border-radius:4px; overflow:auto; max-height:240px; line-height:1.4; }
+.expr-editor__preview-error { background:#7f1d1d; color:#fff; }
+.expr-editor__readonly { background:#eef2f7; border:1px solid #cfd5de; padding:6px 8px; border-radius:4px; font-size:13px; }

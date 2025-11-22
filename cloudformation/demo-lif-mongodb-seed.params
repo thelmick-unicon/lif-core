@@ -1,0 +1,59 @@
+
+[
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "demo"
+  },
+  {
+    "ParameterKey": "ServiceName",
+    "ParameterValue": "mongodb-seed"
+  },
+  {
+    "ParameterKey": "ScheduleExpression",
+    "ParameterValue": "cron(0 13 * * ? *)"
+  },
+  {
+    "ParameterKey": "ImageUrl",
+    "ParameterValue": "381492161417.dkr.ecr.us-east-1.amazonaws.com/lif/dev/mongodb_seed:2025-07-28-16-46-03-8f4bb41"
+  },
+  {
+    "ParameterKey": "TaskDefIncludesFile",
+    "ParameterValue": "s3://clir-cf-templates/demo-lif/mongodb-seed-taskdef-includes.yml"
+  },
+  {
+    "ParameterKey": "TaskRoleIncludesFile",
+    "ParameterValue": "s3://clir-cf-templates/demo-lif/service-taskrole-includes.yml"
+  },
+  {
+    "ParameterKey": "ContainerMemory",
+    "ParameterValue": "1024"
+  },
+  {
+    "ParameterKey": "ContainerCpu",
+    "ParameterValue": "512"
+  },
+  {
+    "ParameterKey": "SecurityGroup",
+    "ParameterValue": "/demo/EcsInstanceSecurityGroup"
+  },
+  {
+    "ParameterKey": "PrivateSubnets",
+    "ParameterValue": "/demo/PrivateSubnets"
+  },
+  {
+    "ParameterKey": "EnvironmentKmsKey",
+    "ParameterValue": "/demo/EnvironmentKmsKey"
+  },
+  {
+    "ParameterKey": "EcsCluster",
+    "ParameterValue": "/demo/EcsCluster"
+  },
+  {
+    "ParameterKey": "EfsFileSystemId",
+    "ParameterValue": "/demo/EfsFileSystemId"
+  },
+  {
+    "ParameterKey": "S3AppBucket",
+    "ParameterValue": "/demo/S3Bucket"
+  }
+]

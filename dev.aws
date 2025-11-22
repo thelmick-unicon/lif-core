@@ -1,0 +1,109 @@
+PROJECT=lif
+FARGATE_CLUSTER=dev
+AWS_REGION=us-east-1
+TEMPLATE_BUCKET=clir-cf-templates
+SSO_ACCOUNT_NAME=AWS-Gates-CLIR
+SAM_CONFIG_ENV=dev
+
+declare -g -A STACKS
+STACKS['dev-lif-repositories']='repositories'
+STACKS['dev-lif-networking']='networking'
+STACKS['dev-lif-common']='service-common'
+
+# Org1 services (existing)
+STACKS['dev-lif-translator-org1']='service'
+STACKS['dev-lif-identity-mapper-mariadb-org1']='service'
+STACKS['dev-lif-identity-mapper-org1']='service'
+STACKS['dev-lif-mongodb-org1']='service'
+STACKS['dev-lif-query-cache-org1']='service'
+STACKS['dev-lif-query-planner-org1']='service'
+STACKS['dev-lif-graphql-org1']='service'
+STACKS['dev-lif-semantic-search']='service'
+STACKS['dev-lif-advisor-api']='service'
+STACKS['dev-lif-advisor-app']='service'
+STACKS['dev-lif-mongodb-seed-org1']='scheduled-task'
+STACKS['dev-lif-orchestrator']='service'
+STACKS['dev-lif-example-data-source-rest-api']='service'
+
+# Org2 services (new)
+STACKS['dev-lif-identity-mapper-mariadb-org2']='service'
+STACKS['dev-lif-identity-mapper-org2']='service'
+STACKS['dev-lif-mongodb-org2']='service'
+STACKS['dev-lif-query-cache-org2']='service'
+STACKS['dev-lif-query-planner-org2']='service'
+STACKS['dev-lif-graphql-org2']='service'
+STACKS['dev-lif-mongodb-seed-org2']='scheduled-task'
+
+# Org3 services (new)
+STACKS['dev-lif-identity-mapper-mariadb-org3']='service'
+STACKS['dev-lif-identity-mapper-org3']='service'
+STACKS['dev-lif-mongodb-org3']='service'
+STACKS['dev-lif-query-cache-org3']='service'
+STACKS['dev-lif-query-planner-org3']='service'
+STACKS['dev-lif-graphql-org3']='service'
+STACKS['dev-lif-mongodb-seed-org3']='scheduled-task'
+
+STACKS['dev-lif-dagster-cloud-agent']='service'
+STACKS['dev-lif-mdr-frontend']='s3-hosted'
+STACKS['dev-lif-mdr-api']='service'
+
+# Dagster OSE
+STACKS['dev-lif-dagster-code-location']='service'
+STACKS['dev-lif-dagster-webserver']='service'
+STACKS['dev-lif-dagster-daemon']='service'
+
+declare -g -a STACK_ORDER
+STACK_ORDER=(
+  dev-lif-repositories 
+  dev-lif-networking 
+  dev-lif-common
+  
+  # Org1 infrastructure
+  dev-lif-translator-org1
+  dev-lif-identity-mapper-mariadb-org1
+  dev-lif-identity-mapper-org1
+  dev-lif-mongodb-org1
+  dev-lif-query-cache-org1
+  dev-lif-query-planner-org1
+  dev-lif-graphql-org1
+  dev-lif-semantic-search
+  dev-lif-advisor-api
+  dev-lif-advisor-app
+  dev-lif-mongodb-seed-org1
+  dev-lif-example-data-source-rest-api
+  
+  # Org2 infrastructure
+  dev-lif-identity-mapper-mariadb-org2
+  dev-lif-identity-mapper-org2
+  dev-lif-mongodb-org2
+  dev-lif-query-cache-org2
+  dev-lif-query-planner-org2
+  dev-lif-graphql-org2
+  dev-lif-mongodb-seed-org2
+  
+  # Org3 infrastructure
+  dev-lif-identity-mapper-mariadb-org3
+  dev-lif-identity-mapper-org3
+  dev-lif-mongodb-org3
+  dev-lif-query-cache-org3
+  dev-lif-query-planner-org3
+  dev-lif-graphql-org3
+  dev-lif-mongodb-seed-org3
+ 
+  dev-lif-dagster-cloud-agent
+  dev-lif-orchestrator-api
+  dev-lif-mdr-frontend
+  dev-lif-mdr-api
+
+  # Dagster OSE
+  dev-lif-dagster-code-location
+  dev-lif-dagster-webserver
+  dev-lif-dagster-daemon
+  
+)
+
+declare -g -a SAM_STACKS
+SAM_STACKS=(
+  mdr-database
+  dagster-database
+)

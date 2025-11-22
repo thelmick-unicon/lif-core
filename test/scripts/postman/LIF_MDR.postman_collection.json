@@ -1,0 +1,2950 @@
+{
+	"info": {
+		"_postman_id": "17a58f03-a972-4217-b7d5-07651cab8981",
+		"name": "LIF MDR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3873920",
+		"_collection_link": "https://martian-firefly-184396.postman.co/workspace/Unicon~df66ffbe-ee5a-46f3-8237-bdfd8443b361/collection/3873920-17a58f03-a972-4217-b7d5-07651cab8981?action=share&source=collection_link&creator=3873920"
+	},
+	"item": [
+		{
+			"name": "DataModels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels?size=30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIF DataModel id = 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIF DataModel with Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Source DataModel with Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Partner DataModel with Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StateU LIF DataModel id = 17",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StateU LIF DataModel with Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StateU LIF Partner Extensions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/17?partner_only=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"17"
+					],
+					"query": [
+						{
+							"key": "partner_only",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StateU LIF Org Extensions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/17?org_ext_only=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"17"
+					],
+					"query": [
+						{
+							"key": "org_ext_only",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StateU LIF Public",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/with_details/17?public_only=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"with_details",
+						"17"
+					],
+					"query": [
+						{
+							"key": "public_only",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Base LIF OpenAPI Schema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/open_api_schema/1?include_attr_md=true&include_entity_md=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"open_api_schema",
+						"1"
+					],
+					"query": [
+						{
+							"key": "include_attr_md",
+							"value": "true"
+						},
+						{
+							"key": "include_entity_md",
+							"value": "true"
+						},
+						{
+							"key": "public_only",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StateU LIF OpenAPI Schema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/open_api_schema/17?include_attr_md=true&include_entity_md=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"open_api_schema",
+						"17"
+					],
+					"query": [
+						{
+							"key": "include_attr_md",
+							"value": "true"
+						},
+						{
+							"key": "include_entity_md",
+							"value": "true"
+						},
+						{
+							"key": "public_only",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Source OpenAPI Schema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/open_api_schema/25?include_attr_md=true&include_entity_md=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"open_api_schema",
+						"25"
+					],
+					"query": [
+						{
+							"key": "include_attr_md",
+							"value": "true"
+						},
+						{
+							"key": "include_entity_md",
+							"value": "true"
+						},
+						{
+							"key": "public_only",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Partner LIF OpenAPI Schema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/open_api_schema/18?include_attr_md=true&include_entity_md=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"open_api_schema",
+						"18"
+					],
+					"query": [
+						{
+							"key": "include_attr_md",
+							"value": "true"
+						},
+						{
+							"key": "include_entity_md",
+							"value": "true"
+						},
+						{
+							"key": "public_only",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Partner LIF Data Model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"TestNewPartnerModel\",\n  \"Description\": \"I am testing if I can create a new data model\",\n  \"UseConsiderations\": \"considerations\",\n  \"Type\": \"PartnerLIF\",\n  \"BaseDataModelId\": 1,\n  \"Notes\": null,\n  \"DataModelVersion\": \"1.0\",\n  \"CreationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"ActivationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"State\": \"Draft\",\n  \"Deleted\": false,\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Source Data Model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"TestNewSourceModel\",\n  \"Description\": \"I am testing if I can create a new source data model\",\n  \"UseConsiderations\": \"considerations\",\n  \"Type\": \"SourceSchema\",\n  \"BaseDataModelId\": null,\n  \"Notes\": null,\n  \"DataModelVersion\": \"1.0\",\n  \"CreationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"ActivationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"State\": \"Draft\",\n  \"Deleted\": false,\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Source Schema Data Model from OpenAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/mgwozdz/Downloads/data_model_18_full_openapi_schema (3).json"
+						},
+						{
+							"key": "data_model_type",
+							"value": "SourceSchema",
+							"type": "text"
+						},
+						{
+							"key": "base_data_model_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "use_considerations",
+							"value": "Example considerations",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "Example notes",
+							"type": "text"
+						},
+						{
+							"key": "activation_date",
+							"value": "2025-08-15T16:32:21.997Z",
+							"type": "text"
+						},
+						{
+							"key": "deprecation_date",
+							"value": "2050-08-15T16:32:21.997Z",
+							"type": "text"
+						},
+						{
+							"key": "contributor",
+							"value": "Mary Gwozdz",
+							"type": "text"
+						},
+						{
+							"key": "contributor_organization",
+							"value": "Unicon",
+							"type": "text"
+						},
+						{
+							"key": "data_model_name",
+							"value": "MarySource1",
+							"type": "text"
+						},
+						{
+							"key": "data_model_version",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "data_model_description",
+							"value": "Test openapi schema upload description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/open_api_schema/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"open_api_schema",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Partner LIF Data Model from OpenAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/mgwozdz/Downloads/data_model_18_full_openapi_schema (3).json"
+						},
+						{
+							"key": "data_model_type",
+							"value": "PartnerLIF",
+							"type": "text"
+						},
+						{
+							"key": "base_data_model_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "use_considerations",
+							"value": "Example considerations",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "Example notes",
+							"type": "text"
+						},
+						{
+							"key": "activation_date",
+							"value": "2025-08-15T16:32:21.997Z",
+							"type": "text"
+						},
+						{
+							"key": "deprecation_date",
+							"value": "2050-08-15T16:32:21.997Z",
+							"type": "text"
+						},
+						{
+							"key": "contributor",
+							"value": "Mary Gwozdz",
+							"type": "text"
+						},
+						{
+							"key": "contributor_organization",
+							"value": "Unicon",
+							"type": "text"
+						},
+						{
+							"key": "data_model_name",
+							"value": "Mary Test",
+							"type": "text"
+						},
+						{
+							"key": "data_model_version",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "data_model_description",
+							"value": "Test openapi schema upload description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/open_api_schema/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"open_api_schema",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Partner LIF Data Model",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2UpdatedPartnerModel\",\n  \"Description\": \"I am testing if I can create a new data model\",\n  \"UseConsiderations\": \"considerations\",\n  \"Type\": \"PartnerLIF\",\n  \"BaseDataModelId\": 1,\n  \"Notes\": null,\n  \"DataModelVersion\": \"1.0\",\n  \"CreationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"ActivationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"State\": \"Draft\",\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Source Data Model",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2UpdatedSourceModel\",\n  \"Description\": \"I am testing if I can create a new source data model\",\n  \"UseConsiderations\": \"considerations\",\n  \"Type\": \"SourceSchema\",\n  \"BaseDataModelId\": null,\n  \"Notes\": null,\n  \"DataModelVersion\": \"1.0\",\n  \"CreationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"ActivationDate\": \"2025-08-15T16:32:21.997Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"State\": \"Draft\",\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update LIF Data Model",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 1,\n    \"Name\": \"LIF\",\n    \"Description\": \"This is the data model for the Learner Information Framework (LIF).\",\n    \"UseConsiderations\": null,\n    \"Type\": \"BaseLIF\",\n    \"BaseDataModelId\": null,\n    \"Notes\": null,\n    \"DataModelVersion\": \"2.0\",\n    \"CreationDate\": null,\n    \"ActivationDate\": null,\n    \"DeprecationDate\": null,\n    \"Contributor\": null,\n    \"ContributorOrganization\": \"LIF\",\n    \"State\": \"Draft\",\n    \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Org Data Model",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 17,\n    \"Name\": \"StateU LIF\",\n    \"Description\": \"This is the StateU version of LIF.\",\n    \"UseConsiderations\": null,\n    \"Type\": \"OrgLIF\",\n    \"BaseDataModelId\": 1,\n    \"Notes\": null,\n    \"DataModelVersion\": \"1.0\",\n    \"CreationDate\": null,\n    \"ActivationDate\": null,\n    \"DeprecationDate\": null,\n    \"Contributor\": null,\n    \"ContributorOrganization\": \"StateU\",\n    \"State\": \"Draft\",\n    \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/datamodels/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Partner LIF Data Model",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Source Data Model",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm LIF Can't Be Deleted",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/datamodels/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"datamodels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Entity in LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2ChildLIFEntity\",\n  \"UniqueName\": \"Test2ChildLIFEntity\",\n  \"Description\": \"Test of creating a new LIF Entity\",\n  \"UseConsiderations\": \"Test considerations\",\n  \"Required\": \"No\",\n  \"Array\": \"Yes\",\n  \"SourceModel\": null,\n  \"DataModelId\": 1,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"ActivationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": \"Test extension notes\",\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entities/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create LIF Child Entity Association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ParentEntityId\": 346,\n  \"ChildEntityId\": 357,\n  \"Relationship\": null,\n  \"Placement\": \"Embedded\",\n  \"Notes\": \"Test notes for association\",\n  \"CreationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"ActivationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"DeprecationDate\": \"2025-08-17T16:50:35.491Z\",\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null,\n  \"ExtendedByDataModelId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Entity in Source Schema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2ChildSourceEntity\",\n  \"UniqueName\": \"Test2ChildSourceEntity\",\n  \"Description\": \"Test of creating a child Source Schema Entity\",\n  \"UseConsiderations\": \"Test considerations\",\n  \"Required\": \"No\",\n  \"Array\": \"Yes\",\n  \"SourceModel\": null,\n  \"DataModelId\": 25,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"ActivationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null,\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entities/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Source Schema Child Entity Association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ParentEntityId\": 340,\n  \"ChildEntityId\": 358,\n  \"Relationship\": null,\n  \"Placement\": \"Embedded\",\n  \"Notes\": \"Test notes for association\",\n  \"CreationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"ActivationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"DeprecationDate\": \"2025-08-17T16:50:35.491Z\",\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null,\n  \"ExtendedByDataModelId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Entity in Org LIF Extensions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"TestOrgChildEntity\",\n  \"UniqueName\": \"TestOrgChildEntity\",\n  \"Description\": \"Test of creating an org Child LIF extension Entity\",\n  \"UseConsiderations\": \"Test considerations\",\n  \"Required\": \"No\",\n  \"Array\": \"Yes\",\n  \"SourceModel\": null,\n  \"DataModelId\": 17,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"ActivationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\",\n  \"Extension\": true,\n  \"ExtensionNotes\": null,\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entities/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Include new Entity in Org LIF Extensions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ExtDataModelId\": 17,\n  \"ElementType\": \"Entity\",\n  \"IncludedElementId\": 359,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\",\n  \"Deleted\": false,\n  \"LevelOfAccess\": \"Public\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Org LIF Child Entity Association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ParentEntityId\": 4,\n  \"ChildEntityId\": 359,\n  \"Relationship\": null,\n  \"Placement\": \"Embedded\",\n  \"Notes\": \"Test notes for association\",\n  \"CreationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"ActivationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\",\n  \"Extension\": true,\n  \"ExtensionNotes\": null,\n  \"ExtendedByDataModelId\": 17\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Entity in Partner LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"TestEntity8\",\n  \"UniqueName\": \"TestEntity8\",\n  \"Description\": \"Test of creating a partner LIF extension Entity\",\n  \"UseConsiderations\": \"Test considerations\",\n  \"Required\": \"No\",\n  \"Array\": \"Yes\",\n  \"SourceModel\": null,\n  \"DataModelId\": 18,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"ActivationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"Extension\": true,\n  \"ExtensionNotes\": null,\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entities/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Include new Entity in Partner LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ExtDataModelId\": 18,\n  \"ElementType\": \"Entity\",\n  \"IncludedElementId\": 360,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"Deleted\": false,\n  \"LevelOfAccess\": \"Public\",\n  \"Queryable\": true,\n  \"Modifiable\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Partner LIF Child Entity Association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ParentEntityId\": 344,\n  \"ChildEntityId\": 360,\n  \"Relationship\": null,\n  \"Placement\": \"Embedded\",\n  \"Notes\": \"Test notes for association\",\n  \"CreationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"ActivationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"Extension\": true,\n  \"ExtensionNotes\": null,\n  \"ExtendedByDataModelId\": 18\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associate Partner Entity to OrgLIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ExtDataModelId\": 17,\n  \"ElementType\": \"Entity\",\n  \"IncludedElementId\": 360,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"Deleted\": false,\n  \"LevelOfAccess\": \"Public\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associate LIF Entity to OrgLIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ExtDataModelId\": 17,\n  \"ElementType\": \"Entity\",\n  \"IncludedElementId\": 76,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"LIF\",\n  \"Deleted\": false,\n  \"LevelOfAccess\": \"Public\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Entity to Public or Private in OrgLIF",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"LevelOfAccess\": \"Public\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"162"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entities/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entities by Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entities/by_data_model_id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						"by_data_model_id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Associations By Data Model ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/by_data_model_id/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						"by_data_model_id",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Association By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/154",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						"154"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Associations By Parent Entity Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/by_parent_entity_id/4?including_extended_by_data_model_id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						"by_parent_entity_id",
+						"4"
+					],
+					"query": [
+						{
+							"key": "including_extended_by_data_model_id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Inclusion by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"162"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Inclusions by Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/by_data_model_id/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"by_data_model_id",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Inclusion Entities by Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/entities/by_data_model_id/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"entities",
+						"by_data_model_id",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Entity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2UpdateLIFEntity\",\n  \"UniqueName\": \"Test2UpdateLIFEntity\",\n  \"Description\": \"Test of updating LIF Entity\",\n  \"UseConsiderations\": \"Test considerations\",\n  \"Required\": \"No\",\n  \"Array\": \"Yes\",\n  \"SourceModel\": null,\n  \"DataModelId\": 1,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"ActivationDate\": \"2025-08-17T16:19:22.543Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": \"Test extension notes\",\n  \"Tags\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entities/356",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						"356"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Entity Association",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ParentEntityId\": 340,\n  \"ChildEntityId\": 341,\n  \"Relationship\": null,\n  \"Placement\": \"Reference\",\n  \"Notes\": \"Test updated notes for association\",\n  \"CreationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"ActivationDate\": \"2025-08-17T16:50:35.490Z\",\n  \"DeprecationDate\": \"2025-08-17T16:50:35.491Z\",\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null,\n  \"ExtendedByDataModelId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/154",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						"154"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Inclusion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Notes\": \"Test updated notes\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"LevelOfAccess\": \"Public\",\n  \"Queryable\": false,\n  \"Modifiable\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/183",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"183"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Entity",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entities/348",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entities",
+						"348"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Entity Association",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_associations/157",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_associations",
+						"157"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Inclusion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/163",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"163"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute in LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2NewLIFAttribute\",\n  \"DataType\": \"string\",\n  \"DataModelId\": 1,\n  \"UniqueName\": \"Test2NewLIFAttribute\",\n  \"Description\": \"This is a test of creating a new LIF attribute\",\n  \"UseConsiderations\": \"consideration\",\n  \"ValueSetId\": null,\n  \"Required\": \"No\",\n  \"Array\": \"No\",\n  \"SourceModel\": null,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"ActivationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"LIF\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute to Entity Association for LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"EntityId\": 346,\n  \"AttributeId\": 1853,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"ActivationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"LIF\",\n  \"ExtendedByDataModelId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute in Org LIF (StateU)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2NewOrgAttribute\",\n  \"DataType\": \"string\",\n  \"DataModelId\": 17,\n  \"UniqueName\": \"Test2NewOrgAttribute\",\n  \"Description\": \"This is a test of creating a new Org attribute\",\n  \"UseConsiderations\": \"consideration\",\n  \"ValueSetId\": null,\n  \"Required\": \"No\",\n  \"Array\": \"No\",\n  \"SourceModel\": null,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"ActivationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\",\n  \"Extension\": true,\n  \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute to Entity Association for Org LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"EntityId\": 342,\n  \"AttributeId\": 1854,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"ActivationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\",\n  \"ExtendedByDataModelId\": 17\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Inclusion of Attribute in Org LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ExtDataModelId\": 17,\n  \"ElementType\": \"Attribute\",\n  \"IncludedElementId\": 1854,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\",\n  \"Deleted\": false,\n  \"LevelOfAccess\": \"Public\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute in Source Schema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2NewSourceAttribute\",\n  \"DataType\": \"string\",\n  \"DataModelId\": 25,\n  \"UniqueName\": \"Test2NewSourceAttribute\",\n  \"Description\": \"This is a test of creating a new Source attribute\",\n  \"UseConsiderations\": \"consideration\",\n  \"ValueSetId\": null,\n  \"Required\": \"No\",\n  \"Array\": \"No\",\n  \"SourceModel\": null,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"ActivationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute to Entity Association in Source Schema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"EntityId\": 340,\n  \"AttributeId\": 1855,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"ActivationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"ExtendedByDataModelId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute in Partner LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"TestAttribute11\",\n  \"DataType\": \"string\",\n  \"DataModelId\": 18,\n  \"UniqueName\": \"TestAttribute11\",\n  \"Description\": \"This is a test of creating a new partner attribute\",\n  \"UseConsiderations\": \"consideration\",\n  \"ValueSetId\": null,\n  \"Required\": \"No\",\n  \"Array\": \"No\",\n  \"SourceModel\": null,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"ActivationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"Extension\": true,\n  \"ExtensionNotes\": null,\n  \"Example\": \"asdfasdf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Attribute to Entity Association in Partner LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"EntityId\": 341,\n  \"AttributeId\": 1856,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"ActivationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"ExtendedByDataModelId\": 18\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Inclusion of Attribute in Partner LIF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ExtDataModelId\": 18,\n  \"ElementType\": \"Attribute\",\n  \"IncludedElementId\": 1856,\n  \"Notes\": \"Test notes\",\n  \"CreationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"Deleted\": false,\n  \"LevelOfAccess\": \"Public\",\n  \"Queryable\": true,\n  \"Modifiable\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/attributes/1851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes",
+						"1851"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute By Entity Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/attributes/by_entity_id/344",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes",
+						"by_entity_id",
+						"344"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute By Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/attributes/by_data_model_id/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes",
+						"by_data_model_id",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Attribute Association",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/178",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						"178"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Attribute Association By Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/by_data_model_id/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						"by_data_model_id",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Attribute Association By Entity Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/by_entity_id/340?including_extended_by_data_model_id=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						"by_entity_id",
+						"340"
+					],
+					"query": [
+						{
+							"key": "including_extended_by_data_model_id",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entity Attribute Association By Attribute Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/by_attribute_id/1820?including_extended_by_data_model_id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						"by_attribute_id",
+						"1820"
+					],
+					"query": [
+						{
+							"key": "including_extended_by_data_model_id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute Inclusion By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"162"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute Inclusions By Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/attributes/by_data_model_id/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"attributes",
+						"by_data_model_id",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute Inclusions By Data Model Id & Entity Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/attributes/by_data_model_id/18/by_entity_id/344",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"attributes",
+						"by_data_model_id",
+						"18",
+						"by_entity_id",
+						"344"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Attribute By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2UpdatedAttribute11\",\n  \"DataType\": \"string\",\n  \"DataModelId\": 25,\n  \"UniqueName\": \"Test2UpdatedAttribute11\",\n  \"Description\": \"This is a test of creating updated attribute\",\n  \"UseConsiderations\": \"consideration\",\n  \"ValueSetId\": null,\n  \"Required\": \"No\",\n  \"Array\": \"No\",\n  \"SourceModel\": null,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"ActivationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null,\n  \"Example\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes/1852",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes",
+						"1852"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Entity Attribute Association By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"EntityId\": 342,\n  \"AttributeId\": 1830,\n  \"Notes\": \"This is updated\",\n  \"CreationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"ActivationDate\": \"2025-08-19T13:58:08.810Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"StateU\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/1791",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						"1791"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Inclusion of Attribute",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Notes\": \"Test updated notes\",\n  \"ActivationDate\": \"2025-08-17T18:32:30.945Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Org2\",\n  \"LevelOfAccess\": \"Private\",\n  \"Queryable\": true,\n  \"Modifiable\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inclusions/184",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Attribute By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/attributes/1830",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes",
+						"1830"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Entity Attribute Association",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/entity_attribute_associations/1794",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"entity_attribute_associations",
+						"1794"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Attribute Inclusion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inclusions/166",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inclusions",
+						"166"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Value Set",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2NewValueSet\",\n  \"Description\": \"This is a test of creating a new value set.\",\n  \"UseConsiderations\": \"considerations\",\n  \"DataModelId\": 25,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T22:25:33.387Z\",\n  \"ActivationDate\": \"2025-08-19T22:25:33.387Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_sets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Value Set Values",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n    \"ValueSetId\": 345,\n    \"DataModelId\": 25,\n    \"Description\": \"This is a test of creating a value for a value set\",\n    \"UseConsiderations\": \"consideration\",\n    \"Value\": \"A\",\n    \"ValueName\": \"A\",\n    \"OriginalValueId\": null,\n    \"Source\": null,\n    \"Notes\": null,\n    \"CreationDate\": \"2025-08-19T22:31:49.065Z\",\n    \"ActivationDate\": \"2025-08-19T22:31:49.065Z\",\n    \"DeprecationDate\": null,\n    \"Contributor\": \"Mary Gwozdz\",\n    \"ContributorOrganization\": \"Unicon\",\n    \"Extension\": false,\n    \"ExtensionNotes\": null\n    },\n    {\n    \"ValueSetId\": 345,\n    \"DataModelId\": 25,\n    \"Description\": \"This is a test of creating a value for a value set\",\n    \"UseConsiderations\": \"consideration\",\n    \"Value\": \"B\",\n    \"ValueName\": \"B\",\n    \"OriginalValueId\": null,\n    \"Source\": null,\n    \"Notes\": null,\n    \"CreationDate\": \"2025-08-19T22:31:49.065Z\",\n    \"ActivationDate\": \"2025-08-19T22:31:49.065Z\",\n    \"DeprecationDate\": null,\n    \"Contributor\": \"Mary Gwozdz\",\n    \"ContributorOrganization\": \"Unicon\",\n    \"Extension\": false,\n    \"ExtensionNotes\": null\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_set_values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_set_values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Value Set With Values",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ValueSet\": {\n    \"Name\": \"Test2AnotherNewValueSetWithValues\",\n    \"Description\": \"This is a test of creating a new value set with values.\",\n    \"UseConsiderations\": \"considerations\",\n    \"DataModelId\": 18,\n    \"Notes\": null,\n    \"CreationDate\": \"2025-08-19T22:34:39.754Z\",\n    \"ActivationDate\": \"2025-08-19T22:34:39.754Z\",\n    \"DeprecationDate\": null,\n    \"Contributor\": \"Mary Gwozdz\",\n    \"ContributorOrganization\": \"Unicon\",\n    \"Extension\": false,\n    \"ExtensionNotes\": null\n  },\n  \"Values\": [\n    {\n      \"Description\": \"This is a test of creating values at the same time as the value set.\",\n      \"UseConsiderations\": null,\n      \"Value\": \"TEST3\",\n      \"ValueName\": \"Test Three\",\n      \"OriginalValueId\": null,\n      \"Source\": null,\n      \"Notes\": null,\n      \"CreationDate\": \"2025-08-19T22:34:39.754Z\",\n      \"ActivationDate\": \"2025-08-19T22:34:39.754Z\",\n      \"DeprecationDate\": null,\n      \"Contributor\": \"Mary Gwozdz\",\n      \"ContributorOrganization\": \"Unicon\",\n      \"Extension\": false,\n      \"ExtensionNotes\": null\n    },\n    {\n      \"Description\": \"This is a test of creating values at the same time as the value set.\",\n      \"UseConsiderations\": null,\n      \"Value\": \"TEST4\",\n      \"ValueName\": \"Test Four\",\n      \"OriginalValueId\": null,\n      \"Source\": null,\n      \"Notes\": null,\n      \"CreationDate\": \"2025-08-19T22:34:39.754Z\",\n      \"ActivationDate\": \"2025-08-19T22:34:39.754Z\",\n      \"DeprecationDate\": null,\n      \"Contributor\": \"Mary Gwozdz\",\n      \"ContributorOrganization\": \"Unicon\",\n      \"Extension\": false,\n      \"ExtensionNotes\": null\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_sets/with_values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets",
+						"with_values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associate ValueSet with Existing Attribute",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"DataType\": \"Enum\",\n    \"ValueSetId\": 347\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes/1841",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes",
+						"1841"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associate ValueSet with New Attribute",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"MDRTest2\",\n  \"DataType\": \"Enum\",\n  \"DataModelId\": 25,\n  \"UniqueName\": \"MDRTest2\",\n  \"Description\": \"This is a test of creating a new Source attribute\",\n  \"UseConsiderations\": \"consideration\",\n  \"ValueSetId\": 343,\n  \"Required\": \"No\",\n  \"Array\": \"No\",\n  \"SourceModel\": null,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"ActivationDate\": \"2025-08-19T13:42:40.259Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/attributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value Set By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_sets/343",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets",
+						"343"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value Sets By Data Model Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_sets/by_data_model_id/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets",
+						"by_data_model_id",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attribute Metadata for ValueSet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_sets/usage/333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets",
+						"usage",
+						"333"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ValueSet Values by ValueSet Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_set_values/by_valueset_id/335",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_set_values",
+						"by_valueset_id",
+						"335"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ValueSet Value by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_set_values/337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_set_values",
+						"337"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update ValueSet by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name\": \"Test2UpdatedValueSet\",\n  \"Description\": \"This is a test of updating a value set.\",\n  \"UseConsiderations\": \"considerations\",\n  \"DataModelId\": 25,\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-19T22:25:33.387Z\",\n  \"ActivationDate\": \"2025-08-19T22:25:33.387Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"Extension\": false,\n  \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_sets/348",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets",
+						"348"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update ValueSet Value by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"DataModelId\": 25,\n    \"Description\": \"This is a test of creating a value for a value set\",\n    \"UseConsiderations\": \"consideration\",\n    \"Value\": \"B\",\n    \"ValueName\": \"B\",\n    \"OriginalValueId\": null,\n    \"Source\": null,\n    \"Notes\": null,\n    \"CreationDate\": \"2025-08-19T22:31:49.065Z\",\n    \"ActivationDate\": \"2025-08-19T22:31:49.065Z\",\n    \"DeprecationDate\": null,\n    \"Contributor\": \"Mary Gwozdz\",\n    \"ContributorOrganization\": \"Unicon\",\n    \"Extension\": false,\n    \"ExtensionNotes\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_set_values/4770",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_set_values",
+						"4770"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ValueSet By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_sets/337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_sets",
+						"337"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ValueSet Value by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_set_values/4770",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_set_values",
+						"4770"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Transformation Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"SourceDataModelId\": 25,\n  \"TargetDataModelId\": 17,\n  \"Name\": \"TestNewSourceModel_StateULIF\",\n  \"GroupVersion\": \"1.0\",\n  \"Description\": \"Testing creating transformation group\",\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-26T16:04:47.192Z\",\n  \"ActivationDate\": \"2025-08-26T16:04:47.192Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Transformation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"TransformationGroupId\": 22,\n  \"Name\": \"TestOrgEntity.TestNewOrgAttribute\",\n  \"Expression\": \"TestOrgEntity.TestNewOrgAttribute = TestNewSourceEntity.TestNewSourceAttribute\",\n  \"ExpressionLanguage\": \"JSONata\",\n  \"Notes\": null,\n  \"Alignment\": null,\n  \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n  \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"SourceAttributes\": [\n    {\n      \"EntityId\": 341,\n      \"AttributeId\": 1851,\n      \"AttributeType\": \"Source\",\n      \"Notes\": null,\n      \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n      \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n      \"DeprecationDate\": null,\n      \"Contributor\": \"Mary Gwozdz\",\n      \"ContributorOrganization\": \"Unicon\",\n      \"EntityIdPath\": \"TestNewSourceEntity.TestChildSourceEntity\"\n    }\n  ],\n  \"TargetAttribute\": {\n    \"EntityId\": 212,\n    \"AttributeId\": 1815,\n    \"AttributeType\": \"Target\",\n    \"Notes\": null,\n    \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n    \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n    \"DeprecationDate\": null,\n    \"Contributor\": \"Mary Gwozdz\",\n    \"ContributorOrganization\": \"Unicon\",\n    \"EntityIdPath\": \"Person.CredentialAward.issuerOrganization\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/transformations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"transformations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transformation Group by Source and Target Data Model Ids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/source_and_target/?source_data_model_id=25&target_data_model_id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"source_and_target",
+						""
+					],
+					"query": [
+						{
+							"key": "source_data_model_id",
+							"value": "25"
+						},
+						{
+							"key": "target_data_model_id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transformations by Source and Target Data Model Ids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/transformations_for_data_models/?source_data_model_id=25&target_data_model_id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"transformations_for_data_models",
+						""
+					],
+					"query": [
+						{
+							"key": "source_data_model_id",
+							"value": "25"
+						},
+						{
+							"key": "target_data_model_id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transformations by Path Ids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/transformations_by_path_ids/?entity_id_path=TestNewSourceEntity.TestChildSourceEntity&attribute_id=1851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"transformations_by_path_ids",
+						""
+					],
+					"query": [
+						{
+							"key": "entity_id_path",
+							"value": "TestNewSourceEntity.TestChildSourceEntity"
+						},
+						{
+							"key": "attribute_id",
+							"value": "1851"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Transformation Group",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"SourceDataModelId\": 25,\n  \"TargetDataModelId\": 17,\n  \"Name\": \"TestNewSourceModel_StateULIF\",\n  \"GroupVersion\": \"1.0\",\n  \"Description\": \"Testing updating transformation group\",\n  \"Notes\": null,\n  \"CreationDate\": \"2025-08-26T16:04:47.192Z\",\n  \"ActivationDate\": \"2025-08-26T16:04:47.192Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Transformation without Attributes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"TransformationGroupId\": 18,\n  \"Name\": \"TestOrgEntity.TestNewOrgAttribute\",\n  \"Expression\": \"TestOrgEntity.TestNewOrgAttribute = TestNewSourceEntity.TestNewSourceAttribute + Update\",\n  \"ExpressionLanguage\": \"JSONata\",\n  \"Notes\": null,\n  \"Alignment\": null,\n  \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n  \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/transformations/1342",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"transformations",
+						"1342"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Transformation with Attributes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"TransformationGroupId\": 22,\n  \"Name\": \"TestOrgEntity.TestNewOrgAttribute\",\n  \"Expression\": \"TestOrgEntity.TestNewOrgAttribute = TestNewSourceEntity.TestNewSourceAttribute\",\n  \"ExpressionLanguage\": \"JSONata\",\n  \"Notes\": null,\n  \"Alignment\": null,\n  \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n  \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"SourceAttributes\": [\n    {\n      \"EntityId\": 341,\n      \"AttributeId\": 1851,\n      \"AttributeType\": \"Source\",\n      \"Notes\": null,\n      \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n      \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n      \"DeprecationDate\": null,\n      \"Contributor\": \"Mary Gwozdz\",\n      \"ContributorOrganization\": \"Unicon\",\n      \"EntityIdPath\": \"TestNewSourceEntity.TestChildSourceEntity\"\n    }\n  ],\n  \"TargetAttribute\": {\n    \"EntityId\": 342,\n    \"AttributeId\": 1833,\n    \"AttributeType\": \"Target\",\n    \"Notes\": null,\n    \"CreationDate\": \"2025-08-26T16:59:03.522Z\",\n    \"ActivationDate\": \"2025-08-26T16:59:03.522Z\",\n    \"DeprecationDate\": null,\n    \"Contributor\": \"Mary Gwozdz\",\n    \"ContributorOrganization\": \"Unicon\",\n    \"EntityIdPath\": \"TestOrgEntity\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/transformations/1350",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"transformations",
+						"1350"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transformation Group",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transformation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/transformation_groups/transformations/1342",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transformation_groups",
+						"transformations",
+						"1342"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Value Mapping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"SourceValueSetId\": 343,\n  \"SourceValueId\": 4766,\n  \"TargetValueSetId\": 347,\n  \"TargetValueId\": 4773,\n  \"Description\": \"Example of value mapping\",\n  \"OriginalValueMappingId\": null,\n  \"Notes\": null,\n  \"UseConsiderations\": \"considerations\",\n  \"CreationDate\": \"2025-08-28T18:15:22.032Z\",\n  \"ActivationDate\": \"2025-08-28T18:15:22.032Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"TransformationGroupId\": 22\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Value Mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"SourceValueSetId\": 343,\n  \"SourceValueId\": 4766,\n  \"TargetValueSetId\": 347,\n  \"TargetValueId\": 4773,\n  \"Description\": \"Example of updating value mapping\",\n  \"OriginalValueMappingId\": null,\n  \"Notes\": null,\n  \"UseConsiderations\": \"considerations\",\n  \"CreationDate\": \"2025-08-28T18:15:22.032Z\",\n  \"ActivationDate\": \"2025-08-28T18:15:22.032Z\",\n  \"DeprecationDate\": null,\n  \"Contributor\": \"Mary Gwozdz\",\n  \"ContributorOrganization\": \"Unicon\",\n  \"TransformationGroupId\": 22\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/2348",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						"2348"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value Mapping By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/2347",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						"2347"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value Mappings By Transformation Group Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/by_transformation_group/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						"by_transformation_group",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value Mappings By Value Ids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/by_value_ids/?source_value_id=4765",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						"by_value_ids",
+						""
+					],
+					"query": [
+						{
+							"key": "source_value_id",
+							"value": "4765"
+						},
+						{
+							"key": "target_value_id",
+							"value": "4772",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value Mappings By Value Set Ids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/by_value_set_ids/?source_value_set_id=343&target_value_set_id=347",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						"by_value_set_ids",
+						""
+					],
+					"query": [
+						{
+							"key": "source_value_set_id",
+							"value": "343"
+						},
+						{
+							"key": "target_value_set_id",
+							"value": "347"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Value Mapping by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/value_mappings/2346",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"value_mappings",
+						"2346"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

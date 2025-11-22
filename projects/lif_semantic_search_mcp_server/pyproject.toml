@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lif_semantic_search_mcp_server"
+version = "0.1.0"
+
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "fastmcp~=2.9",
+    "httpx~=0.28",
+    "jsonref~=1.1",
+    "numpy~=2.3",
+    "pydantic~=2.11",
+    "sentence-transformers~=4.1",
+]
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+# This section is needed for building
+[tool.hatch.build.targets.wheel]
+packages = ["lif"]
+
+[tool.polylith.bricks]
+"../../bases/lif/semantic_search_mcp_server" = "lif/semantic_search_mcp_server"
+"../../components/lif/logging" = "lif/logging"
+"../../components/lif/datatypes" = "lif/datatypes"
+"../../components/lif/exceptions" = "lif/exceptions"
+"../../components/lif/openapi_schema_parser" = "lif/openapi_schema_parser"
+"../../components/lif/semantic_search_service" = "lif/semantic_search_service"
+"../../components/lif/string_utils" = "lif/string_utils"
+"../../components/lif/mdr_client" = "lif/mdr_client"

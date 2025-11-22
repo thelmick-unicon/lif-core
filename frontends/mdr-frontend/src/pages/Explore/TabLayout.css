@@ -1,0 +1,95 @@
+.tab-layout {
+  .tab-list { margin-left: -1px;
+
+    /* Adjust for border of first TabTrigger */
+    .rt-TabsTrigger {
+      color: var(--theme-text);
+      background-color: var(--tab-bg);
+      border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+      border: 1px inset var(--slate-a5);
+      border-bottom: none;
+
+      &[data-state="active"] {
+        font-weight: bold;
+        background-color: white !important;
+        &::before { height: 0; }
+      }
+      &:hover { background-color: var(--tab-active); }
+      +.rt-TabsTrigger { margin-left: 0.25em; }
+      .rt-TabsTriggerInner { background-color: unset !important; }
+    }
+  }
+
+  .tab-content { background-color: white; }
+}
+
+.col-layout {
+  padding: 0;
+  margin: 1rem;
+  overflow: auto;
+  line-height: 1.25rem;
+
+  .data-loading { display: none; height: 100%;   }
+  &.column-model.pending {
+    .json-tree-wrapper { display: none; }
+    .data-loading { display: block;
+      .col-body { min-height: calc(100% - 100px); text-align: center;
+        .spinner { display: flex; justify-content: center; align-items: center; }
+      }
+    }
+  }
+
+  .col-head,
+  .col-head-inner {
+    margin: 0;
+    padding: 1.5rem 2rem;
+    background-color: var(--col-bg-head);
+    border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+  }
+  .col-head { position:-webkit-sticky; position:sticky; top:0; z-index:5; }
+
+  .col-body,
+  .col-body-inner {
+    padding: 1rem 2rem;
+    background-color: var(--col-bg-body);
+  }
+  .col-body.thin,
+  .thin .col-body-inner { padding-left: 12px; padding-right: 12px; }
+
+  &.column-properties {
+    &:nth-child(1) { display: none !important; }
+
+    .col-head .actions { margin-left: auto; display: flex; gap: 12px;
+      button { cursor: pointer;}
+    }
+    .col-body {
+      .rt-DataListLabel {
+        font-weight: bold;
+        color: var(--theme-text);
+      }
+    }
+  }
+
+
+}
+
+.col-layout:nth-child(n+4) { display: none !important; }
+
+/* Dropdown menu */
+.menu-content {
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: .5rem;
+  padding: .25rem;
+  min-width: 160px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+
+  .menu-item {
+    padding: .375rem .5rem;
+    border-radius: .375rem;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .menu-item[data-highlighted] { background: #f3f4f6; }
+}

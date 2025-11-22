@@ -1,0 +1,627 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org3",
+          "lastName": "Hanson",
+          "firstName": "Matt"
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org3",
+              "emailAddress": [
+                "mhanson_lifdemo@stateu.edu"
+              ]
+            }
+          ],
+          "address": [
+            {
+              "informationSourceId": "Org3",
+              "addressCity": "Marietta",
+              "countryCode": "US",
+              "addressState": "Georgia",
+              "addressPostalCode": "30008"
+            }
+          ],
+          "telephone": [
+            {
+              "informationSourceId": "Org3",
+              "telephoneNumber": [
+                "+12345678910"
+              ]
+            }
+          ],
+          "informationSourceId": "Org3"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org3",
+          "identifier": "100005",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        },
+        {
+          "informationSourceId": "Org3",
+          "identifier": "SVU-20250005",
+          "identifierType": "Summit Valley University student ID"
+        }
+      ],
+      "credentialAward": [
+        {
+          "informationSourceId": "Org3",
+          "awardStatus": "InProgress",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "641d3d79-cf40-47e3-9396-7f4d067ceccd",
+          "awardIssueDate": "2023-10-25",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "id": "cred-proficiency-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Matt Hanson",
+          "informationSourceId": "Org3"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "5367f3bd-e285-4880-be4f-75f270c99de9",
+          "awardIssueDate": "2024-11-14T02:37:11Z",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "21448b4f-163d-4806-b0f4-28ffd06a078a",
+          "awardIssueDate": "2021-08-05",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org3",
+            "id": ""
+          },
+          "informationSourceId": "Org3",
+          "id": "8f6e6d12-2693-4543-85ac-f57174f5863f",
+          "awardIssueDate": "2021-10-12T17:39:31Z",
+          "credentialAwardee": "Matt Hanson"
+        }
+      ],
+      "courseLearningExperience": [
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "5367f3bd-e285-4880-be4f-75f270c99de9",
+            "awardIssueDate": "2024-11-14T02:37:11Z",
+            "credentialAwardee": "Matt Hanson"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "21448b4f-163d-4806-b0f4-28ffd06a078a",
+            "awardIssueDate": "2021-08-05",
+            "credentialAwardee": "Matt Hanson"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org3",
+            "name": "Summit Valley University",
+            "identificationSystem": "Summit Valley University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org3",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org3"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org3"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org3",
+            "id": "8f6e6d12-2693-4543-85ac-f57174f5863f",
+            "awardIssueDate": "2021-10-12T17:39:31Z",
+            "credentialAwardee": "Matt Hanson"
+          }
+        }
+      ],
+      "proficiency": [
+        {
+          "informationSourceId": "Org3",
+          "name": "Principles of Public Health",
+          "description": "Explains the core principles and goals of public and community health.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Determinants of Health",
+          "description": "Identifies and analyzes social, environmental, and economic factors that influence individual and community health outcomes.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Health Disparities and Equity",
+          "description": "Describes health disparities and strategies to promote health equity in diverse populations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Introduction to Epidemiology",
+          "description": "Explains key concepts such as incidence, prevalence, risk, and disease prevention in public health.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Health Behavior Theories",
+          "description": "Applies behavioral science theories to understand and influence health-related behaviors in individuals and communities.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Community Health Needs Assessment",
+          "description": "Describes methods used to assess the health needs and assets of communities.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Cultural Competency in Health Promotion",
+          "description": "Demonstrates cultural awareness and adapts health programs to meet the needs of diverse populations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Health Literacy and Communication",
+          "description": "Communicates public health information effectively to audiences with varying levels of health literacy.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Public Health Systems and Policy",
+          "description": "Identifies components of the U.S. public health system and explains how health policies affect community outcomes.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Introduction to Health Promotion Planning",
+          "description": "Outlines the steps for designing, implementing, and evaluating a basic community health promotion program.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Ethical Issues in Community Health",
+          "description": "Examines ethical considerations in public health decision-making and service delivery.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Health and Wellness Promotion Across the Lifespan",
+          "description": "Identifies strategies for promoting health and wellness across different life stages and populations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Principles of Health Education",
+          "description": "Explains the role and purpose of health education in promoting behavior change and improving public health outcomes.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Behavior Change Theories in Health Education",
+          "description": "Applies models like the Health Belief Model and Transtheoretical Model to design effective health interventions.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Assessment of Health Education Needs",
+          "description": "Conducts assessments to determine the health education needs of individuals and communities.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Health Communication Strategies",
+          "description": "Selects communication channels and techniques to deliver culturally relevant and accessible health messages.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Developing Health Education Materials",
+          "description": "Creates educational content aligned with learning objectives and appropriate for the target population\u2019s literacy level.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Planning Health Education Programs",
+          "description": "Outlines the process for planning health education programs, including setting goals and identifying resources.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Facilitation of Group-Based Education Sessions",
+          "description": "Demonstrates effective facilitation skills in delivering group-based health education activities.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Motivational Interviewing Techniques",
+          "description": "Uses motivational interviewing to support individuals in exploring and achieving behavior change goals.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Behavioral Goal Setting and Evaluation",
+          "description": "Guides individuals in setting achievable health goals and measuring their progress.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Evaluating Health Education Effectiveness",
+          "description": "Designs and implements plans to measure the impact of health education programs.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Cultural and Ethical Considerations in Health Education",
+          "description": "Incorporates cultural sensitivity and ethical guidelines into health education design and delivery.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        },
+        {
+          "informationSourceId": "Org3",
+          "name": "Collaboration with Public Health Stakeholders",
+          "description": "Works with healthcare professionals and community organizations to coordinate and deliver effective health education.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org3"
+          }
+        }
+      ],
+      "informationSourceId": "Org3"
+    }
+  ],
+  "course": [
+    {
+      "informationSourceId": "Org3",
+      "identifier": [
+        {
+          "identifier": "CS651",
+          "identifierType": "Course Code",
+          "identifierVerification": [
+            "Academic Records"
+          ],
+          "informationSourceId": "Org3"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
+      "contact": [
+        {
+          "address": [
+            {
+              "addressCity": "Aspen Falls",
+              "countryCode": "US",
+              "addressState": "Colorado",
+              "addressStreet": "123 Innovation Drive, Suite 500",
+              "addressPostalCode": "80901",
+              "informationSourceId": "Org3"
+            }
+          ],
+          "email": [
+            {
+              "emailAddress": [
+                "info@summitvalley.edu"
+              ],
+              "informationSourceId": "Org3"
+            }
+          ],
+          "websiteAddress": "https://www.summitvalley.edu/",
+          "telephone": [
+            {
+              "telephoneNumber": [
+                "888-555-7210"
+              ],
+              "informationSourceId": "Org3"
+            }
+          ],
+          "informationSourceId": "Org3"
+        }
+      ],
+      "imageUrl": "https://cdn.summitvalley.edu/assets/logo.svg",
+      "identifier": [
+        {
+          "identifier": "999112233",
+          "identifierType": "Federal employer identification number",
+          "informationSourceId": "Org3"
+        },
+        {
+          "identifier": "123456789",
+          "identifierType": "Dun and Bradstreet number",
+          "informationSourceId": "Org3"
+        },
+        {
+          "identifier": "https://credentialfinder.org/organization/999/Summit_Valley_University",
+          "identifierType": "credentialfinder.org",
+          "informationSourceId": "Org3"
+        }
+      ],
+      "identificationSystem": "Summit Valley University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "svu-corporate-partner-id",
+      "name": "Summit Valley Corporate Partner",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org3"
+    },
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "identificationSystem": "Summit Valley University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-state-university-id",
+      "name": "State University",
+      "organizationType": [
+        "University"
+      ],
+      "informationSourceId": "Org3"
+    },
+    {
+      "informationSourceId": "Org3",
+      "name": "Summit Valley University",
+      "identificationSystem": "summit-valley-university-sis",
+      "organizationType": []
+    }
+  ],
+  "credential": [
+    {
+      "informationSourceId": "Org3",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "Bachelor of Science in Health and Wellness",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "alignedProgram": [
+        {
+          "specialization": "Community Health Promotion",
+          "informationSourceId": "Org3"
+        }
+      ],
+      "issuedByRefOrganization": {
+        "informationSourceId": "Org3",
+        "name": "Summit Valley University",
+        "identificationSystem": "summit-valley-university-sis",
+        "organizationType": []
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org3",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org3",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+    }
+  ],
+  "informationSourceId": "Org3"
+}

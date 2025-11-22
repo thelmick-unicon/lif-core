@@ -1,0 +1,16 @@
+.group-editor__summary { margin: 4px 0 10px; display: flex; flex-direction: column; gap: 6px; }
+.group-editor__summary-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.group-editor__pill { background: #eef5f5; border: 1px solid #dbe4e6; border-radius: 10px; padding: 4px 10px; }
+.group-editor__badge { background: #e7f6ee; color: #14532d; border: 1px solid #cfead9; border-radius: 10px; padding: 2px 8px; font-weight: 600; }
+.group-editor__arrow { color: #334155; }
+.group-editor__summary-meta { display: flex; gap: 14px; flex-wrap: wrap; color: #334155; }
+.group-editor__grid { display: grid; grid-template-columns: 180px 1fr; gap: 10px 14px; margin-top: 10px; }
+.group-editor__label { align-self: center; font-weight: 600; color: #334155; }
+.group-editor__label--block { grid-column: 1 / -1; margin-top: 6px; }
+.group-editor__input, .group-editor__textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px; font-size: 14px; box-sizing: border-box; }
+.group-editor__textarea { resize: vertical; }
+.group-editor__textarea--block { grid-column: 1 / -1; }
+.group-editor__actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px; }
+.group-editor__btn { border: 1px solid #cbd5e1; background: #fff; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+.group-editor__btn--primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+.group-editor__btn:disabled { opacity: 0.6; cursor: default; }

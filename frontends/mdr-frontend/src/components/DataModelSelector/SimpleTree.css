@@ -1,0 +1,75 @@
+/* Wrapper & Head */
+.simple-tree { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, 'Apple Color Emoji', 'Segoe UI Emoji';
+    .model { margin: unset; padding: unset; border: unset; border-radius: unset; }
+    .col-head { display:flex; align-items:center; gap:.5rem; padding:.5rem 0; border-bottom:1px solid #e5e7eb; }
+    /* .col-body { min-height: calc(100% - 100px);} */
+    .col-head-inner { display:flex; align-items:center; gap:.5rem; padding:.5rem 0; }
+    .col-body-inner { padding:.25rem 0; }
+    .head-group { width: 100%; }
+    .col-title { margin:0; line-height:1.1em; font-weight:600; }
+    .addNew {
+        float:right; cursor:pointer; padding:.25rem .5rem;
+        border:1px solid #e5e7eb; border-radius:.375rem;
+        color:#ffffff; background:#4D5E80;
+    }
+    .addNew:hover,
+    .addNew:focus-visible { background:#5e739d; }
+    .tree-search { width:100%;}
+    .head-group .tree-search { margin-top:18px;}
+    .tree-search input { width: 96%; border:1px solid #e5e7eb; border-radius:.375rem; padding:.25rem .5rem; }
+
+    /* Leaves */
+    .leaf-toggle-spacer { width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; }
+    .leaf-toggle-all {
+        width:18px; height:18px;
+        display:flex; align-items:center; justify-content:center;
+        border:1px solid #e5e7eb; background:#fff; border-radius:.25rem;
+        line-height:1; padding:0; cursor:pointer;
+    }
+    .leaf-toggle-all:hover { background:#f9fafb; }
+    .leaf-toggle-all:focus-visible { outline:2px solid #6366f1; outline-offset:2px; }
+
+    .leaf { display:flex; flex-direction:column; padding-left: 1rem;
+        /* &.has-leaves { padding-left: 1.5rem; } */
+        &.leaf-0 { padding-left: 0;
+            > .leaf-row .leaf-label { font-weight: bold; }
+        }
+        &.no-click button { cursor:default !important; }
+        button.leaf-toggle,
+        button.leaf-label-wrap { color: var(--theme-text); }
+
+        .leaf-row { display:grid; grid-template-columns:18px 1fr; align-items:center; gap:.25rem; padding:2px .25rem; border-radius:.375rem; }
+        .leaf-row:hover { background:#f9fafb;}
+        .leaf-toggle { width:18px; height:18px; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; background:transparent; }
+        .leaf-toggle .caret { transition: transform .15s ease; display:inline-block; }
+        .leaf-toggle[aria-expanded="true"] .caret { transform: rotate(90deg); }
+
+        /* Label & icon */
+        .leaf-label-wrap { display:flex; align-items:center; gap:3px; width:100%; border:none; background:transparent; padding:0; cursor:pointer; }
+        &:not(.no-click) .leaf-label-wrap:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+        .leaf-label-ico { width:10px; height:10px; border-radius:2px; display:inline-block; }
+        .leaf-label { white-space:normal; width:100%; margin:0 6px; padding:4px 6px; overflow:hidden; text-overflow:ellipsis; text-align:left; }
+        &:not(.no-click) .leaf-label:hover { outline: 2px solid #6366f1; outline-offset: -2px; }
+
+        /* Right-side actions */
+        .leaf-actions { display:flex; align-items:center; justify-content:flex-end; }
+        .menu-trigger { border:1px solid #e5e7eb; background:#fff; border-radius:.375rem; padding:.125rem .375rem; cursor:pointer; }
+
+        /* Checkboxes (Radix) */
+        .leaf-chk { width:16px; height:16px; border:1px solid #e5e7eb; border-radius:.25rem; display:inline-flex; align-items:center; justify-content:center; background:white; }
+        .leaf-chk[data-state="checked"] { border-color:#6366f1; }
+        .leaf-chk-ind { font-size:.75rem; line-height:1; }
+    }
+
+    .hide-spacers .leaf-toggle-spacer,
+    .hide-spacers .leaf-toggle { display:none; }
+    .hide-spacers .leaf-row { grid-template-columns:1fr;}
+
+    /* Type color blocks (override as desired) */
+    .leaf-label-ico { background:#000000; }
+    .leaf-BaseLIF .leaf-label-ico { background:#3b82f6; }
+    .leaf-OrgLIF .leaf-label-ico { background:#10b981; }
+    .leaf-SourceSchema .leaf-label-ico { background:#8b5cf6; }
+    .leaf-PartnerLIF .leaf-label-ico { background:#f59e0b; }
+    .leaf-Filter .leaf-label-ico { background:#ef4444; }
+}

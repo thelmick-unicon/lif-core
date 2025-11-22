@@ -1,0 +1,131 @@
+/* Wrapper & Head */
+.tree-model-explorer { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, 'Apple Color Emoji', 'Segoe UI Emoji';
+    .model { margin: unset; padding: unset; border: unset; border-radius: unset; }
+    .col-head { display:flex; align-items:center; gap:.5rem; padding:.5rem 0; border-bottom:1px solid #e5e7eb; }
+    .col-head-inner { display:flex; align-items:center; gap:.5rem; padding:0.75rem 2rem !important; }
+    .col-body-inner { padding:.25rem 0; }
+    .head-group { width: 100%;
+        .col-title { margin:0; line-height:1.1em; font-weight:600; }
+        button {
+            cursor:pointer; padding:.25rem .5rem;
+            border:1px solid #e5e7eb; border-radius:.375rem;
+            color:#ffffff; background:#4D5E80;
+            &:hover,
+            &:focus-visible { background:#5e739d; }
+            + button { margin-left:.25rem; }
+        }
+        .tree-search { width:100%; margin-top:18px;
+            input { width:96%; border:1px solid #e5e7eb; border-radius:.375rem; padding:.25rem .5rem; }
+        }
+    }
+
+    /* Legend */
+    .legend { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-around; gap:1rem; padding:1em 0; font-size:.875rem; color:#374151; }
+    .legend-item { display:flex; flex:0 0 auto; align-items:center; gap:.375rem; }
+    .legend-ico { width:10px; height:10px; border-radius:2px; display:inline-block; }
+    .legend-label { text-transform:capitalize;}
+
+    /* OpenAPI Download Schema */
+    .openapi-dl { display: inline-flex; align-items: center; gap: 8px; font-size: 13px;
+        .openapi-dl-header { font-weight: bold; margin-top: 6px; }
+        .openapi-dl-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e2e8f0;
+            background: #fff;
+            border-radius: 6px;
+            transition: background 0.15s, box-shadow 0.15s, border-color 0.15s;
+            cursor: pointer;
+            padding: 0.5em;
+            font-size: 13px;
+            &:disabled { cursor: not-allowed; }
+        }
+        .openapi-dl-btn:hover { background: #f1f5f9; border-color: #cbd5e1; }
+        .openapi-dl-btn:active { background: #e2e8f0; }
+        .openapi-dl-pub { font-size: 12px; font-weight: normal; cursor: pointer;
+            &:disabled { cursor: not-allowed; }
+        }
+    }
+
+    /* Body grid headers for checkboxes */
+    .col-body { padding-top:0 !important; padding-bottom: 0 !important;}
+    .col-field-headers {
+        display:grid; grid-template-columns:18px 1fr 28px 28px 28px;
+        align-items:center; gap:.25rem; padding:.25rem .25rem;
+        color:#6b7280; font-size:.75rem; font-weight: 500;
+    }
+    .col-chkhead { display:flex; align-items:center; justify-content:center; font-weight: bold; }
+    .leaf-toggle-spacer { width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; }
+    .leaf-toggle-all {
+        width:18px; height:18px;
+        display:flex; align-items:center; justify-content:center;
+        border:1px solid #e5e7eb; background:#fff; border-radius:.25rem;
+        line-height:1; padding:0; cursor:pointer;
+    }
+    .leaf-toggle-all:hover,
+    .leaf-toggle-all:focus-visible { outline:2px solid #6366f1; outline-offset:2px; background:#f9fafb; }
+
+    .thin {
+        .legend { padding:0.5em 0; }
+    }
+
+    /* Leaves */
+    .leaf { display:flex; flex-direction:column; padding-left: 1rem;
+        /* &.has-leaves { padding-left: 1.5rem; } */
+        &.part-ref .leaf-label { font-style: italic; }
+        &.leaf-0 { padding-left: 0; }
+        button.leaf-toggle,
+        button.leaf-label-wrap { color: var(--theme-text); }
+
+        .leaf-row { display:grid; grid-template-columns: 18px 1fr 24px 24px 28px; align-items:center; gap:.25rem; padding:.25rem .25rem; border-radius:.375rem; }
+        .leaf-row:hover { background:#f9fafb; }
+        .leaf-toggle { width:18px; height:18px; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; background:transparent; }
+        .leaf-toggle .caret { transition: transform .15s ease; display:inline-block; }
+        .leaf-toggle[aria-expanded="true"] .caret { transform: rotate(90deg); }
+
+        /* Label & icon */
+        .leaf-label-wrap { display:flex; align-items:center; gap:3px; width:100%; border:none; background:transparent; padding:0; cursor:pointer; }
+        .leaf-label-wrap:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+        .leaf-label-ico { width:10px; height:10px; border-radius:2px; display:inline-block; }
+        .leaf-label { white-space:normal; width:100%; margin:0 2px; padding:4px 2px; overflow:hidden; text-overflow:ellipsis; cursor:pointer; text-align:left; overflow-wrap:anywhere; }
+        .leaf-label:hover { outline: 2px solid #6366f1; outline-offset: -2px; }
+
+        /* Right-side actions */
+        .leaf-actions { display:flex; align-items:center; justify-content:flex-end; }
+        .menu-trigger { border:1px solid #e5e7eb; background:#fff; border-radius:.375rem; padding:.125rem .375rem; cursor:pointer; }
+
+        /* Checkboxes (Radix) */
+        .leaf-cbx { width:16px; height:16px; display:inline-flex; }
+        .leaf-chk { width:16px; height:16px; border:1px solid #e5e7eb; border-radius:.25rem; display:inline-flex; align-items:center; justify-content:center; background:white; cursor:pointer; }
+        .leaf-chk:disabled { opacity:0.5; cursor:not-allowed; }
+        .leaf-chk[data-state="checked"] { border-color:#6366f1; }
+        .leaf-chk-ind { font-size:.75rem; line-height:1; }
+
+        /* Depth indents */
+        /* .leaf-0 { padding-left: 0.25rem; }
+        .leaf-1 { padding-left: 1.00rem; }
+        .leaf-2 { padding-left: 1.75rem; }
+        .leaf-3 { padding-left: 2.5rem; }
+        .leaf-4 { padding-left: 3.25rem; }
+        .leaf-5 { padding-left: 4.00rem; }
+
+        .leaf-1.no-leaves { padding-left: .70rem; }
+        .leaf-2.no-leaves { padding-left: 1.55rem; }
+        .leaf-3.no-leaves { padding-left: 2.25rem; }
+        .leaf-4.no-leaves { padding-left: 3.00rem; }
+        .leaf-5.no-leaves { padding-left: 3.75rem; } */
+
+
+    }
+
+    /* Type color blocks (override as desired) */
+    .leaf .leaf-model .leaf-label-ico, .legend-ico.model { background:#000000; }
+    .leaf .leaf-entity .leaf-label-ico, .legend-ico.entity { background:#10b981; }
+    .leaf .leaf-extension .leaf-label-ico, .legend-ico.extension { background:#3b82f6; }
+    .leaf .leaf-partner .leaf-label-ico, .legend-ico.partner { background:#c6d42c; }
+    .leaf .leaf-attribute .leaf-label-ico, .legend-ico.attribute { background:#8b5cf6; }
+    .leaf .leaf-valueSet .leaf-label-ico, .legend-ico.valueSet { background:#f59e0b; }
+    .leaf .leaf-value .leaf-label-ico, .legend-ico.value { background:#ef4444; }
+
+}

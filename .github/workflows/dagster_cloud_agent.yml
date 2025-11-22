@@ -1,0 +1,52 @@
+name: Deploy Dagster Cloud Agent to Amazon ECS
+
+env:
+  AWS_REGION: us-east-1
+  GHA_ROLE: "arn:aws:iam::381492161417:role/lif-github-actions-dev"
+  ECS_CLUSTER: dev
+  ECS_SERVICE: dagster-cloud-agent-FARGATE
+
+permissions:
+      id-token: write
+      contents: read
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main", "feature/dagster-init" ]
+    paths:
+      - .github/workflows/dagster_cloud_agent.yml
+      - cloudformation/dev-dagster-cloud-agent.params
+      - cloudformation/dagster-cloud-agent-taskdef-includes.yml
+      - cloudformation/dagster-cloud-agent-taskrole-includes.yml
+      - projects/dagster_plus_hybrid/dagster_cloud_agent/**
+
+jobs:
+
+  dagster-cloud-agent:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      WORKING_DIR: ./projects/dagster_plus_hybrid/dagster_cloud_agent
+      ECR_REPOSITORY: lif/dev/dagster_cloud_agent
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: ./.github/actions/build-and-push
+      with:
+        working-dir: ${{ env.WORKING_DIR }}
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-cloud-agent-build
+        aws-region: ${{ env.AWS_REGION }}
+        ecr-repository: ${{ env.ECR_REPOSITORY }}
+
+    - uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-cloud-agent-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: ${{ env.ECS_SERVICE }}
+

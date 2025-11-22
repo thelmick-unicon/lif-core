@@ -1,0 +1,18 @@
+Environment:
+  - Name: BAR
+    Value: BAZ
+  - Name: LIF_GRAPHQL_API_URL
+    Value: 
+      Fn::Sub: "http://graphql-org1.lif.${EnvironmentName}.aws:8000/graphql"
+  - Name: LIF_GRAPHQL_ROOT_NODE
+    Value: Person
+  - Name: SEMANTIC_SEARCH_SERVICE__GRAPHQL_TIMEOUT__READ
+    Value: 300
+  - Name: LIF_MDR_API_URL
+    Value: "https://mdr-api.lif.unicon.net"
+  - Name: OPENAPI_DATA_MODEL_ID
+    Value: "17"
+  - Name: OPENAPI_JSON_FILENAME
+    Value: "openapi_constrained_with_interactions.json"
+  - Name: USE_OPENAPI_DATA_MODEL_FROM_FILE
+    Value: "false"

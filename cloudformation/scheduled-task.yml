@@ -1,0 +1,235 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Scheduled Task in ECS
+
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks:
+        - W2001
+        - W1001
+
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: General Environment Configuration
+        Parameters:
+          - ServiceName
+          - EnvironmentName
+          - TaskDefIncludesFile
+          - TaskRoleIncludesFile
+          - EfsFileSystemId
+      - Label:
+          default: ECS Configuration
+        Parameters:
+          - ImageUrl
+          - ContainerMemory
+          - ContainerCpu
+          - ScheduleExpression
+      - Label:
+          default: SSM-sourced parameters
+        Parameters:
+          - EcsCluster
+          - PrivateSubnets
+          - SecurityGroup
+          - EnvironmentKmsKey
+          - S3AppBucket
+
+Parameters:
+
+  EnvironmentName:
+    Type: String
+    Description: The environment name (the SSM prefix path name)
+    Default: webdev
+
+  ServiceName:
+    Type: String
+    Description: The name of the service
+
+  TaskDefIncludesFile:
+    Type: String
+    Description: The S3 url of the secrets includes file
+
+  TaskRoleIncludesFile:
+    Type: String
+    Description: The S3 url of the task policies includes file
+
+  ImageUrl:
+    Type: String
+    Description: The url of a docker image that contains the application process that will execute the scheduled task
+
+  ContainerCpu:
+    Type: Number
+    Description: How much CPU to give the container. 1024 is 1 CPU
+
+  ContainerMemory:
+    Type: Number
+    Description: How much memory in megabytes to give the container
+
+  ScheduleExpression:
+    Type: String
+    Description: "The EventBridge Scheduled Task expression (ex: cron(0 23 * * ? *) # Runs every day at 6 AM (UTC-7))"
+
+  SecurityGroup:
+    Type : 'AWS::SSM::Parameter::Value<AWS::EC2::SecurityGroup::Id>'
+    Description: The name of a SSM parameter store parameter that contains the id of the environment's shared security group
+
+  PrivateSubnets:
+    Type : 'AWS::SSM::Parameter::Value<List<AWS::EC2::Subnet::Id>>'
+    Description: The name of a SSM parameter store parameter that contains a comma-separate list of private subnet ids
+
+  EnvironmentKmsKey:
+    Type : 'AWS::SSM::Parameter::Value<String>'
+    Description: The name of a SSM parameter store parameter that contains the ARN of the KMS key for the environment
+
+  EcsCluster:
+    Type : 'AWS::SSM::Parameter::Value<String>'
+    Description: The name of a SSM parameter store parameter that contains the ARN of the ECS cluster
+
+  EfsFileSystemId:
+    Type : 'AWS::SSM::Parameter::Value<String>'
+    Description: The name of a SSM parameter store parameter that contains the EFS file system id of the shared storage
+
+  S3AppBucket:
+    Type : 'AWS::SSM::Parameter::Value<String>'
+    Description: The arn of the application bucket
+
+Resources:
+
+  ECSTaskExecutionRole:
+    Type: AWS::IAM::Role
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W11
+      cfn-lint:
+        config:
+          ignore_checks:
+            - E3002
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: [ecs-tasks.amazonaws.com]
+          Action: ['sts:AssumeRole']
+      Path: /
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+        - arn:aws:iam::aws:policy/service-role/AWSAppSyncPushToCloudWatchLogs
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      'Fn::Transform':
+        Name: 'AWS::Include'
+        Parameters:
+          Location: !Ref TaskRoleIncludesFile
+
+  TaskDefinition:
+    Type: AWS::ECS::TaskDefinition
+    Metadata:
+      cfn-lint:
+        config:
+          ignore_checks:
+            - E3002
+    Properties:
+      Family: !Sub '${ServiceName}-${EnvironmentName}'
+      Cpu: !Ref ContainerCpu
+      Memory: !Ref ContainerMemory
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      ExecutionRoleArn: !GetAtt ECSTaskExecutionRole.Arn
+      TaskRoleArn: !Ref ECSTaskExecutionRole
+      Volumes:
+        - Name: efs-share
+          EFSVolumeConfiguration:
+            FilesystemId: !Ref EfsFileSystemId
+            TransitEncryption: ENABLED
+            AuthorizationConfig:
+              AccessPointId: !Ref EfsAccessPoint
+      ContainerDefinitions:
+        - Name: !Sub '${ServiceName}'
+          Image: !Ref ImageUrl
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: !Sub '${EnvironmentName}'
+              awslogs-create-group: 'true'
+              awslogs-region: !Ref "AWS::Region"
+              awslogs-stream-prefix: !Sub '${ServiceName}'
+          MountPoints:
+            - SourceVolume: efs-share
+              ContainerPath: /mnt/efs
+          'Fn::Transform':
+            Name: 'AWS::Include'
+            Parameters:
+              Location: !Ref TaskDefIncludesFile
+
+  RunTaskRole:
+    Type: AWS::IAM::Role
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W11
+      cfn-lint:
+        config:
+          ignore_checks:
+            - E3002
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: [events.amazonaws.com]
+          Action: ['sts:AssumeRole']
+      Path: /
+      Policies:
+        - PolicyName: RunTaskPolicy
+          PolicyDocument:
+            Statement:
+            - Effect: Allow
+              Action:
+                - 'ecs:RunTask'
+              Resource: !Ref TaskDefinition
+        - PolicyName: PassRolePolicy
+          PolicyDocument:
+            Statement:
+            - Effect: Allow
+              Action:
+                - 'iam:PassRole'
+              Resource: !GetAtt ECSTaskExecutionRole.Arn
+
+  ScheduledTaskRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: !Sub '${EnvironmentName}-${ServiceName}-FARGATE'
+      Description: !Sub "Runs ${ServiceName} task on a schedule"
+      ScheduleExpression: !Ref ScheduleExpression
+      State: "ENABLED"
+      Targets:
+        -
+          Id: "EcsScheduledTaskTarget"
+          Arn: !Sub "arn:aws:ecs:${AWS::Region}:${AWS::AccountId}:cluster/${EcsCluster}"
+          RoleArn: !GetAtt RunTaskRole.Arn
+          EcsParameters:
+            TaskDefinitionArn: !Ref TaskDefinition
+            TaskCount: 1
+            LaunchType: "FARGATE"
+            NetworkConfiguration:
+              AwsVpcConfiguration:
+                Subnets: !Ref PrivateSubnets
+                SecurityGroups: 
+                  - !Ref SecurityGroup
+
+  EfsAccessPoint:
+    Type: AWS::EFS::AccessPoint
+    Properties:
+      FileSystemId: !Ref EfsFileSystemId
+      PosixUser:
+        Uid: "0"
+        Gid: "0"
+      RootDirectory:
+        CreationInfo:
+          OwnerGid: "0"
+          OwnerUid: "0"
+          Permissions: "0755"
+        Path: !Sub '/${ServiceName}'
+

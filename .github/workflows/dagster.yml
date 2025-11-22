@@ -1,0 +1,64 @@
+name: Deploy Dagster Webserver/Daemon to Amazon ECS
+
+env:
+  AWS_REGION: us-east-1
+  GHA_ROLE: "arn:aws:iam::381492161417:role/lif-github-actions-dev"
+  ECS_CLUSTER: dev
+
+permissions:
+      id-token: write
+      contents: read
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    paths:
+      - .github/workflows/dagster.yml
+      - projects/dagster_oss_ecs/**
+
+jobs:
+
+  dagster-webserver:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      WORKING_DIR: ./
+      ECR_REPOSITORY: lif/dev/dagster
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Prepare for Docker build
+      shell: bash
+      run: |
+        cp projects/dagster_oss_ecs/Dockerfile.dagster Dockerfile
+
+    - name: Build and push docker image
+      uses: ./.github/actions/build-and-push
+      with:
+        working-dir: ${{ env.WORKING_DIR }}
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-build
+        aws-region: ${{ env.AWS_REGION }}
+        ecr-repository: ${{ env.ECR_REPOSITORY }}
+
+    - name: Update the Dagster Webserver ECS Service
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-webserver-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: dagster-webserver-FARGATE
+
+    - name: Update the Dagster Daemon ECS Service
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: dagster-daemon-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: dagster-daemon-FARGATE

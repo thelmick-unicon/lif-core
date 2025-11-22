@@ -1,0 +1,219 @@
+services:
+
+  lif-example-data-source-rest-api:
+    build:
+      context: ../
+      dockerfile: projects/lif_example_data_source_rest_api/Dockerfile2
+    environment:
+      API_TOKEN: ${API_TOKEN:-changeme}
+    ports:
+      - "8011:8011"
+    networks:
+      - lif
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-translator:
+    build:
+      context: ../
+      dockerfile: projects/lif_translator_api/Dockerfile2
+    environment:
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://host.docker.internal:8081}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    ports:
+      - "8007:8007"
+    networks:
+      - lif 
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  mongodb:
+    build:
+      context: ../projects/mongodb
+      dockerfile: Dockerfile
+    environment:
+      MONGO_DB: ${MONGO_DB:-LIF}
+      MONGO_COLLECTION: ${MONGO_COLLECTION:-person}
+      MONGO_HOST: ${MONGO_HOST_ORG1:-mongodb}
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-dev-single-org}
+    ports:
+      - "27017:27017"
+    networks:
+      - lif
+
+#  mongodb-seed:
+#    build: mongodb/mongodb-seed
+#    environment:
+#      MONGO_HOST: ${MONGO_HOST:-mongodb}
+#      MONGO_DB: ${MONGO_DB:-LIF}
+#      MONGO_COLLECTION: ${MONGO_COLLECTION:-person}
+#    networks:
+#      - lif 
+#    depends_on:
+#      - mongodb
+
+  lif-identity-mapper-db:
+    build:
+      context: ../projects/lif_identity_mapper_mariadb
+      dockerfile: Dockerfile
+    environment:
+      MARIADB_ROOT_PASSWORD: ${IDENTITY_MAPPER_DB_ROOT_PASSWORD:-changeme}
+      MARIADB_DATABASE: ${IDENTITY_MAPPER_DB_NAME:-lif}
+      MARIADB_USER: ${IDENTITY_MAPPER_DB_USERNAME:-myuser}
+      MARIADB_PASSWORD: ${IDENTITY_MAPPER_DB_PASSWORD:-mypass}
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org1}
+    ports:
+      - "3306:3306"
+#    volumes:
+#      - mariadb_data:/var/lib/mysql
+
+  lif-identity-mapper:
+    build:
+      context: ../
+      dockerfile: projects/lif_identity_mapper_api/Dockerfile2
+    environment:
+      IDENTITY_MAPPER_DB_DRIVER: ${IDENTITY_MAPPER_DB_DRIVER:-mysql+pymysql}
+      IDENTITY_MAPPER_DB_USERNAME: ${IDENTITY_MAPPER_DB_USERNAME:-myuser}
+      IDENTITY_MAPPER_DB_PASSWORD: ${IDENTITY_MAPPER_DB_PASSWORD:-mypass}
+      IDENTITY_MAPPER_DB_HOST: ${IDENTITY_MAPPER_DB_HOST:-host.docker.internal}
+      IDENTITY_MAPPER_DB_PORT: ${IDENTITY_MAPPER_DB_PORT:-3306}
+      IDENTITY_MAPPER_DB_NAME: ${IDENTITY_MAPPER_DB_NAME:-lif}
+    ports:
+      - "8006:8006"
+    networks:
+      - lif 
+    depends_on:
+      - lif-identity-mapper-db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-query-cache:
+    build:
+      context: ../
+      dockerfile: projects/lif_query_cache_api/Dockerfile2
+    environment:
+      MONGODB_URI: ${MONGODB_URI:-mongodb://host.docker.internal:27017}
+    ports:
+      - "8001:8001"
+    networks:
+      - lif 
+    depends_on:
+      - mongodb
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-query-planner:
+    build:
+      context: ../
+      dockerfile: projects/lif_query_planner_api/Dockerfile2
+    environment:
+      LIF_QUERY_CACHE_URL: ${LIF_QUERY_CACHE_URL:-http://host.docker.internal:8001}
+      LIF_ORCHESTRATOR_URL: ${LIF_ORCHESTRATOR_URL:-http://host.docker.internal:8008}
+      LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH: ${LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH:-./information_sources_config.yml}
+    ports:
+      - "8002:8002"
+    networks:
+      - lif 
+    depends_on:
+      - lif-query-cache
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-graphql-api:
+    build:
+      context: ../
+      dockerfile: projects/lif_graphql_api/Dockerfile2
+    environment:
+      LIF_QUERY_PLANNER_URL: ${LIF_QUERY_PLANNER_URL:-http://host.docker.internal:8002}
+      LIF_GRAPHQL_ROOT_TYPE_NAME: ${LIF_GRAPHQL_ROOT_TYPE_NAME:-Person}
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://host.docker.internal:8081}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    ports:
+      - "8000:8000"
+    networks:
+      - lif 
+    depends_on:
+      - lif-query-planner
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-semantic-search-mcp-server:
+    build:
+      context: ../
+      dockerfile: projects/lif_semantic_search_mcp_server/Dockerfile2
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://host.docker.internal:8081}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    volumes: # Make docker client accessible so we can terminate containers from the webserver
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/io_manager_storage:/tmp/io_manager_storage
+    networks:
+      - lif
+    depends_on:
+      - lif-graphql-api
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys,urllib.request; sys.exit(0) if urllib.request.urlopen('http://localhost:8003/health').status==200 else sys.exit(1)"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  lif-advisor-api:
+    build:
+      context: ../
+      dockerfile: projects/lif_advisor_api/Dockerfile2
+    environment:
+      LIF_SEMANTIC_SEARCH_MCP_SERVER_URL: ${LIF_SEMANTIC_SEARCH_MCP_SERVER_URL:-http://host.docker.internal:8003/mcp}
+      LIF_GRAPHQL_API_URL: ${LIF_GRAPHQL_API_URL:-http://host.docker.internal:8000/graphql}
+      LIF_ADVISOR_AGENT_TASKS: ${LIF_ADVISOR_AGENT_TASKS:-load_profile,continue_conversation,save_interaction_summary}
+      LIF_ADVISOR_LLM_MODEL_NAME: ${LANGCHAIN_LLM_MODEL_NAME:-gpt-4.1-mini}
+      LIF_ADVISOR_MESSAGES_TO_KEEP: ${LIF_ADVISOR_MESSAGES_TO_KEEP:-4}
+      LIF_ADVISOR_TRIMMED_MESSAGES_SIZE: ${LIF_ADVISOR_TRIMMED_MESSAGES_SIZE:-384}
+      LIF_ADVISOR_MAX_CONVERSATION_SIZE: ${LIF_ADVISOR_MAX_CONVERSATION_SIZE:-2048}
+      LIF_ADVISOR_MAX_SUMMARY_SIZE: ${LIF_ADVISOR_MAX_SUMMARY_SIZE:-1024}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    ports:
+      - "8004:8004"
+    networks:
+      - lif
+    depends_on:
+      lif-graphql-api:
+        condition: service_started
+      lif-semantic-search-mcp-server:
+        condition: service_healthy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-advisor-app:
+    build:
+      context: ../frontends/lif_advisor_app
+      args:
+        LIF_ADVISOR_API_URL: ${LIF_ADVISOR_API_URL:-http://localhost:8004}
+    ports:
+      - "5173:80"
+    networks:
+      - lif 
+    depends_on:
+     - lif-advisor-api
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # healthcheck:
+    #   test: ["CMD", "python", "-c", "import sys,urllib.request; sys.exit(0) if urllib.request.urlopen('http://localhost:8003/health').status==200 else sys.exit(1)"]
+    #   interval: 15s
+    #   timeout: 10s
+    #   retries: 5
+    #   start_period: 10s
+
+networks:
+  lif:
+    driver: bridge
+    name: lif_network

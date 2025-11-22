@@ -1,0 +1,8 @@
+
+locations:
+  - location_name: dagster_test
+    code_source:
+      package_name: lif_orchestrator.definitions
+    build:
+      directory: ./
+      registry: 381492161417.dkr.ecr.us-east-1.amazonaws.com/lif/dev/dagster_test

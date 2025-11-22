@@ -1,0 +1,58 @@
+[
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "demo"
+  },
+  {
+    "ParameterKey": "Project",
+    "ParameterValue": "lif"
+  },
+  {
+    "ParameterKey": "DnsZone",
+    "ParameterValue": "/demo/VPCHostedZoneName"
+  },
+  {
+    "ParameterKey": "HostedZoneId",
+    "ParameterValue": "/demo/VPCHostedZoneId"
+  },
+  {
+    "ParameterKey": "LoadBalancerScheme",
+    "ParameterValue": "internet-facing"
+  },
+  {
+    "ParameterKey": "EnableSSL",
+    "ParameterValue": "enable"
+  },
+  {
+    "ParameterKey": "PublicHostedZoneName",
+    "ParameterValue": "/demo/PublicHostedZoneName"
+  },
+  {
+    "ParameterKey": "PublicHostedZoneId",
+    "ParameterValue": "/demo/PublicHostedZoneId"
+  },
+  {
+    "ParameterKey": "WebACLArn",
+    "ParameterValue": "not set"
+  },
+  {
+    "ParameterKey": "SecurityGroup",
+    "ParameterValue": "/demo/EcsInstanceSecurityGroup"
+  },
+  {
+    "ParameterKey": "VPC",
+    "ParameterValue": "/demo/VPC"
+  },
+  {
+    "ParameterKey": "PublicSubnets",
+    "ParameterValue": "/demo/PublicSubnets"
+  },
+  {
+    "ParameterKey": "PrivateSubnets",
+    "ParameterValue": "/demo/PrivateSubnets"
+  },
+  {
+    "ParameterKey": "KmsKey",
+    "ParameterValue": "/demo/EnvironmentKmsKey"
+  }
+]

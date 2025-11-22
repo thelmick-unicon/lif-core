@@ -1,0 +1,96 @@
+query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
+  person(filter: { identifier: { identifier: $identifier, identifierType: $identifierType } }) {
+    name {
+      informationSourceId
+      lastName
+      firstName
+    }
+    contact {
+      email {
+        informationSourceId
+        emailAddress
+      }
+    }
+    identifier {
+      informationSourceId
+      identifier
+  # identifierType
+    }
+    employmentLearningExperience {
+      informationSourceId
+      name
+      startDate
+      endDate
+      #refPosition {
+      #  name
+      #  informationSourceId
+      #}
+      assertedByRefOrganization {
+        identificationSystem
+        name
+        organizationType
+        informationSourceId
+      }
+      offeredByRefOrganization {
+        identificationSystem
+        name
+        organizationType
+        informationSourceId
+      }
+      approvedByRefOrganization {
+        identificationSystem
+        name
+        organizationType
+        informationSourceId
+      }
+      refCredentialAward {
+        id
+        awardIssueDate
+        credentialAwardee
+        informationSourceId
+      }
+    }
+    positionPreferences {
+      # informationSourceId
+      travel {
+        percentage
+        willingToTravelIndicator
+      }
+      relocation {
+        willingToRelocateIndicator
+      }
+      remoteWork {
+        remoteWorkIndicator
+      }
+      positionTitles
+      positionOfferingTypeCodes
+      positionScheduleTypeCodes
+      #offeredByRefRemunerationPackage {
+      #  ranges {
+      #    minimumAmount {
+      #      value
+      #      currency
+      #    }
+      #  }
+      #  basisCode
+      #}
+    }
+    employmentPreferences {
+    #  informationSourceId
+      offeredByRefOrganization {
+        informationSourceId
+        name
+        identificationSystem
+        organizationType
+      }
+      organizationTypes
+      organizationNames
+    }
+    credentialAward {
+      id
+      awardIssueDate
+      credentialAwardee
+      informationSourceId
+    }
+  }
+}

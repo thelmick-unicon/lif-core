@@ -1,0 +1,37 @@
+Environment:
+  - Name: CORS_ALLOW_ORIGINS
+    Value: "http://localhost:3000,http://localhost:5173,http://localhost:8080,https://mdr.lif.unicon.net,https://mdr.demo.lif.unicon.net/"
+  - Name: CORS_ALLOW_CREDENTIALS
+    Value: true
+  - Name: CORS_ALLOW_METHODS
+    Value: GET,POST,PUT,DELETE,OPTIONS,PATCH
+  - Name: CORS_ALLOW_HEADERS
+    Value: "*"
+Secrets:
+  - Name: POSTGRESQL_USER
+    ValueFrom: 
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}MdrDb/DBUsername"
+  - Name: POSTGRESQL_HOST
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}MdrDb/DBHost"
+  - Name: POSTGRESQL_DB
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}MdrDb/DBName"
+  - Name: POSTGRESQL_PORT
+    ValueFrom: 
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}MdrDb/DBPort"
+  - Name: POSTGRESQL_PASSWORD
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${EnvironmentName}MdrDb/DBPassword"
+  - Name: MDR__AUTH__JWT_SECRET_KEY
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${ServiceName}/MdrAuthJwtSecretKey"
+  - Name: MDR__AUTH__SERVICE_API_KEY__GRAPHQL
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${ServiceName}/MdrAuthServiceApiKeyGraphql"
+  - Name: MDR__AUTH__SERVICE_API_KEY__SEMANTIC_SEARCH
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${ServiceName}/MdrAuthServiceApiKeySemanticSearch"
+  - Name: MDR__AUTH__SERVICE_API_KEY__TRANSLATOR
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${ServiceName}/MdrAuthServiceApiKeyTranslator"

@@ -1,0 +1,123 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+# https://github.com/aws-samples/vpc-multi-tier/tree/master
+# https://raw.githubusercontent.com/aws-samples/vpc-multi-tier/refs/heads/master/vpc-multi-tier.yml
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Description: Creates 1-, 2- or 3-tier network environment with 1, 2, or 3 Availability Zones (AZs)
+
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks:
+      # Complex conditions trigger this warning.
+      - W1001
+
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+    - Label:
+        default: System Classification
+      Parameters:
+      - pEnv
+    - Label:
+        default: Database Parameters
+      Parameters:    
+      - pMdrDbInstanceClass
+      - pMdrDbSnapshotName
+      - pImageTag
+      - pCreateAlarms
+    - Label:
+        default: Additional Parameters
+      Parameters:    
+      - pNotificationList
+
+    ParameterLabels:
+      pEnv:
+        default: ENV Name
+      pImageTag:
+        default: Docker Lambda-Function Image Tag
+
+      pNotificationList:
+        default: A list of email addresses to receive important DB notifications
+
+Parameters:
+  pEnv:
+    Type: String
+    Description: Name of the Environment
+    Default: dev
+
+  pImageTag:
+    Type: String
+    Description: Used to identity the tagged image for functions
+
+  pNotificationList:
+    Type: String
+    Description: The Email notification list is used to configure a SNS topic for sending cloudwatch alarm and RDS Event notifications
+    Default: ''
+#    AllowedPattern: '^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+    ConstraintDescription: provide a valid email address.
+
+  pCreateAlarms:
+    Type: String
+    Default: 'False'
+    AllowedValues: ['True','False']
+    Description: Create CloudWatch Alarms
+
+  pMdrDbInstanceClass:
+    Type: String
+    Description: Database Instance Class
+  pMdrDbSnapshotName:
+    Type: String
+    Default: ''
+
+Resources:
+
+  MDRDatabase:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location: aurora-postgres.yml
+      Parameters:
+        pEnv: !Ref pEnv
+        pImageTag: !Ref pImageTag
+        PrivateSubnets: !Sub /${pEnv}/PrivateSubnets
+        DBSecurityGroup: !Sub /${pEnv}/EcsInstanceSecurityGroup
+        DBName: !Sub ${pEnv}MdrDb
+        IamUser: mdr
+        DBPort: 5432
+        DBUsername: postgres
+        DBEngineVersion: 17.4
+        DBInstanceClass: !Ref pMdrDbInstanceClass
+        EnvironmentStage: !Ref pEnv
+        Application: lif
+        Confidentiality: private
+        Compliance: other
+        VPC: !Sub /${pEnv}/VPC
+        KmsKey: !Sub /${pEnv}/EnvironmentKmsKey
+        HostedZoneId: !Sub /${pEnv}/VPCHostedZoneId
+        HostedZoneName: !Sub /${pEnv}/VPCHostedZoneName
+        NotificationList: !Ref pNotificationList
+        pCreateAlarms: !Ref pCreateAlarms
+        DBSnapshotName: !Ref pMdrDbSnapshotName
+
+Outputs:
+  MDRDatabaseEndpoint:
+    Description: MDR database endpoint
+    Value: !GetAtt MDRDatabase.Outputs.ClusterEndpoint
+
+  MDRDatabaseEndpointPort:
+    Description: MDR database endpoint port
+    Value: !GetAtt MDRDatabase.Outputs.Port
+
+  MDRDatabaseDBName:
+    Description: MDR database name
+    Value: !GetAtt MDRDatabase.Outputs.DBName
+
+  MDRDatabaseIamUser:
+    Description: MDR database IAM user
+    Value: !GetAtt MDRDatabase.Outputs.IamUser
+  
+  MDRDatabaseSecurityGroup:
+    Description: MDR database security group
+    Value: !GetAtt MDRDatabase.Outputs.ClusterSecurityGroup

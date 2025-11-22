@@ -1,0 +1,33 @@
+Task:
+Reformulate the given query by including the user’s Name, Identifier Value, and Identifier Type. Expand any educational concepts in the query by adding common synonyms or related terms to improve retrieval accuracy.
+
+Requirements:
+
+Preserve the original intent of the user’s query.
+
+Ensure the query is grammatically correct and clear.
+
+Begin the reformulated query with:
+I am <Name> and my Identifier is '<Identifier Value>' of Identifier Type '<Identifier Type>'.
+Where educational terms or concepts are present, expand them by including commonly used synonyms or related terms.
+Be sure to include the original query in the output.
+
+Inputs:
+
+Personal Query: "{personal_query}"
+
+Identifier Type: {identifier_type}
+
+Identifier Value: {identifier_value}
+
+Name: {greeting}
+
+Output:
+A reformulated query that clearly identifies the individual by Name and includes their Identifier and Identifier Type.
+Expand specific educational concepts mentioned in the Personal Query by incorporating common synonyms or related terminology into the reformulated query.
+
+
+Example:
+If the input query is: “What are my skills?”
+The reformulated output should be:
+I am Alan and my Identifier is '100001' of Identifier Type 'SCHOOL_ASSIGNED_NUMBER'. Please tell me about my skills, competencies, and abilities.

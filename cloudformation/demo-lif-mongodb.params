@@ -1,0 +1,138 @@
+[
+  {
+    "ParameterKey": "RedshiftSecretArn",
+    "ParameterValue": "notapplicable"
+  },
+  {
+    "ParameterKey": "DomainNames",
+    "ParameterValue": "notapplicable"
+  },
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "demo"
+  },
+  {
+    "ParameterKey": "ServiceName",
+    "ParameterValue": "mongodb"
+  },
+  {
+    "ParameterKey": "S3AppBucket",
+    "ParameterValue": "/demo/S3Bucket"
+  },
+  {
+    "ParameterKey": "CloudMapPrivateNamespace",
+    "ParameterValue": "/demo/CloudMapPrivateNamespace"
+  },
+  {
+    "ParameterKey": "Priority",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "EcsLaunchType",
+    "ParameterValue": "FARGATE"
+  },
+  {
+    "ParameterKey": "HealthCheckUrl",
+    "ParameterValue": "/"
+  },
+  {
+    "ParameterKey": "UseLbForService",
+    "ParameterValue": "false"
+  },
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t3a.small"
+  },
+  {
+    "ParameterKey": "ECSAMI",
+    "ParameterValue": "/aws/service/ecs/optimized-ami/amazon-linux/recommended/image_id"
+  },
+  {
+    "ParameterKey": "ImageUrl",
+    "ParameterValue": "381492161417.dkr.ecr.us-east-1.amazonaws.com/lif/dev/mongodb:2025-07-28-16-47-24-44a6dd5"
+  },
+  {
+    "ParameterKey": "TaskDefIncludesFile",
+    "ParameterValue": "s3://clir-cf-templates/demo-lif/mongodb-taskdef-includes.yml"
+  },
+  {
+    "ParameterKey": "TaskRoleIncludesFile",
+    "ParameterValue": "s3://clir-cf-templates/demo-lif/service-taskrole-includes.yml"
+  },
+  {
+    "ParameterKey": "ContainerPort",
+    "ParameterValue": "27017"
+  },
+  {
+    "ParameterKey": "ContainerMemory",
+    "ParameterValue": "1024"
+  },
+  {
+    "ParameterKey": "ContainerCpu",
+    "ParameterValue": "512"
+  },
+  {
+    "ParameterKey": "HealthCheckGracePeriod",
+    "ParameterValue": "300"
+  },
+  {
+    "ParameterKey": "MaxCount",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "MinCount",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "SecurityGroup",
+    "ParameterValue": "/demo/EcsInstanceSecurityGroup"
+  },
+  {
+    "ParameterKey": "PrivateSubnets",
+    "ParameterValue": "/demo/PrivateSubnets"
+  },
+  {
+    "ParameterKey": "VPC",
+    "ParameterValue": "/demo/VPC"
+  },
+  {
+    "ParameterKey": "EnvironmentKmsKey",
+    "ParameterValue": "/demo/EnvironmentKmsKey"
+  },
+  {
+    "ParameterKey": "EcsCluster",
+    "ParameterValue": "/demo/EcsCluster"
+  },
+  {
+    "ParameterKey": "LoadBalancerListener",
+    "ParameterValue": "/demo/LoadBalancerHttpsListener"
+  },
+  {
+    "ParameterKey": "EfsFileSystemId",
+    "ParameterValue": "/demo/EfsFileSystemId"
+  },
+  {
+    "ParameterKey": "PublicHostedZoneId",
+    "ParameterValue": "/demo/PublicHostedZoneId"
+  },
+  {
+    "ParameterKey": "PublicHostedZoneName",
+    "ParameterValue": "/demo/PublicHostedZoneName"
+  },
+  {
+    "ParameterKey": "LoadBalancerDnsName",
+    "ParameterValue": "/demo/LoadBalancerDnsName"
+  },
+  {
+    "ParameterKey": "LoadBalancerHostedZoneId",
+    "ParameterValue": "/demo/LoadBalancerHostedZoneId"
+  },
+  {
+    "ParameterKey": "RestrictedCIDRs",
+    "ParameterValue": "notapplicable"
+  },
+  {
+    "ParameterKey": "PathPattern",
+    "ParameterValue": "notapplicable"
+  }
+]

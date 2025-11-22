@@ -1,0 +1,119 @@
+[project]
+name = "lif-main"
+version = "0.1.0"
+description = "Monorepo for LIF Components"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "dagster~=1.11",
+    "dagster-graphql~=1.11",
+    "deepdiff~=8.6",
+    "fastapi~=0.115",
+    "fastmcp~=2.9",
+    "httpx~=0.28",
+    "jsonata-python~=0.6",
+    "jsonpath-ng~=1.7",
+    "jsonref~=1.1",
+    "jsonschema~=4.25",
+    "langchain~=0.3",
+    "langchain-mcp-adapters~=0.1",
+    "langchain-openai~=0.3",
+    "langgraph~=0.4",
+    "langgraph-prebuilt~=0.2",
+    "langmem~=0.0",
+    "mcp-graphql~=0.3",
+    "mkdocs-material~=9.6",
+    "numpy~=2.3",
+    "pandas~=2.2",
+    "pydantic~=2.11",
+    "pyjwt~=2.10",
+    "pymongo~=4.13",
+    "pymysql~=1.1",
+    "pyyaml~=6.0",
+    "sentence-transformers~=4.1",
+    "sqlalchemy~=2.0",
+    "sqlmodel~=0.0",
+    "strawberry-graphql[asgi]~=0.275",
+    "uvicorn~=0.34",
+]
+
+[dependency-groups]
+dev = [
+    "dagster-cloud~=1.11",
+    "dagster-dg-cli~=1.11",
+    "dagster-webserver~=1.11",
+    "polylith-cli~=1.30",
+    "pre-commit~=4.2",
+    "pytest~=8.4",
+    "pytest-asyncio~=1.1",
+    "ruff~=0.11",
+    "strawberry-graphql[debug-server]~=0.275",
+    "ty~=0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+dev-mode-dirs = ["components", "bases", "development", "."]
+
+[tool.uv]
+dev-dependencies = ["polylith-cli"]
+
+[tool.polylith.bricks]
+"bases/lif/query_cache_module" = "lif/query_cache_module"
+"bases/lif/query_cache_restapi" = "lif/query_cache_restapi"
+"bases/lif/query_planner_restapi" = "lif/query_planner_restapi"
+"components/lif/datatypes" = "lif/datatypes"
+"components/lif/mongodb_connection" = "lif/mongodb_connection"
+"components/lif/query_cache_read" = "lif/query_cache_read"
+"components/lif/query_cache_read_store_mongodb" = "lif/query_cache_read_store_mongodb"
+"components/lif/query_cache_read_store_in_memory" = "lif/query_cache_read_store_in_memory"
+"components/lif/query_cache_service" = "lif/query_cache_service"
+"components/lif/query_planner_service" = "lif/query_planner_service"
+"components/lif/logging" = "lif/logging"
+"bases/lif/api_graphql" = "lif/api_graphql"
+"components/lif/openapi_to_graphql" = "lif/openapi_to_graphql"
+"components/lif/string_utils" = "lif/string_utils"
+"components/lif/mdr_client" = "lif/mdr_client"
+"components/lif/mdr_services" = "lif/mdr_services"
+"bases/lif/semantic_search_mcp_server" = "lif/semantic_search_mcp_server"
+"components/lif/semantic_search_service" = "lif/semantic_search_service"
+"components/lif/openapi_schema_parser" = "lif/openapi_schema_parser"
+"bases/lif/advisor_restapi" = "lif/advisor_restapi"
+"components/lif/langchain_agent" = "lif/langchain_agent"
+"components/lif/auth" = "lif/auth"
+"components/lif/advisor_service" = "lif/advisor_service"
+"components/lif/exceptions" = "lif/exceptions"
+"components/lif/composer" = "lif/composer"
+"bases/lif/orchestrator_restapi" = "lif/orchestrator_restapi"
+"components/lif/orchestrator_service" = "lif/orchestrator_service"
+"components/lif/orchestrator_query_plan_parser" = "lif/orchestrator_query_plan_parser"
+"components/lif/orchestrator_clients" = "lif/orchestrator_clients"
+"bases/lif/identity_mapper_restapi" = "lif/identity_mapper_restapi"
+"components/lif/identity_mapper_service" = "lif/identity_mapper_service"
+"components/lif/identity_mapper_storage" = "lif/identity_mapper_storage"
+"components/lif/identity_mapper_storage_sql" = "lif/identity_mapper_storage_sql"
+"components/lif/data_source_adapters" = "lif/data_source_adapters"
+
+[tool.ruff]
+line-length = 120
+required-version = "~=0.11.13"
+
+[tool.ruff.format]
+# use '\n' line endings for all files (*nix/mac default)
+docstring-code-format = true
+line-ending = "lf"
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+ignore = [
+  "E711",
+  "E712",
+  "F811",
+  "F841",  # Eventually should be removed and the code cleaned up
+  "TD002",
+  "TD003"
+]
+

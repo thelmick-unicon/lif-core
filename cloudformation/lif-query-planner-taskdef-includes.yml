@@ -1,0 +1,15 @@
+Environment:
+  - Name: LIF_QUERY_CACHE_URL
+    Value: 
+      Fn::Sub: "http://query-cache-${OrganizationName}.lif.${EnvironmentName}.aws:8001"
+  - Name: LIF_ORCHESTRATOR_URL
+    Value: 
+      Fn::Sub: "http://orchestrator.lif.${EnvironmentName}.aws:8005"
+  - Name: LIF_QUERY_TIMEOUT_SECONDS
+    Value: "120"
+  - Name: LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH
+    Value: "/opt/app/information_sources_config.yml"
+Secrets:
+  - Name: LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_YAML_SSM
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${OrganizationName}/LIFQueryPlannerInformationSourcesConfig"

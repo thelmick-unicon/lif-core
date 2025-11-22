@@ -1,0 +1,186 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org2",
+          "lastName": "Diaz",
+          "firstName": "Jenna"
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org2",
+              "emailAddress": [
+                "jdiaz_lifdemo@stateu.edu"
+              ]
+            }
+          ],
+          "informationSourceId": "Org2"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org2",
+          "identifier": "100002",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        }
+      ],
+      "employmentLearningExperience": [
+        {
+          "informationSourceId": "Org2",
+          "name": "Certified Nursing Assistant CNA",
+          "refPosition": {
+            "informationSourceId": "Org2"
+          },
+          "startDate": "2018-03",
+          "endDate": "2024-11",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Jenna Diaz",
+            "informationSourceId": "Org2"
+          }
+        }
+      ],
+      "positionPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "travel": [
+            {
+              "percentage": 0,
+              "willingToTravelIndicator": false
+            }
+          ],
+          "relocation": [
+            {
+              "willingToRelocateIndicator": false
+            }
+          ],
+          "remoteWork": [
+            {
+              "remoteWorkIndicator": false
+            }
+          ],
+          "positionTitles": [
+            "Software Developer",
+            "Data Analyst",
+            "Project Manager"
+          ],
+          "positionOfferingTypeCodes": [
+            "Full-time",
+            "Permanent"
+          ],
+          "offeredByRefRemunerationPackage": {
+            "ranges": [
+              {
+                "minimumAmount": [
+                  {
+                    "value": 45000.0,
+                    "currency": "USD",
+                    "informationSourceId": "Org2"
+                  }
+                ],
+                "informationSourceId": "Org2"
+              }
+            ],
+            "basisCode": "Salaried",
+            "informationSourceId": "Org2"
+          },
+          "positionScheduleTypeCodes": [
+            "Standard",
+            "Flexible"
+          ]
+        }
+      ],
+      "employmentPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "offeredByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Springfield Hospital",
+            "identificationSystem": "Workday",
+            "organizationType": []
+          },
+          "organizationTypes": [],
+          "organizationNames": [
+            "Corporate Partners",
+            "Technology Companies"
+          ]
+        }
+      ],
+      "informationSourceId": "Org2",
+      "credentialAward": [
+        {
+          "id": "cred-employment-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Jenna Diaz",
+          "informationSourceId": "Org2"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Employing Organization",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Brookdale Senior Living"
+    },
+    {
+      "identificationSystem": "stateu-training-provider-id",
+      "name": "Training Provider",
+      "organizationType": [
+        "Training Organization"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Springfield Hospital",
+      "identificationSystem": "Workday",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-approving-authority-id",
+      "name": "Approving Authority",
+      "organizationType": [
+        "Regulatory Body"
+      ],
+      "informationSourceId": "Org2"
+    }
+  ],
+  "informationSourceId": "Org2"
+}

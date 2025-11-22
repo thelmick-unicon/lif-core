@@ -1,0 +1,5 @@
+Environment:
+  - Name: LOG_LEVEL
+    Value: DEBUG
+  - Name: TOKENS
+    Value: "{\"adapter_1\":\"1234\",\"adapter_2\":\"5678\",\"OBCLR\":\"5678\"}"

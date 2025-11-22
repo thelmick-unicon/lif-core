@@ -1,0 +1,69 @@
+name: Deploy LIF Advisor App to Amazon ECS
+
+env:
+  AWS_REGION: us-east-1
+  GHA_ROLE: "arn:aws:iam::381492161417:role/lif-github-actions-dev"
+  ECS_CLUSTER: dev
+  ECS_SERVICE: advisor-app-FARGATE
+
+permissions:
+      id-token: write
+      contents: read
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    paths:
+      - .github/workflows/lif_advisor_app.yml
+      - frontends/lif_advisor_app/**
+      - cloudformation/dev-lif-advisor-api.params
+      - cloudformation/lif-advisor-taskdef-includes.yml
+
+jobs:
+
+  lif-advisor-app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontends/lif_advisor_app
+        shell: bash
+    env:
+      WORKING_DIR: ./frontends/lif_advisor_app
+      ECR_REPOSITORY: lif/dev/lif_advisor_app
+      VITE_LIF_ADVISOR_API_URL: 'https://advisor-api.lif.unicon.net'
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js 20
+      uses: actions/setup-node@v1
+      with:
+        node-version: 20
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: npm install
+      run: |
+        node --version
+        npm install
+
+    - name: Build and push docker image
+      uses: ./.github/actions/build-and-push
+      with:
+        working-dir: ${{ env.WORKING_DIR }}
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: advisor-app-build
+        aws-region: ${{ env.AWS_REGION }}
+        ecr-repository: ${{ env.ECR_REPOSITORY }}
+        build-args: |
+          LIF_ADVISOR_API_URL=https://advisor-api.lif.unicon.net
+
+    - name: Update the lif-advisor-app ECS Service
+      uses: ./.github/actions/update-cluster
+      with:
+        github-actions-role: ${{ env.GHA_ROLE }}
+        role-session-name: advisor-app-ecs
+        aws-region: ${{ env.AWS_REGION }}
+        ecs-cluster: ${{ env.ECS_CLUSTER }}
+        ecs-service: ${{ env.ECS_SERVICE }}
+

@@ -1,0 +1,7 @@
+Environment:
+  - Name: LOG_LEVEL
+    Value: DEBUG
+Secrets:
+  - Name: DAGSTER_YAML_SSM
+    ValueFrom:
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/DagsterCloudAgentConfig"

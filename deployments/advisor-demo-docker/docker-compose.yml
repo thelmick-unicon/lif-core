@@ -1,0 +1,622 @@
+# Docker Compose file for Advisor Demo with multiple MongoDB instances and LIF services
+#
+# This file defines services for MongoDB and LIF components, including query cache, planner, and GraphQL API.
+# It sets up three MongoDB instances, each with its own data volume and sample data, and connects them to the LIF services.
+#
+# Note that in order to demonstrate translation, the MDR database must be running and accessible.
+
+# ----------- TEMPLATES -----------
+
+x-lif-identity-mapper-db-build-template: &lif-identity-mapper-db-build-template
+  build:
+    context: ../../projects/lif_identity_mapper_mariadb
+
+x-lif-identity-mapper-db-environment-template: &lif-identity-mapper-db-environment-template
+  MARIADB_ROOT_PASSWORD: ${IDENTITY_MAPPER_DB_ROOT_PASSWORD:-changeme}
+  MARIADB_DATABASE: ${IDENTITY_MAPPER_DB_NAME:-lif}
+  MARIADB_USER: ${IDENTITY_MAPPER_DB_USERNAME:-myuser}
+  MARIADB_PASSWORD: ${IDENTITY_MAPPER_DB_PASSWORD:-mypass}
+
+x-lif-identity-mapper-api-build-template: &lif-identity-mapper-api-build-template
+  build:
+    context: ../../
+    dockerfile: projects/lif_identity_mapper_api/Dockerfile2
+
+x-lif-identity-mapper-api-environment-template: &lif-identity-mapper-api-environment-template
+  IDENTITY_MAPPER_DB_DRIVER: ${IDENTITY_MAPPER_DB_DRIVER:-mysql+pymysql}
+  IDENTITY_MAPPER_DB_USERNAME: ${IDENTITY_MAPPER_DB_USERNAME:-myuser}
+  IDENTITY_MAPPER_DB_PASSWORD: ${IDENTITY_MAPPER_DB_PASSWORD:-mypass}
+  IDENTITY_MAPPER_DB_PORT: ${IDENTITY_MAPPER_DB_PORT:-3306}
+  IDENTITY_MAPPER_DB_NAME: ${IDENTITY_MAPPER_DB_NAME:-lif}
+
+x-mongo-template: &mongo-template
+  build:
+    context: ../../projects/mongodb
+
+x-mongo-environment: &mongo-template-environment
+  MONGO_DB: ${MONGO_DB:-LIF}
+  MONGO_COLLECTION: ${MONGO_COLLECTION:-person}
+
+x-lif-query-cache-template: &lif-query-cache-template
+  build:
+    context: ../../
+    dockerfile: projects/lif_query_cache_api/Dockerfile2
+
+x-lif-query-planner-template: &lif-query-planner-template
+  build:
+    context: ../../
+    dockerfile: projects/lif_query_planner_api/Dockerfile2
+
+x-lif-graphql-api-build-template: &lif-graphql-api-build-template
+  build:
+    context: ../../
+    dockerfile: projects/lif_graphql_api/Dockerfile2
+
+x-lif-graphql-api-environment-template: &lif-graphql-api-environment-template
+  LIF_QUERY_TIMEOUT_SECONDS: ${LIF_QUERY_TIMEOUT_SECONDS:-300}
+  LIF_GRAPHQL_ROOT_TYPE_NAME: ${LIF_GRAPHQL_ROOT_TYPE_NAME:-Person}
+  LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://lif-mdr-api:8012}
+  LIF_MDR_API_AUTH_TOKEN: ${LIF_GRAPHQL__LIF_MDR_API_AUTH_TOKEN:-changeme1}
+  OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+  OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+  USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+
+# ----------- SERVICES -----------
+
+services:
+  lif-identity-mapper-db-org1:
+    <<: *lif-identity-mapper-db-build-template
+    container_name: lif-identity-mapper-db-org1
+    environment:
+      <<: *lif-identity-mapper-db-environment-template
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org1}
+    volumes:
+      - mariadb_data_org1:/var/lib/mysql
+    networks:
+      - lif-net-org1
+
+  lif-identity-mapper-db-org2:
+    <<: *lif-identity-mapper-db-build-template
+    container_name: lif-identity-mapper-db-org2
+    environment:
+      <<: *lif-identity-mapper-db-environment-template
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org2}
+    volumes:
+      - mariadb_data_org2:/var/lib/mysql
+    networks:
+      - lif-net-org2
+
+  lif-identity-mapper-db-org3:
+    <<: *lif-identity-mapper-db-build-template
+    container_name: lif-identity-mapper-db-org3
+    environment:
+      <<: *lif-identity-mapper-db-environment-template
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org3}
+    volumes:
+      - mariadb_data_org3:/var/lib/mysql
+    networks:
+      - lif-net-org3
+
+  lif-identity-mapper-org1:
+    <<: *lif-identity-mapper-api-build-template
+    environment:
+      <<: *lif-identity-mapper-api-environment-template
+      IDENTITY_MAPPER_DB_HOST: ${IDENTITY_MAPPER_DB_HOST:-lif-identity-mapper-db-org1}
+    depends_on:
+      - lif-identity-mapper-db-org1
+    networks:
+      - lif-net-org1
+
+  lif-identity-mapper-org2:
+    <<: *lif-identity-mapper-api-build-template
+    environment:
+      <<: *lif-identity-mapper-api-environment-template
+      IDENTITY_MAPPER_DB_HOST: ${IDENTITY_MAPPER_DB_HOST:-lif-identity-mapper-db-org2}
+    depends_on:
+      - lif-identity-mapper-db-org2
+    networks:
+      - lif-net-org2
+
+  lif-identity-mapper-org3:
+    <<: *lif-identity-mapper-api-build-template
+    environment:
+      <<: *lif-identity-mapper-api-environment-template
+      IDENTITY_MAPPER_DB_HOST: ${IDENTITY_MAPPER_DB_HOST:-lif-identity-mapper-db-org3}
+    depends_on:
+      - lif-identity-mapper-db-org3
+    networks:
+      - lif-net-org3
+
+  mongodb-org1:
+    <<: *mongo-template
+    container_name: mongodb-org1
+    environment:
+      <<: *mongo-template-environment
+      MONGO_HOST: ${MONGO_HOST_ORG1:-mongodb-org1}
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org1}
+    #volumes:
+    #  - mongo_data_org1:/data/db
+    networks:
+      - lif-net-org1
+
+  mongodb-org2:
+    <<: *mongo-template
+    container_name: mongodb-org2
+    environment:
+      <<: *mongo-template-environment
+      MONGO_HOST: ${MONGO_HOST_ORG2:-mongodb-org2}
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org2}
+    #volumes:
+    #  - mongo_data_org2:/data/db
+    networks:
+      - lif-net-org2
+
+  mongodb-org3:
+    <<: *mongo-template
+    container_name: mongodb-org3
+    environment:
+      <<: *mongo-template-environment
+      MONGO_HOST: ${MONGO_HOST_ORG3:-mongodb-org3}
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-advisor-demo-org3}
+    #volumes:
+    #  - mongo_data_org3:/data/db
+    networks:
+      - lif-net-org3
+  
+  lif-query-cache-org1:
+    <<: *lif-query-cache-template
+    container_name: lif-query-cache-org1
+    environment:
+      MONGODB_URI: mongodb-org1:27017
+    depends_on:
+      - mongodb-org1
+    networks:
+      - lif-net-org1
+
+  lif-query-cache-org2:
+    <<: *lif-query-cache-template
+    container_name: lif-query-cache-org2
+    environment:
+      MONGODB_URI: mongodb-org2:27017
+    depends_on:
+      - mongodb-org2
+    networks:
+      - lif-net-org2
+
+  lif-query-cache-org3:
+    <<: *lif-query-cache-template
+    container_name: lif-query-cache-org3
+    environment:
+      MONGODB_URI: mongodb-org3:27017
+    depends_on:
+      - mongodb-org3
+    networks:
+      - lif-net-org3
+
+  lif-query-planner-org1:
+    <<: *lif-query-planner-template
+    container_name: lif-query-planner-org1
+    environment:
+      LIF_QUERY_CACHE_URL: http://lif-query-cache-org1:8001
+      LIF_ORCHESTRATOR_URL: ${LIF_ORCHESTRATOR_URL:-http://lif-orchestrator-api-org1:8005}
+      LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH: ${LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH:-/opt/app/information_sources_config.yml}
+      LIF_QUERY_TIMEOUT_SECONDS: ${LIF_QUERY_TIMEOUT_SECONDS:-120}
+    depends_on:
+      - lif-query-cache-org1
+    volumes:
+      - ./volumes/lif_query_planner/org1/information_sources_config_org1.yml:/opt/app/information_sources_config.yml
+    networks:
+      - lif-net-org1
+
+  lif-query-planner-org2:
+    <<: *lif-query-planner-template
+    container_name: lif-query-planner-org2
+    environment:
+      LIF_QUERY_CACHE_URL: http://lif-query-cache-org2:8001
+      LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH: ${LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH:-/opt/app/information_sources_config.yml}
+    depends_on:
+      - lif-query-cache-org2
+    volumes:
+      - ./volumes/lif_query_planner/org2/information_sources_config_org2.yml:/opt/app/information_sources_config.yml
+    networks:
+      - lif-net-org2
+
+  lif-query-planner-org3:
+    <<: *lif-query-planner-template
+    container_name: lif-query-planner-org3
+    environment:
+      LIF_QUERY_CACHE_URL: http://lif-query-cache-org3:8001
+      LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH: ${LIF_QUERY_PLANNER_INFORMATION_SOURCES_CONFIG_PATH:-/opt/app/information_sources_config.yml}
+    depends_on:
+      - lif-query-cache-org3
+    volumes:
+      - ./volumes/lif_query_planner/org3/information_sources_config_org3.yml:/opt/app/information_sources_config.yml
+    networks:
+      - lif-net-org3
+
+  lif-graphql-api-org1:
+    <<: *lif-graphql-api-build-template
+    container_name: lif-graphql-api-org1
+    ports:
+      - "${LIF_GRAPHQL_PORT_ORG1:-8010}:8000"
+    environment:
+      <<: *lif-graphql-api-environment-template
+      LIF_QUERY_PLANNER_URL: http://lif-query-planner-org1:8002
+      LIF_QUERY_TIMEOUT_SECONDS: ${LIF_QUERY_TIMEOUT:-60}
+    depends_on:
+      lif-query-planner-org1:
+        condition: service_started
+      lif-mdr-api:
+        condition: service_healthy
+    networks:
+      - lif-net-org1
+
+
+  lif-graphql-api-org2:
+    <<: *lif-graphql-api-build-template
+    container_name: lif-graphql-api-org2
+    ports:
+      - "${LIF_GRAPHQL_PORT_ORG2:-8110}:8000"
+    environment:
+      <<: *lif-graphql-api-environment-template
+      LIF_QUERY_PLANNER_URL: http://lif-query-planner-org2:8002
+    depends_on:
+      lif-query-planner-org2:
+        condition: service_started
+      lif-mdr-api:
+        condition: service_healthy
+    networks:
+      - lif-net-org2
+      - lif-net-org1 # For org1 to org2 orchestrator communication
+
+
+  lif-graphql-api-org3:
+    <<: *lif-graphql-api-build-template
+    container_name: lif-graphql-api-org3
+    ports:
+      - "${LIF_GRAPHQL_PORT_ORG3:-8210}:8000"
+    environment:
+      <<: *lif-graphql-api-environment-template
+      LIF_QUERY_PLANNER_URL: http://lif-query-planner-org3:8002
+    depends_on:
+      lif-query-planner-org3:
+        condition: service_started
+      lif-mdr-api:
+        condition: service_healthy
+    networks:
+      - lif-net-org3
+      - lif-net-org1 # For org1 to org3 orchestrator communication
+
+
+# ----------- ORG 1 Only Services -----------
+
+  lif-example-data-source-rest-api:
+    build:
+      context: ../../
+      dockerfile: projects/lif_example_data_source_rest_api/Dockerfile2
+    container_name: lif-example-data-source-rest-api
+    environment:
+      API_TOKEN: ${API_TOKEN:-changeme}
+    ports:
+      - "8011:8011"
+    networks:
+      - lif-net-org1
+
+  lif-translator-org1:
+    build:
+      context: ../../
+      dockerfile: projects/lif_translator_api/Dockerfile2
+    environment:
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://lif-mdr-api:8012}
+      LIF_MDR_API_AUTH_TOKEN: ${LIF_TRANSLATOR__LIF_MDR_API_AUTH_TOKEN:-changeme3}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    ports:
+      - "8007:8007"
+    networks:
+      - lif-net-org1
+    depends_on:
+      - lif-mdr-api
+
+  lif-semantic-search-mcp-server:
+    build:
+      context: ../../
+      dockerfile: projects/lif_semantic_search_mcp_server/Dockerfile2
+    container_name: lif-semantic-search-mcp-server
+    environment:
+      LIF_GRAPHQL_API_URL: ${LIF_GRAPHQL_API_URL:-http://lif-graphql-api-org1:8000/graphql}
+      LIF_GRAPHQL_ROOT_NODE: ${LIF_GRAPHQL_ROOT_NODE:-Person}
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://lif-mdr-api:8012}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      SEMANTIC_SEARCH_SERVICE__GRAPHQL_TIMEOUT__READ: ${SEMANTIC_SEARCH_SERVICE__GRAPHQL_TIMEOUT__READ:-300}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    networks:
+      - lif-net-org1
+    depends_on:
+      - lif-graphql-api-org1
+      - lif-mdr-api
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys,urllib.request; sys.exit(0) if urllib.request.urlopen('http://localhost:8003/health').status==200 else sys.exit(1)"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+
+  lif-advisor-api:
+    build:
+      context: ../../
+      dockerfile: projects/lif_advisor_api/Dockerfile2
+    container_name: lif-advisor-api
+    environment:
+      LIF_SEMANTIC_SEARCH_MCP_SERVER_URL: ${LIF_SEMANTIC_SEARCH_MCP_SERVER_URL:-http://lif-semantic-search-mcp-server:8003/mcp}
+      LIF_GRAPHQL_API_URL: ${LIF_GRAPHQL_API_URL:-http://lif-graphql-api-org1:8000/graphql}
+      LIF_ADVISOR_AGENT_TASKS: ${LIF_ADVISOR_AGENT_TASKS:-load_profile,continue_conversation,save_interaction_summary}
+      LIF_ADVISOR_LLM_MODEL_NAME: ${LANGCHAIN_LLM_MODEL_NAME:-gpt-4.1-mini}
+      LIF_ADVISOR_MESSAGES_TO_KEEP: ${LIF_ADVISOR_MESSAGES_TO_KEEP:-4}
+      LIF_ADVISOR_TRIMMED_MESSAGES_SIZE: ${LIF_ADVISOR_TRIMMED_MESSAGES_SIZE:-384}
+      LIF_ADVISOR_MAX_CONVERSATION_SIZE: ${LIF_ADVISOR_MAX_CONVERSATION_SIZE:-2048}
+      LIF_ADVISOR_MAX_SUMMARY_SIZE: ${LIF_ADVISOR_MAX_SUMMARY_SIZE:-1024}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      CONFIG_KEY_STORE: ${CONFIG_KEY_STORE:-/etc/keys}
+    ports:
+      - "8004:8004"
+    networks:
+      - lif-net-org1
+    depends_on:
+      lif-graphql-api-org1:
+        condition: service_started
+      lif-semantic-search-mcp-server:
+        condition: service_healthy
+
+  lif-advisor-app:
+    build:
+      context: ../../frontends/lif_advisor_app
+      args:
+        LIF_ADVISOR_API_URL: ${LIF_ADVISOR_API_URL:-http://localhost:8004} # Web client needs to access the API outside the container
+    container_name: lif-advisor-app
+    ports:
+      - "5174:80"
+    networks:
+      - lif-net-org1
+    depends_on:
+      - lif-advisor-api
+
+  lif-mdr-database:
+    image: postgres
+    command: postgres
+    environment:
+      POSTGRES_USER: ${LIF_MDR__DATABASE__USER:-postgres}
+      POSTGRES_PASSWORD: ${LIF_MDR__DATABASE__PASSWORD:-postgres}
+      POSTGRES_DB: ${LIF_MDR__DATABASE__DBNAME:-LIF}
+      POSTGRES_HOST: localhost
+      POSTGRES_CONTAINER_HOST: lif-mdr-database
+    ports:
+      - "5445:5432" # Host port 5445 to access MDR Postgres
+    networks:
+      - lif-net-mdr-db
+
+  lif-mdr-database-restore:
+    image: postgres
+    command: postgres
+    depends_on:
+      - lif-mdr-database
+    environment:
+      POSTGRES_USER: ${LIF_MDR__DATABASE_RESTORE__USER:-postgres}
+      POSTGRES_PASSWORD: ${LIF_MDR__DATABASE_RESTORE__PASSWORD:-postgres}
+      POSTGRES_DB: ${LIF_MDR__DATABASE_RESTORE__DBNAME:-LIF}
+      POSTGRES_HOST: lif-mdr-database
+      PGPASSWORD: ${LIF_MDR__DATABASE_RESTORE__PASSWORD:-postgres}
+    volumes:
+      - ../../projects/lif_mdr_database/backup.sql:/backup.sql
+      - ../../projects/lif_mdr_database/restore.sh:/docker-entrypoint-initdb.d/restore.sh
+    entrypoint: /docker-entrypoint-initdb.d/restore.sh
+    networks:
+      - lif-net-mdr-db
+
+  lif-mdr-api:
+    build:
+      context: ../../
+      dockerfile: projects/lif_mdr_api/Dockerfile2
+    container_name: lif-mdr-api
+    environment:
+      POSTGRESQL_USER: ${LIF_MDR__API__DATABASE_USER:-postgres}
+      POSTGRESQL_PASSWORD: ${LIF_MDR__API__DATABASE_PASSWORD:-postgres}
+      POSTGRESQL_HOST: ${LIF_MDR__API__DATABASE_HOST:-lif-mdr-database}
+      POSTGRESQL_PORT: ${LIF_MDR__API__DATABASE_PORT:-5432}
+      POSTGRESQL_DB: ${LIF_MDR__API__DATABASE_DBNAME:-LIF}
+      CORS_ALLOW_ORIGINS: ${CORS_ALLOW_ORIGINS:-http://localhost:3000,http://localhost:5173,http://localhost:8080,https://mdr.lif.unicon.net,https://mdr.demo.lif.unicon.net/}
+      CORS_ALLOW_CREDENTIALS: ${CORS_ALLOW_CREDENTIALS:-true}
+      CORS_ALLOW_METHODS: ${CORS_ALLOW_METHODS:-GET,POST,PUT,DELETE,OPTIONS,PATCH}
+      CORS_ALLOW_HEADERS: ${CORS_ALLOW_HEADERS:-*}
+      MDR__AUTH__JWT_SECRET_KEY: ${MDR__AUTH__JWT_SECRET_KEY:-change4}
+      MDR__AUTH__SERVICE_API_KEY__GRAPHQL: ${MDR__AUTH__SERVICE_API_KEY__GRAPHQL:-changeme1}
+      MDR__AUTH__SERVICE_API_KEY__SEMANTIC_SEARCH: ${MDR__AUTH__SERVICE_API_KEY__SEMANTIC_SEARCH:-changeme2}
+      MDR__AUTH__SERVICE_API_KEY__TRANSLATOR: ${MDR__AUTH__SERVICE_API_KEY__TRANSLATOR:-changeme3}
+      MDR__AUTH__METHODS_TO_REQUIRE_AUTH: ${MDR__AUTH__METHODS_TO_REQUIRE_AUTH:-GET,POST,PUT,DELETE}
+      MDR__AUTH__ACCESS_TOKEN_EXPIRE_MINUTES: ${MDR__AUTH__ACCESS_TOKEN_EXPIRE_MINUTES:-30}
+      MDR__AUTH__REFRESH_TOKEN_EXPIRE_DAYS: ${MDR__AUTH__REFRESH_TOKEN_EXPIRE_DAYS:-7}
+      MDR__AUTH__PUBLIC_ALLOWLIST_EXACT: ${MDR__AUTH__PUBLIC_ALLOWLIST_EXACT:-/login,/refresh-token,/health-check}
+      MDR__AUTH__PUBLIC_ALLOWLIST_STARTS_WITH: ${MDR__AUTH__PUBLIC_ALLOWLIST_STARTS_WITH:-/docs,/openapi.json}
+    ports:
+      - "8012:8012"
+    networks:
+      - lif-net-org1
+      - lif-net-org2
+      - lif-net-org3
+      - lif-net-mdr-db
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys,urllib.request; sys.exit(0) if urllib.request.urlopen('http://localhost:8012/health-check').status==200 else sys.exit(1)"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      - lif-mdr-database
+
+
+
+  lif-mdr-app:
+    build:
+      context: ../../frontends/mdr-frontend
+      args:
+        LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://localhost:8012} # Web client needs to access the API outside the container
+    container_name: lif-mdr-app
+    ports:
+      - "5173:80"
+    networks:
+      - lif-net-org1
+    depends_on:
+      - lif-mdr-api
+
+
+  lif-orchestrator-api-org1:
+    build:
+      context: ../../
+      dockerfile: projects/lif_orchestrator_api/Dockerfile2
+    container_name: lif-orchestrator-api-org1
+    environment:
+      ORCHESTRATOR__TYPE: dagster
+      ORCHESTRATOR__DAGSTER__GRAPHQL_API_URL: http://dagster-webserver:3000
+      ORCHESTRATOR__DAGSTER__GRAPHQL_API_TOKEN: ${DAGSTER_GRAPHQL_API_TOKEN:-}
+    ports:
+      - "${LIF_ORCHESTRATOR_PORT_ORG1:-8005}:8005"
+    depends_on:
+      - lif-query-planner-org1
+    networks:
+      - lif-net-org1
+
+  #####################
+  # Dagster services
+  #####################
+  # This service runs the postgres DB used by dagster for run storage, schedule storage,
+  # and event log storage. Depending on the hardware you run this Compose on, you may be able
+  # to reduce the interval and timeout in the healthcheck to speed up your `docker-compose up` times.
+  postgres-dagster:
+    image: postgres:11
+    container_name: postgres-dagster
+    environment:
+      POSTGRES_USER: 'postgres_user'
+      POSTGRES_PASSWORD: 'postgres_password'
+      POSTGRES_DB: 'postgres_db'
+    networks:
+      - lif-net-org1
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres_user -d postgres_db']
+      interval: 10s
+      timeout: 8s
+      retries: 5
+  # This service runs the gRPC server that loads your user code, in both dagster-webserver
+  # and dagster-daemon. By setting DAGSTER_CURRENT_IMAGE to its own image, we tell the
+  # run launcher to use this same image when launching runs in a new container as well.
+  # Multiple containers like this can be deployed separately - each just needs to run on
+  # its own port, and have its own entry in the workspace.yaml file that's loaded by the
+  # webserver.
+  dagster-code-location:
+    build:
+      context: ../..
+      dockerfile: projects/dagster_docker_compose/Dockerfile.code_location
+    container_name: dagster-code-location
+    image: dagster-code-location-image
+    restart: always
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+      DAGSTER_CURRENT_IMAGE: 'dagster-code-location-image'
+      ADAPTERS__LIF_TO_LIF__ORG2__CREDENTIALS__HOST: lif-graphql-api-org2:8000
+      ADAPTERS__LIF_TO_LIF__ORG2__CREDENTIALS__SCHEME: http
+
+      ADAPTERS__LIF_TO_LIF__ORG3__CREDENTIALS__HOST: lif-graphql-api-org3:8000
+      ADAPTERS__LIF_TO_LIF__ORG3__CREDENTIALS__SCHEME: http
+
+      ADAPTERS__EXAMPLE_DATA_SOURCE_REST_API_TO_LIF__ORG1_EXAMPLE_DATA_SOURCE__CREDENTIALS__HOST: lif-example-data-source-rest-api:8011
+      ADAPTERS__EXAMPLE_DATA_SOURCE_REST_API_TO_LIF__ORG1_EXAMPLE_DATA_SOURCE__CREDENTIALS__SCHEME: http
+      ADAPTERS__EXAMPLE_DATA_SOURCE_REST_API_TO_LIF__ORG1_EXAMPLE_DATA_SOURCE__CREDENTIALS__TOKEN: changeme
+
+      LIF_QUERY_PLANNER_RESULTS_BASE_URL: http://lif-query-planner-org1:8002
+      LIF_TRANSLATOR_BASE_URL: http://lif-translator-org1:8007
+    networks:
+      - lif-net-org1
+  # This service runs dagster-webserver, which loads your user code from the code location container.
+  # Since our instance uses the QueuedRunCoordinator, any runs submitted from the webserver will be put on
+  # a queue and later dequeued and launched by dagster-daemon.
+  dagster-webserver:
+    build:
+      context: ../..
+      dockerfile: ./projects/dagster_docker_compose/Dockerfile.dagster
+    entrypoint:
+      - dagster-webserver
+      - -h
+      - '0.0.0.0'
+      - -p
+      - '3000'
+      - -w
+      - workspace.yaml
+    container_name: dagster-webserver
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+    volumes: # Make docker client accessible so we can terminate containers from the webserver
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/io_manager_storage:/tmp/io_manager_storage
+    networks:
+      - lif-net-org1
+    depends_on:
+      postgres-dagster:
+        condition: service_healthy
+      dagster-code-location:
+        condition: service_started
+
+  # This service runs the dagster-daemon process, which is responsible for taking runs
+  # off of the queue and launching them, as well as creating runs from schedules or sensors.
+  dagster-daemon:
+    build:
+      context: ../..
+      dockerfile: ./projects/dagster_docker_compose/Dockerfile.dagster
+    entrypoint:
+      - dagster-daemon
+      - run
+    container_name: dagster-daemon
+    restart: on-failure
+    environment:
+      DAGSTER_POSTGRES_USER: 'postgres_user'
+      DAGSTER_POSTGRES_PASSWORD: 'postgres_password'
+      DAGSTER_POSTGRES_DB: 'postgres_db'
+    volumes: # Make docker client accessible so we can launch containers using host docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/io_manager_storage:/tmp/io_manager_storage
+    networks:
+      - lif-net-org1
+    depends_on:
+      postgres-dagster:
+        condition: service_healthy
+      dagster-code-location:
+        condition: service_started
+
+# ----------- NETWORKS -----------
+
+networks:
+  lif-net-org1:
+    driver: bridge
+    name: lif-net-org1
+  lif-net-org2:
+  lif-net-org3:
+  lif-net-mdr-db:
+
+# ----------- VOLUMES -----------
+
+volumes:
+  #mongo_data_org1:
+  #mongo_data_org2:
+  #mongo_data_org3:
+  mariadb_data_org1:
+  mariadb_data_org2:
+  mariadb_data_org3:

@@ -1,0 +1,85 @@
+# More information about the configuration file can be found here:
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html
+version: 0.1
+
+dev:
+  global:
+    parameters:
+      stack_name: dev-lif-dagster-db-resources
+      region: us-east-1
+
+  build:
+    parameters:
+      parallel: true
+
+  validate:
+    parameters:
+      lint: true
+
+  package:
+    parameters:
+      resolve_s3: true
+  
+  deploy:
+    parameters:
+      capabilities: CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM
+      confirm_changeset: false
+      resolve_s3: true
+      resolve_image_repos: true
+      disable_rollback: false
+      s3_prefix: dev-lif-dagster-db-resources
+      tags: env=dev name=dev-lif-dagster-db-resources
+      parameter_overrides: "pEnv=dev pDagsterDbInstanceClass=db.t4g.medium"
+
+  sync:
+    parameters:
+      watch: true
+
+  local_start_api:
+    parameters:
+      warm_containers: EAGER
+
+  local_start_lambda:
+    parameters:
+      warm_containers: EAGER
+
+demo:
+  global:
+    parameters:
+      stack_name: demo-lif-dagster-db-resources
+      region: us-east-1
+
+  build:
+    parameters:
+      parallel: true
+
+  validate:
+    parameters:
+      lint: true
+
+  package:
+    parameters:
+      resolve_s3: true
+  
+  deploy:
+    parameters:
+      capabilities: CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM
+      confirm_changeset: false
+      resolve_s3: true
+      resolve_image_repos: true
+      disable_rollback: false
+      s3_prefix: demo-lif-dagster-db-resources
+      tags: env=demo name=demo-lif-dagster-db-resources
+      parameter_overrides: "pEnv=demo pDagsterDbInstanceClass=db.t4g.medium"
+
+  sync:
+    parameters:
+      watch: true
+
+  local_start_api:
+    parameters:
+      warm_containers: EAGER
+
+  local_start_lambda:
+    parameters:
+      warm_containers: EAGER

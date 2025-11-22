@@ -1,0 +1,167 @@
+# Docker Compose file for Advisor Demo with single MongoDB instance and LIF services
+#
+# This file defines services for MongoDB and LIF components, including query cache, planner, and GraphQL API.
+# It sets up a single MongoDB instance with its own data volume and sample data, and connects it to the LIF services.
+
+# ----------- SERVICES -----------
+
+services:
+
+  mongodb:
+    build:
+      context: ../../projects/mongodb
+    container_name: mongodb
+    environment:
+      MONGO_DB: ${MONGO_DB:-LIF}
+      MONGO_COLLECTION: ${MONGO_COLLECTION:-person}
+      MONGO_HOST: ${MONGO_HOST_ORG1:-mongodb}
+      SEED_DATA_KEY: ${SEED_DATA_KEY:-dev-single-org}
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - lif-net
+  
+  lif-translator:
+    build:
+      context: ../../
+      dockerfile: projects/lif_translator_api/Dockerfile2
+    environment:
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://host.docker.internal:8081}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    ports:
+      - "8007:8007"
+    networks:
+      - lif-net 
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  lif-query-cache:
+    build:
+      context: ../../
+      dockerfile: projects/lif_query_cache_api/Dockerfile2
+    container_name: lif-query-cache
+    environment:
+      MONGODB_URI: mongodb:27017
+    depends_on:
+      - mongodb
+    networks:
+      - lif-net
+
+  lif-query-planner:
+    build:
+      context: ../../
+      dockerfile: projects/lif_query_planner_api/Dockerfile2
+    container_name: lif-query-planner
+    environment:
+      LIF_QUERY_CACHE_URL: http://lif-query-cache:8001
+    depends_on:
+      - lif-query-cache
+    networks:
+      - lif-net
+
+  lif-graphql-api:
+    build:
+      context: ../../
+      dockerfile: projects/lif_graphql_api/Dockerfile2
+    container_name: lif-graphql-api
+    ports:
+      - "${LIF_GRAPHQL_PORT_ORG1:-8010}:8000"
+    environment:
+      LIF_GRAPHQL_ROOT_TYPE_NAME: ${LIF_GRAPHQL_ROOT_TYPE_NAME:-Person}
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://host.docker.internal:8081}
+      LIF_QUERY_PLANNER_URL: http://lif-query-planner:8002
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    depends_on:
+      - lif-query-planner
+    networks:
+      - lif-net
+
+  lif-semantic-search-mcp-server:
+    build:
+      context: ../../
+      dockerfile: projects/lif_semantic_search_mcp_server/Dockerfile2
+    container_name: lif-semantic-search-mcp-server
+    environment:
+      LIF_GRAPHQL_API_URL: ${LIF_GRAPHQL_API_URL:-http://lif-graphql-api:8000/graphql}
+      LIF_GRAPHQL_ROOT_NODE: ${LIF_GRAPHQL_ROOT_NODE:-Person}
+      LIF_MDR_API_URL: ${LIF_MDR_API_URL:-http://host.docker.internal:8081}
+      OPENAPI_DATA_MODEL_ID: ${OPENAPI_DATA_MODEL_ID:-17}
+      OPENAPI_JSON_FILENAME: ${OPENAPI_JSON_FILENAME:-openapi_constrained_with_interactions.json}
+      USE_OPENAPI_DATA_MODEL_FROM_FILE: ${USE_OPENAPI_DATA_MODEL_FROM_FILE:-false}
+    networks:
+      - lif-net
+    depends_on:
+      - lif-graphql-api
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys,urllib.request; sys.exit(0) if urllib.request.urlopen('http://localhost:8003/health').status==200 else sys.exit(1)"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  lif-example-data-source-rest-api:
+    build:
+      context: ../../
+      dockerfile: projects/lif_example_data_source_rest_api/Dockerfile2
+    container_name: lif-example-data-source-rest-api
+    environment:
+      API_TOKEN: ${API_TOKEN:-changeme}
+    ports:
+      - "8011:8011"
+    networks:
+      - lif-net
+
+  lif-advisor-api:
+    build:
+      context: ../../
+      dockerfile: projects/lif_advisor_api/Dockerfile2
+    container_name: lif-advisor-api
+    environment:
+      LIF_SEMANTIC_SEARCH_MCP_SERVER_URL: ${LIF_SEMANTIC_SEARCH_MCP_SERVER_URL:-http://lif-semantic-search-mcp-server:8003/mcp}
+      LIF_GRAPHQL_API_URL: ${LIF_GRAPHQL_API_URL:-http://lif-graphql-api:8000/graphql}
+      LIF_ADVISOR_AGENT_TASKS: ${LIF_ADVISOR_AGENT_TASKS:-load_profile,continue_conversation,save_interaction_summary}
+      LIF_ADVISOR_LLM_MODEL_NAME: ${LANGCHAIN_LLM_MODEL_NAME:-gpt-4.1-mini}
+      LIF_ADVISOR_MESSAGES_TO_KEEP: ${LIF_ADVISOR_MESSAGES_TO_KEEP:-4}
+      LIF_ADVISOR_TRIMMED_MESSAGES_SIZE: ${LIF_ADVISOR_TRIMMED_MESSAGES_SIZE:-384}
+      LIF_ADVISOR_MAX_CONVERSATION_SIZE: ${LIF_ADVISOR_MAX_CONVERSATION_SIZE:-2048}
+      LIF_ADVISOR_MAX_SUMMARY_SIZE: ${LIF_ADVISOR_MAX_SUMMARY_SIZE:-1024}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      CONFIG_KEY_STORE: ${CONFIG_KEY_STORE:-/etc/keys}
+    ports:
+      - "8004:8004"
+    networks:
+      - lif-net
+    depends_on:
+      lif-graphql-api:
+        condition: service_started
+      lif-semantic-search-mcp-server:
+        condition: service_healthy
+
+  lif-advisor-app:
+    build:
+      context: ../../frontends/lif_advisor_app
+      args:
+        LIF_ADVISOR_API_URL: ${LIF_ADVISOR_API_URL:-http://localhost:8004} # Web client needs to access the API outside the container
+    container_name: lif-advisor-app
+    ports:
+      - "5173:80"
+    networks:
+      - lif-net
+    depends_on:
+      - lif-advisor-api
+
+# ----------- NETWORKS -----------
+
+networks:
+  lif-net:
+
+# ----------- VOLUMES -----------
+
+volumes:
+  mongo_data:

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lif_orchestrator_api"
+version = "0.1.0"
+
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "dagster~=1.11",
+    "dagster-graphql~=1.11",
+    "fastapi~=0.116",
+    "pydantic~=2.11",
+    "uvicorn~=0.35",
+    "pyyaml~=6.0",
+]
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lif"]
+
+[tool.polylith.bricks]
+"../../bases/lif/orchestrator_restapi" = "lif/orchestrator_restapi"
+"../../components/lif/orchestrator_clients" = "lif/orchestrator_clients"
+"../../components/lif/orchestrator_service" = "lif/orchestrator_service"
+"../../components/lif/datatypes" = "lif/datatypes"
+"../../components/lif/exceptions" = "lif/exceptions"
+"../../components/lif/logging" = "lif/logging"

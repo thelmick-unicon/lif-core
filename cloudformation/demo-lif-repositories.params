@@ -1,0 +1,14 @@
+[
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "demo"
+  },
+  {
+    "ParameterKey": "S3Bucket",
+    "ParameterValue": "demo-lif-configs"
+  },
+  {
+    "ParameterKey": "AccessKeySerial",
+    "ParameterValue": "1"
+  }
+]

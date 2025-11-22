@@ -1,0 +1,276 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org2",
+          "lastName": "Tsatrian",
+          "firstName": "Alan "
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org2",
+              "emailAddress": [
+                "atsatrian_lifdemo@stateu.edu "
+              ]
+            }
+          ],
+          "informationSourceId": "Org2"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org2",
+          "identifier": "100001",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        }
+      ],
+      "employmentLearningExperience": [
+        {
+          "informationSourceId": "Org2",
+          "name": "Compliance Manager ",
+          "refPosition": {
+            "informationSourceId": "Org2"
+          },
+          "startDate": "2007-06",
+          "endDate": "2024-12",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "org2-cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org2"
+          }
+        },
+        {
+          "informationSourceId": "Org2",
+          "name": "Compliance Specialist ",
+          "endDate": "2007-05",
+          "refPosition": {
+            "informationSourceId": "Org2",
+            "name": "Referenced Employment Experience"
+          },
+          "startDate": "2004-06",
+          "assertedByRefOrganization": {
+            "identificationSystem": "stateu-employing-organization-id",
+            "name": "Employing Organization",
+            "organizationType": [
+              "Company"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-training-provider-id",
+            "name": "Training Provider",
+            "organizationType": [
+              "Training Organization"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "approvedByRefOrganization": {
+            "identificationSystem": "stateu-approving-authority-id",
+            "name": "Approving Authority",
+            "organizationType": [
+              "Regulatory Body"
+            ],
+            "informationSourceId": "Org2"
+          },
+          "refCredentialAward": {
+            "id": "org2-cred-employment-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian",
+            "informationSourceId": "Org2"
+          }
+        }
+      ],
+      "positionPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "travel": [
+            {
+              "percentage": 25.0,
+              "willingToTravelIndicator": true
+            }
+          ],
+          "relocation": [
+            {
+              "willingToRelocateIndicator": false
+            }
+          ],
+          "remoteWork": [
+            {
+              "remoteWorkIndicator": true
+            }
+          ],
+          "positionTitles": [
+            "Compliance Specialist",
+            "Compliance Manager"
+          ],
+          "positionOfferingTypeCodes": [
+            "DirectHire"
+          ],
+          "positionScheduleTypeCodes": [
+            "FullTime"
+          ],
+          "offeredByRefRemunerationPackage": {
+            "ranges": [
+              {
+                "minimumAmount": [
+                  {
+                    "value": 85000.0,
+                    "currency": "USD",
+                    "informationSourceId": "Org2"
+                  }
+                ],
+                "informationSourceId": "Org2"
+              }
+            ],
+            "basisCode": "Salaried",
+            "informationSourceId": "Org2"
+          }
+        }
+      ],
+      "employmentPreferences": [
+        {
+          "informationSourceId": "Org2",
+          "offeredByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Three Trees Compliance",
+            "identificationSystem": "Workday",
+            "organizationType": []
+          },
+          "organizationTypes": [
+            "Public Sector",
+            "Private Sector"
+          ],
+          "organizationNames": [
+            "Corporate Partners",
+            "Technology Companies"
+          ]
+        },
+        {
+          "informationSourceId": "Org2",
+          "offeredByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "RIA Compliance Consultants",
+            "identificationSystem": "Workday",
+            "organizationType": []
+          },
+          "organizationTypes": [
+            "Public Sector",
+            "Private Sector"
+          ],
+          "organizationNames": [
+            "Corporate Partners",
+            "Technology Companies"
+          ]
+        },
+        {
+          "informationSourceId": "Org2",
+          "offeredByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Utah ISO Consultants",
+            "identificationSystem": "Workday",
+            "organizationType": []
+          },
+          "organizationTypes": [
+            "Public Sector",
+            "Private Sector"
+          ],
+          "organizationNames": [
+            "Corporate Partners",
+            "Technology Companies"
+          ]
+        }
+      ],
+      "informationSourceId": "Org2",
+      "credentialAward": [
+        {
+          "id": "org2-cred-employment-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Alan  Tsatrian",
+          "informationSourceId": "Org2"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Employing Organization",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Three Trees Compliance"
+    },
+    {
+      "identificationSystem": "stateu-training-provider-id",
+      "name": "Training Provider",
+      "organizationType": [
+        "Training Organization"
+      ],
+      "informationSourceId": "Org2"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "McBradshaw Brothers"
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Three Trees Compliance",
+      "identificationSystem": "Workday",
+      "organizationType": []
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "RIA Compliance Consultants",
+      "identificationSystem": "Workday",
+      "organizationType": []
+    },
+    {
+      "informationSourceId": "Org2",
+      "name": "Utah ISO Consultants",
+      "identificationSystem": "Workday",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-approving-authority-id",
+      "name": "Approving Authority",
+      "organizationType": [
+        "Regulatory Body"
+      ],
+      "informationSourceId": "Org2"
+    }
+  ],
+  "informationSourceId": "Org2"
+}

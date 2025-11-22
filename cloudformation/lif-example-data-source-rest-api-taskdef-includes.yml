@@ -1,0 +1,4 @@
+Secrets:
+  - Name: API_TOKEN
+    ValueFrom: 
+      Fn::Sub: "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/${EnvironmentName}/${ServiceName}/apiToken"

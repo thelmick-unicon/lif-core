@@ -1,0 +1,2389 @@
+{
+  "person": [
+    {
+      "name": [
+        {
+          "informationSourceId": "Org1",
+          "lastName": "Hanson",
+          "firstName": "Matt"
+        }
+      ],
+      "proficiency": [
+        {
+          "informationSourceId": "Org1",
+          "name": "Literacy",
+          "description": "Literacy is the ability to read, write, and comprehend information. It is considered a common skill that is essential for individuals to be successful in both their personal and professional lives. It provides a foundation for communication, knowledge acquisition, and critical thinking skills. Literacy skills are typically developed during early childhood education and continue to be refined throughout a person's lifetime.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Algorithms",
+          "description": "Algorithms is a specialized skill that involves developing a logical process or a set of rules to solve a problem or perform a particular task. It entails identifying the steps required to solve a problem efficiently and optimizing them to minimize time complexity and maximize performance. Algorithms are used in various fields such as computer science, mathematics, and engineering, and require expertise in data structures, programming languages, and problem-solving techniques. Developing effective algorithms is a critical skill for software developers, data scientists, and other professionals who work with large datasets and complex systems.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Data Analysis",
+          "description": "Data analysis involves using various techniques and methods to process, transform, and summarize data in order to extract meaningful insights and information that can inform decision-making. It involves the application of statistical and computational tools to large datasets, and requires a specialized set of skills and knowledge, including expertise in programming languages, data visualization, and machine learning. Effective data analysis can help businesses, governments, and other organizations better understand their operations, customers, and markets, and make informed decisions based on the insights gained from their data.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Vehicle Armour",
+          "description": "Vehicle Armour is a specialized skill that involves installing armored protection on vehicles to provide additional safety against potential threats. It includes installing bulletproof windows, reinforced doors and body panels, and other types of protective materials. This skill requires knowledge of vehicles and their structures, as well as experience working with various materials to install the armor effectively. Those who specialize in Vehicle Armour may work with military and law enforcement agencies or private clients who require added protection for their vehicles.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Telecommunications",
+          "description": "Telecommunications refers to the transmission of information over long distances using electronic or digital technologies. It involves the use of advanced communication devices and networks to send, receive, and process data, voice, or images. Telecommunications is a specialized skill that requires knowledge of various technologies, including wired and wireless communication systems, satellite communication, fiber optics, and computer networks. It plays a crucial role in enabling businesses, governments, and individuals to communicate effectively and efficiently across the world.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Electrical Wirings",
+          "description": "Electrical wiring is the process of installing electrical components such as wires, cables, and circuits to provide power to homes, buildings, and other structures. It is a specialized skill that requires knowledge of electrical codes, safety procedures, and proper installation techniques. Proper electrical wiring is crucial for ensuring safety, functionality, and reliability of electrical systems. It is recommended to hire licensed electricians to perform electrical wiring tasks to ensure proper and safe installations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Business Ethics",
+          "description": "Business ethics is a form of applied ethics or professional ethics, that examines ethical principles and moral or ethical problems that can arise in a business environment. It applies to all aspects of business conduct and is relevant to the conduct of individuals and entire organizations. These ethics originate from individuals, organizational statements or the legal system. These norms, values, ethical, and unethical practices are the principles that guide a business.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Strategic Management",
+          "description": "Strategic management is the process of defining, developing, and implementing long-term plans and strategies for a business or organization in order to achieve its goals and objectives. It involves analyzing internal and external factors that affect the organization, setting clear goals and objectives, and making decisions on the allocation of resources in order to optimize performance and achieve sustainable competitive advantage. It is a specialized skill that requires a combination of analytical, creative, and leadership abilities.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Cascading Style Sheets (CSS)",
+          "description": "Cascading Style Sheets (CSS) is a coding language used to style and format web pages. It controls the presentation of HTML elements by defining colors, fonts, layout, and other design properties. CSS enables developers to create visually appealing and user-friendly web interfaces. It is an essential skill for web designers and front-end developers to create modern and responsive websites.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Combat Operations Process",
+          "description": "The Combat Operations Process (COP) is a specialized military skill that involves the synchronization and execution of operations on the battlefield. It is a systematic approach to planning, preparing, executing, and assessing military operations in order to accomplish assigned missions. The COP helps commanders and their staff to achieve unity of effort, preserve combat power, and adapt to changing situations in order to achieve success on the battlefield. It involves a range of activities such as intelligence gathering, task organization, resource allocation, and risk management, all of which are crucial in ensuring the effectiveness of military operations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Communications Security",
+          "description": "Communications security is a specialized skill that focuses on protecting information while it is being transmitted over a network or communication channel. It involves implementing measures to prevent unauthorized access, interception, and modification of data. Communication security professionals use various techniques such as encryption, authentication, and access control to ensure the confidentiality, integrity, and availability of information.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Regulatory Compliance",
+          "description": "Regulatory compliance refers to the adherence of companies and organizations to laws, policies, and regulations established by regulatory bodies. Ensuring compliance requires specialized knowledge and skills, including understanding and interpreting legal and regulatory requirements, developing and implementing compliance programs, monitoring and reporting on compliance efforts, and identifying and mitigating compliance risks. Proper regulatory compliance is essential for organizations to operate legally, ethically, and responsibly.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Security",
+          "description": "Computer security is a specialized skill that involves the protection of digital information and systems from unauthorized access, theft, damage, or disruption. It requires knowledge of various security technologies, practices, and policies to prevent potential cyberattacks, malware infections, data breaches, and other security threats. Computer security professionals are responsible for assessing the security risks, designing and implementing security measures, monitoring the security systems, and responding to security incidents. As technology evolves and new security threats emerge, computer security specialists must stay current on the latest security technologies, vulnerabilities, and best practices to prevent and mitigate security risks.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Information Systems",
+          "description": "Information Systems is a specialized skill that deals with the design, development, implementation, management, and maintenance of computer-based information systems. It involves a combination of technical knowledge, business acumen, and problem-solving skills to help organizations make better use of technology to improve their overall productivity and efficiency. Professionals in the field of Information Systems may work as system analysts, database administrators, cybersecurity experts, and other related positions.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Programming",
+          "description": "Computer programming is a specialized skill that involves writing code in programming languages to create software applications, websites, games, and other digital products. It requires a strong understanding of computer science concepts and problem-solving skills to create efficient and effective code. Programmers must also stay up-to-date with the latest technologies and programming languages to remain competitive in their field.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Networks",
+          "description": "Computer Networks is the study and practice of connecting multiple computer devices and systems to create a network that enables the sharing of resources such as information, files, and software applications. It involves programming, configuring, and maintaining computer networking hardware and software systems to improve communication and collaboration among users, businesses and organizations. This skill requires knowledge of various networking protocols, security measures, troubleshooting techniques, and emerging technologies.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Forensics",
+          "description": "Computer forensics is a specialized skill set that involves the use of technology and investigative techniques to locate, preserve, analyze and present digital evidence in a manner that is admissible in a court of law. This field requires a high level of technical expertise and knowledge of computer systems, software, and networking to investigate and solve crimes that involve electronic data. Computer forensics analysts are often employed by law enforcement agencies, government organizations, and private enterprises to investigate and prevent cybercrime.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Confidentiality",
+          "description": "Text Kernel Skill",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Cryptography",
+          "description": "Cryptography involves creating secure communications by encoding messages in a way that only the intended recipient can decode them. It is a specialized skill that requires knowledge of mathematics, computer science, and cybersecurity. Cryptography is used in various fields, including finance, government, and military, to protect sensitive information and transactions.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Data Collection",
+          "description": "Data collection is the process of gathering and measuring information on targeted variables using established methods, in order to answer specific research questions or test hypotheses. This involves the use of specialized skills and techniques, including designing surveys, conducting interviews, using sensors and other instruments to collect physical data, and utilizing computer programs to manage and analyze data. Effective data collection is crucial for ensuring high-quality research and informing evidence-based decision-making in a variety of fields.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Data Presentation",
+          "description": "Data presentation is the process of organizing, visualizing, and communicating data in a way that is clear, accurate, and meaningful. It is a specialized skill that involves the use of various tools and techniques such as charts, graphs, infographics, and storytelling to present data in a way that can be easily understood and interpreted by the target audience. Effective data presentation is essential for decision-making, problem-solving, and communication in various fields including business, academia, and research.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Project Planning",
+          "description": "Project planning is the process of defining, organizing, and scheduling tasks and resources to achieve specific project goals within a defined timeframe. It involves defining project scope, identifying tasks, developing a project schedule and budget, and creating a communication and risk management plan. Effective project planning is essential for successful project completion and requires specialized skills such as problem-solving, critical thinking, and leadership.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Digital Forensics",
+          "description": "Digital forensics is a specialized area of investigation and analysis that involves the collection, examination, and preservation of electronic evidence to support legal proceedings or to uncover digital crimes. It requires specialized skills and tools to analyze data from various digital sources, such as computers, smartphones, emails, social media, and networks, to identify potential risks and exposures, and to provide expert testimony in court cases. Digital forensic experts must also have knowledge of legal procedures and ethical practices, as well as the ability to work collaboratively with other investigators and law enforcement agencies.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Disaster Recovery Plan",
+          "description": "Disaster Recovery Plan is a set of processes, policies, and procedures that help organizations recover from unexpected events or disasters, such as natural disasters, cyber attacks, and system failures. It is a specialized skill that requires expertise in risk management, IT operations, and business continuity planning. The Disaster Recovery Plan must also be regularly tested and updated to ensure its effectiveness in case of an actual disaster.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Data Storage",
+          "description": "Computer data storage involves the process of storing digital information in various types of storage devices, such as hard drives, solid-state drives, optical disks, and cloud storage. This requires specialized skills in managing and organizing this data, as well as ensuring its security and accessibility. A professional in computer data storage must also have knowledge of various storage technologies and best practices for data backup and recovery.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Emotional Intelligence",
+          "description": "Emotional Intelligence is the ability to identify, understand and manage one's own emotions as well as the emotions of others. It involves being empathetic, self-aware, and skilled at communicating and resolving conflicts. Emotional intelligence is a common skill that can be developed and improved over time through practice and self-reflection. It is important in personal relationships, professional settings, and overall well-being.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Performance Management",
+          "description": "Performance management is a process of setting goals, monitoring progress, providing feedback, and evaluating results to optimize individual and organizational performance. It involves a range of specialized skills, including effective communication, goal setting, tracking and measuring performance, providing constructive feedback, and developing action plans to improve performance. Performance management is crucial for enhancing productivity, achieving strategic objectives, and driving continuous improvement, and requires ongoing commitment from managers and employees alike.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Firmware",
+          "description": "Firmware is a type of software that is embedded into hardware devices to control their basic functions. It acts as the interface between the hardware and the software running on a system, allowing for communication and control of the device. It is often used in devices such as routers, printers, and sensors. Firmware development requires specialized skills in low-level programming, hardware knowledge, and debugging.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Leadership",
+          "description": "Leadership is a skill that is common among successful individuals in various fields. It involves the ability to motivate and guide a team towards achieving common goals. Good leadership qualities include effective communication, empathy, decision-making skills, adaptability, and vision. Leadership can be developed and honed through training, practice, and learning from others.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Electrical Switches",
+          "description": "Switchgear refers to the electrical equipment used to control, protect, and isolate electrical power systems. It is a specialized skill that involves knowledge of electrical distribution systems, electrical engineering, and safety protocols. Switchgear technicians are responsible for installing, maintaining, and troubleshooting switchgear equipment to ensure it operates efficiently and safely. They must also understand how switchgear components work together to protect electrical systems and prevent power failures.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Human-Computer Interaction",
+          "description": "Human-Computer Interaction (HCI) refers to the design, development, and evaluation of interactive computing systems and their user interfaces. This involves understanding the needs and behaviors of users and designing systems that are usable, effective, and enjoyable to use. HCI is a specialized skill that requires knowledge of psychology, design, engineering, and other related fields. It plays a critical role in ensuring that technology is designed to meet the needs of users and to enhance their experience with technology.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Human Capital",
+          "description": "Human capital refers to the specialized skills, knowledge, experience, and education of individuals that contribute to their ability to perform labor in the workforce. It is considered a valuable asset for companies as it helps them to increase productivity, performance, and profitability. Investing in the development of human capital through training, education, and career development programs can lead to long-term benefits for individuals and organizations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Information Security Management",
+          "description": "Information Security Management involves the use of specialized techniques, technologies, and procedures to protect digital and physical assets from unauthorized access, use, disclosure, disruption, modification, or destruction. It requires a deep understanding of information security policies, risk management, compliance, and incident response, as well as strong analytical, communication, and leadership skills. Information Security Managers play a crucial role in ensuring the confidentiality, integrity, and availability of organizational information systems and data.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "IT Management",
+          "description": "IT Governance is a specialized skill that involves creating policies and strategies to ensure that IT resources are aligned with business goals, regulatory requirements, and industry standards. It also involves managing risks and ensuring compliance with legal and ethical obligations related to the use of technology. Effective IT governance can help organizations achieve their objectives, improve operational efficiency, and reduce the risk of security breaches, data loss, and other IT-related problems. It requires expertise in technology, risk management, and corporate governance, as well as strong leadership and communication skills.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Networking Hardware",
+          "description": "Networking hardware refers to the physical components required to connect computers, devices, and networks together to facilitate data transfer and communication. These components include routers, switches, hubs, cables, and other networking equipment. Managing and troubleshooting networking hardware requires specialized skills and knowledge in areas such as network protocols, network architecture, and network security. Effective use of networking hardware is essential for businesses, organizations, and individuals who rely on connectivity for their day-to-day operations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "International Business",
+          "description": "International business refers to the activities of companies that involve cross-border transactions, trade, investment and other types of business dealings in multiple countries. It requires specialized skills such as knowledge of international laws and regulations, market analysis, cultural sensitivity, language proficiency and global business strategies. Successful international business professionals must be adaptable, flexible and able to navigate complex political, economic and cultural barriers.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Interpersonal Skills",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Virtual Private Networks (VPN)",
+          "description": "VPN is a technology that allows users to connect securely to a private network over the internet. It involves encryption and tunneling techniques to ensure that all data transmitted is secure and protected from unauthorized access. Expertise in VPNs requires an understanding of networking protocols, security mechanisms, and encryption algorithms. It is a specialized skill that is increasingly in demand as more organizations adopt remote work policies and rely on the internet for data transmission.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Problem Solving",
+          "description": "Problem solving is the process of identifying, analyzing and resolving problems that can arise in any situation. It is a common skill that is required in many different industries and situations, and involves identifying the root cause of a problem, generating possible solutions, evaluating those solutions and implementing the best one. Successful problem solving involves critical thinking, creativity and communication skills. Learning how to effectively solve problems can help individuals and organizations to more efficiently achieve their goals and objectives.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Local Area Networks",
+          "description": "Local Area Networks (LANs) are a specialized skill that requires knowledge of various components, such as hardware, software, protocols, and security measures. A LAN is a network infrastructure that connects devices within a limited geographical area such as an office, building, or campus. LAN specialists are responsible for designing, configuring, maintaining, and securing LANs to ensure that they operate efficiently and effectively. These specialists may work for companies, government agencies, or educational institutions and must stay up-to-date with emerging technologies, industry standards, and security practices to maintain a secure and reliable network.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Network Security",
+          "description": "Network security is the practice of protecting computer networks and their contents against unauthorized access, hacking, and other security threats. It requires specialized skills and expertise, including knowledge of network protocols, encryption, firewalls, and other security technologies. Effective network security strategies involve a combination of preventive measures, such as access control and password management, as well as proactive threat detection and response capabilities. Skilled network security professionals are in high demand as cyber threats continue to evolve and become more sophisticated.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Maintenance",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Management Systems",
+          "description": "Management systems refer to the organized approach of managing a business or organization by applying various standards, policies, and procedures to achieve specific objectives. It involves designing, implementing, and maintaining management systems that optimize productivity, minimize costs, and ensure compliance with industry standards and regulations. Effective management systems require specialized knowledge, skills, and experience to develop, monitor, and continuously improve them. Overall, management systems play a critical role in enhancing the efficiency and effectiveness of the organization's operations, leading to better performance, reputation, and competitiveness.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Project Management",
+          "description": "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet project requirements. It involves planning, organizing, and controlling resources to achieve specific goals within a defined timeframe, budget, and scope. Effective project management requires strong leadership, communication, and problem-solving skills, as well as the ability to adapt to changing circumstances and manage risks. Project managers are responsible for overseeing all aspects of a project, from initiation to closure, and ensuring that it is delivered on time, within budget, and to the satisfaction of stakeholders.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Military Skills",
+          "description": "Military skills are specialized skills that are acquired through military training and experience. These skills are designed to enable military personnel to perform their duties effectively and efficiently in a variety of environments and conditions. Some common military skills include communication, tactics, marksmanship, navigation, and first aid. These skills are highly valued in both military and civilian contexts and can often lead to successful careers in fields such as law enforcement, security, and emergency services.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Networking Basics",
+          "description": "Networking Basics is a specialized skill that involves understanding the fundamentals of computer networks, including the technologies, devices, protocols, and configurations used to connect and transmit data between devices. It requires knowledge of terminology, network topologies, network models, and network security. A thorough understanding of networking basics is essential for careers in IT, networking, cybersecurity, and related fields.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Network Engineering",
+          "description": "Network engineering is a specialized skill that involves designing, building, and maintaining complex computer networks that facilitate data communication and exchange between multiple devices and systems. It requires a deep understanding of different network technologies, protocols, and architectures, as well as proficiency in hardware and software engineering. Network engineers play a crucial role in ensuring that organizations have reliable and efficient communication infrastructure that can support their business operations.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Network Administration",
+          "description": "Network Administration is the specialized skill of managing, maintaining, and securing computer networks. This involves tasks such as configuring network components, monitoring network performance, troubleshooting network issues, and ensuring network security. It requires knowledge of networking protocols, hardware, and software, as well as the ability to work with various operating systems and devices. A network administrator is essential to ensure the smooth functioning and security of a company's computer network infrastructure.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Personal Attributes Questionnaires",
+          "description": "The Personal Attributes Questionnaire (PAQ) is a specialized skill used in the field of industrial-organizational psychology to assess an individual's personal characteristics and traits. The PAQ is a standardized test that measures individual differences in personality traits such as motivation, leadership, social skills, and work ethic. This tool is often used by employers in the hiring process to identify individuals who possess the qualities and characteristics necessary to excel in a particular position. Professionals who administer this assessment must have a thorough understanding of assessment procedures and standards to ensure accurate and reliable results.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Personal Information Protection and Electronic Documents Act",
+          "description": "The Personal Information Protection and Electronic Documents Act (PIPEDA) is a Canadian privacy law that governs how private sector organizations can collect, use and disclose personal information in the course of commercial activities. It outlines the obligations of organizations when handling personal information, including obtaining consent, safeguarding data, and providing individuals with access to their personal information. It also establishes the Office of the Privacy Commissioner of Canada, which oversees and enforces compliance with the law.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Quality Management",
+          "description": "Quality management is a specialized skill that involves ensuring that products and services meet or exceed customer expectations. This includes setting and adhering to standards, designing and implementing quality control measures, and continuously monitoring and improving processes. Quality management is crucial for businesses seeking to maintain customer satisfaction, increase efficiency, and stay competitive in their respective industries. It requires a combination of technical knowledge, analytical skills, and effective communication to succeed.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Regulatory Requirements",
+          "description": "Regulatory requirements refer to the laws, rules, and guidelines set by government agencies and other regulatory bodies to ensure that products, services, and practices meet certain safety, quality, and ethical standards. Compliance with these regulations is critical for businesses in various industries to avoid penalties, legal liabilities, and reputational damage. Regulatory requirements management is a specialized skill that involves understanding and adhering to these regulations, monitoring changes and updates, and implementing measures to ensure compliance. This may involve working closely with regulatory agencies, conducting audits and assessments, developing and implementing policies and procedures, and training staff on regulatory compliance.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Security Policies",
+          "description": "Security policies refer to a set of rules and guidelines that are put in place to safeguard an organization's information and assets. This can include rules surrounding data access, password management, and network security. A common skill in security policy implementation is the ability to analyze security risks and evaluate the likelihood of a security breach, as well as the ability to communicate security policies effectively to employees and other stakeholders. Additionally, familiarity with industry standards and regulations related to security policies is important.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Stakeholder Management",
+          "description": "Stakeholder management is a specialized skill that involves identifying, analyzing, and managing relationships with individuals or groups who can affect or be affected by the outcome of a project, program, or organization. It requires effective communication, negotiation, and conflict resolution skills to ensure stakeholder needs and expectations are met, and their concerns are addressed. The success of a project or program depends largely on the ability to manage stakeholder relationships effectively, and stakeholders can greatly influence the success or failure of an initiative.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Time Management",
+          "description": "Time management is a common skill that involves organizing and prioritizing tasks and activities to make the most efficient use of time. It involves setting goals, breaking them down into smaller tasks, and allocating time to each task. Effective time management can increase productivity, reduce stress, and provide a sense of accomplishment.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Technical Management",
+          "description": "Technical management involves the application of specialized skills, knowledge, and techniques to effectively manage and lead technical projects, teams, and resources to achieve business objectives. It requires a deep understanding of technical processes, systems, and tools, as well as the ability to communicate effectively with technical and non-technical stakeholders. Effective technical management can improve organizational efficiency, productivity, and innovation.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Vulnerability",
+          "description": "The article discusses how vulnerability is not weakness but rather a specialized skill that can be learned and practiced. It highlights the importance of vulnerability in building trust, connection and growth in personal and professional relationships. The three elements of vulnerability are identified as openness, honesty and willingness to take risks. The article also provides tips on how to cultivate vulnerability in oneself, including self-reflection, seeking support and focusing on the positive benefits of vulnerability.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Extensible Markup Language (XML)",
+          "description": "Extensible Markup Language (XML) is a markup language that is used to store and transport data. It is a language that is both human-readable and machine-readable, making it ideal for storing and exchanging data between applications, databases, and web services. XML is used in a wide range of applications, including web development, data storage, and data transfer between systems. As a specialized skill, proficiency in XML is essential for developers and programmers working in fields that require data transfer, management, and integration.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Friendliness",
+          "description": "The article discusses the importance of friendliness as a skill that can be practiced and mastered. It highlights the benefits of being friendly, including improved social connections, better communication skills, and increased likability. The article also suggests techniques for improving friendliness, such as active listening, displaying positive body language, and finding common interests with others. Overall, the article emphasizes that anyone can improve their friendliness skills with practice and effort.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Passionate",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Security Systems",
+          "description": "Security systems involve the use of hardware, software and physical controls to protect people, property and information. It is a specialized skill that requires knowledge of various technologies and practices that maintain security and mitigate risk. Those who specialize in security systems must understand the various types of threats and vulnerabilities that organizations face and develop solutions to prevent or mitigate these risks. They may work with surveillance cameras, access control systems, intrusion detection systems and other security technologies. A successful security system needs to be comprehensive, adaptive and tailored to the specific needs of each organization.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Security Audits",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Scripting",
+          "description": "Scripting is a computer programming skill that involves writing code to automate processes or perform specific tasks. It requires knowledge of programming languages, such as Python, Bash, or PowerShell, and the ability to understand and solve complex problems. Scripting can be used in various industries, including software development, system administration, and data analysis.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Quality Control",
+          "description": "Quality Control is the process of inspecting, testing, and verifying products or services to ensure they meet or exceed the required standards. This is a common skill in many industries, from manufacturing to healthcare to software development. Effective quality control ensures that customers receive consistent, high-quality products or services and helps to prevent defects, errors, or other issues that could lead to customer dissatisfaction or harm. Key skills for quality control professionals include attention to detail, knowledge of industry standards and regulations, analytical and problem-solving abilities, and strong communication and collaboration skills.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Administration of Computer Systems",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Information Technology",
+          "description": "Information technology is a fundamental and crucial skill for communication, problem-solving, and overall success in today's digital world. It encompasses various aspects such as computer hardware, software, networks, and the internet. With the advancement of technology, it has become a common skill that is necessary for both personal and professional development. Knowing how to effectively utilize technology can enhance productivity, facilitate collaboration, and streamline processes.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Project Scoping",
+          "description": "Project scoping is the process of defining the parameters and requirements of a project in order to create a clear understanding of the project's goals, outcomes, and deliverables. This is a specialized skill that requires careful analysis and communication to ensure that all stakeholders share a common understanding of the project and its objectives. The scope document is a critical component of project planning and provides direction for the rest of the project. Proper scoping can help to identify potential risks and ensure that resources are allocated effectively, minimizing the potential for delays, misunderstandings and budget overruns.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Laptops",
+          "description": "Text Kernel Skill",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Digital Management",
+          "description": "Text Kernel Skill",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Safety Principles",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Cyber Warfare",
+          "description": "Cyber warfare is a specialized skill that involves using technology and hacking techniques to spy on or attack an enemy in cyberspace. It requires knowledge of various computer systems, networks, and software, as well as the ability to exploit vulnerabilities and create malware. This skill is increasingly important in modern warfare as nations, organizations, and individuals become more connected and reliant on technology. It is also a rapidly evolving field, with new threats and countermeasures emerging regularly.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Master of Business Administration (MBA)",
+          "description": "Master of Business Administration (MBA) is a graduate degree that focuses on different aspects of business management. It is designed to equip students with the necessary skills and knowledge to succeed in their careers. The curriculum typically covers topics such as accounting, finance, marketing, operations, and leadership. MBA graduates are highly reputed and sought after by employers across various industries. The program prepares students for leadership positions, entrepreneurship, and the ability to manage and lead people in a business environment.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Written Communication",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Encryption",
+          "description": "Encryption is the process of encoding information in such a way that only authorized parties can access it. It is a specialized skill that requires knowledge of cryptography, algorithms, and computer systems. Encryption is used to protect sensitive information such as financial data, personal details, and military secrets from unauthorized access or theft. It plays a crucial role in modern communication, cybersecurity, and information technology.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Operating Systems",
+          "description": "Operating Systems is a specialized skill related to the software that manages computer hardware and software resources and provides services for computer programs. It involves knowledge of various operating systems such as Windows, macOS, Linux, UNIX, etc. The skill includes understanding system architecture, file systems, process management, memory management, and device drivers. An operating system specialist may be responsible for tasks such as installing, configuring, updating, troubleshooting, and optimizing the operating system.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Workforce Management",
+          "description": "Workforce management refers to the process of planning, scheduling, tracking, and optimizing the use of an organization's workforce to ensure productivity, efficiency and profitability. It requires the use of specialized skill sets and software tools to manage employee scheduling, attendance, time-off, and workload distribution. Workforce management is critical for businesses that rely heavily on human resources such as service-oriented industries like retail, hospitality, and healthcare. Effective workforce management can lead to increased employee satisfaction, improved customer service, and organizational success.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Communications",
+          "description": "Communication is a vital skill that involves exchanging information through speaking, writing or non-verbal means. It is crucial for building relationships, conveying ideas, clarifying misunderstandings, and achieving goals. Effective communication requires active listening, clear and concise expression, empathy, and persuasion skills. It is applicable in all aspects of life, including personal relationships, social interactions, and professional settings.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Information Systems Security",
+          "description": "Information Systems Security involves protecting digital information and computer systems from unauthorized access, use, disclosure, disruption, modification, or destruction. It is a specialized skill that requires knowledge of various security technologies, protocols, best practices, and regulatory frameworks. Information security professionals are responsible for assessing security risks, designing, implementing, and managing security solutions, and responding to security incidents. They play a crucial role in safeguarding sensitive data, intellectual property, and critical infrastructure in today's interconnected world.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Training And Development",
+          "description": "Training and development is a common skill that involves improving the knowledge, skills, and abilities of individuals or groups through teaching, coaching, and mentoring. This skill is essential in enhancing job performance, increasing employee engagement, and achieving organizational goals. It involves identifying training needs, designing and delivering effective training programs, measuring their effectiveness, and continuously improving them. Effective training and development can boost productivity, improve employee retention, and enhance the overall performance of an organization.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Research",
+          "description": "Research is a skill that involves gathering and analyzing information to answer questions or solve problems. It involves identifying reliable sources of information, evaluating the credibility of those sources, and synthesizing the information to draw meaningful conclusions. Research skills are essential in many fields, including academia, business, and journalism. Effective research requires critical thinking, attention to detail, and the ability to discern biases and limitations in information sources.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Relationship Building",
+          "description": "Relationship building is the practice of building strong connections and trust with others, which is a common skill among successful individuals in all industries. It involves open communication, active listening, empathy, and understanding the needs and goals of others. Building relationships can help to establish a solid network, increase opportunities, foster collaboration, and improve overall well-being.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Teamwork",
+          "description": "Teamwork is the ability to work effectively and harmoniously with others towards a common goal. It involves being cooperative, communicative, and collaborative, as well as being able to contribute to and participate in group decision-making processes. Teamwork is a valued skill in many workplaces and is essential for successful project completion and overall business success.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Cybersecurity Strategy",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Management",
+          "description": "Management is a set of skills that involve a variety of tasks, such as planning, organizing, leading, and controlling resources to achieve specific goals. It is a commonly required skill, applicable in various areas, including business, government, and non-profit organizations. A good manager must possess strong communication, decision-making, problem-solving, and leadership skills, and be able to adapt to different situations and work effectively with a team.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Change Management",
+          "description": "Change Management is a specialized skill that involves anticipating, planning, executing, and evaluating the necessary changes within an organization to achieve desired outcomes. It involves understanding the impact of change on individuals, processes, systems, and culture, and developing strategies to mitigate potential resistance and facilitate acceptance. Effective change management requires strong leadership, communication, problem-solving, and project management skills, as well as a commitment to continuous improvement and a focus on achieving business objectives.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Analytical Techniques",
+          "description": "Analytical techniques involve the use of specialized skills and methods to analyze data and information. These techniques enable individuals to identify patterns, trends, and relationships in data, as well as to draw insights and make informed decisions. Such skills require a deep understanding of statistics, data modeling, and visualization techniques, as well as the ability to apply critical thinking and logic to complex problems. Effective use of analytical techniques can help businesses and organizations to improve their operations, identify new opportunities, and make informed decisions based on data-driven insights.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Auditing",
+          "description": "Auditing is a specialized skill that involves reviewing and analyzing financial statements, documents, and systems to ensure that they are accurate, reliable, and in compliance with applicable laws and regulations. It requires an understanding of accounting principles and practices, as well as knowledge of auditing standards and techniques. An auditor must be objective, independent, and thorough in their assessments in order to provide assurance to stakeholders that financial information is trustworthy.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Business Operations",
+          "description": "Business Operations is the process of managing and improving the day-to-day activities and resources of a company to achieve greater efficiency, productivity and profitability. It involves creating and implementing strategies, streamlining processes, optimizing technology, managing finances, and ensuring compliance with laws and regulations. It requires specialized skills in management, analysis, communication and problem solving. Successful operations management creates a sound foundation for a business to achieve long-term success.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Operations",
+          "description": "Operations is a fundamental skill that involves managing and overseeing the day-to-day activities of a business or organization. This includes managing resources, processes, people, and technology to ensure efficient and effective operations. Strong operations skills are critical for businesses to achieve their objectives, meet customer needs, and remain competitive in the marketplace.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Applied Ethics",
+          "description": "Applied ethics is a specialized skill that involves the application of ethical principles to real-world scenarios and situations. It involves understanding and analyzing ethical dilemmas and decision-making processes in areas such as healthcare, business, law, and public policy, in order to make reasoned and justifiable ethical choices. This skill involves knowledge of various ethical theories, principles, and frameworks, as well as critical thinking and communication abilities. An applied ethicist must be able to consider the diverse perspectives and values of different stakeholders, and to navigate complex ethical issues in a professional and unbiased manner.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Stress Management",
+          "description": "Stress management is the ability to cope with stressors and challenges in a healthy manner. It involves a range of techniques and strategies, such as mindfulness, exercise, and time management, that help individuals reduce stress and maintain a sense of balance and wellbeing. Effective stress management can improve mental and physical health, enhance productivity and performance, and lead to overall greater satisfaction with life.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Human Resource Management",
+          "description": "Human Resource Management is a specialized skill that involves managing the people who work for a company, organization or institution. It includes recruiting, hiring, training, and developing staff members to achieve their professional goals and meet the objectives of the organization. Good HR management helps organizations to attract and retain high-quality people by creating a positive work environment and providing opportunities for growth and advancement. Successful HR managers have a strong understanding of employment laws and regulations, and are skilled at building effective teams and resolving conflicts.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Labor Relations",
+          "description": "Labor Relations is a specialized skill that involves managing the relationship between employees and employers, negotiating collective bargaining agreements, mediating labor disputes, and ensuring compliance with labor laws and regulations. A labor relations professional must have a strong understanding of labor laws, communication skills, and the ability to build relationships and resolve conflicts. The ultimate goal of labor relations is to create a productive and harmonious workplace that meets both the needs of workers and employers.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Leadership and Navigation",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Organizational Leadership",
+          "description": "Organizational leadership is a specialized skill that involves the ability to guide, motivate, and influence individuals and groups in achieving common goals in an organization. It requires a combination of knowledge, strategic thinking, communication skills, and emotional intelligence to lead and manage people effectively. Effective organizational leaders need to be able to inspire and empower their team, foster a positive work culture, and adapt to changing circumstances and challenges.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Software Development Life Cycle",
+          "description": "Software Development Life Cycle (SDLC) is a process through which software development teams build and deliver high-quality software. It involves various phases such as planning, designing, coding, testing, and maintenance. Each of these phases plays a critical role in ensuring that the software is efficient, effective, and meets the needs of the end-users. SDLC requires specialized skills, including technical expertise, project management, communication, and problem-solving abilities. Successful software development depends on careful planning, efficient execution, and effective communication between team members and stakeholders.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Talent Sourcing",
+          "description": "Talent sourcing involves finding and attracting qualified candidates for specific job positions. It requires specialized skills such as knowledge of recruitment technologies, market trends, candidate research, and networking strategies. Effective talent sourcing is crucial for companies to build a strong talent pipeline and ensure a competitive edge.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Hardware",
+          "description": "Computer hardware involves the physical components of a computer, such as the motherboard, processor, memory, and hard drives. It also includes peripherals like keyboards, mice, monitors, and printers. Understanding computer hardware requires knowledge of how each component works and interacts with other components of the system. Troubleshooting hardware issues often requires specialized skills and training. Proper installation, maintenance, and upgrades of hardware can improve system performance and prevent hardware failures.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Authentications",
+          "description": "Authentication is the process of verifying the identity of a person or system, usually through the use of credentials such as passwords, biometric data, or security tokens. It is a specialized skill that involves understanding different authentication methods, their strengths and weaknesses, and how to implement and manage them securely. It is an important aspect of cybersecurity and is critical to ensuring the confidentiality, integrity, and availability of data and systems.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Occupational Safety And Health Administration (OSHA)",
+          "description": "OSHA is a government agency responsible for ensuring safe and healthy working conditions for employees in the United States. It sets and enforces workplace safety standards, provides training and education, and conducts inspections to ensure compliance with regulations. Understanding and implementing OSHA regulations is a specialized skill that requires knowledge of workplace hazards, safety procedures, and legal requirements.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Account Management",
+          "description": "Account management is a specialized skill that involves managing and cultivating relationships with clients to meet their needs and ensure continued business. It requires strong communication, negotiation, and problem-solving skills, as well as the ability to understand the client's business goals and develop strategies to help achieve them. The account manager acts as a liaison between the client and the organization, ensuring that all parties are satisfied with the services provided and that any issues are resolved quickly and efficiently. Successful account management can lead to increased revenue, client loyalty, and long-term partnerships.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Infrastructure",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Internal Controls",
+          "description": "Internal controls is a specialized skill that involves creating and maintaining effective systems and procedures within an organization to ensure the accuracy and integrity of financial reporting, compliance with laws and regulations, and safeguarding of assets. This skill requires knowledge of accounting, audit, risk management, and technology, and an understanding of organizational structure, culture, and processes. Effective internal controls can prevent fraud, errors, and losses, and enhance the overall performance and sustainability of an organization.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Cyber Security",
+          "description": "Cyber security is a specialized skill that involves protecting computer systems, networks, and applications from cyber threats such as hackers, viruses, and malware. It requires expertise in risk analysis, threat management, vulnerability assessment, and incident response. Cyber security professionals must constantly update their expertise and knowledge to keep up with the ever-evolving cyber threat landscape.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "HyperText Markup Language (HTML)",
+          "description": "HTML is a markup language used to create web pages and other web-based documents. It consists of a set of tags that are used to define the structure and content of a web page. HTML is the foundation of the World Wide Web and is used in conjunction with other web technologies, such as cascading style sheets (CSS) and JavaScript, to create dynamic and interactive web experiences. Proficiency in HTML is essential for any web developer or designer.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Data Duplication",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Legislation",
+          "description": "Legislation is the process of creating laws and regulations by a governmental body. It is a specialized skill that requires an understanding of legal and political processes, as well as the ability to navigate complex systems and communicate effectively with stakeholders. Legislators must also have the ability to research and analyze information in order to make informed decisions that promote the common good. Successful legislators often possess strong leadership, negotiation, and problem-solving skills, as well as an understanding of the diverse needs and interests of their constituents.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Information Privacy",
+          "description": "Information privacy is the protection of sensitive and personal information from unauthorized access or disclosure. It is a specialized skill that requires knowledge of privacy laws, regulations, and best practices to ensure that an organization handles personal information lawfully and responsibly. Professionals working in information privacy should have a deep understanding of data protection, risk assessment, data management, and information security. They also need to stay up-to-date with evolving privacy laws and technologies to keep organizations compliant and protected against data breaches.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Computer Systems",
+          "description": "Computer Systems is a specialized skill that involves the design, development, and management of computer hardware and software systems. This includes understanding how components work together, writing and testing software, and troubleshooting issues. It requires a strong knowledge of programming languages, computer systems architecture, and networking. With the increasing importance of technology in our society, the demand for professionals skilled in computer systems is growing.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Mitigation",
+          "description": "Mitigation is a highly specialized skill that involves anticipating, preventing and minimizing the impact of harmful events or circumstances on individuals, society, and the environment. It involves a range of strategies and techniques aimed at reducing risks through early warning systems, emergency preparedness plans, community education, and infrastructure improvements. Mitigation is essential for protecting lives, reducing economic losses, and preserving the environment in the face of disasters, climate change, and other challenges. It requires expertise in risk analysis, project management, communication, and collaboration between various stakeholders.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Critical Evaluation",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Human Resource (HR) Strategic Planning",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Total Rewards",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "U.S. Employment Law and Regulations",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Front End (Software Engineering)",
+          "description": "Front-end software engineering is a specialized skill that involves architecture, design, development and maintenance of user interfaces for web and mobile applications. Front-end developers work closely with designers and back-end developers to ensure that the application is user-friendly, functional and visually appealing. They use languages like HTML, CSS and JavaScript to create interactive websites and applications that are optimized for speed, accessibility and responsiveness. Front-end development requires creativity, technical knowledge and attention to detail to create an end product that meets the needs of both clients and users.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Programming Literacy",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "name": "Analytics",
+          "description": "Analytics is the process of gathering and analyzing data to draw insights and make informed decisions. It requires a specialized skill set, including knowledge of statistical analysis, data visualization, and programming. Analytics is used in a variety of industries, from finance and marketing to healthcare and sports.",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "refCredentialAward": {
+            "id": "cred-proficiency-certificate-001",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson",
+            "informationSourceId": "Org1"
+          }
+        }
+      ],
+      "contact": [
+        {
+          "email": [
+            {
+              "informationSourceId": "Org1",
+              "emailAddress": [
+                "mhanson_lifdemo@stateu.edu"
+              ]
+            }
+          ],
+          "address": [
+            {
+              "informationSourceId": "Org1",
+              "addressCity": "Marietta",
+              "countryCode": "US",
+              "addressState": "Georgia",
+              "addressPostalCode": "30008"
+            }
+          ],
+          "telephone": [
+            {
+              "informationSourceId": "Org1",
+              "telephoneNumber": [
+                "+12345678910"
+              ]
+            }
+          ],
+          "informationSourceId": "Org1"
+        }
+      ],
+      "identifier": [
+        {
+          "informationSourceId": "Org1",
+          "identifier": "sha256$81fb9410e68f70a95e9a614e8fcefba8a067fa406a1405610093713d4009844a",
+          "identifierType": "INSTITUTION_ASSIGNED_NUMBER"
+        },
+        {
+          "informationSourceId": "Org1",
+          "identifier": "100005",
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+        }
+      ],
+      "credentialAward": [
+        {
+          "informationSourceId": "Org1",
+          "uri": "https://api.badgr.io/public/assertions/kKunfb5XTPSI91graG2FMQ",
+          "image": [
+            {
+              "id": "https://api.badgr.io/public/assertions/kKunfb5XTPSI91graG2FMQ/image",
+              "informationSourceId": "Org1"
+            }
+          ],
+          "revoked": false,
+          "identity": [
+            {
+              "salt": "Qh21XTPaPjxTYgPm",
+              "hashed": true,
+              "identityType": "email",
+              "informationSourceId": "Org1"
+            }
+          ],
+          "awardIssueDate": "2025-01-30T15:00:00Z",
+          "verificationType": "HostedBadge",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "https://api.badgr.io/public/badges/z7O2tvPBRuiA7hLpzDG0Bg"
+          },
+          "id": "e5b4a2d6-97c4-52b1-b69f-c1a3b5d8e4a2",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "awardStatus": "InProgress",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "HansonM-c868cc12-87e2-354a-b25c-e5b687ffb242",
+          "awardIssueDate": "2022-08-15",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "awardStatus": "InProgress",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "HansonM-a258ba15-89a2-574b-a69c-e8c458ac263",
+          "awardIssueDate": "2021-05-10",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "awardStatus": "Granted",
+          "awardIssueDate": "05/2020",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "HansonM-a258ba15-89a2-574b-a69c-e8c458ac263a",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "HansonM-b4c5da21-8e2a-57bb-a39e-c5e2a6db3a4f",
+          "awardIssueDate": "2022-08-15",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "HansonM-e2a1cb54-92b4-5a4c-a56e-f4b3caa125cb",
+          "awardIssueDate": "2021-05-12",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "awardStatus": "Completed",
+          "instanceOfRefCredential": {
+            "informationSourceId": "Org1",
+            "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+          },
+          "id": "HansonM-c5b8ea43-84a5-5f2d-a28b-e2a4b5a3d6ae",
+          "awardIssueDate": "2020-07-01",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "id": "cred-proficiency-certificate-001",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Matt Hanson",
+          "informationSourceId": "Org1"
+        },
+        {
+          "informationSourceId": "Org1",
+          "id": "b3a1f2c4-9a2b-5e4a-a48c-d4b2e5c9a2f1",
+          "awardIssueDate": "2024-12-15T10:00:00Z",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "id": "d4b2a5e3-94a3-5f2c-a38b-c2a4e5b6d8f9",
+          "awardIssueDate": "2023-06-20",
+          "credentialAwardee": "Matt Hanson"
+        },
+        {
+          "informationSourceId": "Org1",
+          "id": "c3a8b5e2-84b2-54da-b59c-f5c2a6d4e3b1",
+          "awardIssueDate": "2020-12-15T10:00:00Z",
+          "credentialAwardee": "Matt Hanson"
+        }
+      ],
+      "courseLearningExperience": [
+        {
+          "informationSourceId": "Org1",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org1",
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org1",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org1"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org1"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org1",
+            "id": "b3a1f2c4-9a2b-5e4a-a48c-d4b2e5c9a2f1",
+            "awardIssueDate": "2024-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson"
+          }
+        },
+        {
+          "informationSourceId": "Org1",
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org1",
+            "name": "State University",
+            "identificationSystem": "a25bce91-8f4a-53bb-b36a-e8a2d4b3f5a6",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org1",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org1"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org1"
+          },
+          "refCredentialAward": {
+            "informationSourceId": "Org1",
+            "id": "d4b2a5e3-94a3-5f2c-a38b-c2a4e5b6d8f9",
+            "awardIssueDate": "2023-06-20",
+            "credentialAwardee": "Matt Hanson"
+          }
+        },
+        {
+          "assertedByRefOrganization": {
+            "informationSourceId": "Org1",
+            "name": "State University",
+            "identificationSystem": "State University SIS",
+            "organizationType": []
+          },
+          "refCourse": {
+            "informationSourceId": "Org1",
+            "identifier": [
+              {
+                "identifier": "CS651",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org1"
+              }
+            ]
+          },
+          "offeredByRefOrganization": {
+            "identificationSystem": "stateu-state-university-id",
+            "name": "State University",
+            "organizationType": [
+              "University"
+            ],
+            "informationSourceId": "Org1"
+          },
+          "informationSourceId": "Org1",
+          "refCredentialAward": {
+            "informationSourceId": "Org1",
+            "id": "c3a8b5e2-84b2-54da-b59c-f5c2a6d4e3b1",
+            "awardIssueDate": "2020-12-15T10:00:00Z",
+            "credentialAwardee": "Matt Hanson"
+          }
+        }
+      ],
+      "informationSourceId": "Org1"
+    }
+  ],
+  "course": [
+    {
+      "informationSourceId": "Org1",
+      "identifier": [
+        {
+          "identifier": "CS651",
+          "identifierType": "Course Code",
+          "identifierVerification": [
+            "Academic Records"
+          ],
+          "informationSourceId": "Org1"
+        }
+      ]
+    }
+  ],
+  "organization": [
+    {
+      "informationSourceId": "Org1",
+      "name": "State University",
+      "description": "State University (StateU) is an accredited online university offering online bachelor's and master's degree programs. The programs are competency-based, student-focused, online, nonprofit university.",
+      "contact": [
+        {
+          "address": [
+            {
+              "addressCity": "Dallas",
+              "countryCode": "US",
+              "addressState": "Texas",
+              "addressStreet": "632 East Hwy 3",
+              "addressPostalCode": "75001",
+              "informationSourceId": "Org1"
+            }
+          ],
+          "email": [
+            {
+              "emailAddress": [
+                "credentials@stateu.edu"
+              ],
+              "informationSourceId": "Org1"
+            }
+          ],
+          "websiteAddress": "https://www.stateu.edu/",
+          "telephone": [
+            {
+              "telephoneNumber": [
+                "111-222-3333"
+              ],
+              "informationSourceId": "Org1"
+            }
+          ],
+          "informationSourceId": "Org1"
+        }
+      ],
+      "imageUrl": "https://assets.stateu.edu/99da0cfd314920b5cf8cb6c8727e7675",
+      "identifier": [
+        {
+          "identifier": "833333326",
+          "identifierType": "Federal employer identification number",
+          "informationSourceId": "Org1"
+        },
+        {
+          "identifier": "23323331",
+          "identifierType": "Dun and Bradstreet number",
+          "informationSourceId": "Org1"
+        },
+        {
+          "identifier": "https://credentialfinder.org/organization/000/State_University",
+          "identifierType": "credentialfinder.org",
+          "informationSourceId": "Org1"
+        }
+      ],
+      "identificationSystem": "State University SIS",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-employing-organization-id",
+      "name": "Tech Solutions Inc",
+      "organizationType": [
+        "Company"
+      ],
+      "informationSourceId": "Org1"
+    },
+    {
+      "informationSourceId": "Org1",
+      "name": "State University",
+      "description": "State University (StateU) is an accredited online university offering online bachelor's and master's degree programs. The programs are competency-based, student-focused, online, nonprofit university.",
+      "contact": [
+        {
+          "address": [
+            {
+              "addressCity": "Dallas",
+              "countryCode": "US",
+              "addressState": "Texas",
+              "addressStreet": "632 East Hwy 3",
+              "addressPostalCode": "75001",
+              "informationSourceId": "Org1"
+            }
+          ],
+          "email": [
+            {
+              "emailAddress": [
+                "credentials@stateu.edu"
+              ],
+              "informationSourceId": "Org1"
+            }
+          ],
+          "websiteAddress": "https://www.stateu.edu/",
+          "telephone": [
+            {
+              "telephoneNumber": [
+                "111-222-3333"
+              ],
+              "informationSourceId": "Org1"
+            }
+          ],
+          "informationSourceId": "Org1"
+        }
+      ],
+      "imageUrl": "https://assets.stateu.edu/99da0cfd314920b5cf8cb6c8727e7675",
+      "identifier": [
+        {
+          "identifier": "833333326",
+          "identifierType": "Federal employer identification number",
+          "informationSourceId": "Org1"
+        },
+        {
+          "identifier": "23323331",
+          "identifierType": "Dun and Bradstreet number",
+          "informationSourceId": "Org1"
+        },
+        {
+          "identifier": "https://credentialfinder.org/organization/000/State_University",
+          "identifierType": "credentialfinder.org",
+          "informationSourceId": "Org1"
+        }
+      ],
+      "identificationSystem": "a25bce91-8f4a-53bb-b36a-e8a2d4b3f5a6",
+      "organizationType": []
+    },
+    {
+      "informationSourceId": "Org1",
+      "name": "State University",
+      "identificationSystem": "State University SIS",
+      "organizationType": []
+    },
+    {
+      "informationSourceId": "Org1",
+      "name": "State University",
+      "identificationSystem": "a25bce91-8f4a-53bb-b36a-e8a2d4b3f5a6",
+      "organizationType": []
+    },
+    {
+      "identificationSystem": "stateu-state-university-id",
+      "name": "State University",
+      "organizationType": [
+        "University"
+      ],
+      "informationSourceId": "Org1"
+    },
+    {
+      "informationSourceId": "Org1",
+      "name": "San Antonio University",
+      "identificationSystem": "San Antonio University SIS",
+      "organizationType": []
+    }
+  ],
+  "credential": [
+    {
+      "informationSourceId": "Org1",
+      "id": "https://api.badgr.io/public/badges/z7O2tvPBRuiA7hLpzDG0Bg",
+      "name": "StateU Certificate: Network and Cyber Defense Foundations (DEMO)",
+      "image": [
+        {
+          "id": "https://api.badgr.io/public/badges/z7O2tvPBRuiA7hLpzDG0Bg/image",
+          "informationSourceId": "Org1"
+        }
+      ],
+      "format": [
+        "https://w3id.org/openbadges/v2"
+      ],
+      "credentialAlignments": [
+        {
+          "url": "https://www.onetonline.org/link/summary/15-1212.00",
+          "code": "15-1212.00",
+          "name": "Information Security Analysts",
+          "framework": "O*Net OnLine by U.S. Department of Labor",
+          "description": "Plan, implement, upgrade, or monitor security measures for the protection of computer networks and information. Assess system vulnerabilities for security risks and propose and implement risk mitigation strategies. May ensure appropriate security controls are in place that will safeguard digital files and vital electronic infrastructure. May respond to computer security breaches and viruses.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/66f65a89-e6af-49c0-803b-347c3945d7e3",
+          "code": "https://osmt.stateu.edu/api/skills/66f65a89-e6af-49c0-803b-347c3945d7e3",
+          "name": "Address Hacking Threats",
+          "framework": "OSMT",
+          "description": "Address hacking threats via physical hardware security, asset inventory, device, and patch management.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/18b3f238-f76a-4c84-8daa-2296ba9277ee",
+          "code": "https://osmt.stateu.edu/api/skills/18b3f238-f76a-4c84-8daa-2296ba9277ee",
+          "name": "Analyze Collected Data",
+          "framework": "OSMT",
+          "description": "Analyze collected data for evidence gathering and threat investigation processes.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/1a2308b7-0fae-465d-987e-7ec738fa920f",
+          "code": "https://osmt.stateu.edu/api/skills/1a2308b7-0fae-465d-987e-7ec738fa920f",
+          "name": "Business Needs System Data Identification",
+          "framework": "OSMT",
+          "description": "Identify system data and the hardware or software components required to meet the business needs.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/a695e225-5df0-4039-bebb-503b35e11bc0",
+          "code": "https://osmt.stateu.edu/api/skills/a695e225-5df0-4039-bebb-503b35e11bc0",
+          "name": "CIA Triad Objectives Demonstration",
+          "framework": "OSMT",
+          "description": "Demonstrate the objectives of confidentiality, integrity, and availability (the CIA triad).",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/9cdd1e92-fd69-4ba2-ab9d-04a5d6994a8c",
+          "code": "https://osmt.stateu.edu/api/skills/9cdd1e92-fd69-4ba2-ab9d-04a5d6994a8c",
+          "name": "Code Separation",
+          "framework": "OSMT",
+          "description": "Separate presentational code from data code in a web page using cascading style sheets (CSS).",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/3c7be0b2-cd8a-4ae4-bfb1-0c597c513ff6",
+          "code": "https://osmt.stateu.edu/api/skills/3c7be0b2-cd8a-4ae4-bfb1-0c597c513ff6",
+          "name": "Computer System Component Identification",
+          "framework": "OSMT",
+          "description": "Identify common components of computer systems.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/f7c1e346-d47e-4aa1-86a2-5d3cc6ac228a",
+          "code": "https://osmt.stateu.edu/api/skills/f7c1e346-d47e-4aa1-86a2-5d3cc6ac228a",
+          "name": "Create Web Pages and Documents",
+          "framework": "OSMT",
+          "description": "Create web pages and web documents using hypertext markup language (HTML).",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/d9e3e8d2-175a-4053-87ae-9ccbcceb1b8a",
+          "code": "https://osmt.stateu.edu/api/skills/d9e3e8d2-175a-4053-87ae-9ccbcceb1b8a",
+          "name": "Data Access Requirements Definition",
+          "framework": "OSMT",
+          "description": "Define the requirements for ongoing data access and privacy.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/1215297f-d7cd-492e-9cc3-f959e19c357e",
+          "code": "https://osmt.stateu.edu/api/skills/1215297f-d7cd-492e-9cc3-f959e19c357e",
+          "name": "Data Classification",
+          "framework": "OSMT",
+          "description": "Classify data based on provenance, type, and risks.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/cbed35b7-1cfb-42f7-a2e1-c181422d54b7",
+          "code": "https://osmt.stateu.edu/api/skills/cbed35b7-1cfb-42f7-a2e1-c181422d54b7",
+          "name": "Define Computer Program Requirements",
+          "framework": "OSMT",
+          "description": "Define the requirements for a computer program.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/3b5d03f2-8d55-4edb-9126-d01cc51c6e65",
+          "code": "https://osmt.stateu.edu/api/skills/3b5d03f2-8d55-4edb-9126-d01cc51c6e65",
+          "name": "Define Network Wiring System Concepts",
+          "framework": "OSMT",
+          "description": "Define basic network wiring systems concepts.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/36d99c88-03f2-4b96-ad7d-0a2445f15052",
+          "code": "https://osmt.stateu.edu/api/skills/36d99c88-03f2-4b96-ad7d-0a2445f15052",
+          "name": "Disaster Recovery Basics Identification",
+          "framework": "OSMT",
+          "description": "Identify basic disaster recovery terminology, principles, and resources.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/21c39661-fd0b-4d0a-8710-a57c8733d8b1",
+          "code": "https://osmt.stateu.edu/api/skills/21c39661-fd0b-4d0a-8710-a57c8733d8b1",
+          "name": "Ethical Issue Description",
+          "framework": "OSMT",
+          "description": "Describe common ethical issues.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/4b4e7526-5fac-448c-94e9-f8f69b8a677c",
+          "code": "https://osmt.stateu.edu/api/skills/4b4e7526-5fac-448c-94e9-f8f69b8a677c",
+          "name": "Forensic Requirements and Capabilities Explanation",
+          "framework": "OSMT",
+          "description": "Explain forensic requirements and capabilities to applicable stakeholders.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/8bad3445-4d83-4670-94f3-58464bcda50a",
+          "code": "https://osmt.stateu.edu/api/skills/8bad3445-4d83-4670-94f3-58464bcda50a",
+          "name": "Forensic Tool Application",
+          "framework": "OSMT",
+          "description": "Apply forensic tools to obtain data from a computer's file system.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/1c823468-485a-46d8-bfde-12e5c88e8906",
+          "code": "https://osmt.stateu.edu/api/skills/1c823468-485a-46d8-bfde-12e5c88e8906",
+          "name": "Format Web Pages",
+          "framework": "OSMT",
+          "description": "Format web page layout using cascading style sheets (CSS).",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/23d814d1-6581-4491-ad23-50a4c15f4961",
+          "code": "https://osmt.stateu.edu/api/skills/23d814d1-6581-4491-ad23-50a4c15f4961",
+          "name": "Hardware and Software Function Description",
+          "framework": "OSMT",
+          "description": "Describe the functions of common computer hardware and software in business.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/195334a5-71ef-4154-88fa-f806c155b07a",
+          "code": "https://osmt.stateu.edu/api/skills/195334a5-71ef-4154-88fa-f806c155b07a",
+          "name": "Hardware Technologies Comparison",
+          "framework": "OSMT",
+          "description": "Compare the strengths and weaknesses of various computer hardware technologies.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/d5e20c8a-31cd-41f1-b15f-e303d7fd8060",
+          "code": "https://osmt.stateu.edu/api/skills/d5e20c8a-31cd-41f1-b15f-e303d7fd8060",
+          "name": "Identify Types of Programming Languages",
+          "framework": "OSMT",
+          "description": "Identify the different types of programming languages.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/c3a996fd-d839-4dc9-96b6-214e0f7e8f00",
+          "code": "https://osmt.stateu.edu/api/skills/c3a996fd-d839-4dc9-96b6-214e0f7e8f00",
+          "name": "Information Access Social Justice",
+          "framework": "OSMT",
+          "description": "Identify issues of social justice related to information access and use.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/815e9449-78ce-4219-91a3-00594e0911de",
+          "code": "https://osmt.stateu.edu/api/skills/815e9449-78ce-4219-91a3-00594e0911de",
+          "name": "Information Recording",
+          "framework": "OSMT",
+          "description": "Record information accurately for the purpose of data collection.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/d38098ae-9474-48db-ac4b-b454a2019bab",
+          "code": "https://osmt.stateu.edu/api/skills/d38098ae-9474-48db-ac4b-b454a2019bab",
+          "name": "Interface Aesthetics Implementation",
+          "framework": "OSMT",
+          "description": "Implement interface aesthetics.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/2a899009-86b6-4c29-84bb-99b789c14908",
+          "code": "https://osmt.stateu.edu/api/skills/2a899009-86b6-4c29-84bb-99b789c14908",
+          "name": "Investigation and Documentation Process",
+          "framework": "OSMT",
+          "description": "Carry out investigation and documentation processes on security events as necessary.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/34945357-bdd5-4dec-9f0f-a6c181dfd75c",
+          "code": "https://osmt.stateu.edu/api/skills/34945357-bdd5-4dec-9f0f-a6c181dfd75c",
+          "name": "Manual Data Collection",
+          "framework": "OSMT",
+          "description": "Collect data manually from data files and databases.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/3cd8faec-e3d2-4386-83b9-6c9603563305",
+          "code": "https://osmt.stateu.edu/api/skills/3cd8faec-e3d2-4386-83b9-6c9603563305",
+          "name": "Multi-Factor Authentication Methods Description",
+          "framework": "OSMT",
+          "description": "Describe multi-factor authentication methods.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/69aebbed-385d-4ce9-bc5c-8b948e1b352f",
+          "code": "https://osmt.stateu.edu/api/skills/69aebbed-385d-4ce9-bc5c-8b948e1b352f",
+          "name": "Network Technologies Comparison",
+          "framework": "OSMT",
+          "description": "Compare the strengths and weaknesses of various network technologies.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/bfb46f93-397f-4f96-bd0a-f59fa19d1155",
+          "code": "https://osmt.stateu.edu/api/skills/bfb46f93-397f-4f96-bd0a-f59fa19d1155",
+          "name": "Networking Fundamentals Articulation",
+          "framework": "OSMT",
+          "description": "Articulate the fundamentals of networking.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/bb58cfe7-f6c2-441f-9aac-26532e15fec6",
+          "code": "https://osmt.stateu.edu/api/skills/bb58cfe7-f6c2-441f-9aac-26532e15fec6",
+          "name": "Networking Hardware Comparison",
+          "framework": "OSMT",
+          "description": "Compare different networking hardware technologies.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/b76dbb88-ce43-47ea-b833-19a315a3e265",
+          "code": "https://osmt.stateu.edu/api/skills/b76dbb88-ce43-47ea-b833-19a315a3e265",
+          "name": "Obtain Digital Images",
+          "framework": "OSMT",
+          "description": "Obtain digital information images as necessary for a forensic data duplication investigation.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/9f30ce58-4392-4284-9b64-d09dc1165986",
+          "code": "https://osmt.stateu.edu/api/skills/9f30ce58-4392-4284-9b64-d09dc1165986",
+          "name": "Operating System Purpose",
+          "framework": "OSMT",
+          "description": "Identify the purpose of an operating system.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/2a2a153a-f8dc-431c-8167-6835148ce7d3",
+          "code": "https://osmt.stateu.edu/api/skills/2a2a153a-f8dc-431c-8167-6835148ce7d3",
+          "name": "Operating Systems Description",
+          "framework": "OSMT",
+          "description": "Describe the architecture and components of different operating systems.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/7e15ad53-e5f4-4fe3-9abc-e60a258df99a",
+          "code": "https://osmt.stateu.edu/api/skills/7e15ad53-e5f4-4fe3-9abc-e60a258df99a",
+          "name": "Problem Nature and Extent Analysis",
+          "framework": "OSMT",
+          "description": "Analyze data for the nature and extent of a problem.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/822c45f0-effd-4a56-8a44-4731f7656a32",
+          "code": "https://osmt.stateu.edu/api/skills/822c45f0-effd-4a56-8a44-4731f7656a32",
+          "name": "Programming Elements Identification",
+          "framework": "OSMT",
+          "description": "Identify common programming constructs, variables, data types, functions, and operators.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/56000744-29ad-44bc-bed3-605fb1bdd6ab",
+          "code": "https://osmt.stateu.edu/api/skills/56000744-29ad-44bc-bed3-605fb1bdd6ab",
+          "name": "Project Management Elements Identification",
+          "framework": "OSMT",
+          "description": "Identify elements of the project management life cycle.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/a927c85a-bdfd-4cd7-a15d-7301d77ad8dc",
+          "code": "https://osmt.stateu.edu/api/skills/a927c85a-bdfd-4cd7-a15d-7301d77ad8dc",
+          "name": "Record, Content, and Data Security",
+          "framework": "OSMT",
+          "description": "Secure records, content, and data according to institutional policies.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/a09fd00d-be8f-4437-a6c3-ce4d975be185",
+          "code": "https://osmt.stateu.edu/api/skills/a09fd00d-be8f-4437-a6c3-ce4d975be185",
+          "name": "Regulatory Identification",
+          "framework": "OSMT",
+          "description": "Identify regulatory entities, laws, and case law that impact practice across organizations and practice settings.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/add4dba5-3610-4d48-9354-4ab2bc41eba6",
+          "code": "https://osmt.stateu.edu/api/skills/add4dba5-3610-4d48-9354-4ab2bc41eba6",
+          "name": "Script Meaning Explanation",
+          "framework": "OSMT",
+          "description": "Explain the meaning of a script.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/ff8ce237-6ffe-4ba6-95ff-92346df395e5",
+          "code": "https://osmt.stateu.edu/api/skills/ff8ce237-6ffe-4ba6-95ff-92346df395e5",
+          "name": "Script Task Identification",
+          "framework": "OSMT",
+          "description": "Identify a script to accomplish particular tasks.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/283d15c7-c237-4e11-a5ca-42b82c59567b",
+          "code": "https://osmt.stateu.edu/api/skills/283d15c7-c237-4e11-a5ca-42b82c59567b",
+          "name": "Security Needs Identification",
+          "framework": "OSMT",
+          "description": "Identify the security needs of an organization.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/1f2ffb8e-5a2d-4c48-b89f-9129225ecb41",
+          "code": "https://osmt.stateu.edu/api/skills/1f2ffb8e-5a2d-4c48-b89f-9129225ecb41",
+          "name": "Security Solution Determination",
+          "framework": "OSMT",
+          "description": "Determine which security solutions best suit project needs.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/aed05499-42b6-44df-8905-fa48b7fc7e83",
+          "code": "https://osmt.stateu.edu/api/skills/aed05499-42b6-44df-8905-fa48b7fc7e83",
+          "name": "Security Solutions Provision",
+          "framework": "OSMT",
+          "description": "Provide security solutions that help protect company data.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/5a6ec57f-4f64-4a3e-ac33-1cca2bcb0fe0",
+          "code": "https://osmt.stateu.edu/api/skills/5a6ec57f-4f64-4a3e-ac33-1cca2bcb0fe0",
+          "name": "Simple Algorithms Explanation",
+          "framework": "OSMT",
+          "description": "Explain the logic and structure of simple algorithms.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/3342b60b-2f21-4bcf-9dd3-9f26abb7163a",
+          "code": "https://osmt.stateu.edu/api/skills/3342b60b-2f21-4bcf-9dd3-9f26abb7163a",
+          "name": "Web Page Style Definition",
+          "framework": "OSMT",
+          "description": "Define the text styles, table aspects, and aesthetics of a web page using cascading style sheets (CSS).",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/0c348525-a53d-455f-aa7c-b8b9cd3e7076",
+          "code": "https://osmt.stateu.edu/api/skills/0c348525-a53d-455f-aa7c-b8b9cd3e7076",
+          "name": "Extensible Format Data Identification",
+          "framework": "OSMT",
+          "description": "Identify data in extensible format.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/3b0bc03f-9dfe-4380-bfd5-0ae4b1e83518",
+          "code": "https://osmt.stateu.edu/api/skills/3b0bc03f-9dfe-4380-bfd5-0ae4b1e83518",
+          "name": "Resolve a Challenge",
+          "framework": "OSMT",
+          "description": "Resolve a challenge using a problem-solving process.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/8f7a2695-c39f-460e-9308-a08a067de712",
+          "code": "https://osmt.stateu.edu/api/skills/8f7a2695-c39f-460e-9308-a08a067de712",
+          "name": "Software Testing Environment Configuration",
+          "framework": "OSMT",
+          "description": "Configure software testing environments.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/0b7e71f8-6cf1-452f-ba52-e8e4087a68a5",
+          "code": "https://osmt.stateu.edu/api/skills/0b7e71f8-6cf1-452f-ba52-e8e4087a68a5",
+          "name": "Network and Topology Identification",
+          "framework": "OSMT",
+          "description": "Identifies different types of networks and topologies.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/345a3c51-a0ef-41d6-b62e-68e5edc1447f",
+          "code": "https://osmt.stateu.edu/api/skills/345a3c51-a0ef-41d6-b62e-68e5edc1447f",
+          "name": "Connectivity Problem Identification",
+          "framework": "OSMT",
+          "description": "Identifies basic connectivity problems.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/7ea3b1ee-cf0d-4b76-a328-509fcc663c48",
+          "code": "https://osmt.stateu.edu/api/skills/7ea3b1ee-cf0d-4b76-a328-509fcc663c48",
+          "name": "Basic Troubleshooting",
+          "framework": "OSMT",
+          "description": "Implement basic troubleshooting.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/6db97e2d-796f-4e51-b0a3-be5a229fd252",
+          "code": "https://osmt.stateu.edu/api/skills/6db97e2d-796f-4e51-b0a3-be5a229fd252",
+          "name": "Networking Fundamentals and Database Concepts Articulation",
+          "framework": "OSMT",
+          "description": "Articulate the fundamentals of networking and database concepts as they relate to storing and interacting with data.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/fbce0a97-bdf7-4a71-9ffc-387225e8b5af",
+          "code": "https://osmt.stateu.edu/api/skills/fbce0a97-bdf7-4a71-9ffc-387225e8b5af",
+          "name": "Describe Networking Technologies",
+          "framework": "OSMT",
+          "description": "Describe primary networking technologies.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/efdffad6-6978-4dbb-a590-10fa2754d56d",
+          "code": "https://osmt.stateu.edu/api/skills/efdffad6-6978-4dbb-a590-10fa2754d56d",
+          "name": "Describe Programming Concepts",
+          "framework": "OSMT",
+          "description": "Describe the basic concepts of programming.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/550893c4-f7ef-4fd3-a812-a2dd158d98b2",
+          "code": "https://osmt.stateu.edu/api/skills/550893c4-f7ef-4fd3-a812-a2dd158d98b2",
+          "name": "Data Policies Adherence",
+          "framework": "OSMT",
+          "description": "Adhere to organizational policies with respect to securing and controlling access to data.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/1f908b51-964d-4f3a-8ac2-86072c119723",
+          "code": "https://osmt.stateu.edu/api/skills/1f908b51-964d-4f3a-8ac2-86072c119723",
+          "name": "Follow Data Privacy Guidance",
+          "framework": "OSMT",
+          "description": "Follow data privacy guidance and basic information security principles (e.g., encryption, access control logs, etc.).",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/eba771e9-7637-4450-a693-dca2ca027f2c",
+          "code": "https://osmt.stateu.edu/api/skills/eba771e9-7637-4450-a693-dca2ca027f2c",
+          "name": "Industry Compliance Requirements Identification",
+          "framework": "OSMT",
+          "description": "Identify regional, national, and industry compliance requirements.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/cfb823e1-d3c3-4806-9dc8-69698c0d353e",
+          "code": "https://osmt.stateu.edu/api/skills/cfb823e1-d3c3-4806-9dc8-69698c0d353e",
+          "name": "Information Security Strategy Standards Identification",
+          "framework": "OSMT",
+          "description": "Identify globally recognized standards, frameworks, and industry best practices related to information security strategy development.",
+          "informationSourceId": "Org1"
+        },
+        {
+          "url": "https://osmt.stateu.edu/api/skills/07f11500-03be-4a3f-a61a-cf2607ecb112",
+          "code": "https://osmt.stateu.edu/api/skills/07f11500-03be-4a3f-a61a-cf2607ecb112",
+          "name": "Data Encryption Requirements",
+          "framework": "OSMT",
+          "description": "Determine appropriate requirements to encrypt data.",
+          "informationSourceId": "Org1"
+        }
+      ],
+      "description": "Recipients of the Network and Cyber Defense Foundations Certificate from State University have built and demonstrated competence in information security, network security, and digital forensics.",
+      "requirements": {
+        "criteria": [
+          {
+            "narrative": "## Credential Detail\nRecipients of StateU\u00e2\u20ac\u2122s Network and Cyber Defense Foundations Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Introduction to IT\n- The learner explains different computer hardware and networking technologies and their developments. \n- The learner describes fundamental data management functions in databases.   \n- The learner identifies components of software and its relation to operating systems. \n- The learner identifies computer hardware components. \n- The learner evaluates ethical concerns in information technology. \n- The learner describes the structure, function, and security associated with networks.  \n- The learner describes the basics of programming languages in software development.   \n- The learner describes the role of the IT department in IT infrastructure management, disaster recovery, and business continuity processes.   \n\n### Fundamentals of Information Security\t\n- The learner identifies security principles, policies, practices, and methods for asset protection and cyber defense.\n- The learner identifies security requirements based on principles of confidentiality, integrity, and availability.\n- The learner identifies cybersecurity guidelines in privacy and compliance.\u00e2\u20ac\u00af\n\n### Web Development Foundations\n- The learner creates the structure of basic web documents using HTML and XML.  \n- The learner implements web page formatting and interface aesthetics using CSS  \n- The learner resolves software problems in web development environments with debugging tools.\n\n### Network and Security \u00e2\u20ac\u201c Foundations\n- The learner identifies basic network systems and concepts related to networking technologies.  \n- The learner applies network security concepts for business continuity, data access, and confidentiality.   \n- The learner identifies solutions for compliance with security guidance. \n\n### Digital Forensics in Cybersecurity\n- The learner identifies laws, rules, standards, policies, and best practices related to digital forensics.\n- The learner conducts analysis on gathered evidence with forensic tools in alignment with investigation processes. \n- The learner collects forensic evidence from deleted files and artifacts.\n- The learner identifies steganography techniques for data transmission.\n\n### Scripting and Programming Foundations\n- The learner identifies scripts for computer program requirements.\n- The learner uses fundamental programming elements as part of common computer programming tasks.\n- The learner explains the logic and outcome of simple algorithms.\n\n## Competency Demonstration Highlights \nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Develops investigative plans  based on digital forensic tools, best practices, standards, and organizational policies.\n- Conducts a forensic investigation with industry-standard tools.\n\n## StateU Accreditation\nStateU is regionally accredited by the Northwest Commission on Colleges and Universities. The StateU Teachers College is granted accreditation at the initial-licensure level from the Council for the Accreditation of Educator Preparation (CAEP). StateU nursing degree programs are accredited by the Commission for Collegiate Nursing Education (CCNE). The Health Informatics program is accredited by the Commission of Accreditation for Health Informatics and Information Management Education (CAHIIM). The StateU Business College is accredited by the Accreditation Council for Business Schools and Programs (ACBSP).",
+            "informationSourceId": "Org1"
+          }
+        ],
+        "informationSourceId": "Org1"
+      },
+      "achievementType": [
+        "Certificate"
+      ],
+      "issuedByRefOrganization": {
+        "name": "State University",
+        "identificationSystem": "State University SIS",
+        "organizationType": [],
+        "informationSourceId": "Org1"
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "Master of Business Administration (MBA): MBA IT Management",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "alignedProgram": [
+        {
+          "specialization": "IT Management",
+          "informationSourceId": "Org1"
+        }
+      ],
+      "issuedByRefOrganization": {
+        "informationSourceId": "Org1",
+        "name": "State University",
+        "identificationSystem": "State University SIS",
+        "organizationType": []
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "Master of Business Administration (MBA): MBA IT Management",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "alignedProgram": [
+        {
+          "specialization": "Technology Management",
+          "informationSourceId": "Org1"
+        }
+      ],
+      "issuedByRefOrganization": {
+        "informationSourceId": "Org1",
+        "name": "State University",
+        "identificationSystem": "State University SIS",
+        "organizationType": []
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "Bachelor of Science in Cybersecurity",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "alignedProgram": [
+        {
+          "informationSourceId": "Org1",
+          "specialization": "Cybersecurity"
+        }
+      ],
+      "issuedByRefOrganization": {
+        "informationSourceId": "Org1",
+        "name": "San Antonio University",
+        "identificationSystem": "San Antonio University SIS",
+        "organizationType": []
+      },
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "C200 - Managing Organizations and Leading People",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "C202 - Managing Human Capital",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686",
+      "name": "MGT2 - IT Project Management",
+      "format": [
+        "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
+      ],
+      "accreditation": [
+        {
+          "informationSourceId": "Org1",
+          "accreditingAgency": "Higher Learning Commission",
+          "accreditationType": "Institutional",
+          "dateAccredited": "2020-01-01",
+          "accreditationStatus": "Active"
+        }
+      ]
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "https://api.badgr.io/public/badges/z7O2tvPBRuiA7hLpzDG0Bg"
+    },
+    {
+      "informationSourceId": "Org1",
+      "id": "a050aa17-45f1-413f-a63b-c3a627ffa686"
+    }
+  ],
+  "informationSourceId": "Org1"
+}

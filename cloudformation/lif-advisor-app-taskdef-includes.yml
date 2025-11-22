@@ -1,0 +1,4 @@
+Environment:
+  - Name: LIF_ADVISOR_API_URL
+    Value:
+      Fn::Sub: "http://advisor-api.lif.${EnvironmentName}.aws:8004"

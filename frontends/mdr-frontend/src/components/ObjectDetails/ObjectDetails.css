@@ -1,0 +1,10 @@
+.details-grid {
+  /* max-width: 400px; */
+  max-height: 100%;
+  overflow: scroll;
+  .value-text {
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+    color: var(--gray-a10);
+  }
+}
