@@ -12,7 +12,8 @@
         "type": "object",
         "required": [
           "person",
-          "id"
+          "id",
+          "employment"
         ],
         "use_recommendations": "",
         "Description": null,
@@ -70,7 +71,7 @@
           },
           "employment": {
             "type": "object",
-            "required": [],
+            "required": ["preferences"],
             "use_recommendations": "",
             "Description": null,
             "ActivationDate": "2025-10-08T22:12:00+00:00",
@@ -109,7 +110,6 @@
               "preferences": {
                 "type": "object",
                 "required": [
-                  "preferences"
                 ],
                 "use_recommendations": "",
                 "Description": null,

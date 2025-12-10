@@ -44,6 +44,30 @@ class _ScalarFirstResult:
         return self._obj
 
 
+class _Attr:
+    def __init__(self, id, name, required):
+        self.Id = id
+        self.Name = name
+        self.Required = required
+        self.DataType = "string"
+        self.Array = "No"
+        self.ValueSetId = None
+
+    def dict(self):
+        return {
+            "Description": None,
+            "UseConsiderations": None,
+            "Example": None,
+            "Format": None,
+            "Id": self.Id,
+            "Name": self.Name,
+            "Required": self.Required,
+            "DataType": self.DataType,
+            "Array": self.Array,
+            "ValueSetId": self.ValueSetId,
+        }
+
+
 @pytest.fixture
 def fake_session():
     s = MagicMock()
@@ -170,7 +194,9 @@ async def test_add_ref_nested_parent_path():
         key="ChildRef",
     )
 
-    parent_props = openapi_spec["components"]["schemas"]["Root"]["properties"]["Intermediate"]["properties"]["Parent"]["properties"]
+    parent_props = openapi_spec["components"]["schemas"]["Root"]["properties"]["Intermediate"]["properties"]["Parent"][
+        "properties"
+    ]
     child_ref_inline = parent_props["ChildRef"]
     assert child_ref_inline["type"] == "object"
     assert set(child_ref_inline["properties"].keys()) == {"a", "b"}
@@ -344,24 +370,6 @@ async def test_generate_openapi_schema_has_sub_entity_required_fields(fake_sessi
 
     monkeypatch.setattr(svc, "get_entity_by_id", AsyncMock(side_effect=get_entity_by_id_side_effect))
 
-    class _Attr:
-        def __init__(self, id, name, required):
-            self.Id = id
-            self.Name = name
-            self.Required = required
-            self.DataType = "string"
-            self.Array = "No"
-            self.ValueSetId = None
-
-        def dict(self):
-            return {
-                "Description": None,
-                "UseConsiderations": None,
-                "Example": None,
-                "Format": None,
-                "DataType": self.DataType,
-            }
-
     def get_attributes_with_association_metadata_for_entity_side_effect(entity_id, **_):
         if entity_id == 101:  # CompetencyFramework
             return [_Attr(1, "uri", "Yes"), _Attr(2, "name", "Yes"), _Attr(3, "description", "No")]
@@ -403,6 +411,79 @@ async def test_generate_openapi_schema_has_sub_entity_required_fields(fake_sessi
     assoc_schema = cf_schema["properties"]["Association"]
     assert assoc_schema["type"] == "array"
     assert assoc_schema["required"] == ["competencyFrameworkId", "competencyFrameworkType"]
+
+
+async def test_generate_openapi_schema_has_sub_entity_required_entity(fake_session, monkeypatch):
+    """
+    Given:
+      - BaseLIF CompetencyFramework entity with child entity Association in EntityAssociations
+      - The Association Entity has Required="Yes" in EntityAssociations
+    Result:
+      - The generated schema for CompetencyFramework includes Association with its required fields listed
+    """
+    dm = types.SimpleNamespace(
+        Id=1,
+        Name="BaseLIF",
+        DataModelVersion="3.0",
+        Type="BaseLIF",
+        BaseDataModelId=None,
+        ContributorOrganization="LIF",
+    )
+    monkeypatch.setattr(svc, "get_datamodel_by_id", AsyncMock(return_value=dm))
+
+    def get_entity_by_id_side_effect(session=None, id=None, **_):
+        if id == 101:
+            return types.SimpleNamespace(
+                Id=101, Name="CompetencyFramework", Array="No", UseConsiderations=None, Deleted=False
+            )
+        elif id == 202:
+            return types.SimpleNamespace(
+                Id=202, Name="Association", Array="Yes", UseConsiderations=None, Deleted=False, Required="Yes"
+            )
+        else:
+            raise ValueError(f"Unexpected entity_id {id}")
+
+    monkeypatch.setattr(svc, "get_entity_by_id", AsyncMock(side_effect=get_entity_by_id_side_effect))
+
+    def get_attributes_with_association_metadata_for_entity_side_effect(entity_id, **_):
+        if entity_id == 101:  # CompetencyFramework
+            return [_Attr(1, "uri", "Yes"), _Attr(2, "name", "Yes"), _Attr(3, "description", "No")]
+        elif entity_id == 202:  # Association
+            return [_Attr(1, "uri", "Yes"), _Attr(2, "name", "Yes"), _Attr(3, "description", "No")]
+        else:
+            raise ValueError(f"Unexpected entity_id {entity_id}")
+
+    monkeypatch.setattr(
+        svc,
+        "get_attributes_with_association_metadata_for_entity",
+        AsyncMock(side_effect=get_attributes_with_association_metadata_for_entity_side_effect),
+    )
+
+    RowIN = namedtuple("RowIN", ["Id", "Name"])
+    fake_session.execute.side_effect = [
+        # get embedded entity associations
+        _FetchallResult([(101, 202)]),
+        # get entities in DM not in union of associations
+        _FetchallResult([]),
+        # build df_entity (include both entities)
+        _FetchallResult([RowIN(101, "CompetencyFramework"), RowIN(202, "Association")]),
+        # find_children: get detailed association rows via .scalars().all()
+        _ScalarListResult([types.SimpleNamespace(Relationship=None)]),
+        # enums for attributes (none)
+        _FetchallResult([]),
+        _FetchallResult([]),
+        # inter-entity "Reference" links
+        _FetchallResult([]),
+    ]
+
+    out = await svc.generate_openapi_schema(
+        fake_session, data_model_id=1, include_attr_md=False, include_entity_md=False
+    )
+    cf_schema = out["components"]["schemas"]["CompetencyFramework"]
+    assert cf_schema["type"] == "object"
+    assert "Association" in cf_schema["required"]
+    assert "uri" in cf_schema["required"]
+    assert "name" in cf_schema["required"]
 
 
 async def test_generate_openapi_schema_full_export(fake_session, monkeypatch):

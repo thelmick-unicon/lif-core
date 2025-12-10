@@ -252,7 +252,7 @@ def _assert_openapi_data_model_results_from_file(data_model: dict):
     assert data_model["openapi"] == "3.0.0"
     assert data_model["components"]["schemas"] != {}
     assert "Person" in data_model["components"]["schemas"]
-    assert "Organization" in data_model["components"]["schemas"]
+    assert "OrganizationCode" in data_model["components"]["schemas"]
 
 
 def _assert_openapi_data_model_results_from_mdr(data_model: dict):

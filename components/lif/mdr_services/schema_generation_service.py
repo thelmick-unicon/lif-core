@@ -38,7 +38,7 @@ ATTRIBUTE_ASSOCIATION_FIELDS = [
 async def find_children(
     tree,
     parent,
-    parent_properties,
+    parent_schema,
     df_entity,
     session,
     include_attr_md,
@@ -49,6 +49,7 @@ async def find_children(
     full_export,
 ):
     if parent in tree:
+        parent_properties = parent_schema["properties"]
         for x in tree[parent]:
             if data_model.Type in ["OrgLIF", "PartnerLIF"]:
                 child_association_query = select(EntityAssociation).where(
@@ -89,11 +90,12 @@ async def find_children(
                     entity_data.UseConsiderations if entity_data.UseConsiderations else ""
                 )  # Using empty string instead of null to make it easier to diff w/ P1 lif.json schema
                 required_elements = []
-                if include_entity_md:
-                    for key, value in entity_data.__dict__.items():
+                for key, value in entity_data.__dict__.items():
+                    if include_entity_md:
                         parent_properties[entity_name][key] = value
-                        if key == "Required" and value == "Yes":
-                            required_elements.append(entity_name)
+                    if key == "Required" and value == "Yes" and entity_name not in parent_schema["required"]:
+                        parent_schema["required"].append(entity_name)
+                if include_entity_md:
                     if full_export:
                         parent_properties[entity_name]["EntityAssociationId"] = child_association.Id
                         parent_properties[entity_name]["EntityAssociationParentEntityId"] = (
@@ -252,7 +254,7 @@ async def find_children(
                 await find_children(
                     tree,
                     x,
-                    parent_properties[entity_name]["properties"],
+                    parent_properties[entity_name],
                     df_entity=df_entity,
                     session=session,
                     include_attr_md=include_attr_md,
@@ -323,13 +325,7 @@ async def find_ancestors(session, child_id, data_model_type, data_model_id, incl
 
 
 async def add_ref(
-    parent_ancestors,
-    child_ancestors,
-    df_entity,
-    parent_entity_name,
-    child_entity_name,
-    openapi_spec,
-    key
+    parent_ancestors, child_ancestors, df_entity, parent_entity_name, child_entity_name, openapi_spec, key
 ):
     """
     Inline the schema for a referenced child entity under the parent's OpenAPI schema entry.
@@ -366,17 +362,19 @@ async def add_ref(
     ref_data = deepcopy(referenced_schema)
     properties = ref_data.get("properties")
     if isinstance(properties, dict):
-        # In LIF, "Reference" is intended to be instantiated as only the required fields of the referenced entity. 
+        # In LIF, "Reference" is intended to be instantiated as only the required fields of the referenced entity.
         # These can be used to look up the full entity.
         required_fields = ref_data.get("required", [])
         if isinstance(required_fields, list) and required_fields:
             required_fields_set = set(required_fields)
             ref_data["properties"] = {
-                prop_name: prop_value for prop_name, prop_value in properties.items() if prop_name in required_fields_set
+                prop_name: prop_value
+                for prop_name, prop_value in properties.items()
+                if prop_name in required_fields_set
             }
         else:
             ref_data["properties"] = {}
-    ref_data["type"] = "object" # A reference should always be to a single object, not an array of objects.
+    ref_data["type"] = "object"  # A reference should always be to a single object, not an array of objects.
     logger.info(f"ref_data : {ref_data}")
 
     if len(parent_ancestors) == 0:
@@ -714,10 +712,11 @@ async def generate_openapi_schema(
                                 ]["ValueSet"]["Values"] = valueset_values_full
 
             openapi_spec["components"]["schemas"][parent_entity.Name]["required"] = required_elements
+
         await find_children(
             tree,
             parent,
-            openapi_spec["components"]["schemas"][parent_entity.Name]["properties"],
+            openapi_spec["components"]["schemas"][parent_entity.Name],
             session=session,
             df_entity=df_entity,
             include_attr_md=include_attr_md,
@@ -818,7 +817,7 @@ async def generate_openapi_schema(
             parent_entity_name=parent_entity_name,
             child_entity_name=child_entity_name,
             openapi_spec=openapi_spec,
-            key=key
+            key=key,
         )
 
     if "Common" in openapi_spec["components"]["schemas"]:
