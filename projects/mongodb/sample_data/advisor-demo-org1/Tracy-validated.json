@@ -5,7 +5,9 @@
         {
           "informationSourceId": "Org1",
           "lastName": "Thatcher",
-          "firstName": "Tracy"
+          "firstName": "Tracy",
+          "informationSourceOrganization": "State University",
+          "identifier": "name-tracy-thatcher-org1-001"
         }
       ],
       "proficiency": [
@@ -20,7 +22,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-experiential-learning-org1-001"
         },
         {
           "informationSourceId": "Org1",
@@ -33,7 +37,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-academic-writing-org1-002"
         },
         {
           "informationSourceId": "Org1",
@@ -46,7 +52,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-youth-health-org1-003"
         },
         {
           "informationSourceId": "Org1",
@@ -59,7 +67,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-literacy-org1-004"
         },
         {
           "informationSourceId": "Org1",
@@ -72,7 +82,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-analytical-thinking-org1-005"
         },
         {
           "informationSourceId": "Org1",
@@ -85,7 +97,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-data-analysis-org1-006"
         },
         {
           "informationSourceId": "Org1",
@@ -98,7 +112,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-physiology-org1-007"
         },
         {
           "informationSourceId": "Org1",
@@ -111,7 +127,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-analysis-of-variance--anova--org1-008"
         },
         {
           "informationSourceId": "Org1",
@@ -124,7 +142,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-chemistry-org1-009"
         },
         {
           "informationSourceId": "Org1",
@@ -137,7 +157,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-biology-org1-010"
         },
         {
           "informationSourceId": "Org1",
@@ -150,7 +172,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-biological-systems-org1-011"
         },
         {
           "informationSourceId": "Org1",
@@ -163,7 +187,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-business-ethics-org1-012"
         },
         {
           "informationSourceId": "Org1",
@@ -176,7 +202,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-child-behavior-checklists-org1-013"
         },
         {
           "informationSourceId": "Org1",
@@ -189,7 +217,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-child-development-org1-014"
         },
         {
           "informationSourceId": "Org1",
@@ -202,7 +232,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-public-health-org1-015"
         },
         {
           "informationSourceId": "Org1",
@@ -215,7 +247,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-computer-literacy-org1-016"
         },
         {
           "informationSourceId": "Org1",
@@ -228,7 +262,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-conflict-resolution-org1-017"
         },
         {
           "informationSourceId": "Org1",
@@ -241,7 +277,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-critical-thinking-org1-018"
         },
         {
           "informationSourceId": "Org1",
@@ -254,7 +292,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-cultural-diversity-org1-019"
         },
         {
           "informationSourceId": "Org1",
@@ -267,7 +307,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-data-presentation-org1-020"
         },
         {
           "informationSourceId": "Org1",
@@ -280,7 +322,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-data-visualization-org1-021"
         },
         {
           "informationSourceId": "Org1",
@@ -293,7 +337,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-digital-storytelling-org1-022"
         },
         {
           "informationSourceId": "Org1",
@@ -306,7 +352,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-early-childhood-education-org1-023"
         },
         {
           "informationSourceId": "Org1",
@@ -319,7 +367,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-evidence-based-practice-org1-024"
         },
         {
           "informationSourceId": "Org1",
@@ -332,7 +382,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-emotional-intelligence-org1-025"
         },
         {
           "informationSourceId": "Org1",
@@ -345,7 +397,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-performance-management-org1-026"
         },
         {
           "informationSourceId": "Org1",
@@ -358,7 +412,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-front-office-org1-027"
         },
         {
           "informationSourceId": "Org1",
@@ -371,7 +427,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-knowledge-of-dynamics-of-group-org1-028"
         },
         {
           "informationSourceId": "Org1",
@@ -384,7 +442,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-leadership-org1-029"
         },
         {
           "informationSourceId": "Org1",
@@ -397,7 +457,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-human-biology-org1-030"
         },
         {
           "informationSourceId": "Org1",
@@ -410,7 +472,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-psychology-org1-031"
         },
         {
           "informationSourceId": "Org1",
@@ -423,7 +487,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-statistical-hypothesis-testing-org1-032"
         },
         {
           "informationSourceId": "Org1",
@@ -436,7 +502,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-information-literacy-org1-033"
         },
         {
           "informationSourceId": "Org1",
@@ -449,7 +517,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-interpersonal-communications-org1-034"
         },
         {
           "informationSourceId": "Org1",
@@ -462,7 +532,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-problem-solving-org1-035"
         },
         {
           "informationSourceId": "Org1",
@@ -475,7 +547,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-linear-regression-org1-036"
         },
         {
           "informationSourceId": "Org1",
@@ -488,7 +562,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-measurement-and-metrology-org1-037"
         },
         {
           "informationSourceId": "Org1",
@@ -501,7 +577,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-organization-development-org1-038"
         },
         {
           "informationSourceId": "Org1",
@@ -514,7 +592,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-phone-support-org1-039"
         },
         {
           "informationSourceId": "Org1",
@@ -527,7 +607,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-professional-communication-org1-040"
         },
         {
           "informationSourceId": "Org1",
@@ -540,7 +622,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-scientific-reasoning-org1-041"
         },
         {
           "informationSourceId": "Org1",
@@ -553,7 +637,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-social-psychology-org1-042"
         },
         {
           "informationSourceId": "Org1",
@@ -566,7 +652,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-probability-and-statistics-org1-043"
         },
         {
           "informationSourceId": "Org1",
@@ -579,7 +667,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-systems-thinking-org1-044"
         },
         {
           "informationSourceId": "Org1",
@@ -592,7 +682,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-upselling-skills-org1-045"
         },
         {
           "informationSourceId": "Org1",
@@ -605,12 +697,14 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-visual-merchandising-org1-046"
         },
         {
           "informationSourceId": "Org1",
           "name": "Youth Athletics",
-          "description": "Youth athletics is a specialized skill involving the training and development of young athletes in various sports. Coaches and trainers use age-appropriate techniques and strategies to improve a young athlete\u00e2\u20ac\u0161\u00c3\u201e\u00c3\u00b4s performance, physical fitness and mental toughness. Youth athletics teaches children the value of teamwork, discipline, and healthy competition while instilling a passion for physical fitness and athleticism that can last a lifetime.",
+          "description": "Youth athletics is a specialized skill involving the training and development of young athletes in various sports. Coaches and trainers use age-appropriate techniques and strategies to improve a young athleteâ€šÃ„Ã´s performance, physical fitness and mental toughness. Youth athletics teaches children the value of teamwork, discipline, and healthy competition while instilling a passion for physical fitness and athleticism that can last a lifetime.",
           "refCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
@@ -618,7 +712,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-youth-athletics-org1-047"
         },
         {
           "informationSourceId": "Org1",
@@ -631,7 +727,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-team-building-org1-048"
         },
         {
           "informationSourceId": "Org1",
@@ -644,7 +742,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-reflective-practice-org1-049"
         },
         {
           "informationSourceId": "Org1",
@@ -657,7 +757,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-thought-leadership-org1-050"
         },
         {
           "informationSourceId": "Org1",
@@ -670,7 +772,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-curiosity-org1-051"
         },
         {
           "informationSourceId": "Org1",
@@ -683,7 +787,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-help-desk-certification-org1-052"
         },
         {
           "informationSourceId": "Org1",
@@ -695,7 +801,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-written-communication-org1-053"
         },
         {
           "informationSourceId": "Org1",
@@ -708,7 +816,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-strategic-planning-org1-054"
         },
         {
           "informationSourceId": "Org1",
@@ -721,7 +831,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-online-communication-org1-055"
         },
         {
           "informationSourceId": "Org1",
@@ -734,7 +846,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-communications-org1-056"
         },
         {
           "informationSourceId": "Org1",
@@ -747,7 +861,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-social-skills-org1-057"
         },
         {
           "informationSourceId": "Org1",
@@ -760,7 +876,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-cultural-sensitivity-org1-058"
         },
         {
           "informationSourceId": "Org1",
@@ -772,7 +890,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-cross-cultural-fluency-org1-059"
         },
         {
           "informationSourceId": "Org1",
@@ -784,7 +904,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-mindset-org1-060"
         },
         {
           "informationSourceId": "Org1",
@@ -797,7 +919,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-mentorship-org1-061"
         },
         {
           "informationSourceId": "Org1",
@@ -810,7 +934,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-decision-making-org1-062"
         },
         {
           "informationSourceId": "Org1",
@@ -823,7 +949,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-influencing-skills-org1-063"
         },
         {
           "informationSourceId": "Org1",
@@ -835,7 +963,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-goal-oriented-org1-064"
         },
         {
           "informationSourceId": "Org1",
@@ -848,7 +978,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-verbal-communication-skills-org1-065"
         },
         {
           "informationSourceId": "Org1",
@@ -861,7 +993,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-research-org1-066"
         },
         {
           "informationSourceId": "Org1",
@@ -874,7 +1008,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-detail-oriented-org1-067"
         },
         {
           "informationSourceId": "Org1",
@@ -886,7 +1022,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-mathematics-org1-068"
         },
         {
           "informationSourceId": "Org1",
@@ -899,7 +1037,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-planning-org1-069"
         },
         {
           "informationSourceId": "Org1",
@@ -912,7 +1052,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-teamwork-org1-070"
         },
         {
           "informationSourceId": "Org1",
@@ -925,7 +1067,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-self-directed-learning-org1-071"
         },
         {
           "informationSourceId": "Org1",
@@ -938,7 +1082,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-persuasive-communication-org1-072"
         },
         {
           "informationSourceId": "Org1",
@@ -951,7 +1097,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-management-org1-073"
         },
         {
           "informationSourceId": "Org1",
@@ -964,7 +1112,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-team-leadership-org1-074"
         },
         {
           "informationSourceId": "Org1",
@@ -977,7 +1127,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-professionalism-org1-075"
         },
         {
           "informationSourceId": "Org1",
@@ -990,7 +1142,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-performance-appraisal-org1-076"
         },
         {
           "informationSourceId": "Org1",
@@ -1002,7 +1156,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-ethical-responsibility-org1-077"
         },
         {
           "informationSourceId": "Org1",
@@ -1015,7 +1171,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-advocacy-org1-078"
         },
         {
           "informationSourceId": "Org1",
@@ -1028,7 +1186,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-analytical-techniques-org1-079"
         },
         {
           "informationSourceId": "Org1",
@@ -1040,7 +1200,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-caring-and-consideration-org1-080"
         },
         {
           "informationSourceId": "Org1",
@@ -1053,7 +1215,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-empathy-org1-081"
         },
         {
           "informationSourceId": "Org1",
@@ -1066,7 +1230,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-operations-org1-082"
         },
         {
           "informationSourceId": "Org1",
@@ -1079,7 +1245,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-organizational-skills-org1-083"
         },
         {
           "informationSourceId": "Org1",
@@ -1092,7 +1260,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-self-motivation-org1-084"
         },
         {
           "informationSourceId": "Org1",
@@ -1105,7 +1275,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-health-and-wellness-coaching-org1-085"
         },
         {
           "informationSourceId": "Org1",
@@ -1118,7 +1290,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-allyship-org1-086"
         },
         {
           "informationSourceId": "Org1",
@@ -1131,7 +1305,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-applied-ethics-org1-087"
         },
         {
           "informationSourceId": "Org1",
@@ -1143,7 +1319,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-civic-disposition-org1-088"
         },
         {
           "informationSourceId": "Org1",
@@ -1155,7 +1333,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-identifying-emotions-org1-089"
         },
         {
           "informationSourceId": "Org1",
@@ -1168,7 +1348,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-stress-management-org1-090"
         },
         {
           "informationSourceId": "Org1",
@@ -1181,7 +1363,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-mental-agility-org1-091"
         },
         {
           "informationSourceId": "Org1",
@@ -1194,7 +1378,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-civic-engagement-org1-092"
         },
         {
           "informationSourceId": "Org1",
@@ -1206,7 +1392,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-communication-and-interaction-org1-093"
         },
         {
           "informationSourceId": "Org1",
@@ -1218,7 +1406,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-culturally-sensitive-org1-094"
         },
         {
           "informationSourceId": "Org1",
@@ -1230,7 +1420,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-formal-analysis-org1-095"
         },
         {
           "informationSourceId": "Org1",
@@ -1243,7 +1435,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-human-development-org1-096"
         },
         {
           "informationSourceId": "Org1",
@@ -1255,7 +1449,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-novel-and-adaptive-thinking-org1-097"
         },
         {
           "informationSourceId": "Org1",
@@ -1268,7 +1464,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-organizational-ethics-org1-098"
         },
         {
           "informationSourceId": "Org1",
@@ -1281,7 +1479,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-sensemaking-org1-099"
         },
         {
           "informationSourceId": "Org1",
@@ -1294,7 +1494,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-social-determinants-of-health-org1-100"
         },
         {
           "informationSourceId": "Org1",
@@ -1307,7 +1509,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-statistics-org1-101"
         },
         {
           "informationSourceId": "Org1",
@@ -1319,7 +1523,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-basic-math-org1-102"
         },
         {
           "informationSourceId": "Org1",
@@ -1332,7 +1538,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-behavioral-science-org1-103"
         },
         {
           "informationSourceId": "Org1",
@@ -1345,7 +1553,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-public-speaking-org1-104"
         },
         {
           "informationSourceId": "Org1",
@@ -1357,7 +1567,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-digital-fluency-org1-105"
         },
         {
           "informationSourceId": "Org1",
@@ -1369,7 +1581,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-ethical-practice-org1-106"
         },
         {
           "informationSourceId": "Org1",
@@ -1382,7 +1596,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-physical-science-org1-107"
         },
         {
           "informationSourceId": "Org1",
@@ -1394,7 +1610,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-mathematical-literacy-org1-108"
         },
         {
           "informationSourceId": "Org1",
@@ -1406,7 +1624,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-social-science-literacy-org1-109"
         },
         {
           "informationSourceId": "Org1",
@@ -1419,7 +1639,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-writing-org1-110"
         },
         {
           "informationSourceId": "Org1",
@@ -1431,7 +1653,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "proficiency-historical-thinking-org1-111"
         }
       ],
       "contact": [
@@ -1447,7 +1671,7 @@
           "address": [
             {
               "informationSourceId": "Org1",
-              "addressCity": "Land O\u00e2\u20ac\u2122 Lakes",
+              "addressCity": "Land Oâ€™ Lakes",
               "countryCode": "US",
               "addressState": "Florida",
               "addressPostalCode": "33558"
@@ -1461,14 +1685,17 @@
               ]
             }
           ],
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University",
+          "identifier": "contact-org1-001"
         }
       ],
       "identifier": [
         {
           "informationSourceId": "Org1",
           "identifier": "100006",
-          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER",
+          "informationSourceOrganization": "State University"
         }
       ],
       "credentialAward": [
@@ -1479,7 +1706,8 @@
           "image": [
             {
               "identifier": "https://api.badgr.io/public/assertions/Ebrq14YKR02ka6-MHMdc5w/image",
-              "informationSourceId": "Org1"
+              "informationSourceId": "Org1",
+              "informationSourceOrganization": "State University"
             }
           ],
           "revoked": false,
@@ -1522,7 +1750,8 @@
           "image": [
             {
               "identifier": "https://api.badgr.io/public/assertions/Ebrq14YKR02ka6-MHMdc5w/image",
-              "informationSourceId": "Org1"
+              "informationSourceId": "Org1",
+              "informationSourceOrganization": "State University"
             }
           ],
           "revoked": false,
@@ -1555,7 +1784,8 @@
           },
           "identifier": "3534950c-55e7-4814-bafd-638bee4df530",
           "awardIssueDate": "2022-11-28",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "informationSourceId": "Org1",
@@ -1563,7 +1793,8 @@
           "image": [
             {
               "identifier": "https://api.badgr.io/public/assertions/Ebrq14YKR02ka6-MHMdc5w/image",
-              "informationSourceId": "Org1"
+              "informationSourceId": "Org1",
+              "informationSourceOrganization": "State University"
             }
           ],
           "revoked": false,
@@ -1584,7 +1815,8 @@
             "name": "Credential Proficiency Certificate 001"
           },
           "identifier": "eaca3928-463b-48e7-af3d-00c9814c4b55",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "informationSourceId": "Org1",
@@ -1596,7 +1828,8 @@
           },
           "identifier": "f7d53ff3-c68d-429c-9b54-9aab21d23076",
           "awardIssueDate": "2020-06-12",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "informationSourceId": "Org1",
@@ -1604,7 +1837,8 @@
           "image": [
             {
               "identifier": "https://api.badgr.io/public/assertions/Ebrq14YKR02ka6-MHMdc5w/image",
-              "informationSourceId": "Org1"
+              "informationSourceId": "Org1",
+              "informationSourceOrganization": "State University"
             }
           ],
           "revoked": false,
@@ -1625,7 +1859,8 @@
             "name": "Credential Proficiency Certificate 001"
           },
           "identifier": "a6e2df3b-a944-45a3-bae4-93e2f716938f",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "informationSourceId": "Org1",
@@ -1637,7 +1872,8 @@
           },
           "identifier": "665a0e8d-0c28-4dbb-be78-db4171094b49",
           "awardIssueDate": "2021-08-24T10:33:32Z",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "informationSourceId": "Org1",
@@ -1645,7 +1881,8 @@
           "image": [
             {
               "identifier": "https://api.badgr.io/public/assertions/XB_C-zu8Qg2QLs812uTh8A/image",
-              "informationSourceId": "Org1"
+              "informationSourceId": "Org1",
+              "informationSourceOrganization": "State University"
             }
           ],
           "revoked": false,
@@ -1666,7 +1903,8 @@
             "name": "Credential Proficiency Certificate 001"
           },
           "identifier": "48e29caa-2cc1-4342-948a-60f5fe25f0b3",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "informationSourceId": "Org1",
@@ -1678,7 +1916,8 @@
           },
           "identifier": "61865dff-601a-40cf-86d3-efd17722bdbb",
           "awardIssueDate": "2023-07-19",
-          "credentialAwardee": "Tracy Thatcher"
+          "credentialAwardee": "Tracy Thatcher",
+          "informationSourceOrganization": "State University"
         },
         {
           "identifier": "cred-proficiency-certificate-001",
@@ -2007,7 +2246,9 @@
             "credentialAwardee": "Tracy Thatcher",
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-001"
         },
         {
           "informationSourceId": "Org1",
@@ -2068,7 +2309,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-11-30T07:51:18Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-002"
         },
         {
           "informationSourceId": "Org1",
@@ -2129,7 +2372,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-12-03T12:46:24Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-003"
         },
         {
           "informationSourceId": "Org1",
@@ -2190,7 +2435,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-10-24",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-004"
         },
         {
           "informationSourceId": "Org1",
@@ -2251,7 +2498,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-01-21T04:37:24Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-005"
         },
         {
           "informationSourceId": "Org1",
@@ -2312,7 +2561,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2020-12-11",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-006"
         },
         {
           "informationSourceId": "Org1",
@@ -2373,7 +2624,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-08-14T22:51:17Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-007"
         },
         {
           "informationSourceId": "Org1",
@@ -2434,7 +2687,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-09-02",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-008"
         },
         {
           "informationSourceId": "Org1",
@@ -2495,7 +2750,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2020-01-10T19:58:39Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-009"
         },
         {
           "informationSourceId": "Org1",
@@ -2556,7 +2813,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-07-03T19:28:53Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-010"
         },
         {
           "informationSourceId": "Org1",
@@ -2617,7 +2876,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2021-03-02T06:11:27Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-011"
         },
         {
           "informationSourceId": "Org1",
@@ -2678,7 +2939,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2020-09-09T09:50:20Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-012"
         },
         {
           "informationSourceId": "Org1",
@@ -2739,7 +3002,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-09-27T20:57:47Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-013"
         },
         {
           "informationSourceId": "Org1",
@@ -2800,7 +3065,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2020-08-17T00:03:23Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-014"
         },
         {
           "informationSourceId": "Org1",
@@ -2861,7 +3128,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-03-04",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-015"
         },
         {
           "informationSourceId": "Org1",
@@ -2922,7 +3191,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-05-18T02:03:54Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-016"
         },
         {
           "informationSourceId": "Org1",
@@ -2983,7 +3254,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-07-09T00:06:24Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-017"
         },
         {
           "informationSourceId": "Org1",
@@ -3044,7 +3317,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2021-11-23T11:58:30Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-018"
         },
         {
           "informationSourceId": "Org1",
@@ -3063,7 +3338,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2020-05-22T15:00:18Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-019"
         },
         {
           "informationSourceId": "Org1",
@@ -3082,7 +3359,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-04-10T17:09:54Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-020"
         },
         {
           "informationSourceId": "Org1",
@@ -3101,7 +3380,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2021-10-02",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-021"
         },
         {
           "informationSourceId": "Org1",
@@ -3120,7 +3401,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-10-16T22:45:01Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-022"
         },
         {
           "informationSourceId": "Org1",
@@ -3139,7 +3422,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-07-05",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-023"
         },
         {
           "informationSourceId": "Org1",
@@ -3158,7 +3443,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-09-29T05:01:50Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-024"
         },
         {
           "informationSourceId": "Org1",
@@ -3177,7 +3464,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-12-12",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-025"
         },
         {
           "informationSourceId": "Org1",
@@ -3196,7 +3485,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-09-19T02:32:28Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-026"
         },
         {
           "informationSourceId": "Org1",
@@ -3215,7 +3506,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2021-10-18T20:30:04Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-027"
         },
         {
           "informationSourceId": "Org1",
@@ -3234,7 +3527,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2022-08-12T12:41:23Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-028"
         },
         {
           "informationSourceId": "Org1",
@@ -3253,7 +3548,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-09-21T03:16:25Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-029"
         },
         {
           "informationSourceId": "Org1",
@@ -3272,7 +3569,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-06-12",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-030"
         },
         {
           "informationSourceId": "Org1",
@@ -3291,7 +3590,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-09-15",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-031"
         },
         {
           "informationSourceId": "Org1",
@@ -3310,7 +3611,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-02-19T02:04:06Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-032"
         },
         {
           "informationSourceId": "Org1",
@@ -3329,7 +3632,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-12-04T04:33:47Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-033"
         },
         {
           "informationSourceId": "Org1",
@@ -3348,7 +3653,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-08-12T19:16:13Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-034"
         },
         {
           "informationSourceId": "Org1",
@@ -3367,7 +3674,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-11-26T04:17:42Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-035"
         },
         {
           "informationSourceId": "Org1",
@@ -3386,7 +3695,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-07-08",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-036"
         },
         {
           "informationSourceId": "Org1",
@@ -3405,7 +3716,9 @@
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-10-17T00:04:24Z",
             "credentialAwardee": "Tracy Thatcher"
-          }
+          },
+          "informationSourceOrganization": "State University",
+          "identifier": "courselearningexperience-org1-037"
         }
       ],
       "informationSourceId": "Org1"
@@ -3445,7 +3758,9 @@
               "informationSourceId": "Org1"
             }
           ],
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University",
+          "identifier": "contact-org1-001"
         }
       ],
       "imageUrl": "https://assets.stateu.edu/99da0cfd314920b5cf8cb6c8727e7675",
@@ -3453,21 +3768,25 @@
         {
           "identifier": "833333326",
           "identifierType": "Federal employer identification number",
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University"
         },
         {
           "identifier": "23323331",
           "identifierType": "Dun and Bradstreet number",
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University"
         },
         {
           "identifier": "https://credentialfinder.org/organization/000/State_University",
           "identifierType": "credentialfinder.org",
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University"
         }
       ],
       "identificationSystem": "State University SIS",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "State University"
     },
     {
       "identificationSystem": "stateu-employing-organization-id",
@@ -3475,13 +3794,17 @@
       "organizationType": [
         "Company"
       ],
-      "informationSourceId": "Org1"
+      "informationSourceId": "Org1",
+      "informationSourceOrganization": "State University",
+      "identifier": "organization-tech-solutions-inc-org1-002"
     },
     {
       "informationSourceId": "Org1",
       "name": "State University",
       "identificationSystem": "State University SIS",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "State University",
+      "identifier": "organization-state-university-org1-003"
     },
     {
       "identificationSystem": "stateu-state-university-id",
@@ -3489,7 +3812,9 @@
       "organizationType": [
         "University"
       ],
-      "informationSourceId": "Org1"
+      "informationSourceId": "Org1",
+      "informationSourceOrganization": "State University",
+      "identifier": "organization-state-university-org1-004"
     },
     {
       "identificationSystem": "stateu-state-department-of-education-id",
@@ -3497,7 +3822,9 @@
       "organizationType": [
         "Government Agency"
       ],
-      "informationSourceId": "Org1"
+      "informationSourceId": "Org1",
+      "informationSourceOrganization": "State University",
+      "identifier": "organization-state-department-of-education-org1-005"
     }
   ],
   "credential": [
@@ -3515,7 +3842,8 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
@@ -3524,7 +3852,8 @@
       "image": [
         {
           "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg/image",
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University"
         }
       ],
       "format": [
@@ -4216,7 +4545,7 @@
       "requirements": {
         "criteria": [
           {
-            "narrative": "## Credential Detail\nRecipients of StateU\u00e2\u20ac\u2122s Health Science Foundations Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Health Psychology\n- The learner creates a definition of health drawn from community and empirical sources.\n- The learner applies a framework to assess factors impacting individual well-being.  \n- The learner applies principles of health psychology to a behavior change project.  \n\n### Foundations of Public Health\n- The learner identifies the history and role of public health.\n- The learner identifies the basic principles of public health.\n- The learner identifies general strategies that public health specialists recommend to promote health, longevity, and disease prevention.\n\n### Health Equity and Social Determinants of Health\n- The learner explains the social determinants of health that contribute to health disparities.\n- The learner analyzes how social determinants of health impact health outcomes of a population.\n- The learner analyzes strategies to improve health equity for a population.\n\n### Introduction to Psychology\n- The learner explains the foundations of psychology. \n- The learner explains the biological perspectives of psychology. \n- The learner explains the theories of learning and memory. \n- The learner explains the concepts of personality development and social psychology. \n- The learner identifies psychological disorders and treatment methods.\n\n### Composition: Writing with a Strategy\n- The learner writes with purpose for a given context and target audience.\n- The learner incorporates writing strategies and techniques for written communication.\n- The learner constructs a written document with correct format, style, structure, and grammar.\n- The learner formulates a strategy for editing and revising written text.\n- The learner composes constructive feedback of written texts.\n\n### Integrated Physical Sciences\n- The learner describes the nature and process of science.\n- The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves. \n- The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions. \n- The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system.\n\n### Introduction to Chemistry\n- The learner calculates quantities associated with a balanced chemical equation.\n- The learner records measured numbers following scientific standards.\n- The learner describes the arrangement of the periodic table and the electronic structure of atoms.\n- The learner explains how chemical bonds are formed.\u00e2\u20ac\u00af\n- The learner estimates the quantitative properties of solutions and gases.\n- The learner describes the behavior of acids, bases, and gases.\n\n## Competency Demonstration Highlights\nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Identified suitable written formulas to convey information effectively for varying audiences.\n- Created purposeful constructive feedback for written communications.\n- Articulated how social determinants of health affect health outcomes in different populations.\n- Proficiently developed approaches to apply community-based strategies in various educational settings.\n- Articulated the importance of social, socioeconomic, and physical barriers that impact health and healthcare access.\n- Developed SMART goals to address healthy behavioral change plans through thoughts, behaviors, and language.",
+            "narrative": "## Credential Detail\nRecipients of StateUâ€™s Health Science Foundations Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Health Psychology\n- The learner creates a definition of health drawn from community and empirical sources.\n- The learner applies a framework to assess factors impacting individual well-being.  \n- The learner applies principles of health psychology to a behavior change project.  \n\n### Foundations of Public Health\n- The learner identifies the history and role of public health.\n- The learner identifies the basic principles of public health.\n- The learner identifies general strategies that public health specialists recommend to promote health, longevity, and disease prevention.\n\n### Health Equity and Social Determinants of Health\n- The learner explains the social determinants of health that contribute to health disparities.\n- The learner analyzes how social determinants of health impact health outcomes of a population.\n- The learner analyzes strategies to improve health equity for a population.\n\n### Introduction to Psychology\n- The learner explains the foundations of psychology. \n- The learner explains the biological perspectives of psychology. \n- The learner explains the theories of learning and memory. \n- The learner explains the concepts of personality development and social psychology. \n- The learner identifies psychological disorders and treatment methods.\n\n### Composition: Writing with a Strategy\n- The learner writes with purpose for a given context and target audience.\n- The learner incorporates writing strategies and techniques for written communication.\n- The learner constructs a written document with correct format, style, structure, and grammar.\n- The learner formulates a strategy for editing and revising written text.\n- The learner composes constructive feedback of written texts.\n\n### Integrated Physical Sciences\n- The learner describes the nature and process of science.\n- The learner examines applications of physics including fundamental concepts such as forces, motion, energy, and waves. \n- The learner examines applications of key chemistry concepts including the structure of matter and the behavior and conservation of matter in chemical reactions. \n- The learner describes the underlying organization, interactions, and processes within the Earth system including the Earth's structure and atmosphere, and Earth's interactions within the solar system.\n\n### Introduction to Chemistry\n- The learner calculates quantities associated with a balanced chemical equation.\n- The learner records measured numbers following scientific standards.\n- The learner describes the arrangement of the periodic table and the electronic structure of atoms.\n- The learner explains how chemical bonds are formed.â€¯\n- The learner estimates the quantitative properties of solutions and gases.\n- The learner describes the behavior of acids, bases, and gases.\n\n## Competency Demonstration Highlights\nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Identified suitable written formulas to convey information effectively for varying audiences.\n- Created purposeful constructive feedback for written communications.\n- Articulated how social determinants of health affect health outcomes in different populations.\n- Proficiently developed approaches to apply community-based strategies in various educational settings.\n- Articulated the importance of social, socioeconomic, and physical barriers that impact health and healthcare access.\n- Developed SMART goals to address healthy behavioral change plans through thoughts, behaviors, and language.",
             "informationSourceId": "Org1"
           }
         ],
@@ -4292,7 +4621,8 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
@@ -4308,7 +4638,8 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
@@ -4324,7 +4655,8 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
@@ -4340,7 +4672,8 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
@@ -4356,7 +4689,8 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
@@ -4365,7 +4699,8 @@
       "image": [
         {
           "identifier": "https://api.badgr.io/public/badges/SN-6qb4DSBuUbix5HcxYKA/image",
-          "informationSourceId": "Org1"
+          "informationSourceId": "Org1",
+          "informationSourceOrganization": "State University"
         }
       ],
       "format": [
@@ -4841,7 +5176,7 @@
       "requirements": {
         "criteria": [
           {
-            "narrative": "## Credential Detail\nRecipients of StateU\u00e2\u20ac\u2122s Leadership Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Introduction to Sociology\n- The learner explains major perspectives and key contributors to the development of sociology.\u00e2\u20ac\u00af\n- The learner identifies components of culture and socialization as they relate to individuals in society. \n- The learner explains the constructs of conformity to and deviance from social norms.\n- The learner explains how societies are stratified across various social statuses.\n- The learner explains reciprocal relationships between social institutions and individuals. \u00e2\u20ac\u00af\n\n### Organizational Behavior\n- The learner can describe the effects of specified influences on individual behavior.\n- The learner can recommend appropriate principles or techniques for guiding the development of a group.\n- The learner can determine which type of team and team leadership should be used to accomplish a task or project.\n- The learner analyzes the culture within an organization to determine how to work effectively within that organization.\n- The learner can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.\n- The learner can develop and recommend how to implement effective performance evaluation processes.\n\n### Values-Based Leadership\n- The learner identifies their personal values, including honesty, integrity, respect, emotional intelligence, and ethical responsibility, to develop self-awareness through self-assessment.\n- The learner describes how interpersonal skills are applied to effectively collaborate, communicate, and lead within a team and across an organization.\n- The learner demonstrates how their leadership abilities, including active listening, influence, and ethical responsibility, solve problems and deliver results within an organization.\n- The learner explains how the leadership of cultures fosters diversity, inclusion, ethics, and problem-solving.\n\n## Competency Demonstration Highlights\nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Develop self-awareness and personal values.\n- Describe how interpersonal skills are applied in leadership.\n- Demonstrate how leadership delivers results.\n- Explain leadership of cultures.\n- Exhibit introspection for self-awareness and to define personal values.\n- Illustrate the practical application of interpersonal skills within a leadership context.\n- Demonstrate how effective leadership leads to tangible and meaningful outcomes.\n- Explain the role of leadership in shaping and navigating diverse cultures.\n\n## StateU Accreditation\nStateU is regionally accredited by the Northwest Commission on Colleges and Universities. The StateU Teachers College is granted accreditation at the initial-licensure level from the Council for the Accreditation of Educator Preparation (CAEP). StateU nursing degree programs are accredited by the Commission for Collegiate Nursing Education (CCNE). The Health Informatics program is accredited by the Commission of Accreditation for Health Informatics and Information Management Education (CAHIIM). The StateU Business College is accredited by the Accreditation Council for Business Schools and Programs (ACBSP).",
+            "narrative": "## Credential Detail\nRecipients of StateUâ€™s Leadership Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Introduction to Sociology\n- The learner explains major perspectives and key contributors to the development of sociology.â€¯\n- The learner identifies components of culture and socialization as they relate to individuals in society. \n- The learner explains the constructs of conformity to and deviance from social norms.\n- The learner explains how societies are stratified across various social statuses.\n- The learner explains reciprocal relationships between social institutions and individuals. â€¯\n\n### Organizational Behavior\n- The learner can describe the effects of specified influences on individual behavior.\n- The learner can recommend appropriate principles or techniques for guiding the development of a group.\n- The learner can determine which type of team and team leadership should be used to accomplish a task or project.\n- The learner analyzes the culture within an organization to determine how to work effectively within that organization.\n- The learner can analyze leadership theories, methods, and tools in given situations and select the appropriate behavior of the leader.\n- The learner can develop and recommend how to implement effective performance evaluation processes.\n\n### Values-Based Leadership\n- The learner identifies their personal values, including honesty, integrity, respect, emotional intelligence, and ethical responsibility, to develop self-awareness through self-assessment.\n- The learner describes how interpersonal skills are applied to effectively collaborate, communicate, and lead within a team and across an organization.\n- The learner demonstrates how their leadership abilities, including active listening, influence, and ethical responsibility, solve problems and deliver results within an organization.\n- The learner explains how the leadership of cultures fosters diversity, inclusion, ethics, and problem-solving.\n\n## Competency Demonstration Highlights\nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Develop self-awareness and personal values.\n- Describe how interpersonal skills are applied in leadership.\n- Demonstrate how leadership delivers results.\n- Explain leadership of cultures.\n- Exhibit introspection for self-awareness and to define personal values.\n- Illustrate the practical application of interpersonal skills within a leadership context.\n- Demonstrate how effective leadership leads to tangible and meaningful outcomes.\n- Explain the role of leadership in shaping and navigating diverse cultures.\n\n## StateU Accreditation\nStateU is regionally accredited by the Northwest Commission on Colleges and Universities. The StateU Teachers College is granted accreditation at the initial-licensure level from the Council for the Accreditation of Educator Preparation (CAEP). StateU nursing degree programs are accredited by the Commission for Collegiate Nursing Education (CCNE). The Health Informatics program is accredited by the Commission of Accreditation for Health Informatics and Information Management Education (CAHIIM). The StateU Business College is accredited by the Accreditation Council for Business Schools and Programs (ACBSP).",
             "informationSourceId": "Org1"
           }
         ],
@@ -4917,35 +5252,43 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "d3ad4fd0-1869-4129-93f9-07e67751a5ff"
+      "identifier": "d3ad4fd0-1869-4129-93f9-07e67751a5ff",
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg"
+      "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg",
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "a057548f-84b3-45c1-ace1-3f5edd4e4cb1"
+      "identifier": "a057548f-84b3-45c1-ace1-3f5edd4e4cb1",
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "8b6b88df-ff1f-4977-b733-cc00c7993f39"
+      "identifier": "8b6b88df-ff1f-4977-b733-cc00c7993f39",
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "b87e694d-ad90-4547-a3fe-f0c42c770fc8"
+      "identifier": "b87e694d-ad90-4547-a3fe-f0c42c770fc8",
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "c3ee7191-293d-4cc0-ad57-75e72adf36f1"
+      "identifier": "c3ee7191-293d-4cc0-ad57-75e72adf36f1",
+      "informationSourceOrganization": "State University"
     },
     {
       "informationSourceId": "Org1",
-      "identifier": "https://api.badgr.io/public/badges/SN-6qb4DSBuUbix5HcxYKA"
+      "identifier": "https://api.badgr.io/public/badges/SN-6qb4DSBuUbix5HcxYKA",
+      "informationSourceOrganization": "State University"
     }
   ],
   "informationSourceId": "Org1"

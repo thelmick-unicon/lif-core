@@ -5,7 +5,9 @@
         {
           "informationSourceId": "Org2",
           "lastName": "Tsatrian",
-          "firstName": "Alan "
+          "firstName": "Alan ",
+          "informationSourceOrganization": "Community College",
+          "identifier": "name-alan -tsatrian-org2-001"
         }
       ],
       "contact": [
@@ -18,14 +20,17 @@
               ]
             }
           ],
-          "informationSourceId": "Org2"
+          "informationSourceId": "Org2",
+          "informationSourceOrganization": "Community College",
+          "identifier": "contact-org2-001"
         }
       ],
       "identifier": [
         {
           "informationSourceId": "Org2",
           "identifier": "100001",
-          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER",
+          "informationSourceOrganization": "Community College"
         }
       ],
       "employmentLearningExperience": [
@@ -68,7 +73,9 @@
             "credentialAwardee": "Alan  Tsatrian",
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Org2"
-          }
+          },
+          "informationSourceOrganization": "Community College",
+          "identifier": "employmentlearningexperience-compliance-manager--org2-001"
         },
         {
           "informationSourceId": "Org2",
@@ -110,7 +117,9 @@
             "credentialAwardee": "Alan  Tsatrian",
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Org2"
-          }
+          },
+          "informationSourceOrganization": "Community College",
+          "identifier": "employmentlearningexperience-compliance-specialist--org2-002"
         }
       ],
       "positionPreferences": [
@@ -233,11 +242,15 @@
       "organizationType": [
         "Company"
       ],
-      "informationSourceId": "Org2"
+      "informationSourceId": "Org2",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-employing-organization-org2-001"
     },
     {
       "informationSourceId": "Org2",
-      "name": "Three Trees Compliance"
+      "name": "Three Trees Compliance",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-three-trees-compliance-org2-002"
     },
     {
       "identificationSystem": "stateu-training-provider-id",
@@ -245,29 +258,39 @@
       "organizationType": [
         "Training Organization"
       ],
-      "informationSourceId": "Org2"
+      "informationSourceId": "Org2",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-training-provider-org2-003"
     },
     {
       "informationSourceId": "Org2",
-      "name": "McBradshaw Brothers"
+      "name": "McBradshaw Brothers",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-mcbradshaw-brothers-org2-004"
     },
     {
       "informationSourceId": "Org2",
       "name": "Three Trees Compliance",
       "identificationSystem": "Workday",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-three-trees-compliance-org2-005"
     },
     {
       "informationSourceId": "Org2",
       "name": "RIA Compliance Consultants",
       "identificationSystem": "Workday",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-ria-compliance-consultants-org2-006"
     },
     {
       "informationSourceId": "Org2",
       "name": "Utah ISO Consultants",
       "identificationSystem": "Workday",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-utah-iso-consultants-org2-007"
     },
     {
       "identificationSystem": "stateu-approving-authority-id",
@@ -275,7 +298,9 @@
       "organizationType": [
         "Regulatory Body"
       ],
-      "informationSourceId": "Org2"
+      "informationSourceId": "Org2",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-approving-authority-org2-008"
     }
   ],
   "informationSourceId": "Org2"
