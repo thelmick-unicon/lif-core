@@ -1,7 +1,7 @@
 {
   "person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org1",
           "lastName": "Thatcher",
@@ -10,12 +10,12 @@
           "identifier": "name-tracy-thatcher-org1-001"
         }
       ],
-      "proficiency": [
+      "Proficiency": [
         {
           "informationSourceId": "Org1",
           "name": "Experiential Learning",
           "description": "Experiential learning is a unique educational approach that emphasizes hands-on, practical experience as a means of acquiring knowledge and skills. It involves actively engaging in the learning process through various activities that challenge and stimulate learners, such as internships, field trips, simulations, and collaborative projects. This approach is becoming increasingly popular in educational settings, as it allows learners to apply theoretical concepts in real-world situations, and acquire valuable skills that can be applied in practice. However, designing effective experiential learning programs requires specialized skills and expertise, including creating clear goals and objectives, designing appropriate activities and assessments, and providing supportive feedback and guidance.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -30,7 +30,7 @@
           "informationSourceId": "Org1",
           "name": "Academic Writing",
           "description": "Academic writing is a distinct form of writing that requires a specialized set of skills, knowledge and conventions. It is used to communicate complex ideas and research findings in a clear, concise and logical manner, and is often required in academic settings such as universities and research institutions. Effective academic writing requires mastery of research techniques, strong critical thinking skills, a firm grasp of language conventions, and the ability to communicate ideas effectively to diverse audiences.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -45,7 +45,7 @@
           "informationSourceId": "Org1",
           "name": "Youth Health",
           "description": "Youth health is a specialized skill that encompasses the physical, emotional, social, and mental well-being of young individuals. It involves applying knowledge of developmental factors, risk behaviors, and evidence-based interventions to promote positive health outcomes for youth. Youth health professionals work collaboratively with young people, parents, and other stakeholders to provide comprehensive services and support that address the unique needs of this population. Effective youth health interventions can help to prevent or mitigate health problems, improve resilience, and support healthy lifestyles into adulthood.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -60,7 +60,7 @@
           "informationSourceId": "Org1",
           "name": "Literacy",
           "description": "Literacy is the ability to read, write, and comprehend information. It is considered a common skill that is essential for individuals to be successful in both their personal and professional lives. It provides a foundation for communication, knowledge acquisition, and critical thinking skills. Literacy skills are typically developed during early childhood education and continue to be refined throughout a person's lifetime.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -75,7 +75,7 @@
           "informationSourceId": "Org1",
           "name": "Analytical Thinking",
           "description": "Analytical thinking is the ability to break down complex information into smaller components, identify patterns and connections, and draw logical conclusions based on facts and evidence. It is a common skill that is useful in problem-solving, decision-making, and critical thinking in various fields, including business, science, technology, and many others. Analytical thinking involves asking questions, analyzing data, and considering different perspectives to arrive at a well-reasoned conclusion. It is a valuable skill that can be developed and improved with practice and experience.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -90,7 +90,7 @@
           "informationSourceId": "Org1",
           "name": "Data Analysis",
           "description": "Data analysis involves using various techniques and methods to process, transform, and summarize data in order to extract meaningful insights and information that can inform decision-making. It involves the application of statistical and computational tools to large datasets, and requires a specialized set of skills and knowledge, including expertise in programming languages, data visualization, and machine learning. Effective data analysis can help businesses, governments, and other organizations better understand their operations, customers, and markets, and make informed decisions based on the insights gained from their data.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -105,7 +105,7 @@
           "informationSourceId": "Org1",
           "name": "Physiology",
           "description": "Physiology is the study of how living organisms function, including their functions at the cellular, tissue, organ, and systemic levels. It involves understanding the mechanisms and processes involved in various physiological functions such as movement, digestion, respiration, circulation, and nervous system function. Physiology is a specialized skill that requires a strong background in biology, anatomy, chemistry, and physics. It is an important field for understanding health and disease and developing new medical treatments and therapies.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -120,7 +120,7 @@
           "informationSourceId": "Org1",
           "name": "Analysis of Variance (ANOVA)",
           "description": "Analysis of Variance (ANOVA) is a statistical technique used to compare the means of two or more groups. It is used to determine if there is a statistically significant difference between the means of these groups. It is a specialized skill that requires knowledge of statistical analysis and the ability to interpret statistical results. ANOVA is commonly used in scientific research, business analytics, and quality control processes.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -135,7 +135,7 @@
           "informationSourceId": "Org1",
           "name": "Chemistry",
           "description": "Chemistry is a specialized skill that involves the study of matter, its properties, and the changes that it undergoes. It is a branch of science that explores the composition, structure, and properties of elements and compounds, as well as the reactions that take place between them. Chemists use this knowledge to develop new compounds, analyze substances, and design processes that can be used for industrial applications. It is an important field that has applications in many industries, including pharmaceuticals, materials science, and energy production.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -150,7 +150,7 @@
           "informationSourceId": "Org1",
           "name": "Biology",
           "description": "Biology is a specialized skill focused on the study of living organisms, including their structure, function, growth, evolution, distribution, and taxonomy. It involves a deep understanding of the natural world and the processes that drive life. This scientific discipline is critical to many fields, including medicine, agriculture, genetics, and ecology, and it is continually advancing our knowledge of the world around us. Those who study biology must possess a combination of critical thinking, analytical skills, and creativity to excel in their work.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -165,7 +165,7 @@
           "informationSourceId": "Org1",
           "name": "Biological Systems",
           "description": "Biological systems is the study of living organisms and their interactions with each other and their environment. It involves the study of the structure, function, behavior, and evolution of organisms, as well as the processes that enable them to survive and reproduce. It is a specialized skill that requires an understanding of biology, ecology, and related fields, as well as the ability to analyze complex data and conduct experiments to better understand biological systems. Those with a background in biological systems can pursue careers in fields such as ecology, molecular biology, genetics, and biomedical research.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -180,7 +180,7 @@
           "informationSourceId": "Org1",
           "name": "Business Ethics",
           "description": "Business ethics is a form of applied ethics or professional ethics, that examines ethical principles and moral or ethical problems that can arise in a business environment. It applies to all aspects of business conduct and is relevant to the conduct of individuals and entire organizations. These ethics originate from individuals, organizational statements or the legal system. These norms, values, ethical, and unethical practices are the principles that guide a business.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -195,7 +195,7 @@
           "informationSourceId": "Org1",
           "name": "Child Behavior Checklists",
           "description": "The Child Behavior Checklist (CBCL) is a specialized skill that involves the use of standardized questionnaires to assess the behavior and emotional functioning of children and adolescents. The CBCL is used by professionals, such as psychologists and teachers, to identify potential behavioral and emotional problems early on so that appropriate interventions can be put in place to ensure the child's well-being. The use of the CBCL requires specialized training and expertise in administering and interpreting the results.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -210,7 +210,7 @@
           "informationSourceId": "Org1",
           "name": "Child Development",
           "description": "Child development is the study of the physical, cognitive, emotional, and social development of children from infancy through adolescence. It involves understanding the different stages of development and how children learn and grow, as well as identifying potential challenges or delays in development and offering interventions and support to promote healthy growth and development. Child development is a specialized skill that requires knowledge of child psychology, neuroscience, education, and other related fields. Professionals in this field may work in a variety of settings, including schools, healthcare facilities, and social service agencies, to support children and their families.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -225,7 +225,7 @@
           "informationSourceId": "Org1",
           "name": "Public Health",
           "description": "Public health is a specialized skill focused on improving and protecting the health and wellbeing of communities through disease prevention, health promotion, and other interventions. Public health professionals use data, research, and evidence-based practices to identify health risks and develop strategies to mitigate these risks and improve health outcomes. This field encompasses a broad range of specialties, including epidemiology, biostatistics, environmental health, global health, and health policy.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -240,7 +240,7 @@
           "informationSourceId": "Org1",
           "name": "Computer Literacy",
           "description": "Computer literacy refers to the ability to use computers and related technology effectively for a wide range of purposes. It is a common skill in today's society, where most work and communication is done using technology. Individuals who are computer literate are able to perform various tasks such as computer programming, software applications, data management, and Internet browsing. This skill is highly valued in the job market, especially in fields such as computer science, technology, and business.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -255,7 +255,7 @@
           "informationSourceId": "Org1",
           "name": "Conflict Resolution",
           "description": "Conflict Resolution is a specialized skill that involves finding solutions to disputes and disagreements between individuals or groups. It involves active listening, empathy, and effective communication to understand the needs and concerns of each party involved in the conflict. A successful conflict resolution requires a neutral and objective approach to finding a mutually beneficial solution that satisfies all parties involved.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -270,7 +270,7 @@
           "informationSourceId": "Org1",
           "name": "Critical Thinking",
           "description": "Critical thinking is a skill that allows individuals to analyze and evaluate information to make sound judgements and decisions. It involves the ability to question assumptions, identify biases, and examine evidence to reach logical conclusions. It is a common skill that is essential in various areas of life, including education, career, and personal relationships.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -285,7 +285,7 @@
           "informationSourceId": "Org1",
           "name": "Cultural Diversity",
           "description": "Cultural diversity is a specialized skill that involves understanding and appreciating the differences among people from different cultures, including their values, beliefs, behaviors, and communication styles. It requires the ability to be non-judgmental, empathetic, flexible, and open-minded, as well as the willingness to learn and adapt to new cultural situations. This skill is increasingly important in today's globalized and multicultural society, where people of different cultures interact and work together on a daily basis.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -300,7 +300,7 @@
           "informationSourceId": "Org1",
           "name": "Data Presentation",
           "description": "Data presentation is the process of organizing, visualizing, and communicating data in a way that is clear, accurate, and meaningful. It is a specialized skill that involves the use of various tools and techniques such as charts, graphs, infographics, and storytelling to present data in a way that can be easily understood and interpreted by the target audience. Effective data presentation is essential for decision-making, problem-solving, and communication in various fields including business, academia, and research.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -315,7 +315,7 @@
           "informationSourceId": "Org1",
           "name": "Data Visualization",
           "description": "Data visualization is a specialized skill that involves translating complex data into easy-to-understand visual representations, such as graphs or charts. A data visualizer must have knowledge of design principles, good communication skills, and a deep understanding of the data they are working with, as well as the audience that will be viewing the visualizations. Effective data visualization can help organizations make more informed decisions and communicate complex information to stakeholders.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -330,7 +330,7 @@
           "informationSourceId": "Org1",
           "name": "Digital Storytelling",
           "description": "Digital Storytelling is a specialized skill that involves using digital tools to create a compelling narrative or story. It requires a combination of technical skills and creativity to bring together images, audio, and video in a way that engages the audience and communicates a message effectively. Digital storytelling is a powerful way to share experiences, educate others, and create meaningful connections between people, and is commonly used in marketing, education, advocacy, and other fields.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -345,7 +345,7 @@
           "informationSourceId": "Org1",
           "name": "Early Childhood Education",
           "description": "Early Childhood Education requires specialized skills, knowledge and abilities to effectively educate and support young children during critical stages of their development. Educators in this field must understand child development, psychology, and learning theories, as well as possess effective communication, patience, and empathy. They must also be able to create a safe and nurturing environment that encourages exploration, creativity, and socialization. Successful practitioners are able to tailor their teaching methods to the individual needs of each child, while incorporating play-based learning and age-appropriate activities to foster cognitive, social, emotional and physical growth.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -360,7 +360,7 @@
           "informationSourceId": "Org1",
           "name": "Evidence-Based Practice",
           "description": "Evidence-Based Practice is a specialized skill that involves integrating research findings with clinical expertise and patient values to make informed and effective healthcare decisions. It involves understanding and critically appraising research studies, using evidence to inform clinical decision-making, and evaluating and improving clinical practice based on outcomes. Effective Evidence-Based Practice requires ongoing education and training, as well as collaboration with healthcare teams and patients.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -375,7 +375,7 @@
           "informationSourceId": "Org1",
           "name": "Emotional Intelligence",
           "description": "Emotional Intelligence is the ability to identify, understand and manage one's own emotions as well as the emotions of others. It involves being empathetic, self-aware, and skilled at communicating and resolving conflicts. Emotional intelligence is a common skill that can be developed and improved over time through practice and self-reflection. It is important in personal relationships, professional settings, and overall well-being.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -390,7 +390,7 @@
           "informationSourceId": "Org1",
           "name": "Performance Management",
           "description": "Performance management is a process of setting goals, monitoring progress, providing feedback, and evaluating results to optimize individual and organizational performance. It involves a range of specialized skills, including effective communication, goal setting, tracking and measuring performance, providing constructive feedback, and developing action plans to improve performance. Performance management is crucial for enhancing productivity, achieving strategic objectives, and driving continuous improvement, and requires ongoing commitment from managers and employees alike.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -405,7 +405,7 @@
           "informationSourceId": "Org1",
           "name": "Front Office",
           "description": "Front Office is a specialized skill that involves the management and coordination of all activities that take place at the front desk or reception area of an organization. This includes handling guest inquiries, reservations, check-ins and check-outs, billing and payments, and providing general information about the organization. Front Office personnel must have excellent communication and organizational skills, be able to handle high-stress situations, and maintain a professional and welcoming demeanor at all times. In essence, front office is responsible for creating a positive first impression of the organization and ensuring that guests have a seamless and enjoyable experience.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -420,7 +420,7 @@
           "informationSourceId": "Org1",
           "name": "Knowledge of Dynamics of Groups",
           "description": "Group dynamics is the study of how individuals interact and behave in groups. It involves understanding how a group's structure, roles, and communication affect its members and the group's overall success. Group dynamics also includes the study of group development, conflict resolution, and decision-making processes. Effective group dynamics is a specialized skill that requires an understanding of social psychology, communication, and leadership. It is an essential skill for leaders, managers, and anyone who works in a team environment.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -435,7 +435,7 @@
           "informationSourceId": "Org1",
           "name": "Leadership",
           "description": "Leadership is a skill that is common among successful individuals in various fields. It involves the ability to motivate and guide a team towards achieving common goals. Good leadership qualities include effective communication, empathy, decision-making skills, adaptability, and vision. Leadership can be developed and honed through training, practice, and learning from others.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -450,7 +450,7 @@
           "informationSourceId": "Org1",
           "name": "Human Biology",
           "description": "Human Biology is the study of the structure and function of the human body at a cellular and molecular level. It involves the study of the human anatomy, physiology, genetics, and biochemistry. It is a specialized skill that requires a deep understanding of human health and disease, and is essential for medical professionals, scientists, and researchers. Human biology is a broad field that encompasses many areas of study, and is constantly evolving as new research and techniques emerge.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -465,7 +465,7 @@
           "informationSourceId": "Org1",
           "name": "Psychology",
           "description": "Psychology is a scientific discipline that specializes in studying human behavior and mental processes. It covers a range of topics including emotions, cognition, perception, development, motivation, personality, social influence, and mental health. Psychologists utilize various research methods and techniques to understand individuals and their interactions with others, and to help individuals overcome personal challenges or improve their quality of life.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -480,7 +480,7 @@
           "informationSourceId": "Org1",
           "name": "Statistical Hypothesis Testing",
           "description": "Statistical hypothesis testing is a method used to determine whether there is enough evidence to reject or fail to reject a null hypothesis. This process involves defining a null and alternative hypothesis, choosing a significance level, collecting data, performing a statistical test, and interpreting the results. It is an important statistical tool that is commonly used in scientific studies and research. However, it requires specialized skills and knowledge to ensure accurate and valid conclusions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -495,7 +495,7 @@
           "informationSourceId": "Org1",
           "name": "Information Literacy",
           "description": "Information literacy is a common skill that involves the ability to recognize, locate, evaluate, and effectively use information. It is an essential skill for individuals to be effective in today's digital age, as it allows them to make informed decisions, conduct research, and communicate with others using different media platforms. This skill requires critical thinking, problem-solving, and the ability to use technology to access and evaluate information effectively.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -510,7 +510,7 @@
           "informationSourceId": "Org1",
           "name": "Interpersonal Communications",
           "description": "Interpersonal communication is the process of exchanging information, feelings, and meaning through verbal and nonverbal interactions. It is an essential skill that involves the ability to listen actively, speak clearly, and empathize with others. Effective interpersonal communication promotes strong relationships, enhances understanding, and fosters mutual respect between individuals. It is a common skill that is used in personal, social, and professional contexts.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -525,7 +525,7 @@
           "informationSourceId": "Org1",
           "name": "Problem Solving",
           "description": "Problem solving is the process of identifying, analyzing and resolving problems that can arise in any situation. It is a common skill that is required in many different industries and situations, and involves identifying the root cause of a problem, generating possible solutions, evaluating those solutions and implementing the best one. Successful problem solving involves critical thinking, creativity and communication skills. Learning how to effectively solve problems can help individuals and organizations to more efficiently achieve their goals and objectives.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -540,7 +540,7 @@
           "informationSourceId": "Org1",
           "name": "Linear Regression",
           "description": "Linear regression refers to a statistical method that is used to establish relationships between a dependent variable and one or more independent variables. This method involves fitting a straight line to a set of data points, with the goal of determining the most accurate line that represents the relationship between the variables. Linear regression is widely used in various fields, including finance, economics, marketing, and engineering, to make predictions and forecasts based on historical and current data. Becoming proficient in linear regression requires a sound understanding of statistical concepts and techniques, as well as programming skills to implement the method using software tools such as R, Python, or MATLAB.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -555,7 +555,7 @@
           "informationSourceId": "Org1",
           "name": "Measurement and Metrology",
           "description": "Systems of measurement refer to the various standardized systems used to measure and quantify physical quantities such as length, mass, time, and temperature. The most widely used systems of measurement include the metric system and the imperial system. The understanding and use of these systems is a specialized skill necessary in many fields such as science, engineering, and construction. It involves being able to convert between different units of measurement and understanding the appropriate use of each system in different contexts.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -570,7 +570,7 @@
           "informationSourceId": "Org1",
           "name": "Organization Development",
           "description": "Organizational Development (OD) is a specialized skill that involves a planned change process to improve the effectiveness and well-being of an organization. OD professionals use various tools and strategies, such as employee training, leadership development, and culture change initiatives, to enhance organizational performance and productivity. The ultimate goal of OD is to create a positive work environment that fosters employee engagement, innovation, and growth. OD requires a thorough understanding of organizational systems, group dynamics, human behavior, and change management principles.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -585,7 +585,7 @@
           "informationSourceId": "Org1",
           "name": "Phone Support",
           "description": "Phone support is a specialized skill that involves providing assistance and solutions to customers over the phone. It requires effective communication, problem-solving abilities, and technical knowledge to resolve issues efficiently and satisfactorily. A phone support agent must be patient, empathetic, and able to handle challenging situations to ensure a positive customer experience. Successful phone support relies on understanding the customer's needs, diagnosing problems accurately, and providing clear guidance to resolve issues effectively.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -600,7 +600,7 @@
           "informationSourceId": "Org1",
           "name": "Professional Communication",
           "description": "Professional communication is the effective and appropriate exchange of information and ideas within a professional setting. It encompasses verbal, written, and nonverbal communication skills aimed at achieving specific goals, such as building relationships, addressing conflicts, or achieving business objectives. Effective professional communication involves clear, concise messaging, active listening, empathetic response building, and the appropriate levels of confidence, respect, and assertiveness. It is a critical skill for success in most career paths.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -615,7 +615,7 @@
           "informationSourceId": "Org1",
           "name": "Scientific Reasoning",
           "description": "Scientific reasoning is a specific skill that requires a certain set of abilities and practices to critically analyze and solve problems using scientific methods. It involves logical thinking, experimentation, observation, data analysis, and communication of findings. Developing and refining scientific reasoning skills is essential for success in scientific fields and applications.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -630,7 +630,7 @@
           "informationSourceId": "Org1",
           "name": "Social Psychology",
           "description": "Social Psychology is a scientific field that studies social behavior and the way people interact with each other. It focuses on understanding how individuals think, feel, and behave in social situations, and how these interactions are influenced by various factors such as attitudes, beliefs, social norms, group dynamics, culture, and personality. Social psychologists use a variety of research methods to investigate these topics, such as surveys, experiments, and observations. The goal of social psychology is to better understand human behavior and to develop interventions and strategies that can improve social relationships and create positive change.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -645,7 +645,7 @@
           "informationSourceId": "Org1",
           "name": "Probability and Statistics",
           "description": "Probability and statistics is a field of mathematics that deals with the study of random events and the analysis of data. It involves the use of mathematical models and techniques to describe, analyze, and interpret data, and to make predictions or decisions based on these analyses. Probability and statisticians use a variety of tools and methods, including calculus, linear algebra, and programming languages like R and Python. Its applications can range from predicting the weather to designing clinical drug trials. It is a specialized skill that requires a solid understanding of mathematical concepts and the ability to apply these concepts to real-world problems.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -660,7 +660,7 @@
           "informationSourceId": "Org1",
           "name": "Systems Thinking",
           "description": "Systems thinking is a way of making sense of the complexity of the world by looking at it in terms of wholes and relationships rather than by splitting it down into its parts. It has been used as a way of exploring and developing effective action in complex contexts. Systems thinking draws on and contributes to systems theory and the system sciences.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -675,7 +675,7 @@
           "informationSourceId": "Org1",
           "name": "Upselling Skills",
           "description": "Upselling is the art of persuading a customer to buy a more expensive or upgraded version of a product or service. It requires specialized communication skills, product knowledge, and a deep understanding of the customer's needs and preferences. Successful upselling can increase revenue and customer satisfaction, while poor or aggressive upselling can lead to frustration and lost business.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -690,7 +690,7 @@
           "informationSourceId": "Org1",
           "name": "Visual Merchandising",
           "description": "Visual merchandising is a specialized skill that involves creating eye-catching displays in retail stores to attract customers and encourage them to purchase products. It involves a combination of creativity, marketing, and design skills, as well as an understanding of consumer behavior and retail industry trends. The aim is to create a visually appealing environment that enhances the shopping experience for customers and ultimately drives sales.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -705,7 +705,7 @@
           "informationSourceId": "Org1",
           "name": "Youth Athletics",
           "description": "Youth athletics is a specialized skill involving the training and development of young athletes in various sports. Coaches and trainers use age-appropriate techniques and strategies to improve a young athlete's performance, physical fitness and mental toughness. Youth athletics teaches children the value of teamwork, discipline, and healthy competition while instilling a passion for physical fitness and athleticism that can last a lifetime.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -720,7 +720,7 @@
           "informationSourceId": "Org1",
           "name": "Team Building",
           "description": "Team building is the process of creating a cohesive and efficient team by identifying individual strengths, setting collective goals, fostering open communication, and promoting mutual trust and respect. It is a common skill that many leaders and managers must possess to achieve success in their respective organizations. Effective team building can improve productivity, increase motivation, enhance creativity, and reduce conflicts within a team.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -735,7 +735,7 @@
           "informationSourceId": "Org1",
           "name": "Reflective Practice",
           "description": "Reflective practice is a skill that involves critical thinking about one's own experiences and actions in order to gain deeper understanding and improve future performance. It requires self-awareness, open-mindedness, and a willingness to explore both successes and failures. Reflection can be done individually or in a group setting, and can lead to personal and professional growth.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -750,7 +750,7 @@
           "informationSourceId": "Org1",
           "name": "Thought Leadership",
           "description": "Thought Leadership is the ability to lead, inspire and influence others by providing innovative and insightful ideas and perspectives in a particular field or industry. It requires a combination of expertise, strategic thinking, and effective communication skills to establish oneself as a thought leader in a specific niche. Thought leaders often publish articles, speak at conferences, engage with their audience on social media, and demonstrate their expertise in other ways to establish credibility and influence.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -765,7 +765,7 @@
           "informationSourceId": "Org1",
           "name": "Curiosity",
           "description": "The article argues that curiosity is a skill that can be learned and developed rather than just an innate trait. It suggests that curiosity requires actively seeking out information, asking questions, and being open-minded. The article also highlights the benefits of curiosity, such as improving problem-solving abilities and encouraging a growth mindset. Overall, the goal is to encourage readers to embrace their curiosity and foster it as a skill that can enhance their personal and professional lives.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -780,7 +780,7 @@
           "informationSourceId": "Org1",
           "name": "Help Desk Certification",
           "description": "The Help Desk Certification is a professional certification that validates an individual's knowledge and skills in providing technical support and assistance to end-users. It is designed for IT professionals who work on help desks, answering calls, emails or chats to solve technical issues for customers. This certification demonstrates that an individual has the knowledge and skills necessary to handle any technical query, and work efficiently and effectively in a fast-paced environment. It is an industry-standard, recognized globally, and can help enhance career prospects and earning potential.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -794,7 +794,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Written Communication",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -809,7 +809,7 @@
           "informationSourceId": "Org1",
           "name": "Strategic Planning",
           "description": "Strategic planning is the process of setting a clear direction for an organization or project and mapping out the steps needed to achieve specific goals and objectives. It involves analyzing internal strengths and weaknesses, as well as external opportunities and threats, and making informed decisions about how to prioritize resources and allocate them effectively. Successful strategic planning requires a combination of creativity, critical thinking, and collaboration, as well as the ability to adapt to change and respond to feedback.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -824,7 +824,7 @@
           "informationSourceId": "Org1",
           "name": "Online Communication",
           "description": "Online communication requires a specialized set of skills such as clear and concise writing, active listening, the ability to interpret nonverbal cues, and effective use of technology. It also involves understanding cultural differences and adapting communication style accordingly. Developing these skills can lead to more successful and efficient communication in virtual settings.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -839,7 +839,7 @@
           "informationSourceId": "Org1",
           "name": "Communications",
           "description": "Communication is a vital skill that involves exchanging information through speaking, writing or non-verbal means. It is crucial for building relationships, conveying ideas, clarifying misunderstandings, and achieving goals. Effective communication requires active listening, clear and concise expression, empathy, and persuasion skills. It is applicable in all aspects of life, including personal relationships, social interactions, and professional settings.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -854,7 +854,7 @@
           "informationSourceId": "Org1",
           "name": "Social Skills",
           "description": "Social skills refer to the ability to communicate effectively and build relationships with others. It includes the ability to listen, express oneself clearly and openly, show empathy and understanding, negotiate and resolve conflicts, and adapt to varied social situations and cues. Social skills are essential for healthy social interactions and overall well-being, particularly in personal and professional settings.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -869,7 +869,7 @@
           "informationSourceId": "Org1",
           "name": "Cultural Sensitivity",
           "description": "Cultural sensitivity, also sometimes referred to as cross-cultural sensitivity or simply cultural awareness, is the knowledge, awareness, and acceptance of other cultures and others' cultural identities. It is related to cultural competence, and sometimes regarded as the precursor to the achievement of cultural competence, but is a more widely used term than cultural competence. On the individual level, cultural sensitivity enables travelers and workers to successfully navigate a different culture with which they are interacting.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -883,7 +883,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Cross-Cultural Fluency",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -897,7 +897,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Mindset",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -912,7 +912,7 @@
           "informationSourceId": "Org1",
           "name": "Mentorship",
           "description": "Mentorship is the act of guiding and advising someone with less experience or knowledge in a specific area. It involves sharing expertise, knowledge, and experience to help the mentee grow professionally or personally. It is a common skill that is valued in many industries, including business, education, and healthcare. Good mentorship involves active listening, empathy, respect, and open communication. It can benefit both the mentor and the mentee, and result in long-lasting relationships and positive outcomes.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -927,7 +927,7 @@
           "informationSourceId": "Org1",
           "name": "Decision Making",
           "description": "Decision making is the process of choosing between two or more options to reach a desired outcome. It is a common skill that is used in all aspects of life, from personal choices to professional decisions. Effective decision making requires analyzing and evaluating available information, considering the potential outcomes, and weighing the pros and cons of each option. The ability to make sound decisions is an important skill to develop for success in work, relationships, and personal growth.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -942,7 +942,7 @@
           "informationSourceId": "Org1",
           "name": "Influencing Skills",
           "description": "Influencing skills refer to the ability to persuade or convince others to support an idea, decision or action. This involves understanding the perspectives and needs of others, communicating effectively, building trust and rapport, and using various techniques such as negotiation and persuasion to achieve the desired outcome. Influencing skills are commonly required in various personal and professional settings, such as leadership, sales, marketing, and teamwork.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -956,7 +956,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Goal Oriented",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -971,7 +971,7 @@
           "informationSourceId": "Org1",
           "name": "Verbal Communication Skills",
           "description": "Verbal communication skills refer to the ability to communicate effectively using spoken words. This includes not only speaking clearly and articulately, but also active listening, asking questions, and interpreting nonverbal cues from others. Strong verbal communication skills are important in almost all settings, from personal relationships to professional environments, as they allow individuals to express themselves clearly and connect with others. Good verbal communication skills can be developed through practice and training.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -986,7 +986,7 @@
           "informationSourceId": "Org1",
           "name": "Research",
           "description": "Research is a skill that involves gathering and analyzing information to answer questions or solve problems. It involves identifying reliable sources of information, evaluating the credibility of those sources, and synthesizing the information to draw meaningful conclusions. Research skills are essential in many fields, including academia, business, and journalism. Effective research requires critical thinking, attention to detail, and the ability to discern biases and limitations in information sources.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1001,7 +1001,7 @@
           "informationSourceId": "Org1",
           "name": "Detail Oriented",
           "description": "Detail Oriented is a skill that involves a strong focus on precision and thoroughness when performing tasks or handling information. This skill is used to spot errors, maintain accuracy, and ensure quality in work. Detail-oriented individuals excel in tasks such as proofreading documents, conducting thorough research, performing quality control checks, and meticulously reviewing data to prevent mistakes and produce high-quality results.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1015,7 +1015,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Mathematics",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1030,7 +1030,7 @@
           "informationSourceId": "Org1",
           "name": "Planning",
           "description": "Planning is the skill of developing a strategy or a course of action to achieve a specific goal or objective. It involves identifying the tasks and resources required to accomplish the goal, setting realistic timelines, and identifying potential obstacles and solutions. Planning is a common skill that can be applied in various areas of life, such as personal, academic, and professional settings. Effective planning helps individuals and organizations to focus their efforts and work efficiently towards their desired outcomes.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1045,7 +1045,7 @@
           "informationSourceId": "Org1",
           "name": "Teamwork",
           "description": "Teamwork is the ability to work effectively and harmoniously with others towards a common goal. It involves being cooperative, communicative, and collaborative, as well as being able to contribute to and participate in group decision-making processes. Teamwork is a valued skill in many workplaces and is essential for successful project completion and overall business success.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1060,7 +1060,7 @@
           "informationSourceId": "Org1",
           "name": "Self-Directed Learning",
           "description": "Self-Directed Learning (SDL) is a specialized skill that involves individuals taking ownership of their own learning process. It requires individuals to be intentional, motivated, and responsible for their own learning, planning, and evaluation. It involves setting learning goals, seeking out resources, practicing self-reflection, and continuously improving one's knowledge and skills. SDL is an essential skill for lifelong learning and success in academic, professional, and personal pursuits.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1075,7 +1075,7 @@
           "informationSourceId": "Org1",
           "name": "Persuasive Communication",
           "description": "Persuasive communication refers to the ability to convince others to take a certain course of action or persuade them to believe in a particular idea or viewpoint. This skill is commonly used in various settings such as politics, advertising, sales, and public speaking. Effective persuasive communication involves understanding the audience, identifying their needs and values, presenting compelling arguments, using persuasive techniques such as storytelling and emotional appeals, and addressing potential objections. It is a valuable skill to have in personal and professional life as it can lead to successful negotiations, increased influence, and improved relationships.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1090,7 +1090,7 @@
           "informationSourceId": "Org1",
           "name": "Management",
           "description": "Management is a set of skills that involve a variety of tasks, such as planning, organizing, leading, and controlling resources to achieve specific goals. It is a commonly required skill, applicable in various areas, including business, government, and non-profit organizations. A good manager must possess strong communication, decision-making, problem-solving, and leadership skills, and be able to adapt to different situations and work effectively with a team.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1105,7 +1105,7 @@
           "informationSourceId": "Org1",
           "name": "Team Leadership",
           "description": "Team leadership is the ability to guide, direct, and motivate a group of individuals towards a common goal. It involves effective communication, delegation, and conflict resolution skills. Strong team leaders are able to build trust, foster collaboration, and recognize individual strengths and weaknesses to effectively manage and develop their team. This skill is highly valued in many industries and is essential for the success of any team or organization.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1120,7 +1120,7 @@
           "informationSourceId": "Org1",
           "name": "Professionalism",
           "description": "Professionalism is a skill that is essential in any career or job role. It involves demonstrating a high level of quality, competence, and integrity in one's work and interactions with others. Professionalism includes things like punctuality, good communication, a positive attitude, and respect for others. It is important for building trust, credibility, and a strong reputation in the workplace.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1135,7 +1135,7 @@
           "informationSourceId": "Org1",
           "name": "Performance Appraisal",
           "description": "Performance appraisal is the process of evaluating an employee's job performance against a set of predetermined standards. It is a specialized skill that requires the ability to objectively assess employee performance, provide constructive feedback, and identify areas for improvement. A successful performance appraisal program can help organizations to improve performance, boost employee morale, and ensure that employees are meeting the needs of the business.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1149,7 +1149,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Ethical Responsibility",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1164,7 +1164,7 @@
           "informationSourceId": "Org1",
           "name": "Advocacy",
           "description": "Advocacy is a common skill in which an individual or group takes action on behalf of themselves or others to create change, raise awareness, or promote a cause. Effective advocacy requires the ability to clearly articulate one's position, build coalitions, influence decision-makers, and engage in strategic communication. It can be applied in various settings, from personal relationships to professional contexts, and is crucial for promoting social justice, human rights, and equality.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1179,7 +1179,7 @@
           "informationSourceId": "Org1",
           "name": "Analytical Techniques",
           "description": "Analytical techniques involve the use of specialized skills and methods to analyze data and information. These techniques enable individuals to identify patterns, trends, and relationships in data, as well as to draw insights and make informed decisions. Such skills require a deep understanding of statistics, data modeling, and visualization techniques, as well as the ability to apply critical thinking and logic to complex problems. Effective use of analytical techniques can help businesses and organizations to improve their operations, identify new opportunities, and make informed decisions based on data-driven insights.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1193,7 +1193,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Caring and Consideration",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1208,7 +1208,7 @@
           "informationSourceId": "Org1",
           "name": "Empathy",
           "description": "Empathy is the ability to understand and share the feelings of others. It is a common skill that can be developed through practice and is essential for building relationships and improving communication. People who are empathetic are more likely to be kind, compassionate, and understanding of others. They can also solve problems more effectively and make better decisions because they can see things from multiple perspectives. Developing empathy involves active listening, observing body language, and being present in the moment.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1223,7 +1223,7 @@
           "informationSourceId": "Org1",
           "name": "Operations",
           "description": "Operations is a fundamental skill that involves managing and overseeing the day-to-day activities of a business or organization. This includes managing resources, processes, people, and technology to ensure efficient and effective operations. Strong operations skills are critical for businesses to achieve their objectives, meet customer needs, and remain competitive in the marketplace.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1238,7 +1238,7 @@
           "informationSourceId": "Org1",
           "name": "Organizational Skills",
           "description": "Organizational skills refer to the ability to manage time, resources, and information effectively to achieve specific goals. This skill includes the ability to prioritize tasks, develop a plan of action, delegate responsibilities, and create systems for managing information and materials. Organizational skills are essential in most industries and can improve productivity, reduce stress, and increase efficiency.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1253,7 +1253,7 @@
           "informationSourceId": "Org1",
           "name": "Self-Motivation",
           "description": "Self-motivation is a skill that involves the ability to motivate oneself without external influence or direction. It is an essential skill for personal and professional success, requiring self-discipline, focus, determination and resilience. It can be developed through self-awareness, goal setting, self-talk, positive affirmations and visualization techniques. Self-motivated individuals are often more productive, achieve their goals more effectively and are more successful in life.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1268,7 +1268,7 @@
           "informationSourceId": "Org1",
           "name": "Health And Wellness Coaching",
           "description": "Health and wellness coaching is a specialized skill that involves guiding individuals towards making positive lifestyle changes related to their physical and mental health. The coach helps clients set and achieve goals related to nutrition, exercise, stress management, and other aspects of wellness, using a client-centered approach that identifies each person's unique needs and preferences. The goal is to empower clients to take control of their health and improve their quality of life. Effective health and wellness coaches must have strong communication skills, an understanding of behavioral psychology, and a deep knowledge of nutrition and exercise science.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1283,7 +1283,7 @@
           "informationSourceId": "Org1",
           "name": "Allyship",
           "description": "Allyship is the practice of actively supporting and advocating for marginalized groups, and it requires a specialized skill set that includes listening, learning, and taking action to promote equity and inclusivity. Effective allyship involves acknowledging one's own privilege, educating oneself on systemic oppression, and using one's privilege to amplify marginalized voices and work towards tangible change.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1298,7 +1298,7 @@
           "informationSourceId": "Org1",
           "name": "Applied Ethics",
           "description": "Applied ethics is a specialized skill that involves the application of ethical principles to real-world scenarios and situations. It involves understanding and analyzing ethical dilemmas and decision-making processes in areas such as healthcare, business, law, and public policy, in order to make reasoned and justifiable ethical choices. This skill involves knowledge of various ethical theories, principles, and frameworks, as well as critical thinking and communication abilities. An applied ethicist must be able to consider the diverse perspectives and values of different stakeholders, and to navigate complex ethical issues in a professional and unbiased manner.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1312,7 +1312,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Civic Disposition",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1326,7 +1326,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Identifying Emotions",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1341,7 +1341,7 @@
           "informationSourceId": "Org1",
           "name": "Stress Management",
           "description": "Stress management is the ability to cope with stressors and challenges in a healthy manner. It involves a range of techniques and strategies, such as mindfulness, exercise, and time management, that help individuals reduce stress and maintain a sense of balance and wellbeing. Effective stress management can improve mental and physical health, enhance productivity and performance, and lead to overall greater satisfaction with life.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1356,7 +1356,7 @@
           "informationSourceId": "Org1",
           "name": "Mental Agility",
           "description": "Mental agility refers to a person's ability to think critically, creatively, and adaptably. It involves being able to solve problems quickly and efficiently, think on the spot, and remain flexible in one's thinking. Mental agility is an essential skill for success in many areas of life, including academics, business, and personal relationships.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1371,7 +1371,7 @@
           "informationSourceId": "Org1",
           "name": "Civic Engagement",
           "description": "Civic engagement is a specialized skill that involves actively participating in community or social issues to promote positive change. It requires individuals to have strong communication, leadership, and collaboration skills to effectively work with others and reach common goals. By engaging in civic activities, individuals can become more informed about community and political issues and make a meaningful impact on society.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1385,7 +1385,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Communication and Interaction",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1399,7 +1399,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Culturally Sensitive",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1413,7 +1413,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Formal Analysis",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1428,7 +1428,7 @@
           "informationSourceId": "Org1",
           "name": "Human Development",
           "description": "Human Development is a specialized skill that involves understanding the various stages of human growth and development, and applying that understanding to help individuals and communities reach their full potential. It encompasses a range of disciplines, from education and psychology to social work and public health, and requires a deep understanding of biology, culture, society, and individual psychology. Those who specialize in human development work in a variety of settings, from schools and universities to private non-profit organizations and government agencies, and play a vital role in shaping the future of individuals and communities.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1442,7 +1442,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Novel And Adaptive Thinking",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1457,7 +1457,7 @@
           "informationSourceId": "Org1",
           "name": "Organizational Ethics",
           "description": "Organizational Ethics is a specialized skill that involves understanding and applying ethical principles and values in the workplace. It involves creating and implementing ethical codes of conduct, providing training to employees on ethical behavior, and enforcing ethical standards through disciplinary measures. Organizational Ethics requires the ability to navigate complex ethical dilemmas and make decisions that balance the interests of stakeholders while maintaining integrity and fairness in the organization's operations. Effective organizational ethics requires ongoing evaluation and improvement to ensure that the organization's values and practices align with societal norms and expectations.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1472,7 +1472,7 @@
           "informationSourceId": "Org1",
           "name": "Sensemaking",
           "description": "Sensemaking is a cognitive process in which people attempt to make sense of complex, ambiguous, or uncertain situations by creating their own mental models of the situation. It is a specialized skill that involves identifying patterns, generating hypotheses, collecting and analyzing data, and creating meaning from that data. Sensemaking is particularly important in fields such as law enforcement, intelligence gathering, and business strategy, where decision-makers need to understand complex information and make decisions based on that information.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1487,7 +1487,7 @@
           "informationSourceId": "Org1",
           "name": "Social Determinants Of Health",
           "description": "Social determinants of health refer to the conditions in which people are born, grow, live, work, and age that impact their health outcomes. It is a specialized skill to identify, assess, and address these factors, which can include poverty, access to quality healthcare, education, employment, housing, and social supports. Addressing social determinants has become increasingly important in public health efforts to reduce health disparities and improve health equity.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1502,7 +1502,7 @@
           "informationSourceId": "Org1",
           "name": "Statistics",
           "description": "Statistics is a specialized skill that involves the collection, analysis, interpretation, presentation, and organization of data. It is used to understand patterns, relationships, and trends within data to help businesses and organizations make informed decisions. Statistics requires knowledge in mathematics, computer science, and analytical thinking to effectively analyze and interpret data.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1516,7 +1516,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Basic Math",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1531,7 +1531,7 @@
           "informationSourceId": "Org1",
           "name": "Behavioral Science",
           "description": "Behavioral science is a specialized skill that involves the study of human behavior, cognition, and emotions. It draws on disciplines such as psychology, sociology, anthropology, and economics to understand the complex interactions between individuals and their environment. Behavioral scientists apply their expertise to a variety of fields, including healthcare, education, business, and government, to influence behavior change, improve decision-making, and optimize outcomes. To become a successful behavioral scientist, one must possess strong analytical skills, critical thinking, excellent communication skills, and a deep understanding of human behavior.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1546,7 +1546,7 @@
           "informationSourceId": "Org1",
           "name": "Public Speaking",
           "description": "Public speaking is the ability to deliver a coherent and compelling message to a live audience. It involves conveying information clearly, engaging the audience, and instilling confidence in the speaker. Public speaking is a valuable skill in a variety of contexts, including business, politics, education, and entertainment. It can be learned and improved with practice and preparation.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1560,7 +1560,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Digital Fluency",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1574,7 +1574,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Ethical Practice",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1589,7 +1589,7 @@
           "informationSourceId": "Org1",
           "name": "Physical Science",
           "description": "Physical Science is a field of science that deals with the study of matter and energy, including their interactions and transformations. It includes disciplines such as physics, chemistry, and astronomy. Physical scientists use specialized instruments and methods to observe and measure physical phenomena, and use mathematical models to explain and predict behavior. They study everything from the behavior of subatomic particles to the dynamics of the universe as a whole, and their work has practical applications in fields such as engineering, medicine, and technology development.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1603,7 +1603,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Mathematical Literacy",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1617,7 +1617,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Social Science Literacy",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1632,7 +1632,7 @@
           "informationSourceId": "Org1",
           "name": "Writing",
           "description": "Writing is a skill that involves putting thoughts and ideas into words through the use of language. It is an essential communication tool used to convey messages, express thoughts and emotions, and share information. Writing can be done in various forms, such as essays, reports, stories, and letters. It is a skill that can be developed through practice, patience, and dedication. Effective writing requires clarity, coherence, and proper grammar and punctuation, among other things.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1646,7 +1646,7 @@
         {
           "informationSourceId": "Org1",
           "name": "Historical Thinking",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -1658,9 +1658,9 @@
           "identifier": "proficiency-historical-thinking-org1-111"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org1",
               "emailAddress": [
@@ -1668,7 +1668,7 @@
               ]
             }
           ],
-          "address": [
+          "Address": [
             {
               "informationSourceId": "Org1",
               "addressCity": "Land O' Lakes",
@@ -1677,7 +1677,7 @@
               "addressPostalCode": "33558"
             }
           ],
-          "telephone": [
+          "Telephone": [
             {
               "informationSourceId": "Org1",
               "telephoneNumber": [
@@ -1698,7 +1698,7 @@
           "informationSourceOrganization": "State University"
         }
       ],
-      "credentialAward": [
+      "CredentialAward": [
         {
           "informationSourceId": "Org1",
           "informationSourceOrganization": "Org1",
@@ -1721,7 +1721,7 @@
           ],
           "awardIssueDate": "2025-01-22T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "d3ad4fd0-1869-4129-93f9-07e67751a5ff",
@@ -1733,7 +1733,7 @@
         {
           "informationSourceId": "Org1",
           "informationSourceOrganization": "Org1",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg",
@@ -1765,7 +1765,7 @@
           ],
           "awardIssueDate": "2025-01-22T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a057548f-84b3-45c1-ace1-3f5edd4e4cb1",
@@ -1776,7 +1776,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg",
@@ -1808,7 +1808,7 @@
           ],
           "awardIssueDate": "2025-01-22T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "8b6b88df-ff1f-4977-b733-cc00c7993f39",
@@ -1820,7 +1820,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg",
@@ -1852,7 +1852,7 @@
           ],
           "awardIssueDate": "2025-01-22T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "b87e694d-ad90-4547-a3fe-f0c42c770fc8",
@@ -1864,7 +1864,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "https://api.badgr.io/public/badges/RDNeDjydSZeht76dB3Bphg",
@@ -1896,7 +1896,7 @@
           ],
           "awardIssueDate": "2025-01-22T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "c3ee7191-293d-4cc0-ad57-75e72adf36f1",
@@ -1908,7 +1908,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "https://api.badgr.io/public/badges/SN-6qb4DSBuUbix5HcxYKA",
@@ -2186,10 +2186,10 @@
           "credentialAwardee": "Tracy Thatcher"
         }
       ],
-      "courseLearningExperience": [
+      "CourseLearningExperience": [
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2213,7 +2213,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2237,7 +2237,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2247,7 +2247,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "e5db3773-ff1b-4d11-b050-1aa7e8fd9366",
             "name": "Credential Proficiency Certificate 001",
             "awardIssueDate": "2023-05-11",
@@ -2260,7 +2260,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2284,7 +2284,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2308,7 +2308,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2318,7 +2318,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "0fbe0f45-3a44-40ef-bf08-1b2ccce8e45a",
@@ -2331,7 +2331,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2355,7 +2355,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2379,7 +2379,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2389,7 +2389,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "deb9139f-67fa-4f32-af86-7f04e012eba0",
@@ -2402,7 +2402,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2426,7 +2426,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2450,7 +2450,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2460,7 +2460,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "ebccf2d8-8935-4125-993f-83fa3db94dd5",
@@ -2473,7 +2473,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2497,7 +2497,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2521,7 +2521,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2531,7 +2531,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "1d0ce2eb-bd04-44ee-8923-090a31be9f37",
@@ -2544,7 +2544,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2568,7 +2568,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2592,7 +2592,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2602,7 +2602,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "6b724f29-d3ca-4d6f-bf1b-5185fbdec0bc",
@@ -2615,7 +2615,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2639,7 +2639,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2663,7 +2663,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2673,7 +2673,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "60a238c4-db35-4ec2-96bd-b3e591de8dcb",
@@ -2686,7 +2686,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2710,7 +2710,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2734,7 +2734,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2744,7 +2744,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "f10e92fa-e641-4ec8-b2de-e0328ba8f0ab",
@@ -2757,7 +2757,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2781,7 +2781,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2805,7 +2805,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2815,7 +2815,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "316aca97-ce09-433b-91b2-e92ea1602fe8",
@@ -2828,7 +2828,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2852,7 +2852,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2876,7 +2876,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2886,7 +2886,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "4f81bb8a-be82-4743-a591-ad627f1f3e5c",
@@ -2899,7 +2899,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2923,7 +2923,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -2947,7 +2947,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -2957,7 +2957,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "61980779-2666-4cec-9b02-195f30edbaaa",
@@ -2970,7 +2970,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -2994,7 +2994,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3018,7 +3018,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3028,7 +3028,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "3236748c-eac2-4980-82dd-d7f6d148385e",
@@ -3041,7 +3041,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -3065,7 +3065,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3089,7 +3089,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3099,7 +3099,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "5c8b5dff-a489-4f64-ba1b-840924b83f3e",
@@ -3112,7 +3112,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -3136,7 +3136,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3160,7 +3160,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3170,7 +3170,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "213e7f89-b26b-4165-9077-484358ea896c",
@@ -3183,7 +3183,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -3207,7 +3207,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3231,7 +3231,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3241,7 +3241,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "95f68f76-32b8-427f-9ea6-38b48c294861",
@@ -3254,7 +3254,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -3278,7 +3278,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3302,7 +3302,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3312,7 +3312,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "ecf12f06-7c87-463e-902f-286c4fad9937",
@@ -3325,7 +3325,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -3349,7 +3349,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3373,7 +3373,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3383,7 +3383,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "872b7348-4bce-4da5-ac7a-1f25404291d1",
@@ -3396,7 +3396,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org1",
             "name": "State University",
             "identificationSystem": "State University SIS",
@@ -3420,7 +3420,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "approvedByRefOrganization": {
+              "ApprovedByRefOrganization": {
                 "identificationSystem": "stateu-state-department-of-education-id",
                 "name": "State Department of Education",
                 "organizationType": [
@@ -3444,7 +3444,7 @@
               "informationSourceOrganization": "State University"
             }
           ],
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3454,7 +3454,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "5e1f057f-faf7-4194-b24a-7962dcea97fc",
@@ -3467,7 +3467,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3477,7 +3477,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "b2c56e6c-7741-44aa-94d7-387ee8f9b963",
@@ -3490,7 +3490,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3500,7 +3500,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "4e24a2c4-9e3e-43ab-9847-9d1d7ed34316",
@@ -3513,7 +3513,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3523,7 +3523,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "7b804f3d-9586-4dd7-b64b-52f7106c57e7",
@@ -3536,7 +3536,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3546,7 +3546,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "b9e22a75-0b45-41ed-9e0b-0bdc3899aacb",
@@ -3559,7 +3559,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3569,7 +3569,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "8de3b556-2d74-4986-a67d-9e3ea99a2d40",
@@ -3582,7 +3582,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3592,7 +3592,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "bb55286f-0f3d-4a26-bd81-4aa886059af5",
@@ -3605,7 +3605,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3615,7 +3615,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "f770e8b7-ef51-4bb1-b28d-f9ad42239cf6",
@@ -3628,7 +3628,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3638,7 +3638,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "5cef80cb-c495-41d9-9843-0363cbcc4bc8",
@@ -3651,7 +3651,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3661,7 +3661,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "7b03bc89-2dd5-477e-81e4-f4da3828eda9",
@@ -3674,7 +3674,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3684,7 +3684,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "595c313e-760a-42e9-a03a-0c48e348f69b",
@@ -3697,7 +3697,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3707,7 +3707,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "fba8c906-c52d-494d-83c0-75a7ffc739fe",
@@ -3720,7 +3720,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3730,7 +3730,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "d70332a5-3edb-411f-b34c-770719eea691",
@@ -3743,7 +3743,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3753,7 +3753,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "aadb4c3e-40c3-4f17-a642-e23932e54db0",
@@ -3766,7 +3766,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3776,7 +3776,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "f6480f8b-f550-4b7f-8343-482b3a9aff3e",
@@ -3789,7 +3789,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3799,7 +3799,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "6d3d2320-47e3-4062-88d6-6e5d19fa0af1",
@@ -3812,7 +3812,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3822,7 +3822,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "8daf7a79-9b72-49dd-b11f-32af9b68a7bb",
@@ -3835,7 +3835,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3845,7 +3845,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "3bbbc33a-a6ec-4f35-8015-53321b602ac0",
@@ -3858,7 +3858,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3868,7 +3868,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "b5a611ca-24bf-49a9-9926-d2906f10d558",
@@ -3881,7 +3881,7 @@
         },
         {
           "informationSourceId": "Org1",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -3891,7 +3891,7 @@
             "informationSourceOrganization": "State University",
             "identifier": "organization-state-university-org1-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "00a4a048-48a3-44be-89c7-380fd0110209",
@@ -3911,9 +3911,9 @@
       "informationSourceId": "Org1",
       "name": "State University",
       "description": "State University (StateU) is an accredited online university offering online bachelor's and master's degree programs. The programs are competency-based, student-focused, online, nonprofit university.",
-      "contact": [
+      "Contact": [
         {
-          "address": [
+          "Address": [
             {
               "addressCity": "Dallas",
               "countryCode": "US",
@@ -3923,7 +3923,7 @@
               "informationSourceId": "Org1"
             }
           ],
-          "email": [
+          "Email": [
             {
               "emailAddress": [
                 "credentials@stateu.edu"
@@ -3932,7 +3932,7 @@
             }
           ],
           "websiteAddress": "https://www.stateu.edu/",
-          "telephone": [
+          "Telephone": [
             {
               "telephoneNumber": [
                 "111-222-3333"
@@ -4016,7 +4016,7 @@
         "https://w3id.org/openbadges/v2"
       ],
       "identifier": "d3ad4fd0-1869-4129-93f9-07e67751a5ff",
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",
@@ -4906,14 +4906,14 @@
       "achievementType": [
         "Certificate"
       ],
-      "issuedByRefOrganization": [
+      "IssuedByRefOrganization": [
         {
           "informationSourceId": "Org1",
           "name": "State University",
           "description": "State University (StateU) is an accredited online university offering online bachelor's and master's degree programs. The programs are competency-based, student-focused, online, nonprofit university.",
-          "contact": [
+          "Contact": [
             {
-              "address": [
+              "Address": [
                 {
                   "addressCity": "Dallas",
                   "countryCode": "US",
@@ -4923,7 +4923,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "email": [
+              "Email": [
                 {
                   "emailAddress": [
                     "credentials@stateu.edu"
@@ -4932,7 +4932,7 @@
                 }
               ],
               "websiteAddress": "https://www.stateu.edu/",
-              "telephone": [
+              "Telephone": [
                 {
                   "telephoneNumber": [
                     "111-222-3333"
@@ -4971,7 +4971,7 @@
           "informationSourceOrganization": "State University"
         }
       ],
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",
@@ -4988,7 +4988,7 @@
         "https://w3id.org/openbadges/v2"
       ],
       "identifier": "a057548f-84b3-45c1-ace1-3f5edd4e4cb1",
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",
@@ -5005,7 +5005,7 @@
         "https://w3id.org/openbadges/v2"
       ],
       "identifier": "8b6b88df-ff1f-4977-b733-cc00c7993f39",
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",
@@ -5022,7 +5022,7 @@
         "https://w3id.org/openbadges/v2"
       ],
       "identifier": "b87e694d-ad90-4547-a3fe-f0c42c770fc8",
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",
@@ -5039,7 +5039,7 @@
         "https://w3id.org/openbadges/v2"
       ],
       "identifier": "c3ee7191-293d-4cc0-ad57-75e72adf36f1",
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",
@@ -5659,14 +5659,14 @@
       "achievementType": [
         "Certificate"
       ],
-      "issuedByRefOrganization": [
+      "IssuedByRefOrganization": [
         {
           "informationSourceId": "Org1",
           "name": "State University",
           "description": "State University (StateU) is an accredited online university offering online bachelor's and master's degree programs. The programs are competency-based, student-focused, online, nonprofit university.",
-          "contact": [
+          "Contact": [
             {
-              "address": [
+              "Address": [
                 {
                   "addressCity": "Dallas",
                   "countryCode": "US",
@@ -5676,7 +5676,7 @@
                   "informationSourceId": "Org1"
                 }
               ],
-              "email": [
+              "Email": [
                 {
                   "emailAddress": [
                     "credentials@stateu.edu"
@@ -5685,7 +5685,7 @@
                 }
               ],
               "websiteAddress": "https://www.stateu.edu/",
-              "telephone": [
+              "Telephone": [
                 {
                   "telephoneNumber": [
                     "111-222-3333"
@@ -5724,7 +5724,7 @@
           "informationSourceOrganization": "State University"
         }
       ],
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org1",
           "accreditingAgency": "Higher Learning Commission",

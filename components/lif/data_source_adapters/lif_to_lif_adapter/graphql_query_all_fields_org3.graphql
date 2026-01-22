@@ -1,22 +1,22 @@
 query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
-  person(filter: { identifier: { identifier: $identifier, identifierType: $identifierType } }) {
-    name {
+  person(filter: { Identifier: { identifier: $identifier, identifierType: $identifierType } }) {
+    Name {
       informationSourceId
       lastName
       firstName
     }
-    contact {
-      email {
+    Contact {
+      Email {
         informationSourceId
         emailAddress
       }
     }
-    identifier {
+    Identifier {
       informationSourceId
       identifier
       identifierType
     }
-    credentialAward {
+    CredentialAward {
       informationSourceId
       awardStatus
       instanceOfRefCredential {
@@ -29,27 +29,27 @@ query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
       #awardIssueDate
       #credentialAwardee
     }
-    courseLearningExperience {
+    CourseLearningExperience {
       informationSourceId
-      #assertedByRefOrganization {
+      #AssertedByRefOrganization {
       #  informationSourceId
       #  name
       #  identificationSystem
       #  organizationType
       #}
-      refCourse {
+      RefCourse {
         informationSourceId
         informationSourceOrganization
         identifier
         name
       }
-      #offeredByRefOrganization {
+      #OfferedByRefOrganization {
       #  identificationSystem
       #  name
       #  organizationType
       #  informationSourceId
       #}
-      refCredentialAward {
+      RefCredentialAward {
         informationSourceId
         informationSourceOrganization
         identifier
@@ -58,11 +58,11 @@ query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
         #credentialAwardee
       }
     }
-    proficiency {
+    Proficiency {
       informationSourceId
       name
       description
-      refCredentialAward {
+      RefCredentialAward {
         identifier
         #awardIssueDate
         #credentialAwardee

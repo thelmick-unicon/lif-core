@@ -1,7 +1,7 @@
 {
   "person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org3",
           "lastName": "Green",
@@ -10,9 +10,9 @@
           "identifier": "name-renee-green-org3-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org3",
               "emailAddress": [
@@ -20,7 +20,7 @@
               ]
             }
           ],
-          "address": [
+          "Address": [
             {
               "informationSourceId": "Org3",
               "addressCity": "Escondido",
@@ -29,7 +29,7 @@
               "addressPostalCode": "92025"
             }
           ],
-          "telephone": [
+          "Telephone": [
             {
               "informationSourceId": "Org3",
               "telephoneNumber": [
@@ -56,11 +56,11 @@
           "informationSourceOrganization": "Regional University"
         }
       ],
-      "courseLearningExperience": [
+      "CourseLearningExperience": [
         {
           "informationSourceId": "Org3",
           "informationSourceOrganization": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -68,7 +68,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -84,7 +84,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -94,7 +94,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "34024cb4-4a2d-4ed6-ba42-50c65cd688b4",
@@ -105,12 +105,12 @@
           "identifier": "courselearningexperience-org3-001"
         }
       ],
-      "credentialAward": [
+      "CredentialAward": [
         {
           "informationSourceId": "Org3",
           "informationSourceOrganization": "Org3",
           "awardStatus": "InProgress",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1",
@@ -122,7 +122,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -136,7 +136,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -149,12 +149,12 @@
           "credentialAwardee": "Renee Green"
         }
       ],
-      "proficiency": [
+      "Proficiency": [
         {
           "informationSourceId": "Org3",
           "name": "Applies Elements and Principles of Design",
           "description": "Demonstrates understanding and application of the elements and principles of design in visual compositions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
@@ -168,7 +168,7 @@
           "informationSourceId": "Org3",
           "name": "Utilizes Color Theory",
           "description": "Applies color theory concepts including harmony, contrast, and psychological impact in design work.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
@@ -182,7 +182,7 @@
           "informationSourceId": "Org3",
           "name": "Applies Typography Principles",
           "description": "Uses typography effectively by applying principles such as spacing, alignment, readability, and expression.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
@@ -196,7 +196,7 @@
           "informationSourceId": "Org3",
           "name": "Creates Layouts for Print and Digital Media",
           "description": "Develops layouts suitable for both print and digital platforms with attention to format constraints and user experience.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
@@ -210,7 +210,7 @@
           "informationSourceId": "Org3",
           "name": "Employs Design Thinking Process",
           "description": "Applies the design thinking process to define, ideate, prototype, and test design solutions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
@@ -224,7 +224,7 @@
           "informationSourceId": "Org3",
           "name": "Uses Industry-Standard Design Software",
           "description": "Produces digital assets using industry-standard design tools such as Adobe Photoshop or Illustrator.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
@@ -260,9 +260,9 @@
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-      "contact": [
+      "Contact": [
         {
-          "address": [
+          "Address": [
             {
               "addressCity": "Aspen Falls",
               "countryCode": "US",
@@ -272,7 +272,7 @@
               "informationSourceId": "Org3"
             }
           ],
-          "email": [
+          "Email": [
             {
               "emailAddress": [
                 "info@summitvalley.edu"
@@ -281,7 +281,7 @@
             }
           ],
           "websiteAddress": "https://www.summitvalley.edu/",
-          "telephone": [
+          "Telephone": [
             {
               "telephoneNumber": [
                 "888-555-7210"
@@ -365,13 +365,13 @@
         "Digital Badge",
         "PDF Certificate"
       ],
-      "alignedProgram": [
+      "AlignedProgram": [
         {
           "specialization": "Graphic Design",
           "informationSourceId": "Org3"
         }
       ],
-      "issuedByRefOrganization": {
+      "IssuedByRefOrganization": {
         "informationSourceId": "Org3",
         "name": "Adobe Systems Incorporated",
         "identificationSystem": "summit-valley-university-sis",
@@ -379,7 +379,7 @@
         "informationSourceOrganization": "Regional University",
         "identifier": "organization-adobe-systems-incorporated-org3-001"
       },
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org3",
           "accreditingAgency": "Higher Learning Commission",

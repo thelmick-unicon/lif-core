@@ -1,7 +1,7 @@
 {
   "person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org2",
           "lastName": "Diaz",
@@ -10,9 +10,9 @@
           "identifier": "name-jenna-diaz-org2-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org2",
               "emailAddress": [
@@ -33,18 +33,18 @@
           "informationSourceOrganization": "Community College"
         }
       ],
-      "employmentLearningExperience": [
+      "EmploymentLearningExperience": [
         {
           "informationSourceId": "Org2",
           "name": "Certified Nursing Assistant CNA",
-          "refPosition": {
+          "RefPosition": {
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Community College",
             "identifier": "position-org2-001"
           },
           "startDate": "2018-03",
           "endDate": "2024-11",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "identificationSystem": "stateu-employing-organization-id",
             "name": "Employing Organization",
             "organizationType": [
@@ -54,7 +54,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-employing-organization-org2-001"
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-training-provider-id",
             "name": "Training Provider",
             "organizationType": [
@@ -64,7 +64,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-training-provider-org2-001"
           },
-          "approvedByRefOrganization": {
+          "ApprovedByRefOrganization": {
             "identificationSystem": "stateu-approving-authority-id",
             "name": "Approving Authority",
             "organizationType": [
@@ -74,7 +74,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-approving-authority-org2-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-employment-certificate-001",
             "name": "Employment Certificate",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -86,21 +86,21 @@
           "identifier": "employmentlearningexperience-certified-nursing-assistant-cn-org2-001"
         }
       ],
-      "positionPreferences": [
+      "PositionPreferences": [
         {
           "informationSourceId": "Org2",
-          "travel": [
+          "Travel": [
             {
               "percentage": 0,
               "willingToTravelIndicator": false
             }
           ],
-          "relocation": [
+          "Relocation": [
             {
               "willingToRelocateIndicator": false
             }
           ],
-          "remoteWork": [
+          "RemoteWork": [
             {
               "remoteWorkIndicator": false
             }
@@ -114,10 +114,10 @@
             "Full-time",
             "Permanent"
           ],
-          "offeredByRefRemunerationPackage": {
-            "ranges": [
+          "OfferedByRefRemunerationPackage": {
+            "Ranges": [
               {
-                "minimumAmount": [
+                "MinimumAmount": [
                   {
                     "value": 45000.0,
                     "currency": "USD",
@@ -136,10 +136,10 @@
           ]
         }
       ],
-      "employmentPreferences": [
+      "EmploymentPreferences": [
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "Springfield Hospital",
             "identificationSystem": "Workday",
@@ -153,7 +153,7 @@
         }
       ],
       "informationSourceId": "Org2",
-      "credentialAward": [
+      "CredentialAward": [
         {
           "identifier": "cred-employment-certificate-001",
           "name": "Employment Certificate",

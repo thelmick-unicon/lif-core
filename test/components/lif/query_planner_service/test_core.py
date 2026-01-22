@@ -26,7 +26,7 @@ def test_run_query_when_not_all_data_found_in_cache(mock_post):
         filter=LIFQueryFilter(
             root=LIFQueryPersonFilter(
                 person=LIFPersonIdentifiers(
-                    identifier=[LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")]
+                    Identifier=LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
                 )
             )
         ),
@@ -82,7 +82,7 @@ def test_run_query_when_no_data_sources_found_for_any_fragment_paths(mock_post):
         filter=LIFQueryFilter(
             root=LIFQueryPersonFilter(
                 person=LIFPersonIdentifiers(
-                    identifier=[LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")]
+                    Identifier=LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
                 )
             )
         ),
@@ -233,9 +233,7 @@ def test_run_post_orchestration_results(mock_post):
                     filter=LIFQueryFilter(
                         root=LIFQueryPersonFilter(
                             person=LIFPersonIdentifiers(
-                                identifier=[
-                                    LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
-                                ]
+                                Identifier=LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
                             )
                         )
                     ),
@@ -255,7 +253,7 @@ def test_run_post_orchestration_results(mock_post):
         "https://api.example.com/cache/save",
         json={
             "lif_query_filter": {
-                "person": {"identifier": [{"identifier": "12345", "identifierType": "School-assigned number"}]}
+                "person": {"Identifier": {"identifier": "12345", "identifierType": "School-assigned number"}}
             },
             "lif_fragments": [
                 {

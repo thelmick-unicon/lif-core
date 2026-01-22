@@ -94,7 +94,7 @@ class LIFQueryPlannerService:
 
             if first_run:
                 # Otherwise create a query plan, call the Orchestrator, and return a Query ID
-                lif_person_identifier: LIFPersonIdentifier = query.filter.root.person.identifier[0]
+                lif_person_identifier: LIFPersonIdentifier = query.filter.root.person.first_identifier
                 # Note: Used to send lif_fragment_paths_not_found to create the query plan, but this prevented
                 # having the ability to query Org3 if there were already records from Org1 with the same schema
                 # so now lif_fragment_paths is sent to always get all fields

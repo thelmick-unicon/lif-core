@@ -41,10 +41,21 @@ class LIFPersonIdentifiers(BaseModel):
     """
     Pydantic model for a LIF Query Person Identifier list.
     Attributes:
-        identifier (List[LIFPersonIdentifier]): Identifier list value.
+        Identifier: Person identifier(s) for the query. Accepts either a single object or a list.
     """
 
-    identifier: List[LIFPersonIdentifier] = Field(..., description="List of person identifiers")
+    # Updated to match schema v2.0 which uses Identifier (capital I) as the property name
+    # Accepts either a single object (from semantic search) or a list (from GraphQL filter)
+    Identifier: LIFPersonIdentifier | List[LIFPersonIdentifier] = Field(
+        ..., description="Person identifier(s) for the query"
+    )
+
+    @property
+    def first_identifier(self) -> LIFPersonIdentifier:
+        """Returns the first identifier, whether Identifier is a list or single object."""
+        if isinstance(self.Identifier, list):
+            return self.Identifier[0]
+        return self.Identifier
 
 
 class LIFRecord(BaseModel):

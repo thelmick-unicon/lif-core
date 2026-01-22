@@ -305,7 +305,7 @@ async def save(lif_query_filter: LIFQueryFilter, lif_fragments: List[LIFFragment
             raise ValueError(f"Cannot save -- multiple records found for the given filter: {lif_query_filter}")
 
         person_identifiers: LIFPersonIdentifiers = LIFPersonIdentifiers(
-            identifier=lif_query_filter.root.person.identifier
+            Identifier=lif_query_filter.root.person.Identifier
         )
         lif_person: LIFPerson = LIFPerson(root=[person_identifiers.model_dump()])
         lif_record = LIFRecord(**results[0]) if len(results) == 1 else LIFRecord(person=lif_person)

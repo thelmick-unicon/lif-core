@@ -1,7 +1,7 @@
 {
   "person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org2",
           "lastName": "Tsatrian",
@@ -10,9 +10,9 @@
           "identifier": "name-alan -tsatrian-org2-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org2",
               "emailAddress": [
@@ -33,18 +33,18 @@
           "informationSourceOrganization": "Community College"
         }
       ],
-      "employmentLearningExperience": [
+      "EmploymentLearningExperience": [
         {
           "informationSourceId": "Org2",
           "name": "Compliance Manager ",
-          "refPosition": {
+          "RefPosition": {
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Community College",
             "identifier": "position-org2-001"
           },
           "startDate": "2007-06",
           "endDate": "2024-12",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "identificationSystem": "stateu-employing-organization-id",
             "name": "Employing Organization",
             "organizationType": [
@@ -54,7 +54,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-employing-organization-org2-001"
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-training-provider-id",
             "name": "Training Provider",
             "organizationType": [
@@ -64,7 +64,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-training-provider-org2-001"
           },
-          "approvedByRefOrganization": {
+          "ApprovedByRefOrganization": {
             "identificationSystem": "stateu-approving-authority-id",
             "name": "Approving Authority",
             "organizationType": [
@@ -74,7 +74,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-approving-authority-org2-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org2-cred-employment-certificate-001",
             "name": "Employment Certificate",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -89,14 +89,14 @@
           "informationSourceId": "Org2",
           "name": "Compliance Specialist ",
           "endDate": "2007-05",
-          "refPosition": {
+          "RefPosition": {
             "informationSourceId": "Org2",
             "name": "Referenced Employment Experience",
             "informationSourceOrganization": "Community College",
             "identifier": "position-referenced-employment-experien-org2-001"
           },
           "startDate": "2004-06",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "identificationSystem": "stateu-employing-organization-id",
             "name": "Employing Organization",
             "organizationType": [
@@ -106,7 +106,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-employing-organization-org2-001"
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-training-provider-id",
             "name": "Training Provider",
             "organizationType": [
@@ -116,7 +116,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-training-provider-org2-001"
           },
-          "approvedByRefOrganization": {
+          "ApprovedByRefOrganization": {
             "identificationSystem": "stateu-approving-authority-id",
             "name": "Approving Authority",
             "organizationType": [
@@ -126,7 +126,7 @@
             "informationSourceOrganization": "Community College",
             "identifier": "organization-approving-authority-org2-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org2-cred-employment-certificate-001",
             "name": "Employment Certificate",
             "awardIssueDate": "2024-12-15T10:00:00Z",
@@ -138,21 +138,21 @@
           "identifier": "employmentlearningexperience-compliance-specialist--org2-002"
         }
       ],
-      "positionPreferences": [
+      "PositionPreferences": [
         {
           "informationSourceId": "Org2",
-          "travel": [
+          "Travel": [
             {
               "percentage": 25.0,
               "willingToTravelIndicator": true
             }
           ],
-          "relocation": [
+          "Relocation": [
             {
               "willingToRelocateIndicator": false
             }
           ],
-          "remoteWork": [
+          "RemoteWork": [
             {
               "remoteWorkIndicator": true
             }
@@ -167,10 +167,10 @@
           "positionScheduleTypeCodes": [
             "FullTime"
           ],
-          "offeredByRefRemunerationPackage": {
-            "ranges": [
+          "OfferedByRefRemunerationPackage": {
+            "Ranges": [
               {
-                "minimumAmount": [
+                "MinimumAmount": [
                   {
                     "value": 85000.0,
                     "currency": "USD",
@@ -185,10 +185,10 @@
           }
         }
       ],
-      "employmentPreferences": [
+      "EmploymentPreferences": [
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "Three Trees Compliance",
             "identificationSystem": "Workday",
@@ -205,7 +205,7 @@
         },
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "RIA Compliance Consultants",
             "identificationSystem": "Workday",
@@ -222,7 +222,7 @@
         },
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "Utah ISO Consultants",
             "identificationSystem": "Workday",
@@ -239,7 +239,7 @@
         }
       ],
       "informationSourceId": "Org2",
-      "credentialAward": [
+      "CredentialAward": [
         {
           "identifier": "org2-cred-employment-certificate-001",
           "name": "Employment Certificate",

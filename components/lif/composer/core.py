@@ -80,8 +80,8 @@ def add_fragment_items_to_list(list_to_update: list, new_items: list):
         logger.error(f"Expected a list but got: {type(list_to_update)}")
         raise ValueError("Expected a list to update")
     if not new_items:
-        logger.error("No items to add to the list")
-        raise ValueError("No items to add to the list")
+        logger.warning("No items to add to the list, skipping")
+        return
     for new_item in new_items:
         if isinstance(new_item, dict):
             list_to_update.append(new_item)

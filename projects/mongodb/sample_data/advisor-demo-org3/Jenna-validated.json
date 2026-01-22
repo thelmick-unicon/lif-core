@@ -1,7 +1,7 @@
 {
   "person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org3",
           "lastName": "Diaz",
@@ -10,9 +10,9 @@
           "identifier": "name-jenna-diaz-org3-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org3",
               "emailAddress": [
@@ -20,7 +20,7 @@
               ]
             }
           ],
-          "address": [
+          "Address": [
             {
               "informationSourceId": "Org3",
               "addressCity": null,
@@ -29,7 +29,7 @@
               "addressPostalCode": null
             }
           ],
-          "telephone": [
+          "Telephone": [
             {
               "informationSourceId": "Org3",
               "telephoneNumber": []
@@ -54,10 +54,10 @@
           "informationSourceOrganization": "Regional University"
         }
       ],
-      "courseLearningExperience": [
+      "CourseLearningExperience": [
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -65,7 +65,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -81,7 +81,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -91,7 +91,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "32acbc32-9cc5-468b-ab31-aaa01a90aa3e",
@@ -104,7 +104,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -112,7 +112,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -128,7 +128,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -138,7 +138,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "68aabc07-81aa-47b7-9c3d-0378d15784d1",
@@ -151,7 +151,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -159,7 +159,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -175,7 +175,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -185,7 +185,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "be88469a-5e0e-4b09-9975-c921bbb4533a",
@@ -198,7 +198,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -206,7 +206,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -222,7 +222,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -232,7 +232,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "5c824455-52ca-4491-9dca-0379028dd03a",
@@ -245,7 +245,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -253,7 +253,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -269,7 +269,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -279,7 +279,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "d53c9325-fcb7-4ac7-9b33-0d372c44c58d",
@@ -291,12 +291,12 @@
           "identifier": "courselearningexperience-org3-005"
         }
       ],
-      "credentialAward": [
+      "CredentialAward": [
         {
           "informationSourceId": "Org3",
           "informationSourceOrganization": "Org3",
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "84d6de55-974c-47e5-92bf-889addac75ae",
@@ -308,7 +308,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -322,7 +322,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -336,7 +336,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -350,7 +350,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -364,7 +364,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -378,7 +378,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -391,12 +391,12 @@
           "credentialAwardee": "Jenna Diaz"
         }
       ],
-      "proficiency": [
+      "Proficiency": [
         {
           "informationSourceId": "Org3",
           "name": "Algorithm Design Principles",
           "description": "Applies principles such as divide-and-conquer, greedy strategies, and dynamic programming to solve computational problems.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -410,7 +410,7 @@
           "informationSourceId": "Org3",
           "name": "Time and Space Complexity Analysis",
           "description": "Analyzes the efficiency of algorithms using Big-O, Big-Theta, and Big-Omega notation.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -424,7 +424,7 @@
           "informationSourceId": "Org3",
           "name": "Recursive Algorithm Development",
           "description": "Constructs recursive algorithms and explains their execution through call stacks and recurrence relations.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -438,7 +438,7 @@
           "informationSourceId": "Org3",
           "name": "Sorting and Searching Algorithms",
           "description": "Implements and compares the performance of sorting and searching algorithms like quicksort, mergesort, and binary search.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -452,7 +452,7 @@
           "informationSourceId": "Org3",
           "name": "Basic Data Structures Usage",
           "description": "Uses arrays, stacks, queues, and linked lists to support algorithm implementation.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -466,7 +466,7 @@
           "informationSourceId": "Org3",
           "name": "Graph Algorithms Fundamentals",
           "description": "Implements graph algorithms such as breadth-first search, depth-first search, and shortest path algorithms.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -480,7 +480,7 @@
           "informationSourceId": "Org3",
           "name": "Dynamic Programming Techniques",
           "description": "Solves optimization problems using overlapping subproblems and optimal substructure properties.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -494,7 +494,7 @@
           "informationSourceId": "Org3",
           "name": "Abstract Data Type Implementation",
           "description": "Implements abstract data types like stacks, queues, and priority queues in multiple programming contexts.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -508,7 +508,7 @@
           "informationSourceId": "Org3",
           "name": "Tree Structures and Traversals",
           "description": "Applies binary trees, AVL trees, and traversal techniques to solve hierarchical data problems.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -522,7 +522,7 @@
           "informationSourceId": "Org3",
           "name": "Hash Tables and Collision Resolution",
           "description": "Implements hash functions and handles collisions using chaining and open addressing.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -536,7 +536,7 @@
           "informationSourceId": "Org3",
           "name": "Heap Structures and Priority Queues",
           "description": "Uses heaps and priority queues in optimization problems such as scheduling and resource management.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -549,8 +549,8 @@
         {
           "informationSourceId": "Org3",
           "name": "Graph Algorithms and Applications",
-          "description": "Applies graph algorithms like Dijkstra’s and Kruskal’s to solve real-world connectivity and pathfinding problems.",
-          "refCredentialAward": {
+          "description": "Applies graph algorithms like Dijkstra\u2019s and Kruskal\u2019s to solve real-world connectivity and pathfinding problems.",
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -564,7 +564,7 @@
           "informationSourceId": "Org3",
           "name": "CPU Components and Functions",
           "description": "Identifies components of a CPU and explains their role in executing instructions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -578,7 +578,7 @@
           "informationSourceId": "Org3",
           "name": "Assembly Language Programming",
           "description": "Writes and debugs simple assembly programs to demonstrate low-level instruction execution.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -592,7 +592,7 @@
           "informationSourceId": "Org3",
           "name": "Memory Hierarchy and Access",
           "description": "Compares types of memory and explains their interaction in a modern computing system.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -606,7 +606,7 @@
           "informationSourceId": "Org3",
           "name": "Process Management and Scheduling",
           "description": "Explains how operating systems manage processes, threads, and scheduling policies.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -620,7 +620,7 @@
           "informationSourceId": "Org3",
           "name": "Memory Management and Paging",
           "description": "Describes memory management techniques including virtual memory, segmentation, and paging.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -634,7 +634,7 @@
           "informationSourceId": "Org3",
           "name": "Concurrency and Synchronization",
           "description": "Analyzes concurrency problems and applies synchronization solutions like semaphores and mutexes.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -648,7 +648,7 @@
           "informationSourceId": "Org3",
           "name": "File Systems and Storage Management",
           "description": "Explains how operating systems manage files, directories, and storage devices.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -662,7 +662,7 @@
           "informationSourceId": "Org3",
           "name": "Software Development Life Cycle (SDLC) Models",
           "description": "Compares SDLC models including Waterfall and Agile, selecting appropriate methodologies for projects.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -676,7 +676,7 @@
           "informationSourceId": "Org3",
           "name": "Requirements Elicitation and Analysis",
           "description": "Gathers and analyzes software requirements using interviews and modeling techniques.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -690,7 +690,7 @@
           "informationSourceId": "Org3",
           "name": "Software Design Principles",
           "description": "Applies modularity, abstraction, and cohesion principles in scalable software design.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -704,7 +704,7 @@
           "informationSourceId": "Org3",
           "name": "Version Control and Collaboration",
           "description": "Uses tools like Git for collaborative development and change tracking.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -718,7 +718,7 @@
           "informationSourceId": "Org3",
           "name": "Software Testing Techniques",
           "description": "Implements unit, integration, and system tests to ensure software quality.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
@@ -754,9 +754,9 @@
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-      "contact": [
+      "Contact": [
         {
-          "address": [
+          "Address": [
             {
               "addressCity": "Aspen Falls",
               "countryCode": "US",
@@ -766,7 +766,7 @@
               "informationSourceId": "Org3"
             }
           ],
-          "email": [
+          "Email": [
             {
               "emailAddress": [
                 "info@summitvalley.edu"
@@ -775,7 +775,7 @@
             }
           ],
           "websiteAddress": "https://www.summitvalley.edu/",
-          "telephone": [
+          "Telephone": [
             {
               "telephoneNumber": [
                 "888-555-7210"
@@ -850,20 +850,20 @@
       "format": [
         "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
       ],
-      "alignedProgram": [
+      "AlignedProgram": [
         {
           "specialization": "Artificial Intelligence and Machine Learning",
           "informationSourceId": "Org3"
         }
       ],
-      "issuedByRefOrganization": [
+      "IssuedByRefOrganization": [
         {
           "informationSourceId": "Org3",
           "name": "Summit Valley University",
           "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-          "contact": [
+          "Contact": [
             {
-              "address": [
+              "Address": [
                 {
                   "addressCity": "Aspen Falls",
                   "countryCode": "US",
@@ -873,7 +873,7 @@
                   "informationSourceId": "Org3"
                 }
               ],
-              "email": [
+              "Email": [
                 {
                   "emailAddress": [
                     "info@summitvalley.edu"
@@ -882,7 +882,7 @@
                 }
               ],
               "websiteAddress": "https://www.summitvalley.edu/",
-              "telephone": [
+              "Telephone": [
                 {
                   "telephoneNumber": [
                     "888-555-7210"
@@ -921,7 +921,7 @@
           "informationSourceOrganization": "Regional University"
         }
       ],
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org3",
           "accreditingAgency": "Higher Learning Commission",

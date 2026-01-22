@@ -82,7 +82,7 @@ def test_get_lif_fragment_paths_from_query():
     person_identifier: LIFPersonIdentifier = LIFPersonIdentifier(
         identifier="100001", identifierType="School-assigned number"
     )
-    person_filter_identifier: LIFPersonIdentifiers = LIFPersonIdentifiers(identifier=[person_identifier])
+    person_filter_identifier: LIFPersonIdentifiers = LIFPersonIdentifiers(Identifier=person_identifier)
     person_filter = LIFQueryPersonFilter(person=person_filter_identifier)
     query_filter = LIFQueryFilter(root=person_filter)
     query = LIFQuery(

@@ -1,7 +1,7 @@
 {
   "person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org3",
           "lastName": "Tsatrian",
@@ -10,9 +10,9 @@
           "identifier": "name-alan -tsatrian-org3-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org3",
               "emailAddress": [
@@ -20,7 +20,7 @@
               ]
             }
           ],
-          "address": [
+          "Address": [
             {
               "informationSourceId": "Org3",
               "addressCity": null,
@@ -29,7 +29,7 @@
               "addressPostalCode": null
             }
           ],
-          "telephone": [
+          "Telephone": [
             {
               "informationSourceId": "Org3",
               "telephoneNumber": []
@@ -54,12 +54,12 @@
           "informationSourceOrganization": "Regional University"
         }
       ],
-      "credentialAward": [
+      "CredentialAward": [
         {
           "informationSourceId": "Org3",
           "informationSourceOrganization": "Org3",
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "84d6de55-974c-47e5-92bf-889addac75ae",
@@ -71,7 +71,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -85,7 +85,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -99,7 +99,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -113,7 +113,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -127,7 +127,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -141,7 +141,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -155,7 +155,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -168,10 +168,10 @@
           "credentialAwardee": "Alan  Tsatrian"
         }
       ],
-      "courseLearningExperience": [
+      "CourseLearningExperience": [
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -179,7 +179,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -195,7 +195,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -205,7 +205,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "31b9edc0-93cb-42a0-8668-bf6e4bc00796",
@@ -218,7 +218,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -226,7 +226,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -242,7 +242,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -252,7 +252,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "931b66f4-a70e-4bb7-84df-3d200ed1976a",
@@ -265,7 +265,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -273,7 +273,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -289,7 +289,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -299,7 +299,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "ad1adb0a-22c5-4643-bd70-1fbe7ef615a6",
@@ -312,7 +312,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -320,7 +320,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -336,7 +336,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -346,7 +346,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "388bde0e-9e53-44e8-9887-cd9508b34d1e",
@@ -359,7 +359,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -367,7 +367,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -383,7 +383,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -393,7 +393,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "11403294-d6ba-42e0-bbdd-5864080c7d3e",
@@ -406,7 +406,7 @@
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
@@ -414,7 +414,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "CS651",
@@ -430,7 +430,7 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
@@ -440,7 +440,7 @@
             "informationSourceOrganization": "Regional University",
             "identifier": "organization-state-university-org3-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "a02134d5-b3bd-423d-9856-a1702ad18183",
@@ -452,12 +452,12 @@
           "identifier": "courselearningexperience-org3-006"
         }
       ],
-      "proficiency": [
+      "Proficiency": [
         {
           "informationSourceId": "Org3",
-          "name": "Fundamentals of Earth’s Climate System",
+          "name": "Fundamentals of Earth\u2019s Climate System",
           "description": "Describes the key components and processes of Earth's climate system including the atmosphere, hydrosphere, cryosphere, and biosphere.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -471,7 +471,7 @@
           "informationSourceId": "Org3",
           "name": "Atmospheric Energy Balance",
           "description": "Explains how solar radiation, albedo, and greenhouse gases contribute to Earth's energy balance.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -485,7 +485,7 @@
           "informationSourceId": "Org3",
           "name": "Paleoclimate Reconstruction Techniques",
           "description": "Evaluates methods for reconstructing past climates using proxy data such as ice cores, tree rings, and sediment layers.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -499,7 +499,7 @@
           "informationSourceId": "Org3",
           "name": "Using Python or R for Environmental Data Analysis",
           "description": "Writes basic scripts in Python or R to automate environmental data processing, analysis, and visualization tasks.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -513,7 +513,7 @@
           "informationSourceId": "Org3",
           "name": "Wildlife Tracking and Observation",
           "description": "Applies observation protocols and non-invasive tracking techniques to monitor wildlife populations in the field.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -527,7 +527,7 @@
           "informationSourceId": "Org3",
           "name": "Cumulative Impact Analysis",
           "description": "Assesses cumulative environmental impacts resulting from the interaction of proposed projects with existing or planned activities.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -541,7 +541,7 @@
           "informationSourceId": "Org3",
           "name": "Environmental Policy and Ethical Tradeoffs",
           "description": "Evaluates ethical dilemmas in environmental policy, such as balancing economic growth with ecological preservation.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org3-cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
@@ -577,9 +577,9 @@
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-      "contact": [
+      "Contact": [
         {
-          "address": [
+          "Address": [
             {
               "addressCity": "Aspen Falls",
               "countryCode": "US",
@@ -589,7 +589,7 @@
               "informationSourceId": "Org3"
             }
           ],
-          "email": [
+          "Email": [
             {
               "emailAddress": [
                 "info@summitvalley.edu"
@@ -598,7 +598,7 @@
             }
           ],
           "websiteAddress": "https://www.summitvalley.edu/",
-          "telephone": [
+          "Telephone": [
             {
               "telephoneNumber": [
                 "888-555-7210"
@@ -681,13 +681,13 @@
       "format": [
         "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
       ],
-      "alignedProgram": [
+      "AlignedProgram": [
         {
           "specialization": "Climate Modeling",
           "informationSourceId": "Org3"
         }
       ],
-      "issuedByRefOrganization": {
+      "IssuedByRefOrganization": {
         "informationSourceId": "Org3",
         "name": "Summit Valley University",
         "identificationSystem": "stateu-state-university-id",
@@ -695,7 +695,7 @@
         "informationSourceOrganization": "Regional University",
         "identifier": "organization-summit-valley-university-org3-001"
       },
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org3",
           "accreditingAgency": "Higher Learning Commission",
