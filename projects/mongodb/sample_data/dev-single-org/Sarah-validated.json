@@ -1280,7 +1280,7 @@
           ],
           "awardIssueDate": "2025-01-31T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "id": "c6bd80f8-f5af-4d62-ae5d-896e4bf60295",
             "informationSourceId": "Single-Org"
           },
@@ -1291,7 +1291,7 @@
           "identifier": "credentialaward-903f07f0-f556-4051-9dd2-b3ed97-single-org-001"
         },
         {
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "id": "https://api.badgr.io/public/badges/jTvfWDxrQPmJ7o0aR1FL1w",
             "informationSourceId": "Single-Org"
           },
@@ -1323,7 +1323,7 @@
           ],
           "awardIssueDate": "2025-01-31T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "id": "94599d33-de74-42ea-bd51-fc66415d77c8",
             "informationSourceId": "Single-Org"
           },
@@ -1334,7 +1334,7 @@
           "identifier": "credentialaward-e0d76ed3-5a7c-4bb1-a712-2c7a41-single-org-003"
         },
         {
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "id": "https://api.badgr.io/public/badges/6KseIB0VTcaLHE0lx6V72w",
             "informationSourceId": "Single-Org"
           },
@@ -2579,7 +2579,7 @@
         }
       ],
       "description": "Recipients of the Transformative Technology for Inclusive P-12 Classrooms certificate from State University demonstrated competency in the use of technology to support online, blended, and in-person learning, enhance teacher productivity, and create digital learning experiences while applying and analyzing ethical theories and frameworks to address technology and privacy issues.",
-      "requirements": {
+      "Requirements": {
         "criteria": [
           {
             "narrative": "## Credential Detail\nRecipients of StateU's Transformative Technology for Inclusive P-12 Classrooms Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Technology for Instruction and Online Pedagogy\n- The learner plans instruction focused on building students' digital literacy skills.\n- The learner applies instructional technologies to facilitate mastery of standards and objectives for all learners.\n- The learner implements technology solutions to support teacher productivity.\n- The learner applies online pedagogy to facilitate student learning experiences.\n- The learner adapts instruction to meet student needs in a blended environment. \n\n\n### Technology and Ethics: A Look at Emerging Trends and Society\n- The learner describes ethical decision-making frameworks as applied to technology.\n- The learner applies ethical concepts to emerging technology as it relates to society.\n- The learner analyzes privacy ethics and identity as related to emerging technologies.\n- The learner evaluates a contemporary technological case study using multiple ethical theories and frameworks to provide an ethical analysis.\n\n## Competency Demonstration Highlights\nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Plan a lesson on digital literacy skills for in-person and online educational settings. \n- Implement solutions that address teacher productivity challenges.\n- Adapt instructional activities, materials, and technologies for a blended learning environment.\n- Research theories for informed decisions about ethical technology use.\n- Evaluate technologies for ethical implications, such as privacy.\n- Propose strategies for ethical technology use.",
@@ -2917,7 +2917,7 @@
         }
       ],
       "description": "Recipients of the Innovative Technology for Inclusive P-12 Classrooms certificate from State University demonstrated competency in the use of technology to support online and in-person learning, enhance teacher productivity, and create digital learning experiences while applying ethical frameworks to address technology and privacy issues.",
-      "requirements": {
+      "Requirements": {
         "criteria": [
           {
             "narrative": "## Credential Detail\nRecipients of StateU's Innovative Technology for Inclusive P-12 Classrooms Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Instructional Technology and Online Pedagogy\n- The learner plans instruction focused on building students' digital literacy skills.\n- The learner applies instructional technologies to facilitate mastery of standards and objectives for all learners.\n- The learner implements technology solutions to support teacher productivity.\n- The learner applies online pedagogy to facilitate student learning experiences.\n\n### Technology and Ethics: Emerging Trends and Society \n- The learner describes ethical decision-making frameworks as applied to technology.\n- The learner applies ethical concepts to emerging technology as it relates to society.\n- The learner analyzes privacy ethics and identity as related to emerging technologies.\n\n## Competency Demonstration Highlights\nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Plan a lesson on digital literacy skills for in-person and online educational settings. \n- Implement solutions that address teacher productivity challenges.\n- Evaluate technologies for ethical implications, such as privacy.\n- Propose strategies for ethical technology use.",

@@ -736,7 +736,7 @@
           "identifier": "cred-proficiency-certificate-001",
           "awardIssueDate": "2024-12-15T10:00:00Z",
           "credentialAwardee": "Renee Green",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "cred-proficiency-certificate-001",
@@ -749,7 +749,7 @@
           "identifier": "f5d42e6a-d6bd-4a34-a910-dfd12adbb708",
           "awardIssueDate": "2021-03-24",
           "credentialAwardee": "Renee Green",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "f5d42e6a-d6bd-4a34-a910-dfd12adbb708",
@@ -762,7 +762,7 @@
           "identifier": "3cc9234a-4a0c-4171-846b-77d28d9aceb0",
           "awardIssueDate": "2022-02-15T19:22:24Z",
           "credentialAwardee": "Renee Green",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "3cc9234a-4a0c-4171-846b-77d28d9aceb0",
@@ -775,7 +775,7 @@
           "identifier": "c9efcc1d-e6af-492f-8a1b-04006feadce3",
           "awardIssueDate": "2022-01-13",
           "credentialAwardee": "Renee Green",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "c9efcc1d-e6af-492f-8a1b-04006feadce3",

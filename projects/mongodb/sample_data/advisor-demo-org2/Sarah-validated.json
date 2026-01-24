@@ -236,7 +236,7 @@
           "credentialAwardee": "Sarah Marin",
           "informationSourceId": "Org2",
           "informationSourceOrganization": "Org2",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Org2",
             "identifier": "cred-employment-certificate-001",

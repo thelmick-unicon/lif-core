@@ -1715,7 +1715,7 @@
           ],
           "awardIssueDate": "2025-01-30T15:00:00Z",
           "verificationType": "HostedBadge",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "https://api.badgr.io/public/badges/z7O2tvPBRuiA7hLpzDG0Bg",
@@ -1728,7 +1728,7 @@
         {
           "informationSourceId": "Org1",
           "awardStatus": "InProgress",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a050aa17-45f1-413f-a63b-c3a627ffa686",
@@ -1742,7 +1742,7 @@
         {
           "informationSourceId": "Org1",
           "awardStatus": "InProgress",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a050aa17-45f1-413f-a63b-c3a627ffa686",
@@ -1757,7 +1757,7 @@
           "informationSourceId": "Org1",
           "awardStatus": "Granted",
           "awardIssueDate": "05/2020",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a050aa17-45f1-413f-a63b-c3a627ffa686",
@@ -1770,7 +1770,7 @@
         {
           "informationSourceId": "Org1",
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a050aa17-45f1-413f-a63b-c3a627ffa686",
@@ -1784,7 +1784,7 @@
         {
           "informationSourceId": "Org1",
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a050aa17-45f1-413f-a63b-c3a627ffa686",
@@ -1799,7 +1799,7 @@
           "informationSourceId": "Org1",
           "informationSourceOrganization": "Org1",
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "Org1",
             "identifier": "a050aa17-45f1-413f-a63b-c3a627ffa686",
@@ -1815,7 +1815,7 @@
           "credentialAwardee": "Matt Hanson",
           "informationSourceId": "Org1",
           "informationSourceOrganization": "State University",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "State University",
             "identifier": "cred-proficiency-certificate-001",
@@ -1828,7 +1828,7 @@
           "awardIssueDate": "2024-12-15T10:00:00Z",
           "credentialAwardee": "Matt Hanson",
           "informationSourceOrganization": "State University",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "State University",
             "identifier": "b3a1f2c4-9a2b-5e4a-a48c-d4b2e5c9a2f1",
@@ -1841,7 +1841,7 @@
           "awardIssueDate": "2023-06-20",
           "credentialAwardee": "Matt Hanson",
           "informationSourceOrganization": "State University",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "State University",
             "identifier": "d4b2a5e3-94a3-5f2c-a38b-c2a4e5b6d8f9",
@@ -1854,7 +1854,7 @@
           "awardIssueDate": "2020-12-15T10:00:00Z",
           "credentialAwardee": "Matt Hanson",
           "informationSourceOrganization": "State University",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org1",
             "informationSourceOrganization": "State University",
             "identifier": "c3a8b5e2-84b2-54da-b59c-f5c2a6d4e3b1",
@@ -2793,7 +2793,7 @@
         }
       ],
       "description": "Recipients of the Network and Cyber Defense Foundations Certificate from State University have built and demonstrated competence in information security, network security, and digital forensics.",
-      "requirements": {
+      "Requirements": {
         "criteria": [
           {
             "narrative": "## Credential Detail\nRecipients of StateU's Network and Cyber Defense Foundations Certificate have demonstrated competence in the following areas via rigorous assessment activities completed through State University:\n\n### Introduction to IT\n- The learner explains different computer hardware and networking technologies and their developments. \n- The learner describes fundamental data management functions in databases.   \n- The learner identifies components of software and its relation to operating systems. \n- The learner identifies computer hardware components. \n- The learner evaluates ethical concerns in information technology. \n- The learner describes the structure, function, and security associated with networks.  \n- The learner describes the basics of programming languages in software development.   \n- The learner describes the role of the IT department in IT infrastructure management, disaster recovery, and business continuity processes.   \n\n### Fundamentals of Information Security\t\n- The learner identifies security principles, policies, practices, and methods for asset protection and cyber defense.\n- The learner identifies security requirements based on principles of confidentiality, integrity, and availability.\n- The learner identifies cybersecurity guidelines in privacy and compliance. \n\n### Web Development Foundations\n- The learner creates the structure of basic web documents using HTML and XML.  \n- The learner implements web page formatting and interface aesthetics using CSS  \n- The learner resolves software problems in web development environments with debugging tools.\n\n### Network and Security - Foundations\n- The learner identifies basic network systems and concepts related to networking technologies.  \n- The learner applies network security concepts for business continuity, data access, and confidentiality.   \n- The learner identifies solutions for compliance with security guidance. \n\n### Digital Forensics in Cybersecurity\n- The learner identifies laws, rules, standards, policies, and best practices related to digital forensics.\n- The learner conducts analysis on gathered evidence with forensic tools in alignment with investigation processes. \n- The learner collects forensic evidence from deleted files and artifacts.\n- The learner identifies steganography techniques for data transmission.\n\n### Scripting and Programming Foundations\n- The learner identifies scripts for computer program requirements.\n- The learner uses fundamental programming elements as part of common computer programming tasks.\n- The learner explains the logic and outcome of simple algorithms.\n\n## Competency Demonstration Highlights \nRecipients of this credential complete the following tasks and deliverables as part of their assessment activities:\n- Develops investigative plans  based on digital forensic tools, best practices, standards, and organizational policies.\n- Conducts a forensic investigation with industry-standard tools.\n\n## StateU Accreditation\nStateU is regionally accredited by the Northwest Commission on Colleges and Universities. The StateU Teachers College is granted accreditation at the initial-licensure level from the Council for the Accreditation of Educator Preparation (CAEP). StateU nursing degree programs are accredited by the Commission for Collegiate Nursing Education (CCNE). The Health Informatics program is accredited by the Commission of Accreditation for Health Informatics and Information Management Education (CAHIIM). The StateU Business College is accredited by the Accreditation Council for Business Schools and Programs (ACBSP).",

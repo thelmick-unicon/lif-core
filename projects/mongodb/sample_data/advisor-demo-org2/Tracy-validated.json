@@ -333,7 +333,7 @@
           "credentialAwardee": "Tracy Thatcher",
           "informationSourceId": "Org2",
           "informationSourceOrganization": "Community College",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Community College",
             "identifier": "cred-employment-certificate-001",

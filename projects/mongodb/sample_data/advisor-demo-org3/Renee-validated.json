@@ -110,7 +110,7 @@
           "informationSourceId": "Org3",
           "informationSourceOrganization": "Org3",
           "awardStatus": "InProgress",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1",
@@ -122,7 +122,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
@@ -136,7 +136,7 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
             "informationSourceOrganization": "Org3",
             "identifier": "",
