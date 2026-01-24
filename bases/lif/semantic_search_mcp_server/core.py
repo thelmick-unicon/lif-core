@@ -55,11 +55,12 @@ for root_node in ROOT_NODES:
         ALL_LEAVES.extend(root_leaves)
         logger.info(f"Loaded {len(root_leaves)} schema leaves for root '{root_node}'")
     except Exception as e:
-        logger.warning(f"Failed to load schema leaves for root '{root_node}': {e}")
-
-if not ALL_LEAVES:
-    logger.critical("No schema leaves loaded from any root node")
-    sys.exit(1)
+        # Primary root (Person) is required; additional roots are optional
+        if root_node == DEFAULT_ROOT_NODE:
+            logger.critical(f"Failed to load schema leaves for required root '{root_node}': {e}")
+            sys.exit(1)
+        else:
+            logger.warning(f"Failed to load schema leaves for optional root '{root_node}': {e}")
 
 logger.info(f"Total schema leaves loaded: {len(ALL_LEAVES)}")
 
