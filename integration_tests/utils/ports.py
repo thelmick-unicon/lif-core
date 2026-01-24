@@ -1,6 +1,6 @@
 """Port configuration for integration tests.
 
-Port mappings are based on development/advisor-demo-3orgs/docker-compose.yml.
+Port mappings are based on deployments/advisor-demo-docker/docker-compose.yml.
 Some internal services (query cache, query planner) are not exposed for org2/org3
 in the default docker-compose configuration.
 """
