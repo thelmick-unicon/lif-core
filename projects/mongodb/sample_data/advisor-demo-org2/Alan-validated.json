@@ -1,16 +1,18 @@
 {
-  "person": [
+  "Person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org2",
           "lastName": "Tsatrian",
-          "firstName": "Alan "
+          "firstName": "Alan ",
+          "informationSourceOrganization": "Community College",
+          "identifier": "name-alan -tsatrian-org2-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org2",
               "emailAddress": [
@@ -18,116 +20,140 @@
               ]
             }
           ],
-          "informationSourceId": "Org2"
+          "informationSourceId": "Org2",
+          "informationSourceOrganization": "Community College",
+          "identifier": "contact-org2-001"
         }
       ],
-      "identifier": [
+      "Identifier": [
         {
           "informationSourceId": "Org2",
           "identifier": "100001",
-          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER",
+          "informationSourceOrganization": "Community College"
         }
       ],
-      "employmentLearningExperience": [
+      "EmploymentLearningExperience": [
         {
           "informationSourceId": "Org2",
           "name": "Compliance Manager ",
-          "refPosition": {
-            "informationSourceId": "Org2"
+          "RefPosition": {
+            "informationSourceId": "Org2",
+            "name": "Compliance Manager Position",
+            "informationSourceOrganization": "Community College",
+            "identifier": "position-org2-001"
           },
           "startDate": "2007-06",
           "endDate": "2024-12",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "identificationSystem": "stateu-employing-organization-id",
             "name": "Employing Organization",
             "organizationType": [
               "Company"
             ],
-            "informationSourceId": "Org2"
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-employing-organization-org2-001"
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-training-provider-id",
             "name": "Training Provider",
             "organizationType": [
               "Training Organization"
             ],
-            "informationSourceId": "Org2"
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-training-provider-org2-001"
           },
-          "approvedByRefOrganization": {
+          "ApprovedByRefOrganization": {
             "identificationSystem": "stateu-approving-authority-id",
             "name": "Approving Authority",
             "organizationType": [
               "Regulatory Body"
             ],
-            "informationSourceId": "Org2"
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-approving-authority-org2-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org2-cred-employment-certificate-001",
             "name": "Employment Certificate",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Org2"
-          }
+          },
+          "informationSourceOrganization": "Community College",
+          "identifier": "employmentlearningexperience-compliance-manager--org2-001"
         },
         {
           "informationSourceId": "Org2",
           "name": "Compliance Specialist ",
           "endDate": "2007-05",
-          "refPosition": {
+          "RefPosition": {
             "informationSourceId": "Org2",
-            "name": "Referenced Employment Experience"
+            "name": "Referenced Employment Experience",
+            "informationSourceOrganization": "Community College",
+            "identifier": "position-referenced-employment-experien-org2-001"
           },
           "startDate": "2004-06",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "identificationSystem": "stateu-employing-organization-id",
             "name": "Employing Organization",
             "organizationType": [
               "Company"
             ],
-            "informationSourceId": "Org2"
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-employing-organization-org2-001"
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-training-provider-id",
             "name": "Training Provider",
             "organizationType": [
               "Training Organization"
             ],
-            "informationSourceId": "Org2"
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-training-provider-org2-001"
           },
-          "approvedByRefOrganization": {
+          "ApprovedByRefOrganization": {
             "identificationSystem": "stateu-approving-authority-id",
             "name": "Approving Authority",
             "organizationType": [
               "Regulatory Body"
             ],
-            "informationSourceId": "Org2"
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-approving-authority-org2-001"
           },
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "org2-cred-employment-certificate-001",
             "name": "Employment Certificate",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Alan  Tsatrian",
             "informationSourceId": "Org2",
             "informationSourceOrganization": "Org2"
-          }
+          },
+          "informationSourceOrganization": "Community College",
+          "identifier": "employmentlearningexperience-compliance-specialist--org2-002"
         }
       ],
-      "positionPreferences": [
+      "PositionPreferences": [
         {
           "informationSourceId": "Org2",
-          "travel": [
+          "Travel": [
             {
               "percentage": 25.0,
               "willingToTravelIndicator": true
             }
           ],
-          "relocation": [
+          "Relocation": [
             {
               "willingToRelocateIndicator": false
             }
           ],
-          "remoteWork": [
+          "RemoteWork": [
             {
               "remoteWorkIndicator": true
             }
@@ -142,10 +168,10 @@
           "positionScheduleTypeCodes": [
             "FullTime"
           ],
-          "offeredByRefRemunerationPackage": {
-            "ranges": [
+          "OfferedByRefRemunerationPackage": {
+            "Ranges": [
               {
-                "minimumAmount": [
+                "MinimumAmount": [
                   {
                     "value": 85000.0,
                     "currency": "USD",
@@ -160,10 +186,10 @@
           }
         }
       ],
-      "employmentPreferences": [
+      "EmploymentPreferences": [
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "Three Trees Compliance",
             "identificationSystem": "Workday",
@@ -180,7 +206,7 @@
         },
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "RIA Compliance Consultants",
             "identificationSystem": "Workday",
@@ -197,7 +223,7 @@
         },
         {
           "informationSourceId": "Org2",
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "informationSourceId": "Org2",
             "name": "Utah ISO Consultants",
             "identificationSystem": "Workday",
@@ -214,30 +240,143 @@
         }
       ],
       "informationSourceId": "Org2",
-      "credentialAward": [
+      "CredentialAward": [
         {
           "identifier": "org2-cred-employment-certificate-001",
-          "name": "Employment Certificate",
           "awardIssueDate": "2024-12-15T10:00:00Z",
           "credentialAwardee": "Alan Tsatrian",
           "informationSourceId": "Org2",
-          "informationSourceOrganization": "Org2"
+          "informationSourceOrganization": "Org2",
+          "InstanceOfRefCredential": {
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Org2",
+            "identifier": "org2-cred-employment-certificate-001",
+            "name": "Employment Certificate"
+          }
+        }
+      ],
+      "CourseLearningExperience": [
+        {
+          "informationSourceId": "Org2",
+          "informationSourceOrganization": "Community College",
+          "identifier": "courselearningexperience-alan -org2-001",
+          "startDate": "2020-01-15",
+          "endDate": "2020-05-15",
+          "AssertedByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Community College",
+            "identificationSystem": "Community College SIS",
+            "organizationType": [
+              "College"
+            ],
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-community-college-org2-001"
+          },
+          "RefCourse": {
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "BUS101",
+            "name": "Introduction to Business",
+            "Identifier": [
+              {
+                "identifier": "BUS101",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org2"
+              }
+            ]
+          },
+          "OfferedByRefOrganization": {
+            "identificationSystem": "community-college-id",
+            "name": "Community College",
+            "organizationType": [
+              "College"
+            ],
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-community-college-org2-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "cred-course-completion-001",
+            "name": "Course Completion Certificate",
+            "awardIssueDate": "2020-05-20T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
+        },
+        {
+          "informationSourceId": "Org2",
+          "informationSourceOrganization": "Community College",
+          "identifier": "courselearningexperience-alan -org2-002",
+          "startDate": "2020-08-20",
+          "endDate": "2020-12-15",
+          "AssertedByRefOrganization": {
+            "informationSourceId": "Org2",
+            "name": "Community College",
+            "identificationSystem": "Community College SIS",
+            "organizationType": [
+              "College"
+            ],
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-community-college-org2-001"
+          },
+          "RefCourse": {
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "COM201",
+            "name": "Business Communications",
+            "Identifier": [
+              {
+                "identifier": "COM201",
+                "identifierType": "Course Code",
+                "identifierVerification": [
+                  "Academic Records"
+                ],
+                "informationSourceId": "Org2"
+              }
+            ]
+          },
+          "OfferedByRefOrganization": {
+            "identificationSystem": "community-college-id",
+            "name": "Community College",
+            "organizationType": [
+              "College"
+            ],
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "organization-community-college-org2-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org2",
+            "informationSourceOrganization": "Community College",
+            "identifier": "cred-course-completion-002",
+            "name": "Course Completion Certificate",
+            "awardIssueDate": "2020-12-20T10:00:00Z",
+            "credentialAwardee": "Alan  Tsatrian"
+          }
         }
       ]
     }
   ],
-  "organization": [
+  "Organization": [
     {
       "identificationSystem": "stateu-employing-organization-id",
       "name": "Employing Organization",
       "organizationType": [
         "Company"
       ],
-      "informationSourceId": "Org2"
+      "informationSourceId": "Org2",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-employing-organization-org2-001"
     },
     {
       "informationSourceId": "Org2",
-      "name": "Three Trees Compliance"
+      "name": "Three Trees Compliance",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-three-trees-compliance-org2-002"
     },
     {
       "identificationSystem": "stateu-training-provider-id",
@@ -245,29 +384,39 @@
       "organizationType": [
         "Training Organization"
       ],
-      "informationSourceId": "Org2"
+      "informationSourceId": "Org2",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-training-provider-org2-003"
     },
     {
       "informationSourceId": "Org2",
-      "name": "McBradshaw Brothers"
+      "name": "McBradshaw Brothers",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-mcbradshaw-brothers-org2-004"
     },
     {
       "informationSourceId": "Org2",
       "name": "Three Trees Compliance",
       "identificationSystem": "Workday",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-three-trees-compliance-org2-005"
     },
     {
       "informationSourceId": "Org2",
       "name": "RIA Compliance Consultants",
       "identificationSystem": "Workday",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-ria-compliance-consultants-org2-006"
     },
     {
       "informationSourceId": "Org2",
       "name": "Utah ISO Consultants",
       "identificationSystem": "Workday",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-utah-iso-consultants-org2-007"
     },
     {
       "identificationSystem": "stateu-approving-authority-id",
@@ -275,7 +424,9 @@
       "organizationType": [
         "Regulatory Body"
       ],
-      "informationSourceId": "Org2"
+      "informationSourceId": "Org2",
+      "informationSourceOrganization": "Community College",
+      "identifier": "organization-approving-authority-org2-008"
     }
   ],
   "informationSourceId": "Org2"

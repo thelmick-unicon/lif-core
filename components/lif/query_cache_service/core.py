@@ -22,6 +22,7 @@ from lif.datatypes.core import (
     LIFUpdate,
 )
 from lif.exceptions.core import ResourceNotFoundException
+from lif.lif_schema_config import PERSON_KEY_PASCAL, PERSON_DOT_PASCAL_ZERO
 from lif.logging.core import get_logger
 from lif.mongodb_connection.core import get_database_async
 
@@ -92,7 +93,7 @@ def extract_filter(filter_dict: Dict[str, Any]) -> Dict[str, Any]:
     return mongo_filter
 
 
-def build_mongo_update_ops(update_fields, root_prefix="person.0"):
+def build_mongo_update_ops(update_fields, root_prefix=PERSON_DOT_PASCAL_ZERO):
     """Recursively builds $set and $push update dicts for MongoDB."""
     set_ops = {}
     push_ops = {}
@@ -150,7 +151,7 @@ async def query(query: LIFQuery) -> List[LIFRecord]:
     """
     try:
         cleaned_fields = clean_projection(query.selected_fields, keep="leaves")
-        mongo_filter = extract_filter(query.filter.model_dump())
+        mongo_filter = extract_filter(query.filter.model_dump(by_alias=True))
         mongo_projection = {field: 1 for field in cleaned_fields}
         mongo_projection["_id"] = 0
 
@@ -193,19 +194,19 @@ async def update(lif_update: LIFUpdate) -> LIFRecord:
         filter_dict = lif_update.updatePerson.filter
         update_fields = lif_update.updatePerson.input
 
-        # Unwrap "person" key if present
-        if "person" in update_fields and isinstance(update_fields["person"], dict):
-            update_fields = update_fields["person"]
+        # Unwrap "Person" key if present (PascalCase per schema)
+        if PERSON_KEY_PASCAL in update_fields and isinstance(update_fields[PERSON_KEY_PASCAL], dict):
+            update_fields = update_fields[PERSON_KEY_PASCAL]
 
         mongo_filter = extract_filter(filter_dict) if filter_dict else {}
 
-        set_ops, push_ops = build_mongo_update_ops(update_fields, "person.0")
+        set_ops, push_ops = build_mongo_update_ops(update_fields, PERSON_DOT_PASCAL_ZERO)
         update_doc = {}
 
         # --- Step 1: Ensure all $push targets are arrays, using $set in a SEPARATE update ---
         array_inits = {}
         if push_ops:
-            current_doc = await collection.find_one(mongo_filter, {"person": 1})
+            current_doc = await collection.find_one(mongo_filter, {PERSON_KEY_PASCAL: 1})
             for field_path in push_ops:
                 keys = field_path.split(".")
                 val = current_doc
@@ -243,10 +244,10 @@ async def update(lif_update: LIFUpdate) -> LIFRecord:
         await collection.update_one(mongo_filter, update_doc)
         logger.info("===> DONE MAKING MONGODB CALL")
 
-        # Return ONLY the full 'person' array as { "person": [ ... ] }
-        doc = await collection.find_one(mongo_filter, {"person": 1, "_id": 0})
-        if doc and "person" in doc:
-            return LIFRecord(person=doc["person"])
+        # Return ONLY the full 'Person' array as { "Person": [ ... ] }
+        doc = await collection.find_one(mongo_filter, {PERSON_KEY_PASCAL: 1, "_id": 0})
+        if doc and PERSON_KEY_PASCAL in doc:
+            return LIFRecord(person=doc[PERSON_KEY_PASCAL])
         raise ResourceNotFoundException(resource_id=None, message=f"No matching record after update: {filter_dict}")
 
     except Exception as e:
@@ -272,7 +273,7 @@ async def add(lif_record: LIFRecord) -> LIFRecord:
     """
     try:
         logger.info(f"===> CALL MADE TO ADD: {lif_record}")
-        result = await collection.insert_one(lif_record.model_dump())
+        result = await collection.insert_one(lif_record.model_dump(by_alias=True))
         if result.inserted_id:
             added_record = await collection.find_one({"_id": result.inserted_id})
             return LIFRecord(**added_record)  # type: ignore
@@ -296,7 +297,7 @@ async def save(lif_query_filter: LIFQueryFilter, lif_fragments: List[LIFFragment
         Exception: If the save operation fails or if the LIFQueryFilter results in more than one LIFRecord being found.
     """
     try:
-        mongo_filter = extract_filter(lif_query_filter.model_dump())
+        mongo_filter = extract_filter(lif_query_filter.model_dump(by_alias=True))
         cursor = collection.find(mongo_filter)
         results = []
         async for doc in cursor:
@@ -305,14 +306,14 @@ async def save(lif_query_filter: LIFQueryFilter, lif_fragments: List[LIFFragment
             raise ValueError(f"Cannot save -- multiple records found for the given filter: {lif_query_filter}")
 
         person_identifiers: LIFPersonIdentifiers = LIFPersonIdentifiers(
-            identifier=lif_query_filter.root.person.identifier
+            Identifier=lif_query_filter.root.person.Identifier
         )
         lif_person: LIFPerson = LIFPerson(root=[person_identifiers.model_dump()])
         lif_record = LIFRecord(**results[0]) if len(results) == 1 else LIFRecord(person=lif_person)
 
         updated_lif_record = compose_with_fragment_list(lif_record, lif_fragments)
         mongo_update_response = await collection.update_one(
-            mongo_filter, {"$set": updated_lif_record.model_dump()}, upsert=True
+            mongo_filter, {"$set": updated_lif_record.model_dump(by_alias=True)}, upsert=True
         )
         logger.debug(f"MONGO UPDATE RESPONSE: {mongo_update_response}")
     except Exception as e:

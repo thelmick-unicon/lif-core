@@ -94,7 +94,7 @@ class LIFQueryPlannerService:
 
             if first_run:
                 # Otherwise create a query plan, call the Orchestrator, and return a Query ID
-                lif_person_identifier: LIFPersonIdentifier = query.filter.root.person.identifier[0]
+                lif_person_identifier: LIFPersonIdentifier = query.filter.root.person.first_identifier
                 # Note: Used to send lif_fragment_paths_not_found to create the query plan, but this prevented
                 # having the ability to query Org3 if there were already records from Org1 with the same schema
                 # so now lif_fragment_paths is sent to always get all fields
@@ -256,7 +256,7 @@ class LIFQueryPlannerService:
             )
 
             json_body = {
-                "lif_query_filter": lif_query_filter.model_dump(),
+                "lif_query_filter": lif_query_filter.model_dump(by_alias=True),
                 "lif_fragments": [fragment.model_dump() for fragment in lif_fragments],
             }
             async with httpx.AsyncClient() as client:
@@ -290,7 +290,7 @@ async def query_lif_cache(lif_cache_query_url: str, query: LIFQuery) -> List[LIF
     """
     try:
         async with httpx.AsyncClient() as client:
-            response = await client.post(lif_cache_query_url, json=query.model_dump())
+            response = await client.post(lif_cache_query_url, json=query.model_dump(by_alias=True))
         response.raise_for_status()
         response_json = response.json()
         lif_records = [LIFRecord(**record) for record in response_json]

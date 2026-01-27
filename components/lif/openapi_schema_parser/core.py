@@ -6,7 +6,6 @@ from typing import Any, Dict, List, Optional
 import jsonref
 
 from lif.logging import get_logger
-from lif.string_utils import camelcase_path
 
 
 logger = get_logger(__name__)
@@ -36,10 +35,19 @@ def extract_leaves(obj: Any, path_prefix: str = "", attribute_keys: Optional[Lis
         attribute_keys = ["x-queryable", "dataType", "enum", "x-mutable"]
     leaves = []
     if isinstance(obj, dict):
-        if "Description" in obj and obj["Description"]:
-            key = camelcase_path(path_prefix.rstrip("."))
+        # Support both "Description" (old schema) and "description" (new schema v2.0)
+        # Only use lowercase "description" if it's a string (in old schema, "description"
+        # can be a property name containing an object, not the description string)
+        desc = obj.get("Description")
+        if not desc:
+            lowercase_desc = obj.get("description")
+            if isinstance(lowercase_desc, str):
+                desc = lowercase_desc
+        if desc:
+            # Preserve original schema property names (e.g., Identifier instead of identifier)
+            key = path_prefix.rstrip(".")
             attributes = {to_camel_case(k): obj.get(k) for k in attribute_keys if k in obj}
-            leaves.append(SchemaLeaf(json_path=key, description=obj["Description"], attributes=attributes))
+            leaves.append(SchemaLeaf(json_path=key, description=desc, attributes=attributes))
         for k, v in obj.items():
             if isinstance(v, (dict, list)):
                 new_prefix = path_prefix

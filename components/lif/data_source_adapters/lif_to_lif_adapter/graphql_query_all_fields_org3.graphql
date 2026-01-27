@@ -1,71 +1,61 @@
 query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
-  person(filter: { identifier: { identifier: $identifier, identifierType: $identifierType } }) {
-    name {
+  person(filter: { Identifier: { identifier: $identifier, identifierType: $identifierType } }) {
+    Name {
       informationSourceId
       lastName
       firstName
     }
-    contact {
-      email {
+    Contact {
+      Email {
         informationSourceId
         emailAddress
       }
     }
-    identifier {
+    Identifier {
       informationSourceId
       identifier
       identifierType
     }
-    credentialAward {
+    CredentialAward {
       informationSourceId
       awardStatus
-      instanceOfRefCredential {
+      InstanceOfRefCredential {
         informationSourceId
+        informationSourceOrganization
         identifier
+        name
       }
       identifier
       #awardIssueDate
       #credentialAwardee
     }
-    courseLearningExperience {
+    CourseLearningExperience {
       informationSourceId
-      #assertedByRefOrganization {
-      #  informationSourceId
-      #  name
-      #  identificationSystem
-      #  organizationType
-      #}
-      refCourse {
+      RefCourse {
         informationSourceId
-        #identifier {
-        #  identifier
-        #  identifierType
-        #  identifierVerification
-        #  informationSourceId
-        #}
-      }
-      #offeredByRefOrganization {
-      #  identificationSystem
-      #  name
-      #  organizationType
-      #  informationSourceId
-      #}
-      refCredentialAward {
-        informationSourceId
+        informationSourceOrganization
         identifier
+        name
+      }
+      RefCredentialAward {
+        informationSourceId
+        informationSourceOrganization
+        identifier
+        name
         #awardIssueDate
         #credentialAwardee
       }
     }
-    proficiency {
+    Proficiency {
       informationSourceId
       name
       description
-      refCredentialAward {
+      RefCredentialAward {
         identifier
         #awardIssueDate
         #credentialAwardee
         informationSourceId
+        informationSourceOrganization
       }
     }
   }

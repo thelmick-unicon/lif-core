@@ -1,49 +1,33 @@
 query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
-  person(filter: { identifier: { identifier: $identifier, identifierType: $identifierType } }) {
-    name {
+  person(filter: { Identifier: { identifier: $identifier, identifierType: $identifierType } }) {
+    Name {
       informationSourceId
       lastName
       firstName
     }
-    contact {
-      email {
+    Contact {
+      Email {
         informationSourceId
         emailAddress
       }
     }
-    identifier {
+    Identifier {
       informationSourceId
       identifier
   # identifierType
     }
-    employmentLearningExperience {
+    EmploymentLearningExperience {
       informationSourceId
       name
       startDate
       endDate
-      #refPosition {
-      #  name
-      #  informationSourceId
-      #}
-      #assertedByRefOrganization {
-      #  identificationSystem
-      #  name
-      #  organizationType
-      #  informationSourceId
-      #}
-      #offeredByRefOrganization {
-      #  identificationSystem
-      #  name
-      #  organizationType
-      #  informationSourceId
-      #}
-      #approvedByRefOrganization {
-      #  identificationSystem
-      #  name
-      #  organizationType
-      #  informationSourceId
-      #}
-      refCredentialAward {
+      RefPosition {
+        identifier
+        name
+        informationSourceId
+        informationSourceOrganization
+      }
+      RefCredentialAward {
         identifier
         #awardIssueDate
         #credentialAwardee
@@ -52,24 +36,24 @@ query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
         name
       }
     }
-    positionPreferences {
+    PositionPreferences {
       # informationSourceId
-      travel {
+      Travel {
         percentage
         willingToTravelIndicator
       }
-      relocation {
+      Relocation {
         willingToRelocateIndicator
       }
-      remoteWork {
+      RemoteWork {
         remoteWorkIndicator
       }
       positionTitles
       positionOfferingTypeCodes
       positionScheduleTypeCodes
-      #offeredByRefRemunerationPackage {
-      #  ranges {
-      #    minimumAmount {
+      #OfferedByRefRemunerationPackage {
+      #  Ranges {
+      #    MinimumAmount {
       #      value
       #      currency
       #    }
@@ -77,9 +61,9 @@ query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
       #  basisCode
       #}
     }
-    employmentPreferences {
+    EmploymentPreferences {
     #  informationSourceId
-    #  offeredByRefOrganization {
+    #  OfferedByRefOrganization {
     #    informationSourceId
     #    name
     #    identificationSystem
@@ -89,11 +73,34 @@ query GetPersonByIdentifier($identifier: String!, $identifierType: String!) {
       organizationTypes
       organizationNames
     }
-    credentialAward {
+    CredentialAward {
       identifier
       awardIssueDate
       credentialAwardee
       informationSourceId
+      InstanceOfRefCredential {
+        informationSourceId
+        informationSourceOrganization
+        identifier
+        name
+      }
+    }
+    CourseLearningExperience {
+      informationSourceId
+      startDate
+      endDate
+      RefCourse {
+        informationSourceId
+        informationSourceOrganization
+        identifier
+        name
+      }
+      RefCredentialAward {
+        informationSourceId
+        informationSourceOrganization
+        identifier
+        name
+      }
     }
   }
 }

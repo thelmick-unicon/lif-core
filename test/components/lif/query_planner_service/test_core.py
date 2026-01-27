@@ -26,7 +26,7 @@ def test_run_query_when_not_all_data_found_in_cache(mock_post):
         filter=LIFQueryFilter(
             root=LIFQueryPersonFilter(
                 person=LIFPersonIdentifiers(
-                    identifier=[LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")]
+                    Identifier=LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
                 )
             )
         ),
@@ -39,21 +39,21 @@ def test_run_query_when_not_all_data_found_in_cache(mock_post):
             "information_source_organization": "Example Org 1",
             "adapter_id": "lif-to-lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.name", "person.identifier"],
+            "lif_fragment_paths": ["Person.name", "Person.identifier"],
         },
         {
             "information_source_id": "source_2",
             "information_source_organization": "Example Org 2",
             "adapter_id": "lif-to-lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.employmentLearningExperience"],
+            "lif_fragment_paths": ["Person.employmentLearningExperience"],
         },
         {
             "information_source_id": "source_3",
             "information_source_organization": "Example Org 3",
             "adapter_id": "lif-to-lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.positionPreferences"],
+            "lif_fragment_paths": ["Person.positionPreferences"],
         },
     ]
 
@@ -82,7 +82,7 @@ def test_run_query_when_no_data_sources_found_for_any_fragment_paths(mock_post):
         filter=LIFQueryFilter(
             root=LIFQueryPersonFilter(
                 person=LIFPersonIdentifiers(
-                    identifier=[LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")]
+                    Identifier=LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
                 )
             )
         ),
@@ -95,7 +95,7 @@ def test_run_query_when_no_data_sources_found_for_any_fragment_paths(mock_post):
             "information_source_organization": "Example Org 1",
             "adapter_id": "lif-to-lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.name", "person.identifier"],
+            "lif_fragment_paths": ["Person.name", "Person.identifier"],
         }
     ]
 
@@ -131,21 +131,21 @@ def test_run_post_orchestration_results(mock_post):
             "information_source_organization": "Example Org 1",
             "adapter_id": "lif_to_lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.name", "person.identifier"],
+            "lif_fragment_paths": ["Person.name", "Person.identifier"],
         },
         {
             "information_source_id": "source_2",
             "information_source_organization": "Example Org 2",
             "adapter_id": "lif_to_lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.employmentLearningExperience"],
+            "lif_fragment_paths": ["Person.employmentLearningExperience"],
         },
         {
             "information_source_id": "source_3",
             "information_source_organization": "Example Org 3",
             "adapter_id": "lif_to_lif",
             "ttl_hours": 24,
-            "lif_fragment_paths": ["person.positionPreferences"],
+            "lif_fragment_paths": ["Person.positionPreferences"],
         },
     ]
 
@@ -233,9 +233,7 @@ def test_run_post_orchestration_results(mock_post):
                     filter=LIFQueryFilter(
                         root=LIFQueryPersonFilter(
                             person=LIFPersonIdentifiers(
-                                identifier=[
-                                    LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
-                                ]
+                                Identifier=LIFPersonIdentifier(identifier="12345", identifierType="School-assigned number")
                             )
                         )
                     ),
@@ -255,7 +253,7 @@ def test_run_post_orchestration_results(mock_post):
         "https://api.example.com/cache/save",
         json={
             "lif_query_filter": {
-                "person": {"identifier": [{"identifier": "12345", "identifierType": "School-assigned number"}]}
+                "Person": {"Identifier": {"identifier": "12345", "identifierType": "School-assigned number"}}
             },
             "lif_fragments": [
                 {

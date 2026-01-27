@@ -1,16 +1,18 @@
 {
-  "person": [
+  "Person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org3",
           "lastName": "Diaz",
-          "firstName": "Jenna"
+          "firstName": "Jenna",
+          "informationSourceOrganization": "Regional University",
+          "identifier": "name-jenna-diaz-org3-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org3",
               "emailAddress": [
@@ -18,7 +20,7 @@
               ]
             }
           ],
-          "address": [
+          "Address": [
             {
               "informationSourceId": "Org3",
               "addressCity": null,
@@ -27,39 +29,48 @@
               "addressPostalCode": null
             }
           ],
-          "telephone": [
+          "Telephone": [
             {
               "informationSourceId": "Org3",
               "telephoneNumber": []
             }
           ],
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University",
+          "identifier": "contact-org3-001"
         }
       ],
-      "identifier": [
+      "Identifier": [
         {
           "informationSourceId": "Org3",
           "identifier": "100002",
-          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER",
+          "informationSourceOrganization": "Regional University"
         },
         {
           "informationSourceId": "Org3",
           "identifier": "SVU-20250002",
-          "identifierType": "Summit Valley University student ID"
+          "identifierType": "Summit Valley University student ID",
+          "informationSourceOrganization": "Regional University"
         }
       ],
-      "courseLearningExperience": [
+      "CourseLearningExperience": [
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
-            "organizationType": []
+            "organizationType": [],
+            "informationSourceOrganization": "Regional University",
+            "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
-            "identifier": [
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "CS651",
+            "name": "Computer Science 651",
+            "Identifier": [
               {
                 "identifier": "CS651",
                 "identifierType": "Course Code",
@@ -70,33 +81,43 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
               "University"
             ],
-            "informationSourceId": "Org3"
-          },
-          "refCredentialAward": {
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-state-university-org3-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
             "identifier": "32acbc32-9cc5-468b-ab31-aaa01a90aa3e",
+            "name": "Computer Science 651 Course Completion",
             "awardIssueDate": "2020-07-13",
             "credentialAwardee": "Jenna Diaz"
-          }
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "courselearningexperience-org3-001"
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
-            "organizationType": []
+            "organizationType": [],
+            "informationSourceOrganization": "Regional University",
+            "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
-            "identifier": [
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "CS651",
+            "name": "Computer Science 651",
+            "Identifier": [
               {
                 "identifier": "CS651",
                 "identifierType": "Course Code",
@@ -107,33 +128,43 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
               "University"
             ],
-            "informationSourceId": "Org3"
-          },
-          "refCredentialAward": {
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-state-university-org3-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
             "identifier": "68aabc07-81aa-47b7-9c3d-0378d15784d1",
+            "name": "Computer Science 651 Course Completion",
             "awardIssueDate": "2021-02-25T08:49:53Z",
             "credentialAwardee": "Jenna Diaz"
-          }
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "courselearningexperience-org3-002"
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
-            "organizationType": []
+            "organizationType": [],
+            "informationSourceOrganization": "Regional University",
+            "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
-            "identifier": [
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "CS651",
+            "name": "Computer Science 651",
+            "Identifier": [
               {
                 "identifier": "CS651",
                 "identifierType": "Course Code",
@@ -144,33 +175,43 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
               "University"
             ],
-            "informationSourceId": "Org3"
-          },
-          "refCredentialAward": {
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-state-university-org3-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
             "identifier": "be88469a-5e0e-4b09-9975-c921bbb4533a",
+            "name": "Computer Science 651 Course Completion",
             "awardIssueDate": "2023-04-27",
             "credentialAwardee": "Jenna Diaz"
-          }
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "courselearningexperience-org3-003"
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
-            "organizationType": []
+            "organizationType": [],
+            "informationSourceOrganization": "Regional University",
+            "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
-            "identifier": [
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "CS651",
+            "name": "Computer Science 651",
+            "Identifier": [
               {
                 "identifier": "CS651",
                 "identifierType": "Course Code",
@@ -181,33 +222,43 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
               "University"
             ],
-            "informationSourceId": "Org3"
-          },
-          "refCredentialAward": {
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-state-university-org3-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
             "identifier": "5c824455-52ca-4491-9dca-0379028dd03a",
+            "name": "Computer Science 651 Course Completion",
             "awardIssueDate": "2022-10-07T15:11:21Z",
             "credentialAwardee": "Jenna Diaz"
-          }
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "courselearningexperience-org3-004"
         },
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
-            "organizationType": []
+            "organizationType": [],
+            "informationSourceOrganization": "Regional University",
+            "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
-            "identifier": [
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "CS651",
+            "name": "Computer Science 651",
+            "Identifier": [
               {
                 "identifier": "CS651",
                 "identifierType": "Course Code",
@@ -218,31 +269,38 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
               "University"
             ],
-            "informationSourceId": "Org3"
-          },
-          "refCredentialAward": {
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-state-university-org3-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
             "identifier": "d53c9325-fcb7-4ac7-9b33-0d372c44c58d",
+            "name": "Computer Science 651 Course Completion",
             "awardIssueDate": "2021-07-29",
             "credentialAwardee": "Jenna Diaz"
-          }
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "courselearningexperience-org3-005"
         }
       ],
-      "credentialAward": [
+      "CredentialAward": [
         {
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": "84d6de55-974c-47e5-92bf-889addac75ae"
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "84d6de55-974c-47e5-92bf-889addac75ae",
+            "name": "Bachelor of Science (BS): Computer Science"
           },
           "identifier": "fb8e3666-654d-4544-b353-1285242f9a4a",
           "awardIssueDate": "2023-08-22",
@@ -250,393 +308,455 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science Proficiency Certificate"
           },
           "identifier": "cred-proficiency-certificate-001",
           "awardIssueDate": "2024-12-15T10:00:00Z",
           "credentialAwardee": "Jenna Diaz",
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3"
+          "informationSourceOrganization": "Summit Valley University"
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science 651 Course Completion"
           },
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "32acbc32-9cc5-468b-ab31-aaa01a90aa3e",
           "awardIssueDate": "2020-07-13",
           "credentialAwardee": "Jenna Diaz"
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science 651 Course Completion"
           },
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "68aabc07-81aa-47b7-9c3d-0378d15784d1",
           "awardIssueDate": "2021-02-25T08:49:53Z",
           "credentialAwardee": "Jenna Diaz"
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science 651 Course Completion"
           },
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "be88469a-5e0e-4b09-9975-c921bbb4533a",
           "awardIssueDate": "2023-04-27",
           "credentialAwardee": "Jenna Diaz"
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science 651 Course Completion"
           },
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "5c824455-52ca-4491-9dca-0379028dd03a",
           "awardIssueDate": "2022-10-07T15:11:21Z",
           "credentialAwardee": "Jenna Diaz"
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science 651 Course Completion"
           },
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "d53c9325-fcb7-4ac7-9b33-0d372c44c58d",
           "awardIssueDate": "2021-07-29",
           "credentialAwardee": "Jenna Diaz"
         }
       ],
-      "proficiency": [
+      "Proficiency": [
         {
           "informationSourceId": "Org3",
           "name": "Algorithm Design Principles",
           "description": "Applies principles such as divide-and-conquer, greedy strategies, and dynamic programming to solve computational problems.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-algorithm-design-principles-org3-001"
         },
         {
           "informationSourceId": "Org3",
           "name": "Time and Space Complexity Analysis",
           "description": "Analyzes the efficiency of algorithms using Big-O, Big-Theta, and Big-Omega notation.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-time-and-space-complexity-anal-org3-002"
         },
         {
           "informationSourceId": "Org3",
           "name": "Recursive Algorithm Development",
           "description": "Constructs recursive algorithms and explains their execution through call stacks and recurrence relations.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-recursive-algorithm-developmen-org3-003"
         },
         {
           "informationSourceId": "Org3",
           "name": "Sorting and Searching Algorithms",
           "description": "Implements and compares the performance of sorting and searching algorithms like quicksort, mergesort, and binary search.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-sorting-and-searching-algorith-org3-004"
         },
         {
           "informationSourceId": "Org3",
           "name": "Basic Data Structures Usage",
           "description": "Uses arrays, stacks, queues, and linked lists to support algorithm implementation.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-basic-data-structures-usage-org3-005"
         },
         {
           "informationSourceId": "Org3",
           "name": "Graph Algorithms Fundamentals",
           "description": "Implements graph algorithms such as breadth-first search, depth-first search, and shortest path algorithms.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-graph-algorithms-fundamentals-org3-006"
         },
         {
           "informationSourceId": "Org3",
           "name": "Dynamic Programming Techniques",
           "description": "Solves optimization problems using overlapping subproblems and optimal substructure properties.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-dynamic-programming-techniques-org3-007"
         },
         {
           "informationSourceId": "Org3",
           "name": "Abstract Data Type Implementation",
           "description": "Implements abstract data types like stacks, queues, and priority queues in multiple programming contexts.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-abstract-data-type-implementat-org3-008"
         },
         {
           "informationSourceId": "Org3",
           "name": "Tree Structures and Traversals",
           "description": "Applies binary trees, AVL trees, and traversal techniques to solve hierarchical data problems.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-tree-structures-and-traversals-org3-009"
         },
         {
           "informationSourceId": "Org3",
           "name": "Hash Tables and Collision Resolution",
           "description": "Implements hash functions and handles collisions using chaining and open addressing.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-hash-tables-and-collision-reso-org3-010"
         },
         {
           "informationSourceId": "Org3",
           "name": "Heap Structures and Priority Queues",
           "description": "Uses heaps and priority queues in optimization problems such as scheduling and resource management.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-heap-structures-and-priority-q-org3-011"
         },
         {
           "informationSourceId": "Org3",
           "name": "Graph Algorithms and Applications",
           "description": "Applies graph algorithms like Dijkstra\u2019s and Kruskal\u2019s to solve real-world connectivity and pathfinding problems.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-graph-algorithms-and-applicati-org3-012"
         },
         {
           "informationSourceId": "Org3",
           "name": "CPU Components and Functions",
           "description": "Identifies components of a CPU and explains their role in executing instructions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-cpu-components-and-functions-org3-013"
         },
         {
           "informationSourceId": "Org3",
           "name": "Assembly Language Programming",
           "description": "Writes and debugs simple assembly programs to demonstrate low-level instruction execution.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-assembly-language-programming-org3-014"
         },
         {
           "informationSourceId": "Org3",
           "name": "Memory Hierarchy and Access",
           "description": "Compares types of memory and explains their interaction in a modern computing system.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-memory-hierarchy-and-access-org3-015"
         },
         {
           "informationSourceId": "Org3",
           "name": "Process Management and Scheduling",
           "description": "Explains how operating systems manage processes, threads, and scheduling policies.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-process-management-and-schedul-org3-016"
         },
         {
           "informationSourceId": "Org3",
           "name": "Memory Management and Paging",
           "description": "Describes memory management techniques including virtual memory, segmentation, and paging.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-memory-management-and-paging-org3-017"
         },
         {
           "informationSourceId": "Org3",
           "name": "Concurrency and Synchronization",
           "description": "Analyzes concurrency problems and applies synchronization solutions like semaphores and mutexes.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-concurrency-and-synchronizatio-org3-018"
         },
         {
           "informationSourceId": "Org3",
           "name": "File Systems and Storage Management",
           "description": "Explains how operating systems manage files, directories, and storage devices.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-file-systems-and-storage-manag-org3-019"
         },
         {
           "informationSourceId": "Org3",
           "name": "Software Development Life Cycle (SDLC) Models",
           "description": "Compares SDLC models including Waterfall and Agile, selecting appropriate methodologies for projects.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-software-development-life-cycl-org3-020"
         },
         {
           "informationSourceId": "Org3",
           "name": "Requirements Elicitation and Analysis",
           "description": "Gathers and analyzes software requirements using interviews and modeling techniques.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-requirements-elicitation-and-a-org3-021"
         },
         {
           "informationSourceId": "Org3",
           "name": "Software Design Principles",
           "description": "Applies modularity, abstraction, and cohesion principles in scalable software design.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-software-design-principles-org3-022"
         },
         {
           "informationSourceId": "Org3",
           "name": "Version Control and Collaboration",
           "description": "Uses tools like Git for collaborative development and change tracking.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-version-control-and-collaborat-org3-023"
         },
         {
           "informationSourceId": "Org3",
           "name": "Software Testing Techniques",
           "description": "Implements unit, integration, and system tests to ensure software quality.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Jenna Diaz",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-software-testing-techniques-org3-024"
         }
       ],
       "informationSourceId": "Org3"
     }
   ],
-  "course": [
+  "Course": [
     {
       "informationSourceId": "Org3",
-      "identifier": [
+      "Identifier": [
         {
           "identifier": "CS651",
           "identifierType": "Course Code",
           "identifierVerification": [
             "Academic Records"
           ],
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         }
-      ]
+      ],
+      "informationSourceOrganization": "Regional University"
     }
   ],
-  "organization": [
+  "Organization": [
     {
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-      "contact": [
+      "Contact": [
         {
-          "address": [
+          "Address": [
             {
               "addressCity": "Aspen Falls",
               "countryCode": "US",
@@ -646,7 +766,7 @@
               "informationSourceId": "Org3"
             }
           ],
-          "email": [
+          "Email": [
             {
               "emailAddress": [
                 "info@summitvalley.edu"
@@ -655,7 +775,7 @@
             }
           ],
           "websiteAddress": "https://www.summitvalley.edu/",
-          "telephone": [
+          "Telephone": [
             {
               "telephoneNumber": [
                 "888-555-7210"
@@ -663,29 +783,35 @@
               "informationSourceId": "Org3"
             }
           ],
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University",
+          "identifier": "contact-org3-001"
         }
       ],
       "imageUrl": "https://cdn.summitvalley.edu/assets/logo.svg",
-      "identifier": [
+      "Identifier": [
         {
           "identifier": "999112233",
           "identifierType": "Federal employer identification number",
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         },
         {
           "identifier": "123456789",
           "identifierType": "Dun and Bradstreet number",
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         },
         {
           "identifier": "https://credentialfinder.org/organization/999/Summit_Valley_University",
           "identifierType": "credentialfinder.org",
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         }
       ],
       "identificationSystem": "Summit Valley University SIS",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Regional University"
     },
     {
       "identificationSystem": "svu-corporate-partner-id",
@@ -693,13 +819,17 @@
       "organizationType": [
         "Company"
       ],
-      "informationSourceId": "Org3"
+      "informationSourceId": "Org3",
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-summit-valley-corporate-partne-org3-002"
     },
     {
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "identificationSystem": "Summit Valley University SIS",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-summit-valley-university-org3-003"
     },
     {
       "identificationSystem": "stateu-state-university-id",
@@ -707,10 +837,12 @@
       "organizationType": [
         "University"
       ],
-      "informationSourceId": "Org3"
+      "informationSourceId": "Org3",
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-state-university-org3-004"
     }
   ],
-  "credential": [
+  "Credential": [
     {
       "informationSourceId": "Org3",
       "identifier": "84d6de55-974c-47e5-92bf-889addac75ae",
@@ -718,20 +850,20 @@
       "format": [
         "http://schema.hropenstandards.org/4.4/recruiting/json/ler-rs/LER-RSType.json"
       ],
-      "alignedProgram": [
+      "AlignedProgram": [
         {
           "specialization": "Artificial Intelligence and Machine Learning",
           "informationSourceId": "Org3"
         }
       ],
-      "issuedByRefOrganization": [
+      "IssuedByRefOrganization": [
         {
           "informationSourceId": "Org3",
           "name": "Summit Valley University",
           "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-          "contact": [
+          "Contact": [
             {
-              "address": [
+              "Address": [
                 {
                   "addressCity": "Aspen Falls",
                   "countryCode": "US",
@@ -741,7 +873,7 @@
                   "informationSourceId": "Org3"
                 }
               ],
-              "email": [
+              "Email": [
                 {
                   "emailAddress": [
                     "info@summitvalley.edu"
@@ -750,7 +882,7 @@
                 }
               ],
               "websiteAddress": "https://www.summitvalley.edu/",
-              "telephone": [
+              "Telephone": [
                 {
                   "telephoneNumber": [
                     "888-555-7210"
@@ -758,32 +890,38 @@
                   "informationSourceId": "Org3"
                 }
               ],
-              "informationSourceId": "Org3"
+              "informationSourceId": "Org3",
+              "informationSourceOrganization": "Regional University",
+              "identifier": "contact-org3-001"
             }
           ],
           "imageUrl": "https://cdn.summitvalley.edu/assets/logo.svg",
-          "identifier": [
+          "Identifier": [
             {
               "identifier": "999112233",
               "identifierType": "Federal employer identification number",
-              "informationSourceId": "Org3"
+              "informationSourceId": "Org3",
+              "informationSourceOrganization": "Regional University"
             },
             {
               "identifier": "123456789",
               "identifierType": "Dun and Bradstreet number",
-              "informationSourceId": "Org3"
+              "informationSourceId": "Org3",
+              "informationSourceOrganization": "Regional University"
             },
             {
               "identifier": "https://credentialfinder.org/organization/999/Summit_Valley_University",
               "identifierType": "credentialfinder.org",
-              "informationSourceId": "Org3"
+              "informationSourceId": "Org3",
+              "informationSourceOrganization": "Regional University"
             }
           ],
           "identificationSystem": "summit-valley-university-sis",
-          "organizationType": []
+          "organizationType": [],
+          "informationSourceOrganization": "Regional University"
         }
       ],
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org3",
           "accreditingAgency": "Higher Learning Commission",
@@ -791,11 +929,13 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "Regional University"
     },
     {
       "informationSourceId": "Org3",
-      "identifier": "84d6de55-974c-47e5-92bf-889addac75ae"
+      "identifier": "84d6de55-974c-47e5-92bf-889addac75ae",
+      "informationSourceOrganization": "Regional University"
     }
   ],
   "informationSourceId": "Org3"

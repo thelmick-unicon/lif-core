@@ -35,6 +35,7 @@ dependencies = [
     "sqlalchemy~=2.0",
     "sqlmodel~=0.0",
     "strawberry-graphql[asgi]~=0.275",
+    "testing-postgresql>=1.3.0",
     "uvicorn~=0.34",
 ]
 
@@ -67,6 +68,10 @@ dev-mode-dirs = ["components", "bases", "development", "."]
 
 [tool.uv]
 dev-dependencies = ["polylith-cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+asyncio_mode = "auto"
 
 [tool.polylith.bricks]
 "bases/lif/query_cache_module" = "lif/query_cache_module"

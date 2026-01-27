@@ -1,16 +1,18 @@
 {
-  "person": [
+  "Person": [
     {
-      "name": [
+      "Name": [
         {
           "informationSourceId": "Org3",
           "lastName": "Green",
-          "firstName": "Renee"
+          "firstName": "Renee",
+          "informationSourceOrganization": "Regional University",
+          "identifier": "name-renee-green-org3-001"
         }
       ],
-      "contact": [
+      "Contact": [
         {
-          "email": [
+          "Email": [
             {
               "informationSourceId": "Org3",
               "emailAddress": [
@@ -18,7 +20,7 @@
               ]
             }
           ],
-          "address": [
+          "Address": [
             {
               "informationSourceId": "Org3",
               "addressCity": "Escondido",
@@ -27,7 +29,7 @@
               "addressPostalCode": "92025"
             }
           ],
-          "telephone": [
+          "Telephone": [
             {
               "informationSourceId": "Org3",
               "telephoneNumber": [
@@ -35,33 +37,43 @@
               ]
             }
           ],
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University",
+          "identifier": "contact-org3-001"
         }
       ],
-      "identifier": [
+      "Identifier": [
         {
           "informationSourceId": "Org3",
           "identifier": "100004",
-          "identifierType": "SCHOOL_ASSIGNED_NUMBER"
+          "identifierType": "SCHOOL_ASSIGNED_NUMBER",
+          "informationSourceOrganization": "Regional University"
         },
         {
           "informationSourceId": "Org3",
           "identifier": "SVU-20250004",
-          "identifierType": "Summit Valley University student ID"
+          "identifierType": "Summit Valley University student ID",
+          "informationSourceOrganization": "Regional University"
         }
       ],
-      "courseLearningExperience": [
+      "CourseLearningExperience": [
         {
           "informationSourceId": "Org3",
-          "assertedByRefOrganization": {
+          "informationSourceOrganization": "Summit Valley University",
+          "AssertedByRefOrganization": {
             "informationSourceId": "Org3",
             "name": "Summit Valley University",
             "identificationSystem": "Summit Valley University SIS",
-            "organizationType": []
+            "organizationType": [],
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-summit-valley-university-org3-001"
           },
-          "refCourse": {
+          "RefCourse": {
             "informationSourceId": "Org3",
-            "identifier": [
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "CS651",
+            "name": "Computer Science 651",
+            "Identifier": [
               {
                 "identifier": "CS651",
                 "identifierType": "Course Code",
@@ -72,31 +84,37 @@
               }
             ]
           },
-          "offeredByRefOrganization": {
+          "OfferedByRefOrganization": {
             "identificationSystem": "stateu-state-university-id",
             "name": "State University",
             "organizationType": [
               "University"
             ],
-            "informationSourceId": "Org3"
-          },
-          "refCredentialAward": {
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "organization-state-university-org3-001"
+          },
+          "RefCredentialAward": {
+            "informationSourceId": "Org3",
+            "informationSourceOrganization": "Summit Valley University",
             "identifier": "34024cb4-4a2d-4ed6-ba42-50c65cd688b4",
+            "name": "Computer Science 651 Course Completion",
             "awardIssueDate": "2021-11-15T20:13:56Z",
             "credentialAwardee": "Renee Green"
-          }
+          },
+          "identifier": "courselearningexperience-org3-001"
         }
       ],
-      "credentialAward": [
+      "CredentialAward": [
         {
           "informationSourceId": "Org3",
-          "informationSourceOrganization": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "awardStatus": "InProgress",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1"
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1",
+            "name": "Adobe Certified Associate - Visual Design"
           },
           "identifier": "230826f6-7b40-4c79-9589-fb290deea1a3",
           "awardIssueDate": "2022-07-31T13:14:17Z",
@@ -104,127 +122,147 @@
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Visual Design Proficiency Certificate"
           },
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "cred-proficiency-certificate-001",
           "awardIssueDate": "2024-12-15T10:00:00Z",
-          "credentialAwardee": "Renee Green",
-          "informationSourceId": "Org3"
+          "credentialAwardee": "Renee Green"
         },
         {
           "awardStatus": "Completed",
-          "instanceOfRefCredential": {
+          "InstanceOfRefCredential": {
             "informationSourceId": "Org3",
-            "identifier": ""
+            "informationSourceOrganization": "Summit Valley University",
+            "identifier": "",
+            "name": "Computer Science 651 Course Completion"
           },
           "informationSourceId": "Org3",
+          "informationSourceOrganization": "Summit Valley University",
           "identifier": "34024cb4-4a2d-4ed6-ba42-50c65cd688b4",
           "awardIssueDate": "2021-11-15T20:13:56Z",
           "credentialAwardee": "Renee Green"
         }
       ],
-      "proficiency": [
+      "Proficiency": [
         {
           "informationSourceId": "Org3",
           "name": "Applies Elements and Principles of Design",
           "description": "Demonstrates understanding and application of the elements and principles of design in visual compositions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-applies-elements-and-principle-org3-001"
         },
         {
           "informationSourceId": "Org3",
           "name": "Utilizes Color Theory",
           "description": "Applies color theory concepts including harmony, contrast, and psychological impact in design work.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-utilizes-color-theory-org3-002"
         },
         {
           "informationSourceId": "Org3",
           "name": "Applies Typography Principles",
           "description": "Uses typography effectively by applying principles such as spacing, alignment, readability, and expression.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-applies-typography-principles-org3-003"
         },
         {
           "informationSourceId": "Org3",
           "name": "Creates Layouts for Print and Digital Media",
           "description": "Develops layouts suitable for both print and digital platforms with attention to format constraints and user experience.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-creates-layouts-for-print-and--org3-004"
         },
         {
           "informationSourceId": "Org3",
           "name": "Employs Design Thinking Process",
           "description": "Applies the design thinking process to define, ideate, prototype, and test design solutions.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-employs-design-thinking-proces-org3-005"
         },
         {
           "informationSourceId": "Org3",
           "name": "Uses Industry-Standard Design Software",
           "description": "Produces digital assets using industry-standard design tools such as Adobe Photoshop or Illustrator.",
-          "refCredentialAward": {
+          "RefCredentialAward": {
             "identifier": "cred-proficiency-certificate-001",
             "awardIssueDate": "2024-12-15T10:00:00Z",
             "credentialAwardee": "Renee Green",
             "informationSourceId": "Org3",
-            "informationSourceOrganization": "Org3"
-          }
+            "informationSourceOrganization": "Summit Valley University"
+          },
+          "informationSourceOrganization": "Summit Valley University",
+          "identifier": "proficiency-uses-industry-standard-design--org3-006"
         }
       ],
       "informationSourceId": "Org3"
     }
   ],
-  "course": [
+  "Course": [
     {
       "informationSourceId": "Org3",
-      "identifier": [
+      "Identifier": [
         {
           "identifier": "CS651",
           "identifierType": "Course Code",
           "identifierVerification": [
             "Academic Records"
           ],
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         }
-      ]
+      ],
+      "informationSourceOrganization": "Regional University"
     }
   ],
-  "organization": [
+  "Organization": [
     {
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "description": "Summit Valley University (SVU) is a for-profit online university offering career-focused associate, bachelor's, and master's degree programs. SVU delivers instruction through traditional term-based courses led by experienced faculty. With an emphasis on practical skills and industry alignment, SVU serves a diverse student population seeking flexible, accessible pathways to advancement in business, healthcare, information technology, and criminal justice.",
-      "contact": [
+      "Contact": [
         {
-          "address": [
+          "Address": [
             {
               "addressCity": "Aspen Falls",
               "countryCode": "US",
@@ -234,7 +272,7 @@
               "informationSourceId": "Org3"
             }
           ],
-          "email": [
+          "Email": [
             {
               "emailAddress": [
                 "info@summitvalley.edu"
@@ -243,7 +281,7 @@
             }
           ],
           "websiteAddress": "https://www.summitvalley.edu/",
-          "telephone": [
+          "Telephone": [
             {
               "telephoneNumber": [
                 "888-555-7210"
@@ -251,29 +289,35 @@
               "informationSourceId": "Org3"
             }
           ],
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University",
+          "identifier": "contact-org3-001"
         }
       ],
       "imageUrl": "https://cdn.summitvalley.edu/assets/logo.svg",
-      "identifier": [
+      "Identifier": [
         {
           "identifier": "999112233",
           "identifierType": "Federal employer identification number",
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         },
         {
           "identifier": "123456789",
           "identifierType": "Dun and Bradstreet number",
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         },
         {
           "identifier": "https://credentialfinder.org/organization/999/Summit_Valley_University",
           "identifierType": "credentialfinder.org",
-          "informationSourceId": "Org3"
+          "informationSourceId": "Org3",
+          "informationSourceOrganization": "Regional University"
         }
       ],
       "identificationSystem": "Summit Valley University SIS",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Regional University"
     },
     {
       "identificationSystem": "svu-corporate-partner-id",
@@ -281,13 +325,17 @@
       "organizationType": [
         "Company"
       ],
-      "informationSourceId": "Org3"
+      "informationSourceId": "Org3",
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-summit-valley-corporate-partne-org3-002"
     },
     {
       "informationSourceId": "Org3",
       "name": "Summit Valley University",
       "identificationSystem": "Summit Valley University SIS",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-summit-valley-university-org3-003"
     },
     {
       "identificationSystem": "stateu-state-university-id",
@@ -295,16 +343,20 @@
       "organizationType": [
         "University"
       ],
-      "informationSourceId": "Org3"
+      "informationSourceId": "Org3",
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-state-university-org3-004"
     },
     {
       "informationSourceId": "Org3",
       "name": "Adobe Systems Incorporated",
       "identificationSystem": "summit-valley-university-sis",
-      "organizationType": []
+      "organizationType": [],
+      "informationSourceOrganization": "Regional University",
+      "identifier": "organization-adobe-systems-incorporated-org3-005"
     }
   ],
-  "credential": [
+  "Credential": [
     {
       "informationSourceId": "Org3",
       "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1",
@@ -313,19 +365,21 @@
         "Digital Badge",
         "PDF Certificate"
       ],
-      "alignedProgram": [
+      "AlignedProgram": [
         {
           "specialization": "Graphic Design",
           "informationSourceId": "Org3"
         }
       ],
-      "issuedByRefOrganization": {
+      "IssuedByRefOrganization": {
         "informationSourceId": "Org3",
         "name": "Adobe Systems Incorporated",
         "identificationSystem": "summit-valley-university-sis",
-        "organizationType": []
+        "organizationType": [],
+        "informationSourceOrganization": "Regional University",
+        "identifier": "organization-adobe-systems-incorporated-org3-001"
       },
-      "accreditation": [
+      "Accreditation": [
         {
           "informationSourceId": "Org3",
           "accreditingAgency": "Higher Learning Commission",
@@ -333,11 +387,13 @@
           "dateAccredited": "2020-01-01",
           "accreditationStatus": "Active"
         }
-      ]
+      ],
+      "informationSourceOrganization": "Regional University"
     },
     {
       "informationSourceId": "Org3",
-      "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1"
+      "identifier": "dbd3c22f-1fd2-4829-b39d-be88d2052ca1",
+      "informationSourceOrganization": "Regional University"
     }
   ],
   "informationSourceId": "Org3"

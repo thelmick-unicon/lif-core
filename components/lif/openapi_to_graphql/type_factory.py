@@ -25,6 +25,12 @@ import httpx
 import strawberry
 from dateutil import parser
 
+from lif.lif_schema_config import (
+    XSD_TO_PYTHON,
+    is_mutable as schema_is_mutable,
+    is_queryable as schema_is_queryable,
+    resolve_ref as schema_resolve_ref,
+)
 from lif.logging import get_logger
 from lif.string_utils import (
     convert_dates_to_strings,
@@ -44,16 +50,8 @@ LIF_QUERY_TIMEOUT_SECONDS = int(os.getenv("LIF_QUERY_TIMEOUT_SECONDS", "20"))
 
 # === Constants ===
 
-DATATYPE_MAP: Dict[str, Type[Any]] = {
-    "xsd:string": str,
-    "xsd:decimal": float,
-    "xsd:integer": int,
-    "xsd:boolean": bool,
-    "xsd:date": date,
-    "xsd:dateTime": datetime,
-    "xsd:datetime": datetime,
-    "xsd:anyURI": str,
-}
+# Use centralized type mappings from lif_schema_config
+DATATYPE_MAP = XSD_TO_PYTHON
 
 input_type_cache: Dict[str, Optional[Type[Any]]] = {}
 
@@ -64,6 +62,8 @@ input_type_cache: Dict[str, Optional[Type[Any]]] = {}
 def resolve_ref(ref: str, openapi: Dict[str, Any]) -> Dict[str, Any]:
     """Resolve a JSON reference in the OpenAPI document.
 
+    Delegates to centralized implementation in lif_schema_config.
+
     Args:
         ref (str): The JSON reference string.
         openapi (Dict[str, Any]): The OpenAPI document.
@@ -71,11 +71,7 @@ def resolve_ref(ref: str, openapi: Dict[str, Any]) -> Dict[str, Any]:
     Returns:
         Dict[str, Any]: The referenced object in the OpenAPI document.
     """
-    path = ref.lstrip("#/").split("/")
-    node: Any = openapi
-    for part in path:
-        node = node[part]
-    return node
+    return schema_resolve_ref(ref, openapi)
 
 
 # === Type/Enum Mapping and Queryable Propagation ===
@@ -145,11 +141,26 @@ def propagate_queryables_to_parent(
 
 
 def input_asdict(obj: Any) -> Any:
-    """Recursively converts a dataclass input object to a dict."""
+    """Recursively converts a dataclass input object to a dict.
+
+    Uses Strawberry's type definition to get the original GraphQL field names,
+    preserving the schema's case (e.g., Identifier instead of identifier).
+    """
     if hasattr(obj, "__dataclass_fields__"):
         result = {}
+
+        # Build a mapping from Python field name to GraphQL field name using Strawberry's type info
+        graphql_names = {}
+        strawberry_def = getattr(type(obj), "__strawberry_definition__", None) or getattr(
+            type(obj), "_type_definition", None
+        )
+        if strawberry_def and hasattr(strawberry_def, "fields"):
+            for f in strawberry_def.fields:
+                graphql_names[f.name] = getattr(f, "graphql_name", f.name)
+
         for field in obj.__dataclass_fields__.values():
-            key = field.metadata.get("graphql_name", field.name)
+            # Use Strawberry's graphql_name if available, else metadata, else Python name
+            key = graphql_names.get(field.name, field.metadata.get("graphql_name", field.name))
             value = getattr(obj, field.name)
             if isinstance(value, list):
                 value = [input_asdict(item) for item in value]
@@ -195,25 +206,19 @@ def get_selected_field_paths(
 
 
 def is_queryable(field_def: dict) -> bool:
-    """Checks if this field or any nested field is x-queryable."""
-    if field_def.get("x-queryable", False):
-        return True
-    if field_def.get("type") == "object" and "properties" in field_def:
-        return any(is_queryable(sub_def) for sub_def in field_def["properties"].values())
-    if field_def.get("type") == "array" and "properties" in field_def:
-        return any(is_queryable(sub_def) for sub_def in field_def["properties"].values())
-    return False
+    """Checks if this field or any nested field is x-queryable.
+
+    Delegates to centralized implementation in lif_schema_config.
+    """
+    return schema_is_queryable(field_def)
 
 
 def is_mutable(field_def: dict) -> bool:
-    """Checks if this field or any nested field is x-mutable."""
-    if field_def.get("x-mutable", False):
-        return True
-    if field_def.get("type") == "object" and "properties" in field_def:
-        return any(is_mutable(sub_def) for sub_def in field_def["properties"].values())
-    if field_def.get("type") == "array" and "properties" in field_def:
-        return any(is_mutable(sub_def) for sub_def in field_def["properties"].values())
-    return False
+    """Checks if this field or any nested field is x-mutable.
+
+    Delegates to centralized implementation in lif_schema_config.
+    """
+    return schema_is_mutable(field_def)
 
 
 def convert_enums(obj):
@@ -315,8 +320,8 @@ def create_type(
                 field_type_class = Optional[field_type_class]
             annotations[safe_field_name] = field_type_class
 
-            if field_def.get("Description"):
-                class_fields[safe_field_name] = strawberry.field(description=field_def["Description"])
+            # Always set the GraphQL field name to preserve original schema case (e.g., Identifier, not identifier)
+            class_fields[safe_field_name] = strawberry.field(name=field_name, description=field_def.get("Description"))
 
         placeholder.__annotations__ = annotations
         for field in annotations:
@@ -372,6 +377,7 @@ def create_mutable_input_type(
         if not is_mutable(field_def):
             continue
 
+        # Use field_name (not to_camel_case) to preserve original schema case (e.g., Identifier)
         safe_field_name = safe_identifier(field_name)
         if field_def.get("type") == "object" and "properties" in field_def:
             nested_type_name = f"{type_name}_{safe_field_name}MutableInput"
@@ -380,7 +386,7 @@ def create_mutable_input_type(
             )
             if nested_input_type is not None:
                 input_annotations[safe_field_name] = Optional[nested_input_type]
-                input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+                input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
         elif field_def.get("type") == "array" and "properties" in field_def:
             nested_type_name = f"{type_name}_{safe_field_name}MutableItemInput"
             nested_input_type = create_mutable_input_type(
@@ -388,16 +394,16 @@ def create_mutable_input_type(
             )
             if nested_input_type is not None:
                 input_annotations[safe_field_name] = Optional[List[nested_input_type]]
-                input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+                input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
         elif "enum" in field_def and field_def.get("x-mutable", False):
             enum_type_name = to_pascal_case(type_name, field_name, "Enum")
             enum_type = create_enum_type(enum_type_name, field_def["enum"], created_types)
             input_annotations[safe_field_name] = Optional[enum_type]
-            input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+            input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
         else:
             py_type = map_datatype(field_def)
             input_annotations[safe_field_name] = Optional[py_type]
-            input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+            input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
 
     if not input_class_fields:
         input_type_cache[cache_key] = None
@@ -413,16 +419,57 @@ def create_mutable_input_type(
 # === Dataclass Construction: Recursive Conversion ===
 
 
+def is_strawberry_type(cls: Any) -> bool:
+    """Check if a class is a Strawberry type."""
+    # Check for Strawberry-specific attributes
+    if hasattr(cls, "__strawberry_definition__") or hasattr(cls, "_type_definition"):
+        return True
+    # Also check if it has __dataclass_fields__ (Strawberry converts to dataclass)
+    if hasattr(cls, "__dataclass_fields__"):
+        return True
+    return False
+
+
+def is_dataclass_or_strawberry(cls: Any) -> bool:
+    """Check if a class is a dataclass or a Strawberry type."""
+    return dataclasses.is_dataclass(cls) or is_strawberry_type(cls)
+
+
+def can_instantiate_with_kwargs(cls: Any) -> bool:
+    """Check if a class can be instantiated with keyword arguments (has annotations)."""
+    try:
+        return hasattr(cls, "__annotations__") and len(cls.__annotations__) > 0
+    except Exception:
+        return False
+
+
 def resolve_actual_type(tp):
-    # Unwrap Strawberry wrappers (Optional, List, etc.)
+    """Unwrap Strawberry Optional wrapper but preserve List types.
+
+    We only unwrap StrawberryOptional, not StrawberryList, because we need
+    to know when a field is a list so we can process its items.
+    """
+    # Unwrap Strawberry Optional wrapper only (not List!)
     while True:
         class_name = type(tp).__name__
-        if class_name.startswith("Strawberry") and hasattr(tp, "_type"):
-            tp = tp._type
-        elif class_name.startswith("Strawberry") and hasattr(tp, "of_type"):
-            tp = tp.of_type
+        # Only unwrap StrawberryOptional, not StrawberryList
+        if class_name == "StrawberryOptional":
+            if hasattr(tp, "of_type"):
+                tp = tp.of_type
+            elif hasattr(tp, "_type"):
+                tp = tp._type
+            else:
+                break
         else:
             break
+
+    # Handle StrawberryList - convert to typing.List with the inner type
+    class_name = type(tp).__name__
+    if class_name == "StrawberryList":
+        inner_type = tp.of_type if hasattr(tp, "of_type") else (tp._type if hasattr(tp, "_type") else None)
+        if inner_type is not None:
+            # Return as a proper typing.List so get_origin works
+            return List[resolve_actual_type(inner_type)]
 
     # Unwrap typing.Optional/Union
     origin = get_origin(tp)
@@ -493,6 +540,8 @@ def dict_to_dataclass(cls: Any, data: Any) -> Any:
     # Handle list/array types
     if origin in (list, List):
         item_type = get_args(actual_cls)[0]
+        # Resolve the item type in case it's a Strawberry wrapper
+        resolved_item_type = resolve_actual_type(item_type)
         if isinstance(data, dict):  # Defensive: treat dict as [dict]
             data = [data]
         if isinstance(data, bool):
@@ -503,31 +552,47 @@ def dict_to_dataclass(cls: Any, data: Any) -> Any:
         result = []
         for item in data:
             try:
-                result.append(dict_to_dataclass(item_type, item))
+                converted = dict_to_dataclass(resolved_item_type, item)
+                result.append(converted)
             except Exception as exc:
                 logger.warning(f"dict_to_dataclass: Failed to parse list item {item}: {exc}. Skipping.")
         return result
 
-    # Handle dataclasses
-    if dataclasses.is_dataclass(actual_cls):
+    # Check if this is a type we can handle
+    is_known_type = is_dataclass_or_strawberry(actual_cls)
+    can_instantiate = can_instantiate_with_kwargs(actual_cls)
+
+    # Handle dataclasses and Strawberry types
+    if is_known_type or can_instantiate:
         if not isinstance(data, dict):
             raise TypeError(f"Expected dict for {cls}, got {type(data)}: {data}")
-        field_types = {f.name: f.type for f in dataclasses.fields(actual_cls)}
+
+        # Get field info - try dataclasses.fields first, fall back to __annotations__
+        field_types = {}
+        field_names = []
+        if dataclasses.is_dataclass(actual_cls):
+            field_types = {f.name: f.type for f in dataclasses.fields(actual_cls)}
+            field_names = [f.name for f in dataclasses.fields(actual_cls)]
+        elif hasattr(actual_cls, "__annotations__"):
+            field_types = actual_cls.__annotations__
+            field_names = list(actual_cls.__annotations__.keys())
+
         instance_data = {}
-        for f in dataclasses.fields(actual_cls):
-            field_name = f.name
-            field_type = field_types[field_name]
+        for field_name in field_names:
+            field_type = field_types.get(field_name)
             value = data.get(field_name, None)
             try:
-                if value is not None:
+                if value is not None and field_type is not None:
                     real_type = resolve_actual_type(field_type)
                     origin = get_origin(real_type)
                     if origin in (list, List):
                         item_type = get_args(real_type)[0]
+                        # Resolve the item type as well in case it's wrapped
+                        resolved_item_type = resolve_actual_type(item_type)
                         if isinstance(value, dict):
                             value = [value]
-                        value = [dict_to_dataclass(item_type, v) for v in value]
-                    elif dataclasses.is_dataclass(real_type):
+                        value = [dict_to_dataclass(resolved_item_type, v) for v in value]
+                    elif is_dataclass_or_strawberry(real_type) or can_instantiate_with_kwargs(real_type):
                         if isinstance(value, dict):
                             value = dict_to_dataclass(real_type, value)
                     elif is_datetime_type(field_type):
@@ -590,6 +655,7 @@ def create_nested_input_type(
             continue
 
         safe_field_name = safe_identifier(field_name)
+        # Use field_name (not to_camel_case) to preserve original schema case (e.g., Identifier)
         if field_def.get("type") == "object" and "properties" in field_def:
             nested_type_name = f"{type_name}_{safe_field_name}Input"
             nested_input_type = create_nested_input_type(
@@ -597,7 +663,7 @@ def create_nested_input_type(
             )
             if nested_input_type is not None:
                 input_annotations[safe_field_name] = Optional[nested_input_type]
-                input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+                input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
         elif field_def.get("type") == "array" and "properties" in field_def:
             nested_type_name = f"{type_name}_{safe_field_name}ItemInput"
             nested_input_type = create_nested_input_type(
@@ -605,16 +671,16 @@ def create_nested_input_type(
             )
             if nested_input_type is not None:
                 input_annotations[safe_field_name] = Optional[List[nested_input_type]]
-                input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+                input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
         elif "enum" in field_def and field_def.get("x-queryable", False):
             enum_type_name = to_pascal_case(type_name, field_name, "Enum")
             enum_type = create_enum_type(enum_type_name, field_def["enum"], created_types)
             input_annotations[safe_field_name] = Optional[enum_type]
-            input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+            input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
         else:
             py_type = map_datatype(field_def)
             input_annotations[safe_field_name] = Optional[py_type]
-            input_class_fields[safe_field_name] = strawberry.field(default=None, name=to_camel_case(field_name))
+            input_class_fields[safe_field_name] = strawberry.field(default=None, name=field_name)
 
     if not input_class_fields:
         input_type_cache[type_name] = None
@@ -680,14 +746,16 @@ def build_root_query_type(
             deserializing the result into dataclasses.
             """
             # Convert the input filter into a dict, handling enums
+            # input_asdict now preserves original GraphQL field names (e.g., Identifier)
             filter_dict_raw = input_asdict(filter) if filter else None
             filter_dict = convert_enums(filter_dict_raw) if filter_dict_raw else None
-            filter_dict = dict_keys_to_camel(filter_dict) if filter_dict else None
+            # Note: removed dict_keys_to_camel since input_asdict now returns correct schema names
 
             # Gather selection info from the GraphQL query
-            root_query_name = info.field_name
+            # Use PascalCase for the root name since MongoDB documents use PascalCase keys
+            root_query_name = info.field_name[0].upper() + info.field_name[1:]  # "person" -> "Person"
             fragments = get_fragments_from_info(info)
-            selected_fields = get_selected_field_paths(info.field_nodes, fragments, info.field_name)
+            selected_fields = get_selected_field_paths(info.field_nodes, fragments, root_query_name)
 
             # Structure the query for the backend API
             filter_wrapped = {root_query_name: filter_dict} if filter_dict else None
@@ -794,18 +862,19 @@ def build_root_mutation_type(
     update_field_name = f"update{root_name}"
 
     async def update_resolver(self, info, filter: Any, input: Any) -> Any:
+        # input_asdict now preserves original GraphQL field names (e.g., Identifier)
         filter_dict_raw = input_asdict(filter)
         filter_dict = convert_enums(filter_dict_raw)
-        filter_dict = dict_keys_to_camel(filter_dict)
+        # Note: removed dict_keys_to_camel since input_asdict now returns correct schema names
 
         input_dict_raw = input_asdict(input)
         input_dict = convert_enums(input_dict_raw)
-        input_dict = dict_keys_to_camel(input_dict)
+        # Note: removed dict_keys_to_camel since input_asdict now returns correct schema names
         input_dict = convert_dates_to_strings(input_dict)
 
-        # Wrap the dict under 'person'
-        filter_wrapped = {"person": filter_dict} if filter_dict else {}
-        input_wrapped = {"person": input_dict} if input_dict else {}
+        # Wrap the dict under 'Person' (PascalCase to match MongoDB document keys)
+        filter_wrapped = {"Person": filter_dict} if filter_dict else {}
+        input_wrapped = {"Person": input_dict} if input_dict else {}
 
         root_mutation_name = info.field_name
         payload = {root_mutation_name: {"filter": filter_wrapped, "input": input_wrapped}}
