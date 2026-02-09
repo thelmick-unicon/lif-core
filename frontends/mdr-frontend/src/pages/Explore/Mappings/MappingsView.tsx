@@ -169,6 +169,13 @@ const MappingsView: React.FC = () => {
         startY: number;
         transforms: DisplayTransformationData[];
     } | null>(null);
+    // Ref mirror of reassignHoverTargetId so the reassign effect's handleUp reads
+    // the latest value without needing reassignHoverTargetId in the dep array
+    // (which caused effect re-runs + duplicate handleUp registrations).
+    const reassignHoverTargetIdRef = useRef<number | null>(null);
+    // Guard against duplicate handleUp invocations caused by the synthetic mouseup
+    // that handleMove dispatches after the button is released.
+    const reassignProcessingRef = useRef(false);
 
     // Build a JSONata-compatible expression path like EntityA.EntityB.Attribute from an EntityIdPath.
     // Uses entity/attribute NAMES (not IDs) because JSONata navigates JSON documents by property names.
@@ -242,6 +249,7 @@ const MappingsView: React.FC = () => {
         setReassignTransformations([]);
         setReassignPaths([]);
         setReassignHoverTargetId(null);
+        reassignHoverTargetIdRef.current = null;
         setSelectedTargetAttrId(null);
         setSelectedTransformationIds(new Set());
         setSelectionAll(false);
@@ -1555,12 +1563,21 @@ const MappingsView: React.FC = () => {
                 }
                 node = node.parentElement;
             }
+            reassignHoverTargetIdRef.current = targetId;
             setReassignHoverTargetId(targetId);
         };
         const handleUp = async () => {
+            // Guard: prevent duplicate invocations caused by the synthetic mouseup
+            // that handleMove dispatches when e.buttons indicates the button is already released.
+            if (reassignProcessingRef.current) return;
+            reassignProcessingRef.current = true;
+            // Read from ref so we always get the latest hover target, regardless of
+            // which effect-closure version of handleUp fires.
+            const reassignHoverTargetId = reassignHoverTargetIdRef.current;
             const droppingOnTarget =
                 !!reassignHoverTargetId &&
                 reassignHoverTargetId !== selectedTargetAttrId;
+            try {
             if (droppingOnTarget) {
                 // Determine target path from DOM or tree
                 const targetAttrEl = rightScrollRef.current?.querySelector(
@@ -1920,11 +1937,15 @@ const MappingsView: React.FC = () => {
                     cleanupSelection();
                 }
             }
+            } finally {
             // Always exit reassign mode and clear dashed overlays
             setReassignActive(false);
             setReassignPaths([]);
             setReassignHoverTargetId(null);
+            reassignHoverTargetIdRef.current = null;
             pendingReassignRef.current = null;
+            reassignProcessingRef.current = false;
+            }
         };
         window.addEventListener('mousemove', handleMove);
         window.addEventListener('mouseup', handleUp, { once: true });
@@ -1935,7 +1956,6 @@ const MappingsView: React.FC = () => {
     }, [
         reassignActive,
         reassignTransformations,
-        reassignHoverTargetId,
         selectedTargetAttrId,
     cleanupSelection,
     wireDetachDragging,
@@ -1947,6 +1967,7 @@ const MappingsView: React.FC = () => {
         if (!reassignActive) {
             setReassignPaths([]);
             setReassignHoverTargetId(null);
+            reassignHoverTargetIdRef.current = null;
         }
     }, [reassignActive]);
 
