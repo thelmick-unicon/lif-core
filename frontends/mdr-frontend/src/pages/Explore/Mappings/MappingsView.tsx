@@ -35,6 +35,7 @@ import {
     parseEntityIdPath,
     appendAttributeToPath,
     extractEntityIds,
+    buildAttributeLookupKey,
 } from '../../../utils/entityIdPath';
 import {
     DataModelWithDetailsDTO,
@@ -1361,7 +1362,7 @@ const MappingsView: React.FC = () => {
 
         const computeStart = (srcAttrId: number) => {
             const srcEntry = (transformation as any).SourceAttributes?.find((s: any) => s.AttributeId === srcAttrId);
-            const srcKey = srcEntry?.EntityIdPath ? `${srcEntry.EntityIdPath}|${srcAttrId}` : String(srcAttrId);
+            const srcKey = buildAttributeLookupKey(srcEntry?.EntityIdPath, srcAttrId);
             const leftEl = attrElementsLeft.current.get(srcKey) || attrElementsLeft.current.get(String(srcAttrId));
             const leftDot = leftEl?.querySelector<HTMLElement>('.mappings-column__dot--end') || leftEl || null;
             const lb = leftDot?.getBoundingClientRect();
