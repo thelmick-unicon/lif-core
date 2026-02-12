@@ -145,6 +145,9 @@ const MappingsView: React.FC = () => {
     const [selectedTargetAttrId, setSelectedTargetAttrId] = useState<
         number | null
     >(null);
+    const [selectedTargetAttrPath, setSelectedTargetAttrPath] = useState<
+        string | null
+    >(null);
     const [selectionIndex, setSelectionIndex] = useState(0);
     const [selectionAll, setSelectionAll] = useState(false);
     const [selectedTransformationIds, setSelectedTransformationIds] =
@@ -258,6 +261,7 @@ const MappingsView: React.FC = () => {
         reassignHoverTargetIdRef.current = null;
         reassignHoverTargetPathRef.current = null;
         setSelectedTargetAttrId(null);
+        setSelectedTargetAttrPath(null);
         setSelectedTransformationIds(new Set());
         setSelectionAll(false);
     }, []);
@@ -2685,6 +2689,7 @@ const MappingsView: React.FC = () => {
                         disableInteractions={groupId < 0}
                         selectionContext={{
                             selectedTargetAttrId, setSelectedTargetAttrId,
+                            selectedTargetAttrPath, setSelectedTargetAttrPath,
                             selectionIndex, setSelectionIndex,
                             selectionAll, setSelectionAll,
                             selectedTransformationIds, setSelectedTransformationIds,
@@ -2737,6 +2742,7 @@ const MappingsView: React.FC = () => {
                         disableInteractions={groupId < 0}
                         selectionContext={{
                             selectedTargetAttrId, setSelectedTargetAttrId,
+                            selectedTargetAttrPath, setSelectedTargetAttrPath,
                             selectionIndex, setSelectionIndex,
                             selectionAll, setSelectionAll,
                             selectedTransformationIds, setSelectedTransformationIds,
