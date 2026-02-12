@@ -16,8 +16,12 @@ export interface DisplayTransformationDataLike {
 
 export interface SelectionContextLike {
     selectedTargetAttrId: number | null;
+    selectedTargetAttrPath?: string | null;
     setSelectedTargetAttrId: React.Dispatch<
         React.SetStateAction<number | null>
+    >;
+    setSelectedTargetAttrPath?: React.Dispatch<
+        React.SetStateAction<string | null>
     >;
     selectionIndex: number;
     setSelectionIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -32,6 +36,7 @@ export interface SelectionContextLike {
         React.SetStateAction<DisplayTransformationDataLike[]>
     >;
     reassignHoverTargetId: number | null;
+    reassignHoverTargetPath?: string | null;
     prepareReassign?: (
         e: React.MouseEvent,
         transforms: DisplayTransformationDataLike[]
@@ -179,9 +184,17 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                     const inboundTs = (
                                         transformations || []
                                     ).filter(
-                                        (t) =>
-                                            t.TargetAttribute?.AttributeId ===
-                                            attr.Id
+                                        (t) => {
+                                            if (t.TargetAttribute?.AttributeId !== attr.Id) return false;
+                                            // Also match entity path so same-AttributeId in different entities don't collide
+                                            if (currentPath) {
+                                                const tgtEntityIdPath = (t.TargetAttribute as any)?.EntityIdPath;
+                                                if (tgtEntityIdPath) {
+                                                    return normalizeForComparison(tgtEntityIdPath) === currentPath;
+                                                }
+                                            }
+                                            return true;
+                                        }
                                     );
                                     const wires: Array<{
                                         trans: DisplayTransformationDataLike;
@@ -204,6 +217,7 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                                 if (!selectionContext) return;
                                                 const {
                                                     selectedTargetAttrId, setSelectedTargetAttrId,
+                                                    selectedTargetAttrPath, setSelectedTargetAttrPath,
                                                     selectionIndex, setSelectionIndex,
                                                     setSelectionAll,
                                                     setSelectedTransformationIds,
@@ -212,14 +226,17 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                                 const SrcWireLength = inboundWires?.length || 0;
                                                 if (!SrcWireLength) return;
                                                 const inboundTsUnique = Array.from(new Set(inboundWires.map(w => w.trans.Id)));
+                                                // Determine if this is the same target (same attr ID AND same entity path)
+                                                const isSameTarget = selectedTargetAttrId === attr.Id &&
+                                                    (selectedTargetAttrPath == null || selectedTargetAttrPath === currentPath);
                                                 // Shift = select ALL transformations (all wires)
                                                 if (e.shiftKey) {
                                                     setSelectedTargetAttrId(attr.Id);
+                                                    if (setSelectedTargetAttrPath) setSelectedTargetAttrPath(currentPath || null);
                                                     setSelectionAll(true);
                                                     setSelectionIndex(SrcWireLength);
                                                     setSelectedTransformationIds(new Set(inboundTsUnique));
                                                     if (setSelectedWireSourceAttrIds) {
-                                                        // empty set means highlight all, but we want explicit all sources of first trans? choose first trans's sources
                                                         const firstTrans = inboundWires[0].trans;
                                                         const allSrcIds = new Set<number>((firstTrans.SourceAttributes || []).map((s: any) => s.AttributeId));
                                                         setSelectedWireSourceAttrIds(allSrcIds);
@@ -228,8 +245,9 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                                 }
                                                 setSelectionAll(false);
                                                 // Initial select or different target: pick first transformation
-                                                if (selectedTargetAttrId !== attr.Id) {
+                                                if (!isSameTarget) {
                                                     setSelectedTargetAttrId(attr.Id);
+                                                    if (setSelectedTargetAttrPath) setSelectedTargetAttrPath(currentPath || null);
                                                     setSelectionIndex(0);
                                                     const firstTrans = inboundWires[0].trans;
                                                     setSelectedTransformationIds(new Set([firstTrans.Id]));
@@ -245,11 +263,11 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                                 if (SelectAllWires) {
                                                     // Select all wires
                                                     setSelectedTargetAttrId(attr.Id);
+                                                    if (setSelectedTargetAttrPath) setSelectedTargetAttrPath(currentPath || null);
                                                     setSelectionAll(true);
                                                     setSelectionIndex(nextIndex);
                                                     setSelectedTransformationIds(new Set(inboundTsUnique));
                                                     if (setSelectedWireSourceAttrIds) {
-                                                        // empty set means highlight all, but we want explicit all sources of first trans? choose first trans's sources
                                                         const firstTrans = inboundWires[0].trans;
                                                         const allSrcIds = new Set<number>((firstTrans.SourceAttributes || []).map((s: any) => s.AttributeId));
                                                         setSelectedWireSourceAttrIds(allSrcIds);
@@ -349,7 +367,9 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                                 <span
                                                     className={`mappings-attr__name ${
                                                         selectionContext?.reassignHoverTargetId ===
-                                                        attr.Id
+                                                        attr.Id &&
+                                                        (selectionContext?.reassignHoverTargetPath == null ||
+                                                         selectionContext?.reassignHoverTargetPath === node.PathId)
                                                             ? 'mappings-attr--drop-target'
                                                             : ''
                                                     }`}
@@ -819,7 +839,8 @@ const ModelColumn: React.FC<ModelColumnProps> = ({
                                                                   <span
                                                                       className={`mappings-attr__name ${
                                                                           selectionContext?.reassignHoverTargetId ===
-                                                                          attr.Id
+                                                                          attr.Id &&
+                                                                          selectionContext?.reassignHoverTargetPath == null
                                                                               ? 'mappings-attr--drop-target'
                                                                               : ''
                                                                       }`}
