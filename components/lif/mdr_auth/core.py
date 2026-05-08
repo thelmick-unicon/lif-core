@@ -9,6 +9,8 @@ from typing import Any, Dict, Optional
 import jwt
 from fastapi import HTTPException, Request, status
 from fastapi.responses import JSONResponse
+from lif.mdr_auth.workspace_cookie import COOKIE_NAME, decode_workspace_cookie
+from lif.mdr_services.workspace_service import find_workspace
 from lif.tenant_routing import resolve_tenant_schema
 from lif.mdr_utils.collection_utils import convert_csv_to_set
 from lif.mdr_utils.config import get_settings
@@ -243,6 +245,8 @@ class AuthMiddleware(BaseHTTPMiddleware):
                     logger.warning("Auth token 'sub'/'email' is missing")
                     return _build_unauthorized(detail="Could not validate credentials")
 
+            # Default tenant from JWT groups (or service-schema fallback for
+            # API-key callers and group-less Cognito users).
             request.state.tenant_schema = resolve_tenant_schema(
                 enabled=TENANT_ROUTING_ENABLED,
                 is_service_principal=isinstance(request.state.principal, str)
@@ -250,6 +254,22 @@ class AuthMiddleware(BaseHTTPMiddleware):
                 cognito_groups=getattr(request.state, "cognito_groups", None),
                 service_schema=TENANT_SERVICE_SCHEMA,
             )
+
+            # If the user picked a specific workspace via POST /tenants/select,
+            # honor it — but only if the cookie's group is actually one of
+            # theirs. The Cognito JWT remains the ground truth for membership;
+            # a stale or stolen cookie can't grant access to a group the user
+            # no longer belongs to. Service principals and HS256 callers have
+            # no cognito_groups, so find_workspace returns None and the
+            # default above stands.
+            if TENANT_ROUTING_ENABLED:
+                cookie_value = request.cookies.get(COOKIE_NAME)
+                cookie = decode_workspace_cookie(cookie_value, secret=SECRET_KEY)
+                if cookie is not None:
+                    cognito_groups = getattr(request.state, "cognito_groups", None)
+                    selected = find_workspace(cognito_groups, cookie.group)
+                    if selected is not None:
+                        request.state.tenant_schema = selected.tenant_schema
         except HTTPException as e:
             logger.exception("Auth middleware HTTPException")
             body = {"detail": str(e.detail)}
