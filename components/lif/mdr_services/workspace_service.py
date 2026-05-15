@@ -14,6 +14,8 @@ surface the divergence rather than papering over it in this listing.
 
 from dataclasses import dataclass
 
+from pydantic import BaseModel
+
 from lif.tenant_routing import tenant_schema_for_group
 
 
@@ -23,6 +25,24 @@ class Workspace:
 
     group: str
     tenant_schema: str
+
+
+class WorkspaceItem(BaseModel):
+    """API response shape for a workspace.
+
+    Separate from the internal ``Workspace`` dataclass so the wire
+    contract can evolve independently of in-process types — e.g., we
+    might later add ``display_name`` or ``schema_status`` to the API
+    without changing the service-layer return shape.
+    """
+
+    group: str
+    tenant_schema: str
+
+
+def to_workspace_item(workspace: Workspace) -> WorkspaceItem:
+    """Project a service-layer ``Workspace`` into its API response shape."""
+    return WorkspaceItem(group=workspace.group, tenant_schema=workspace.tenant_schema)
 
 
 def list_workspaces_for_groups(cognito_groups: list[str] | None) -> list[Workspace]:

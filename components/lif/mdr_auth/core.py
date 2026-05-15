@@ -259,8 +259,9 @@ class AuthMiddleware(BaseHTTPMiddleware):
             # honor it — but only if the cookie's group is actually one of
             # theirs. The Cognito JWT remains the ground truth for membership;
             # a stale or stolen cookie can't grant access to a group the user
-            # no longer belongs to. Service principals and HS256 callers have
-            # no cognito_groups, so find_workspace returns None and the
+            # no longer belongs to. Service principals and HS256 callers
+            # (legacy local JWT path, no Cognito groups claim) have no
+            # cognito_groups, so find_workspace returns None and the
             # default above stands.
             if TENANT_ROUTING_ENABLED:
                 cookie_value = request.cookies.get(COOKIE_NAME)
