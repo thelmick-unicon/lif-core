@@ -156,7 +156,7 @@ async def list_my_workspaces(
     state); HS256 callers also receive an empty list since they have no
     group concept.
     """
-    cognito_groups: list[str] = getattr(request.state, "cognito_groups", []) or []
+    cognito_groups: list[str] = getattr(request.state, "cognito_groups", [])
     workspaces = list_workspaces_for_groups(cognito_groups)
     return ListMyWorkspacesResponse(workspaces=[_to_item(w) for w in workspaces])
 
@@ -195,7 +195,7 @@ async def select_workspace(
     the user's groups are the ground truth, and a non-member's perspective
     is "that workspace doesn't exist for me."
     """
-    cognito_groups: list[str] = getattr(request.state, "cognito_groups", []) or []
+    cognito_groups: list[str] = getattr(request.state, "cognito_groups", [])
     workspace = find_workspace(cognito_groups, body.group)
     if workspace is None:
         raise HTTPException(

@@ -32,6 +32,10 @@ import hmac
 import time
 from dataclasses import dataclass
 
+from lif.mdr_utils.logger_config import get_logger
+
+logger = get_logger(__name__)
+
 COOKIE_NAME = "lif_workspace"
 DEFAULT_MAX_AGE_SECONDS = 30 * 24 * 60 * 60  # 30 days
 _SEPARATOR = "."
@@ -78,18 +82,24 @@ def decode_workspace_cookie(value: str | None, secret: str, *, now: int | None =
         return None
     parts = value.split(_SEPARATOR)
     if len(parts) != 3:
+        logger.warning("Workspace cookie malformed: expected 3 dot-separated parts, got %d", len(parts))
         return None
     encoded_group, exp_str, sig = parts
     payload = f"{encoded_group}{_SEPARATOR}{exp_str}"
     expected_sig = _sign(payload, secret)
     if not hmac.compare_digest(sig, expected_sig):
+        # Don't log the signature itself — could be a stale cookie signed by a
+        # rotated secret, not necessarily an attack.
+        logger.warning("Workspace cookie signature mismatch (tampering, rotated secret, or stale cookie)")
         return None
     try:
         expires_at = int(exp_str)
         group = _b64url_decode(encoded_group)
-    except (ValueError, UnicodeDecodeError):
+    except (ValueError, UnicodeDecodeError) as e:
+        logger.warning("Workspace cookie payload decode failed: %s", e)
         return None
     current = now if now is not None else int(time.time())
     if expires_at <= current:
+        logger.debug("Workspace cookie expired (exp=%d, now=%d)", expires_at, current)
         return None
     return WorkspaceCookie(group=group, expires_at=expires_at)
