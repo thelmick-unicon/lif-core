@@ -268,7 +268,7 @@ async def create_invite(
     window can join the group. Single-use enforcement is deferred to a
     later PR if reuse abuse appears in practice.
     """
-    cognito_groups: list[str] = getattr(request.state, "cognito_groups", []) or []
+    cognito_groups: list[str] = getattr(request.state, "cognito_groups", [])
     if body.group not in cognito_groups:
         # Can't invite to a group you don't belong to. 404 (not 403) for
         # the same reason as /tenants/select: from the caller's perspective
