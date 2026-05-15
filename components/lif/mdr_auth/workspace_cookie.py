@@ -15,6 +15,18 @@ forged cookie naming a group the user doesn't belong to is silently
 ignored, falling back to the default. The cookie alone never grants new
 access; it only narrows membership the JWT already proves.
 
+Why a forged cookie is treated differently from a forged JWT:
+an attacker who can forge the JWT has already won and we have bigger
+problems. The cookie, by contrast, is *just a workspace selection* — its
+authority is bounded by the JWT's ``cognito:groups`` claim, which the
+middleware re-verifies on every request. So the threat model for a bad
+cookie is narrow: at worst the attacker selects one of the user's *own*
+groups, which they could have selected anyway. We fall back rather than
+hard-reject because the common cause of a bad cookie is innocuous —
+secret rotation, an evicted group, or a stale 30-day cookie — and
+locking those users out would create support tickets without preventing
+any attack the JWT check doesn't already cover.
+
 Format
 ------
 ``{base64url(group_name)}.{exp_unix}.{hmac_sha256_hex}``

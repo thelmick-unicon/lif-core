@@ -26,7 +26,12 @@ from lif.mdr_auth.cognito_admin import (
 from lif.mdr_auth.invite_token import decode_invite_token, encode_invite_token
 from lif.mdr_auth.workspace_cookie import COOKIE_NAME, DEFAULT_MAX_AGE_SECONDS, encode_workspace_cookie
 from lif.mdr_services.tenant_service import InvalidGroupNameError, TenantAlreadyExistsError, provision_tenant
-from lif.mdr_services.workspace_service import Workspace, find_workspace, list_workspaces_for_groups
+from lif.mdr_services.workspace_service import (
+    WorkspaceItem,
+    find_workspace,
+    list_workspaces_for_groups,
+    to_workspace_item,
+)
 from lif.tenant_routing import tenant_schema_for_group
 from lif.mdr_utils.config import get_settings
 from lif.mdr_utils.database_setup import get_session
@@ -122,19 +127,24 @@ async def provision_tenant_endpoint(
 
 
 # --- Workspace listing & selection (issue #884 Phase 3 PR 1) ---
-
-
-class WorkspaceItem(BaseModel):
-    group: str
-    tenant_schema: str
+#
+# Request/response envelopes for the /tenants/mine and /tenants/select
+# endpoints. ``WorkspaceItem`` (the per-workspace payload) lives in the
+# workspace_service component since it's a domain DTO; the envelopes
+# below are endpoint-layer wrappers.
 
 
 class ListMyWorkspacesResponse(BaseModel):
     workspaces: list[WorkspaceItem]
 
 
-def _to_item(workspace: Workspace) -> WorkspaceItem:
-    return WorkspaceItem(group=workspace.group, tenant_schema=workspace.tenant_schema)
+class SelectWorkspaceRequest(BaseModel):
+    group: str = Field(..., min_length=1, max_length=128, description="Cognito group name to switch to")
+
+
+class SelectWorkspaceResponse(BaseModel):
+    group: str
+    tenant_schema: str
 
 
 @router.get(
@@ -153,21 +163,12 @@ async def list_my_workspaces(
     Sourced from the JWT ``cognito:groups`` claim that the auth middleware
     already extracted onto ``request.state``. Cognito users with no group
     receive an empty list (frontend should show a "no workspaces yet"
-    state); HS256 callers also receive an empty list since they have no
-    group concept.
+    state); HS256 callers (legacy local JWT path, no group concept) also
+    receive an empty list.
     """
     cognito_groups: list[str] = getattr(request.state, "cognito_groups", [])
     workspaces = list_workspaces_for_groups(cognito_groups)
-    return ListMyWorkspacesResponse(workspaces=[_to_item(w) for w in workspaces])
-
-
-class SelectWorkspaceRequest(BaseModel):
-    group: str = Field(..., min_length=1, max_length=128, description="Cognito group name to switch to")
-
-
-class SelectWorkspaceResponse(BaseModel):
-    group: str
-    tenant_schema: str
+    return ListMyWorkspacesResponse(workspaces=[to_workspace_item(w) for w in workspaces])
 
 
 @router.post(
