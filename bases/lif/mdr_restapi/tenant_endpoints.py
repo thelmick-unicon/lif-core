@@ -270,7 +270,10 @@ async def create_invite(
     later PR if reuse abuse appears in practice.
     """
     cognito_groups: list[str] = getattr(request.state, "cognito_groups", [])
-    if body.group not in cognito_groups:
+    # `find_workspace` (not raw `in cognito_groups`) so we also reject groups
+    # whose names sanitize to no tenant schema (e.g. "---", "123") — those
+    # would mint a token guaranteed to fail at /invite/accept time.
+    if find_workspace(cognito_groups, body.group) is None:
         # Can't invite to a group you don't belong to. 404 (not 403) for
         # the same reason as /tenants/select: from the caller's perspective
         # this group isn't theirs to operate on.
@@ -294,7 +297,10 @@ async def create_invite(
 
 
 class AcceptInviteRequest(BaseModel):
-    token: str = Field(..., min_length=1, description="Invite token from POST /tenants/invite")
+    # Real tokens are well under 2 KB (base64url payload + signature); 4096
+    # leaves headroom while rejecting clearly-bogus inputs before they reach
+    # HMAC verification (called up to twice on the expired-token branch).
+    token: str = Field(..., min_length=1, max_length=4096, description="Invite token from POST /tenants/invite")
 
 
 class AcceptInviteResponse(BaseModel):

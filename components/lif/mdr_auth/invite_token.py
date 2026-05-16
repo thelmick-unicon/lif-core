@@ -89,10 +89,17 @@ def decode_invite_token(value: str | None, secret: str, *, now: int | None = Non
         return None
     try:
         payload = json.loads(_b64url_decode(encoded).decode("utf-8"))
+    except (ValueError, UnicodeDecodeError):
+        return None
+    # A validly-signed but non-object payload (e.g. a JSON list or string)
+    # would crash the field indexing below with TypeError; reject explicitly.
+    if not isinstance(payload, dict):
+        return None
+    try:
         group = payload["g"]
         inviter_sub = payload["i"]
         expires_at = int(payload["e"])
-    except (ValueError, KeyError, UnicodeDecodeError):
+    except (KeyError, ValueError, TypeError):
         return None
     if not isinstance(group, str) or not isinstance(inviter_sub, str):
         return None

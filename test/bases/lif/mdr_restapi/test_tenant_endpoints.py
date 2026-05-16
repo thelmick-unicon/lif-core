@@ -350,3 +350,12 @@ class TestAcceptInvite:
         _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team"], cognito_sub="acceptor-sub-1")
         resp = await client.post("/tenants/invite/accept", json={"token": self._make_token()})
         assert resp.status_code == 500
+
+    async def test_accept_without_cognito_sub_returns_400(self, client, monkeypatch, mock_cognito):
+        """HS256 legacy users have no Cognito sub — can't be invite acceptors
+        even when the token itself is valid. Must short-circuit before any
+        Cognito Admin API call."""
+        _stub_cognito_principal(monkeypatch, "demo-user", ["lif-team"], cognito_sub=None)
+        resp = await client.post("/tenants/invite/accept", json={"token": self._make_token()})
+        assert resp.status_code == 400
+        mock_cognito.assert_not_called()

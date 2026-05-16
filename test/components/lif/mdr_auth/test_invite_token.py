@@ -79,6 +79,19 @@ class TestDecodeRejection:
         token = f"{bad_payload}.{sig}"
         assert decode_invite_token(token, secret=SECRET) is None
 
+    def test_validly_signed_non_object_payload_returns_none(self):
+        """A signed payload that is valid JSON but not an object (list, string,
+        number) must return None — indexing a non-dict would otherwise raise
+        TypeError and 500 the endpoint."""
+        from base64 import urlsafe_b64encode
+        from lif.mdr_auth.invite_token import _sign
+
+        for raw in (b'[1,2,3]', b'"just a string"', b'42', b'null'):
+            encoded = urlsafe_b64encode(raw).decode().rstrip("=")
+            sig = _sign(encoded, SECRET)
+            token = f"{encoded}.{sig}"
+            assert decode_invite_token(token, secret=SECRET) is None, f"non-object payload {raw!r} should decode to None"
+
 
 class TestExpiryRecovery:
     def test_now_zero_reveals_expired_token_would_have_been_valid(self):
