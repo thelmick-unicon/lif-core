@@ -79,6 +79,29 @@ class SelectWorkspaceResponse(BaseModel):
     tenant_schema: str
 
 
+class CreateInviteRequest(BaseModel):
+    group: str = Field(..., min_length=1, max_length=128, description="Group to invite the recipient into")
+
+
+class CreateInviteResponse(BaseModel):
+    token: str
+    group: str
+    expires_at: int
+
+
+class AcceptInviteRequest(BaseModel):
+    # Real tokens are well under 2 KB (base64url payload + signature); 4096
+    # leaves headroom while rejecting clearly-bogus inputs before they reach
+    # HMAC verification (called up to twice on the expired-token branch).
+    token: str = Field(..., min_length=1, max_length=4096, description="Invite token from POST /tenants/invite")
+
+
+class AcceptInviteResponse(BaseModel):
+    group: str
+    tenant_schema: str
+    inviter_sub: str
+
+
 # --- Auth dependencies ---
 
 
@@ -109,6 +132,24 @@ async def require_user_principal(request: Request) -> str:
     if principal.startswith("service:"):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="User principal required")
     return principal
+
+
+def _require_cognito_sub(request: Request) -> str:
+    """Pull the inviter's Cognito ``sub`` off ``request.state``.
+
+    The auth middleware stamps the decoded payload's ``sub`` (or email)
+    into ``request.state.principal``; for Cognito callers the sub is also
+    set on ``request.state.cognito_sub`` in PR 2 (this PR). Endpoints that
+    need the stable user identifier should call this helper rather than
+    parsing ``principal``, which may be an email string.
+    """
+    sub = getattr(request.state, "cognito_sub", None)
+    if not isinstance(sub, str) or not sub:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invite operations require a Cognito-issued JWT (no Cognito sub on request)",
+        )
+    return sub
 
 
 # --- Endpoints ---
@@ -221,37 +262,6 @@ async def select_workspace(
     return SelectWorkspaceResponse(group=workspace.group, tenant_schema=workspace.tenant_schema)
 
 
-# --- Invite links (issue #884 Phase 3 PR 2) ---
-
-
-class CreateInviteRequest(BaseModel):
-    group: str = Field(..., min_length=1, max_length=128, description="Group to invite the recipient into")
-
-
-class CreateInviteResponse(BaseModel):
-    token: str
-    group: str
-    expires_at: int
-
-
-def _require_cognito_sub(request: Request) -> str:
-    """Pull the inviter's Cognito ``sub`` off ``request.state``.
-
-    The auth middleware stamps the decoded payload's ``sub`` (or email)
-    into ``request.state.principal``; for Cognito callers the sub is also
-    set on ``request.state.cognito_sub`` in PR 2 (this PR). Endpoints that
-    need the stable user identifier should call this helper rather than
-    parsing ``principal``, which may be an email string.
-    """
-    sub = getattr(request.state, "cognito_sub", None)
-    if not isinstance(sub, str) or not sub:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Invite operations require a Cognito-issued JWT (no Cognito sub on request)",
-        )
-    return sub
-
-
 @router.post(
     "/invite",
     response_model=CreateInviteResponse,
@@ -298,19 +308,6 @@ async def create_invite(
     assert decoded is not None  # we just made it; sanity check, not a runtime guard
     logger.info("User %r created invite for group %r (expires %d)", inviter_sub, body.group, decoded.expires_at)
     return CreateInviteResponse(token=token, group=body.group, expires_at=decoded.expires_at)
-
-
-class AcceptInviteRequest(BaseModel):
-    # Real tokens are well under 2 KB (base64url payload + signature); 4096
-    # leaves headroom while rejecting clearly-bogus inputs before they reach
-    # HMAC verification (called up to twice on the expired-token branch).
-    token: str = Field(..., min_length=1, max_length=4096, description="Invite token from POST /tenants/invite")
-
-
-class AcceptInviteResponse(BaseModel):
-    group: str
-    tenant_schema: str
-    inviter_sub: str
 
 
 @router.post(
