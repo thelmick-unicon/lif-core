@@ -82,7 +82,11 @@ async def reset_tenant(session: AsyncSession, group_name: str) -> str:
     """
     target = tenant_schema_for_group(group_name)
     if target is None:
-        raise InvalidGroupNameError(f"Group name {group_name!r} does not produce a valid tenant schema")
+        # Friendly message: this exception is wrapped into the endpoint's
+        # generic 400 today, but a future caller (CLI, other endpoint) may
+        # surface the message directly. Match the tone the endpoint uses
+        # for the same situation.
+        raise InvalidGroupNameError(f"Group {group_name!r} is not a valid workspace")
 
     # CASCADE removes everything that depends on the schema (tables,
     # constraints, sequences, FKs into the schema). Anything outside this

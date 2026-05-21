@@ -46,6 +46,7 @@ from lif.mdr_utils.config import get_settings
 from lif.mdr_utils.database_setup import get_session
 from lif.mdr_utils.logger_config import get_logger
 from pydantic import BaseModel, Field
+from sqlalchemy.exc import DBAPIError
 from sqlalchemy.ext.asyncio import AsyncSession
 
 router = APIRouter()
@@ -429,6 +430,7 @@ async def accept_invite(
         401: {"description": "Not authenticated"},
         403: {"description": "User principal required"},
         404: {"description": "Group is not in the user's Cognito groups"},
+        500: {"description": "Database error during DROP or clone; transaction rolled back"},
     },
 )
 async def reset_workspace(
@@ -468,6 +470,17 @@ async def reset_workspace(
         # the exception message — it carries the raw group string we sanitized.
         logger.exception("Unexpected InvalidGroupNameError on reset for group=%r", workspace.group)
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Could not reset workspace")
+    except DBAPIError:
+        # DROP or clone failed at the DB layer (transient PG outage, clone
+        # function bug, etc.). The surrounding transaction is rolled back by
+        # SQLAlchemy / asyncpg so prior tenant data is preserved; the user
+        # just sees a generic 500. Log full SQLSTATE detail server-side via
+        # logger.exception — don't echo the SDK exception to the client.
+        logger.exception("Database error while resetting workspace %r", workspace.group)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Could not reset workspace; please retry or contact support if this persists",
+        )
 
     logger.info("User %r reset workspace %r -> %s", request.state.principal, workspace.group, tenant_schema)
     return ResetWorkspaceResponse(group=workspace.group, tenant_schema=tenant_schema)

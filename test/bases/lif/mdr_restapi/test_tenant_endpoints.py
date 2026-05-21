@@ -411,6 +411,23 @@ class TestResetWorkspace:
         assert resp.status_code == 422
         mock_reset.assert_not_awaited()
 
+    async def test_db_error_returns_sanitized_500(self, client, monkeypatch, mock_reset):
+        """If the service helper bubbles a DBAPIError (PG hiccup, clone bug,
+        transient outage), the endpoint catches it and returns a generic 500
+        — never the raw SQLSTATE detail. Matches the no-info-leak pattern
+        from /invite/accept."""
+        from sqlalchemy.exc import DBAPIError
+
+        mock_reset.side_effect = DBAPIError("statement", {}, Exception("connection refused: 10.0.0.5:5432"))
+        _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team"])
+        resp = await client.post("/tenants/reset", json={"group": "lif-team"})
+        assert resp.status_code == 500
+        body = resp.json()
+        assert body["detail"].startswith("Could not reset workspace")
+        # Connection details / internal addresses must not leak to the client.
+        assert "10.0.0.5" not in resp.text
+        assert "connection refused" not in resp.text
+
     async def test_invalid_group_name_from_service_returns_sanitized_400(self, client, monkeypatch, mock_reset):
         """Exercises the belt-and-suspenders branch: if `find_workspace` ever
         regresses and lets through a group that the service then rejects, the
