@@ -410,3 +410,23 @@ class TestResetWorkspace:
         resp = await client.post("/tenants/reset", json={"group": ""})
         assert resp.status_code == 422
         mock_reset.assert_not_awaited()
+
+    async def test_invalid_group_name_from_service_returns_sanitized_400(self, client, monkeypatch, mock_reset):
+        """Exercises the belt-and-suspenders branch: if `find_workspace` ever
+        regresses and lets through a group that the service then rejects, the
+        endpoint translates the InvalidGroupNameError into a generic 400.
+
+        The detail must NOT echo the raw group string (the exception message
+        carries it). That'd be an info-leak on a path we describe as
+        'shouldn't reach here.'"""
+        from lif.mdr_services.tenant_service import InvalidGroupNameError
+
+        mock_reset.side_effect = InvalidGroupNameError(
+            "Group name 'leaky-input' does not produce a valid tenant schema"
+        )
+        _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team"])
+        resp = await client.post("/tenants/reset", json={"group": "lif-team"})
+        assert resp.status_code == 400
+        body = resp.json()
+        assert body == {"detail": "Could not reset workspace"}
+        assert "leaky-input" not in resp.text

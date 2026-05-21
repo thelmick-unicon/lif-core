@@ -73,8 +73,12 @@ async def reset_tenant(session: AsyncSession, group_name: str) -> str:
     the target group. By design this is irrecoverable; there is no
     snapshot of the prior tenant state.
 
-    Returns the resulting tenant schema name. Raises:
+    Returns the resulting tenant schema name.
+
+    Raises:
       - InvalidGroupNameError if the group sanitizes to empty.
+      - sqlalchemy.exc.DBAPIError if the DROP or clone fails — the surrounding
+        transaction is rolled back, so the prior tenant data is preserved.
     """
     target = tenant_schema_for_group(group_name)
     if target is None:
@@ -85,11 +89,15 @@ async def reset_tenant(session: AsyncSession, group_name: str) -> str:
     # schema is untouched. clone_lif_schema then rebuilds DDL + data from
     # public. Both run in the session's open transaction; if the clone
     # raises, the drop is rolled back and the tenant data is preserved.
+    # (Verified: both psycopg and asyncpg execute DDL inside the explicit
+    # transaction — no implicit commit between the two statements.)
     #
     # Identifiers can't be bound as parameters, so we interpolate `target`
     # directly. Safety: `tenant_schema_for_group` enforces the
     # `tenant_[a-z][a-z0-9_]*` shape, so there's no injection surface.
+    logger.info("Resetting tenant schema %s", target)
     await session.execute(text(f'DROP SCHEMA IF EXISTS "{target}" CASCADE'))
     await session.execute(text("SELECT public.clone_lif_schema(:target)"), {"target": target})
     await session.commit()
+    logger.info("Reset of tenant schema %s complete", target)
     return target

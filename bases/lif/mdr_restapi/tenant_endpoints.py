@@ -427,7 +427,7 @@ async def accept_invite(
     response_model=ResetWorkspaceResponse,
     responses={
         401: {"description": "Not authenticated"},
-        403: {"description": "Service principals can't reset a workspace"},
+        403: {"description": "User principal required"},
         404: {"description": "Group is not in the user's Cognito groups"},
     },
 )
@@ -461,11 +461,13 @@ async def reset_workspace(
 
     try:
         tenant_schema = await reset_tenant(session, workspace.group)
-    except InvalidGroupNameError as e:
+    except InvalidGroupNameError:
         # Shouldn't reach here — find_workspace already filtered groups whose
         # names don't sanitize to a tenant schema. Belt-and-suspenders so a
-        # future regression in find_workspace doesn't 500 the user.
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e)) from e
+        # future regression in find_workspace doesn't 500 the user. Don't echo
+        # the exception message — it carries the raw group string we sanitized.
+        logger.exception("Unexpected InvalidGroupNameError on reset for group=%r", workspace.group)
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Could not reset workspace")
 
-    logger.info("User %r reset workspace %r → %s", request.state.principal, workspace.group, tenant_schema)
+    logger.info("User %r reset workspace %r -> %s", request.state.principal, workspace.group, tenant_schema)
     return ResetWorkspaceResponse(group=workspace.group, tenant_schema=tenant_schema)
