@@ -15,6 +15,8 @@
 Reset and admin endpoints live in later PRs of the #884 split.
 """
 
+import time
+
 from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from lif.mdr_auth.cognito_admin import (
     CognitoAdminConfig,
@@ -342,16 +344,20 @@ async def accept_invite(
     for expired tokens so the frontend can show a "ask for a fresh invite"
     message rather than a generic error.
     """
-    decoded = decode_invite_token(body.token, secret=settings.mdr__auth__jwt_secret_key)
+    # Decode once with now=0 to bypass the expiry check; we want to know
+    # whether the token is *structurally* valid + correctly signed first,
+    # then branch on expiry separately. Two reasons to keep the 400 vs 410
+    # distinction: (a) the frontend can show "ask for a fresh invite" on
+    # 410 instead of a generic "invalid" error, (b) it's cheap and the
+    # extra decode-with-real-now would log a duplicate warning at the
+    # decoder layer.
+    decoded = decode_invite_token(body.token, secret=settings.mdr__auth__jwt_secret_key, now=0)
     if decoded is None:
-        # We don't distinguish malformed/signature-fail/expired here at the
-        # decoder layer (deliberate — avoids leaking which check failed).
-        # For better UX we do a second peek with now=0 to see if the token
-        # *would* have decoded but for the expiry; if so, return 410.
-        peek = decode_invite_token(body.token, secret=settings.mdr__auth__jwt_secret_key, now=0)
-        if peek is not None:
-            raise HTTPException(status_code=status.HTTP_410_GONE, detail="Invite token has expired")
+        # Truly invalid: malformed, bad signature, or non-conforming payload.
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invite token is invalid")
+    if decoded.expires_at <= int(time.time()):
+        # Was a real token, but past its TTL.
+        raise HTTPException(status_code=status.HTTP_410_GONE, detail="Invite token has expired")
 
     target_schema = tenant_schema_for_group(decoded.group)
     if target_schema is None:
@@ -371,12 +377,22 @@ async def accept_invite(
         # deeply wrong — surface as 500. If the *group* isn't in the pool
         # (GroupNotFound), the inviter's group was deleted after the invite
         # was issued; same story for the recipient. Both are 500-class.
+        # Log full detail server-side (includes pool ID and sub); return a
+        # generic message so we don't leak that detail to the client.
         logger.exception("Invite accept failed: %s", e)
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e)) from e
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Invite accept failed; contact support if this persists",
+        ) from e
     except CognitoAdminError as e:
+        # Wraps boto3 ClientError + BotoCoreError. The exception message can
+        # carry transport-layer detail (region, IAM error codes, internal IDs)
+        # we don't want in client-visible responses. Log server-side; return
+        # generic.
         logger.exception("Invite accept failed: cognito admin error")
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Cognito admin error: {e}"
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Invite accept failed; please retry or contact support if this persists",
         ) from e
 
     logger.info(
