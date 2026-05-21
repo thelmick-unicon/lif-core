@@ -139,3 +139,104 @@ class TestProvisionEndpointErrorHandling:
         resp = await client.post("/tenants/provision", headers={"X-API-Key": VALID_SERVICE_KEY})
         assert resp.status_code == 422
         mock_provision.assert_not_awaited()
+
+
+# --- Workspace listing & selection (issue #884 Phase 3 PR 1) ---
+
+
+def _hs256_user_token(sub: str = "alice@example.com") -> str:
+    """Create a legacy HS256 token. Not Cognito — has no cognito:groups."""
+    from lif.mdr_auth.core import create_access_token
+
+    return create_access_token({"sub": sub})
+
+
+def _stub_cognito_principal(monkeypatch, principal: str, groups: list[str]):
+    """Replace the middleware's auth path so test requests get the desired
+    principal + cognito_groups without needing a real Cognito JWT.
+
+    The actual JWT plumbing has its own integration tests in
+    test_middleware.py; here we want to exercise endpoint behavior given
+    a known authenticated request, not re-validate the JWT plumbing."""
+    from lif.mdr_auth import core as auth_core
+
+    original_dispatch = auth_core.AuthMiddleware.dispatch
+
+    async def fake_dispatch(self, request, call_next):
+        request.state.principal = principal
+        request.state.cognito_groups = groups
+        request.state.tenant_schema = None
+        return await call_next(request)
+
+    monkeypatch.setattr(auth_core.AuthMiddleware, "dispatch", fake_dispatch)
+    return original_dispatch
+
+
+class TestListMyWorkspaces:
+    async def test_no_auth_returns_401(self, client):
+        resp = await client.get("/tenants/mine")
+        assert resp.status_code == 401
+
+    async def test_service_principal_returns_403(self, client):
+        resp = await client.get("/tenants/mine", headers={"X-API-Key": VALID_SERVICE_KEY})
+        assert resp.status_code == 403
+
+    async def test_returns_workspaces_for_user_groups(self, client, monkeypatch):
+        _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team", "acme-univ"])
+        resp = await client.get("/tenants/mine")
+        assert resp.status_code == 200
+        assert resp.json() == {
+            "workspaces": [
+                {"group": "lif-team", "tenant_schema": "tenant_lif_team"},
+                {"group": "acme-univ", "tenant_schema": "tenant_acme_univ"},
+            ]
+        }
+
+    async def test_user_with_no_groups_returns_empty_list(self, client, monkeypatch):
+        """Cognito user with no groups: empty list, not 500. Frontend shows
+        a 'no workspaces yet' state."""
+        _stub_cognito_principal(monkeypatch, "user@example.com", [])
+        resp = await client.get("/tenants/mine")
+        assert resp.status_code == 200
+        assert resp.json() == {"workspaces": []}
+
+    async def test_hs256_user_returns_empty_list(self, client):
+        """Legacy HS256 callers have no group concept; empty list is the right answer."""
+        resp = await client.get("/tenants/mine", headers={"Authorization": f"Bearer {_hs256_user_token()}"})
+        assert resp.status_code == 200
+        assert resp.json() == {"workspaces": []}
+
+
+class TestSelectWorkspace:
+    async def test_no_auth_returns_401(self, client):
+        resp = await client.post("/tenants/select", json={"group": "lif-team"})
+        assert resp.status_code == 401
+
+    async def test_service_principal_returns_403(self, client):
+        resp = await client.post(
+            "/tenants/select", json={"group": "lif-team"}, headers={"X-API-Key": VALID_SERVICE_KEY}
+        )
+        assert resp.status_code == 403
+
+    async def test_selecting_a_user_group_sets_cookie(self, client, monkeypatch):
+        _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team", "acme-univ"])
+        resp = await client.post("/tenants/select", json={"group": "acme-univ"})
+        assert resp.status_code == 200
+        assert resp.json() == {"group": "acme-univ", "tenant_schema": "tenant_acme_univ"}
+        # The Set-Cookie header carries the lif_workspace cookie
+        set_cookie = resp.headers.get("set-cookie", "")
+        assert "lif_workspace=" in set_cookie
+        assert "HttpOnly" in set_cookie
+        assert "samesite=lax" in set_cookie.lower()
+
+    async def test_selecting_a_non_member_group_returns_404(self, client, monkeypatch):
+        """User isn't in 'acme-univ' — refuse rather than trust the request body."""
+        _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team"])
+        resp = await client.post("/tenants/select", json={"group": "acme-univ"})
+        assert resp.status_code == 404
+        assert "lif_workspace=" not in resp.headers.get("set-cookie", "")
+
+    async def test_empty_group_rejected_by_pydantic(self, client, monkeypatch):
+        _stub_cognito_principal(monkeypatch, "user@example.com", ["lif-team"])
+        resp = await client.post("/tenants/select", json={"group": ""})
+        assert resp.status_code == 422

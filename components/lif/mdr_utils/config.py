@@ -35,6 +35,10 @@ class Settings(BaseSettings):
     # group. Stays "public" until the PR 3 cutover sets this to
     # "tenant_lif_team" in env params.
     mdr__tenant_routing__service_schema: str = "public"
+    # Workspace selection cookie (issue #884 Phase 3 PR 1). Set False for
+    # local HTTP dev so the browser will accept it; deployed envs run on
+    # HTTPS and should keep this True.
+    mdr__cookie__secure: bool = True
 
 
 _settings = Settings()

@@ -10,6 +10,7 @@
         "boto",
         "chatbots",
         "checkpointing",
+        "dedupe",
         "Checkpointing",
         "classmethod",
         "ainvoke",
