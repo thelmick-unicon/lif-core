@@ -255,7 +255,17 @@ const Workspaces: React.FC = () => {
             <Card key={ws.group}>
               <Flex align="center" justify="between" gap="3">
                 <Box>
-                  <Heading size="4">{ws.group}</Heading>
+                  {/* display_name is the friendly label (email for personal
+                      tenants, group name for shared). Backend guarantees
+                      it's present and non-empty — `compute_display_name`
+                      falls through to `tenant_schema` rather than ever
+                      returning an empty string. Using `||` not `??` so a
+                      corrupted runtime value (manual localStorage edit,
+                      future code path that writes an empty string) still
+                      falls back to `group` rather than rendering a blank
+                      heading — defense in depth per Adam Hungerford
+                      review of #947. */}
+                  <Heading size="4">{ws.display_name || ws.group}</Heading>
                   <Text size="1" color="gray">
                     Schema: {ws.tenant_schema}
                   </Text>

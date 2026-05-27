@@ -31,18 +31,70 @@ class WorkspaceItem(BaseModel):
     """API response shape for a workspace.
 
     Separate from the internal ``Workspace`` dataclass so the wire
-    contract can evolve independently of in-process types — e.g., we
-    might later add ``display_name`` or ``schema_status`` to the API
-    without changing the service-layer return shape.
+    contract can evolve independently of in-process types.
+
+    ``display_name`` is the human-friendly label the SPA shows in the
+    workspace picker + header indicator (issue #943). For a user's own
+    auto-created personal tenant (``eval-<their-cognito-sub>``), this is
+    their email — meaningful to the user and consistent with how the
+    rest of the LIF stack identifies them. For shared / invited groups
+    (``lif-team`` and future named teams), it's the group name itself.
+    The technical ``tenant_schema`` stays on every record so the picker
+    can still surface it as secondary text.
     """
 
     group: str
     tenant_schema: str
+    display_name: str
 
 
-def to_workspace_item(workspace: Workspace) -> WorkspaceItem:
-    """Project a service-layer ``Workspace`` into its API response shape."""
-    return WorkspaceItem(group=workspace.group, tenant_schema=workspace.tenant_schema)
+def compute_display_name(group: str, cognito_sub: str | None, principal: str | None, tenant_schema: str) -> str:
+    """Resolve a friendly display name for a Cognito group (issue #943).
+
+    For the user's own personal tenant (``eval-<their-sub>``), where we
+    can confidently match the JWT's ``sub`` against the group's suffix,
+    use the user's email — which the auth middleware stores as
+    ``request.state.principal`` for Cognito users with a verified
+    email claim. The ``@`` is intentional; PM call on 2026-05-26
+    explicitly confirmed it's fine in the UI.
+
+    For any group that isn't the caller's own ``eval-<sub>``, use the
+    group name. That covers shared groups (``lif-team``, future named
+    teams), invited memberships, and the edge case where ``principal``
+    is a raw sub (legacy HS256 path, no email claim).
+
+    ``tenant_schema`` is the ultimate fallback. The wire contract for
+    ``display_name`` is "never empty"; if both the personal and group
+    paths somehow produced an empty/whitespace-only string (group is
+    impossibly empty, principal is whitespace-only, etc.), the schema
+    name is preferable to a blank label in the SPA. Per Adam Hungerford
+    review of #947 — defense in depth on a server-side invariant the
+    frontend now relies on.
+    """
+    if cognito_sub is not None and principal is not None and "@" in principal and group == f"eval-{cognito_sub}":
+        candidate = principal
+    else:
+        candidate = group
+    candidate = candidate.strip()
+    return candidate if candidate else tenant_schema
+
+
+def to_workspace_item(
+    workspace: Workspace, *, cognito_sub: str | None = None, principal: str | None = None
+) -> WorkspaceItem:
+    """Project a service-layer ``Workspace`` into its API response shape.
+
+    Computes ``display_name`` from the optional caller-identity hints.
+    Callers without identity context (tests that don't care about the
+    friendly label) get ``display_name = group`` (or ``tenant_schema``
+    if the group somehow sanitizes to empty), matching pre-#943
+    behavior modulo the empty-string defense.
+    """
+    return WorkspaceItem(
+        group=workspace.group,
+        tenant_schema=workspace.tenant_schema,
+        display_name=compute_display_name(workspace.group, cognito_sub, principal, workspace.tenant_schema),
+    )
 
 
 def list_workspaces_for_groups(cognito_groups: list[str] | None) -> list[Workspace]:
