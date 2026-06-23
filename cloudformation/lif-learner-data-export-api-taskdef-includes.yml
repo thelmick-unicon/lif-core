@@ -14,6 +14,10 @@ Environment:
   - Name: LIF_TRANSLATOR_BASE_URL
     Value:
       Fn::Sub: "http://translator-org1.lif.${EnvironmentName}.aws:8007"
+  - Name: QUERY_PLANNER_CLIENT_TIMEOUT_SECONDS
+    Value: "30"
+  - Name: TRANSLATOR_CLIENT_TIMEOUT_SECONDS
+    Value: "30"
 Secrets:
   - Name: LIF_MDR_API_AUTH_TOKEN
     ValueFrom:
