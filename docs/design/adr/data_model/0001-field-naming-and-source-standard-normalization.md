@@ -135,6 +135,8 @@ checked-in convention files (`reference_data/schemas/lif-schema.json`, seed SQL,
 - #1013 (rename the three `iSO639-*` CEDS language fields — first application of this policy)
 - #1016 (semantic-search/MCP: same invalid-name crash, a different consumer — evidence this is not
   GraphQL-specific)
+- #1018 (MongoDB: writes break on `$`/`.` field names — verified consumer-side failure)
+- #1019 (Composer: dot-path split silently drops fragments for `.`-bearing names — verified)
 - #1017 (sibling: data-vs-declared-type conformance — the *data* entry point)
 - `docs/specs/data-model-rules.md` → *Naming Styles*
 - Nygard, ["Documenting Architecture Decisions"](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
