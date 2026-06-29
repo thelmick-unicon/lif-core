@@ -85,6 +85,7 @@
 
 ### `docs/operations/proposals/` — Proposed work
 
+- [`advisor-streaming.md`](operations/proposals/advisor-streaming.md) — End-to-end token streaming for the Advisor (NDJSON over `astream_events` + `StreamingResponse` + a fetch reader), including the single-worker reframe concurrency fix, ALB idle-timeout risk, rollout, and PR sequencing (#970).
 - [`mdr-transformation-output-validation.md`](operations/proposals/mdr-transformation-output-validation.md) — Validate the MDR bulk-transform preview output against the target LIF schema (Ajv) at authoring time; uses the already-wired `targetSchema` prop (#973).
 
 ---
