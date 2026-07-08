@@ -110,12 +110,16 @@ async def create_attribute(session: AsyncSession, data: CreateAttributeDTO):
 
     if data.EntityId is not None:
         await session.flush()  # assign attribute.Id without committing
+        # For an extension model (OrgLIF/PartnerLIF — data.Extension is derived from the model's
+        # BaseDataModelId above), the association is an extension placement onto this model, matching
+        # the frontend's tmplCreateEntityAttributeAssociation (ExtendedByDataModelId = the model id).
         association = EntityAttributeAssociation(
             EntityId=data.EntityId,
             AttributeId=attribute.Id,
             Contributor=data.Contributor,
             ContributorOrganization=data.ContributorOrganization,
             Deleted=False,
+            ExtendedByDataModelId=data.DataModelId if data.Extension else None,
         )
         session.add(association)
 
