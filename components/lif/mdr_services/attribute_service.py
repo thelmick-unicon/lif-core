@@ -16,7 +16,7 @@ from lif.mdr_dto.attribute_dto import (
     CreateAttributeDTO,
     UpdateAttributeDTO,
 )
-from lif.mdr_services.helper_service import check_datamodel_by_id
+from lif.mdr_services.helper_service import check_datamodel_by_id, check_entity_by_id
 from lif.mdr_services.value_set_values_service import check_value_set_exists_by_id
 from lif.mdr_utils.logger_config import get_logger
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -96,8 +96,29 @@ async def create_attribute(session: AsyncSession, data: CreateAttributeDTO):
     if data.ValueSetId:
         await check_value_set_exists_by_id(session=session, id=data.ValueSetId)
 
-    attribute = Attribute(**data.dict())
+    # When an EntityId is supplied, create the attribute AND its entity association in a single
+    # transaction. Previously the UI created these via two separate, independently-committed
+    # requests; if the first response was lost the client never issued the second, leaving the
+    # attribute persisted but unassociated — invisible in the entity view yet blocking re-create
+    # on the unique name (#1028). One commit means a dropped response leaves either nothing or a
+    # fully-associated (visible) attribute, never an orphan.
+    if data.EntityId is not None:
+        await check_entity_by_id(session=session, id=data.EntityId)
+
+    attribute = Attribute(**data.dict(exclude={"EntityId"}))
     session.add(attribute)
+
+    if data.EntityId is not None:
+        await session.flush()  # assign attribute.Id without committing
+        association = EntityAttributeAssociation(
+            EntityId=data.EntityId,
+            AttributeId=attribute.Id,
+            Contributor=data.Contributor,
+            ContributorOrganization=data.ContributorOrganization,
+            Deleted=False,
+        )
+        session.add(association)
+
     await session.commit()
     await session.refresh(attribute)
     attribute_dto = AttributeDTO.from_orm(attribute)
